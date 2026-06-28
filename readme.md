@@ -17,6 +17,8 @@ https://mrkandreev.name/snippets/gitignore-generator/#Node
 when you save the file it will restart your server automatically 
 nodemon is a tool that helps develop Node.js based applications by automatically restarting the node application when file changes in the directory are detected.
 
+npm i nodemon
+
 
 
 ## Author Mudasir @ Anberlin
