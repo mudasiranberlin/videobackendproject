@@ -15,7 +15,8 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src"
+    "dev": "nodemon src/index
+    "
     "start": "npm run dev"
   },
   "devDependencies": {
