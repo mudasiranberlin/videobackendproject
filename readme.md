@@ -12,7 +12,9 @@ https://mrkandreev.name/snippets/gitignore-generator/#Node
 
 # 3 i will using : "type": "module"
 
-## 4 i will be using node mon 
+## 4 i will be using nodemon
+
+for start 
 
 
 
