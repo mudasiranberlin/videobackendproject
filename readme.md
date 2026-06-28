@@ -19,7 +19,8 @@ nodemon is a tool that helps develop Node.js based applications by automatically
 
 npm i nodemon
 
-## The fundamental difference is that dependencies are strictly required for your application to run in production, while devDependencies are only used locally for building, testing, and developing the code
+## 
+The fundamental difference is that dependencies are strictly required for your application to run in production, while devDependencies are only used locally for building, testing, and developing the code
 
 
 
