@@ -8,7 +8,7 @@ here is one website i serach there node
 
 https://mrkandreev.name/snippets/gitignore-generator/#Node
 
-# Create .env file 
+# 2 Create .env file 
 
 # i will using : "type": "module"
 
