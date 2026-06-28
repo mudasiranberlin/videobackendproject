@@ -10,7 +10,7 @@ https://mrkandreev.name/snippets/gitignore-generator/#Node
 
 # 2 Create .env file 
 
-# i will using : "type": "module"
+# 3 i will using : "type": "module"
 
 
 
