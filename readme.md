@@ -2,6 +2,6 @@
 
 You want to create the readme file you can simply go to google and serach .gitignore generator
 
-
+https://mrkandreev.name/snippets/gitignore-generator/#Node
 
 ## Author Mudasir @ Anberlin
