@@ -35,7 +35,7 @@ then scripts and then use this index is your file
 mkdir public
 cd public
 mkdir temp
-
+touch .gitkeep
 
 
 
