@@ -24,7 +24,8 @@ The fundamental difference is that dependencies are strictly required for your a
 
 npm i -D nodemon
 
-how to use go to package 
+how to use go to package json 
+
 
 ## 6 
 
