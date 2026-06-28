@@ -33,6 +33,7 @@ then scripts and then use this index is your file
 
 ## 6  now create the new folder 
 mkdir public
+cd 
 mkdir temp
 
 
