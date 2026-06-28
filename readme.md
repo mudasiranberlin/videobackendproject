@@ -22,7 +22,7 @@ npm i nodemon
 ##  Core Differences
 The fundamental difference is that dependencies are strictly required for your application to run in production, while devDependencies are only used locally for building, testing, and developing the code
 
-npm i nodemon
+npm i -D nodemon
 
 
 
