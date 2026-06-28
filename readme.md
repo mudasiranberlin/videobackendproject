@@ -42,7 +42,7 @@ now go mail folder
 create new folder mkdir src 
  and then go inside it 
  src % mkdir controllers db middlewares models routes utils 
-
+touch app.js constants.js index.js
 
 ## 7 
 
