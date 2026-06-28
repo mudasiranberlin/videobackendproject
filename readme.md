@@ -43,7 +43,6 @@ create new folder mkdir src
  and then go inside it 
  src % mkdir controllers db middlewares models routes utils 
 
- 
 
 ## 7 
 
