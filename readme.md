@@ -39,7 +39,7 @@ touch .gitkeep
 
 now go mail folder 
 
-create new folder mkdir 
+create new folder mkdir src 
 
 ## 7 
 
