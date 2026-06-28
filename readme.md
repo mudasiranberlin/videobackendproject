@@ -26,7 +26,8 @@ npm i -D nodemon
 
 how to use go to package json 
 
-then see "scripts": {
+then see 
+"scripts": {
     "dev": "nodemon src/index.js"
   },
 
