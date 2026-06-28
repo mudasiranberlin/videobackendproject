@@ -14,7 +14,7 @@ https://mrkandreev.name/snippets/gitignore-generator/#Node
 
 ## 4 i will be using nodemon
 
-when you save the file 
+when you save the file it will restart your server automatically 
 
 
 
