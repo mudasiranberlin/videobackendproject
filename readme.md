@@ -31,7 +31,7 @@ then scripts and then use this index is your file
     "dev": "nodemon src/index.js"
   },
 
-## 6 
+## 6  now create the 
 
 
 
