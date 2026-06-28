@@ -2,7 +2,7 @@
 
 # 1 Readme Generator
 
-1. You want to create the readme file you can simply go to google and serach .gitignore generator
+ You want to create the readme file you can simply go to google and serach .gitignore generator
 
 here is one website i serach there node 
 
