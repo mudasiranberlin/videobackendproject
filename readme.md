@@ -10,6 +10,8 @@ https://mrkandreev.name/snippets/gitignore-generator/#Node
 
 # Create .env file 
 
-# i will using 
+# i will using : "type": "module"
+
+
 
 ## Author Mudasir @ Anberlin
