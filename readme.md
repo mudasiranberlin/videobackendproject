@@ -37,6 +37,8 @@ cd public
 mkdir temp
 touch .gitkeep
 
+now go mail folder 
+
 ## 7 
 
 
