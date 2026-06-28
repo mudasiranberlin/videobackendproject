@@ -15,7 +15,7 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    
+    "dev"
     "start": "npm run dev"
   },
   "devDependencies": {
