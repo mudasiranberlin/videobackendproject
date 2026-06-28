@@ -14,7 +14,7 @@ https://mrkandreev.name/snippets/gitignore-generator/#Node
 
 ## 4 i will be using nodemon
 
-for start 
+
 
 
 
