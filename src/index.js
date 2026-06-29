@@ -5,7 +5,7 @@ import mongoose from "mongoose";
     try {
         
     } catch (error) {
-        console.error
+        console.error()
         
     }
 })()
