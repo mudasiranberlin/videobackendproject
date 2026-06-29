@@ -2,6 +2,8 @@ import mongoose from "mongoose";
 // This imports the Mongoose library so you can connect to MongoDB.
 import { DB_NAME } from "../constants";
 
+
+
 const  connectDB= async ()=>{
     try {
         const connectionInstance = await mongoose.connect(`${process.env.MONGODB_URI}/${DB_NAME}`)
