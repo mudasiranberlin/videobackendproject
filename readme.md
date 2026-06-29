@@ -69,7 +69,7 @@ create another file:  touch .prettierignore
 
 to ignore the .env so cannot make any changes there 
 
-write there: or you can g
+write there: or you can generate 
 
 /.vscode
 /node_modules
