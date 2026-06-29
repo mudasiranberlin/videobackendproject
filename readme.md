@@ -44,7 +44,7 @@ create new folder mkdir src
  src % mkdir controllers db middlewares models routes utils 
 touch app.js constants.js index.js
 
-middleware
+middleware: code between 
 
 ## 7 
 
