@@ -1,4 +1,6 @@
 import mongoose from "mongoose";
 
 
-( async (params) => {})()
+( async (params) => {
+    tr
+})()
