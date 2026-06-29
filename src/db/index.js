@@ -26,9 +26,7 @@ try { /* Try connecting to the database. If anything fails, execution jumps to t
 
     Wrong password
     MongoDB not running
-    Wrong URL
-
-    this block runs.
+    Wrong URL this block runs.
 */
 }
 
