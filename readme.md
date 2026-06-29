@@ -79,6 +79,6 @@ write there: or you can generate online prettier ignore
 .env.*
 
 
-
+# database 
 
 ## Author Mudasir @ Anberlin
