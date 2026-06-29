@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 
 ( async (params) => {
     try {
-        mongoose.connect(`${process.env.MONGODB_URI}/`)
+        mongoose.connect(`${process.env.MONGODB_URI}/$`)
         
     } catch (error) {
         console.error("ERROR",error)
