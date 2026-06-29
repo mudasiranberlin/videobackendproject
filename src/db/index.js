@@ -1,4 +1,4 @@
 import mongoose from "mongoose";
 import { DB_NAME } from "../constants";
 
-const connectionInstance = 
+const connectionInstance = as
