@@ -22,6 +22,8 @@ try { /* Try connecting to the database. If anything fails, execution jumps to t
         process.exit(1)
     }
 
+    
+
 }
 
 
