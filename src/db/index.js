@@ -5,7 +5,7 @@ const connectionInstance = async ()=>{
     try {
         
     } catch (error) {
-        console.log
+        console.log("")
     }
 
 }
