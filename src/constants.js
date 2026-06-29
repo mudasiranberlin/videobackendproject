@@ -1,1 +1,1 @@
-export const DB_
+export const DB_NAME
