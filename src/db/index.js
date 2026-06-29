@@ -6,4 +6,4 @@ const connectionInstance = async ()=>{
 }
 
 
-export de
+export default
