@@ -14,7 +14,7 @@ const app = express();
             throw error
         })
         
-        app.listen(process.en)
+        app.listen(process.env)
 
 
     } catch (error) {
