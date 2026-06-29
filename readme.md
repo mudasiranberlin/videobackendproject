@@ -80,6 +80,6 @@ write there: or you can generate online prettier ignore
 
 
 # database connection 
-here we will use mongo
+here we will use mongodb 
 
 ## Author Mudasir @ Anberlin
