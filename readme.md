@@ -69,7 +69,12 @@ create another file:  touch .prettierignore
 
 to ignore the .env so cannot make any changes there 
 
-
+/.vscode
+/node_modules
+./dist
+*.env
+.env
+.env.*
 
 
 ## Author Mudasir @ Anberlin
