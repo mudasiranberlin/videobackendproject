@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
 
-function connect(params) {
+function connectDB(params) {
     
 }
