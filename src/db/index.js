@@ -17,7 +17,12 @@ try { /* Try connecting to the database. If anything fails, execution jumps to t
         
     /* await tells JavaScript: Wait until the database is connected before continuing.  */
 
-    } catch (error) { 
+    } catch (error) {     /* If the connection fails:
+
+    Wrong password
+    MongoDB not running
+    Wrong URL this block runs.
+*/
         console.log("The error connecting the database")
         process.exit(1)
     }
