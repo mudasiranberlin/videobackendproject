@@ -45,7 +45,7 @@ create new folder mkdir src
 touch app.js constants.js index.js
 
 middleware: jatay phelay muj sai mil kai jana 
-routes 
+routes : 
 
 ## 7 
 
