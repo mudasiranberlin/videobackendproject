@@ -6,7 +6,7 @@ import { DB_NAME } from "../constants";
 
 const  connectDB= async ()=>{
 
-/You're creating a function named connectDB.
+/*You're creating a function named connectDB.
 It is not running yet.
 It only runs when you call:
 connectDB();
