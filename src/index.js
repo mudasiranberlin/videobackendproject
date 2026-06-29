@@ -9,6 +9,7 @@ const app = express();
 ( async (params) => {
     try {
         await mongoose.connect(`${process.env.MONGODB_URI}/${DB_NAME}`)
+        app.
         
     } catch (error) {
         console.error("ERROR",error)
