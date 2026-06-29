@@ -79,6 +79,7 @@ write there: or you can generate online prettier ignore
 .env.*
 
 
-# database connect
+# database connection 
+
 
 ## Author Mudasir @ Anberlin
