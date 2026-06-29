@@ -67,7 +67,7 @@ and write in the file :
 
 create another file:  touch .prettierignore
 
-to ignore the 
+to ignore the .env so cannot make any changes there 
 
 
 ## Author Mudasir @ Anberlin
