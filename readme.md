@@ -82,6 +82,6 @@ write there: or you can generate online prettier ignore
 # database connection 
 here we will use mongodb database
 
-signup and create or
+signup and create project and then create cluster and allow all
 
 ## Author Mudasir @ Anberlin
