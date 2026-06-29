@@ -24,7 +24,7 @@ try { /* Try connecting to the database. If anything fails, execution jumps to t
 
     /* If the connection fails:
 
-Wrong password
+    Wrong password
 MongoDB not running
 Wrong URL
 
