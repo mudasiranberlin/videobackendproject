@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 import { DB_NAME } from "./constants";
 
-import express from ""
+import express from "express"
 
 
 ( async (params) => {
