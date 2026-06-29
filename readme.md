@@ -69,6 +69,8 @@ create another file:  touch .prettierignore
 
 to ignore the .env so cannot make any changes there 
 
+write there: 
+
 /.vscode
 /node_modules
 ./dist
