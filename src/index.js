@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 
 ( async (params) => {
     try {
-        mon
+        mongoose.connect
         
     } catch (error) {
         console.error("ERROR",error)
