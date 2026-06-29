@@ -55,7 +55,15 @@ Prettier is an opinionated code formatter. It enforces a consistent style by par
 npm i -D prettier
 
 touch .prettierrc create file
-and 
+and write in the file :
+
+{
+  "singleQuote": false,
+  "bracketSpacing": true,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "semi": true
+}
 
 
 ## Author Mudasir @ Anberlin
