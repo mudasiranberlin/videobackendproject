@@ -105,6 +105,8 @@ npm install express dotenv mongoose
 # database 2 thing note 
 1 get the problems while 
 
+2. 
+
 
 
 ## Author Mudasir @ Anberlin
