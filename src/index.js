@@ -1,8 +1,8 @@
 import mongoose from "mongoose";
 
-function connectDB() {
+// function connectDB() {
     
-}
-connectDB
+// }
+// connectDB
 
 ( async (params) => {})()
