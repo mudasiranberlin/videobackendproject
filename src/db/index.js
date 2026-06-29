@@ -22,7 +22,13 @@ try { /* Try connecting to the database. If anything fails, execution jumps to t
         process.exit(1)
     }
 
-    /*
+    /*If the connection fails:
+
+Wrong password
+MongoDB not running
+Wrong URL
+
+this block runs.
 
 }
 
