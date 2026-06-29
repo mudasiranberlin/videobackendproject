@@ -5,4 +5,6 @@ function connectDB() {
 }
 connectDB
 
-(( as)=>{})()
+(( async (params) => {
+    
+})=>{})()
