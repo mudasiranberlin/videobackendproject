@@ -15,4 +15,4 @@ const  connectDB= async ()=>{
 }
 
 
-export default connectionInstance
+export default connectDB
