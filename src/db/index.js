@@ -1,2 +1,2 @@
 import mongoose from "mongoose";
-import {D}
+import { DB_NAME } from "../constants";
