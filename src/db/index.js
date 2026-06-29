@@ -19,7 +19,6 @@ try { /* Try connecting to the database. If anything fails, execution jumps to t
 
     } catch (error) {     
         /* If the connection fails:
-
     Wrong password
     MongoDB not running
     Wrong URL this block runs.
