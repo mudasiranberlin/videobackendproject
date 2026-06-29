@@ -103,7 +103,7 @@ mongodb+srv://anberlin:your_password@mudi.jgdl6hb.mongodb.net
 npm install express dotenv mongoose
 
 # database 2 thing note 
-1 when connecting the database there will be a problem 
+1 when connecting the database there will be a problem  use try catch or you can use promises 
 
 2. 
 
