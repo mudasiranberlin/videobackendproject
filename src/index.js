@@ -14,7 +14,7 @@ const app = express();
             throw error
         })
         
-        app.li
+        app.listen
 
 
     } catch (error) {
