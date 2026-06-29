@@ -65,7 +65,7 @@ and write in the file :
   "semi": true
 }
 
-create another file touch .prettierignore
+create another file:  touch .prettierignore
 
 
 ## Author Mudasir @ Anberlin
