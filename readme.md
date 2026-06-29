@@ -100,6 +100,10 @@ mongodb+srv://anberlin:your_password@mudi.jgdl6hb.mongodb.net
 
 # install package : 
 
+npm install express dotenv mongoose
+
+# 
+
 
 
 ## Author Mudasir @ Anberlin
