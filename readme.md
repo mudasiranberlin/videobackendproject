@@ -70,4 +70,6 @@ create another file:  touch .prettierignore
 to ignore the .env so cannot make any changes there 
 
 
+
+
 ## Author Mudasir @ Anberlin
