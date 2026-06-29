@@ -88,6 +88,8 @@ and then copy usernamer and password and save
 
 and then 
 
+go to database and then clu
+
 
 
 ## Author Mudasir @ Anberlin
