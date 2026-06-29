@@ -88,7 +88,7 @@ and then copy usernamer and password and save
 
 and then 
 
-go to database and then clu
+go to database and then cluster and then click on connect and select the 
 
 
 
