@@ -109,7 +109,7 @@ npm install express dotenv mongoose
 
 # to connect database we will use if inside it we will use arrow function with async 
 
-
+( async (params) => {})()
 
 
 
