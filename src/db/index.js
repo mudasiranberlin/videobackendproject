@@ -14,6 +14,7 @@ try { /* Try connecting to the database. If anything fails, execution jumps to t
         console.log(`The DB is Connected and Host Name is ${connectionInstance.connection.host}`);
         
     /* await tells JavaScript: Wait until the database is connected before continuing.  */
+    
     } catch (error) {
         console.log("The error connecting the database")
         process.exit(1)
