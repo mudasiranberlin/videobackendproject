@@ -2,5 +2,9 @@ import mongoose from "mongoose";
 
 
 ( async (params) => {
-    tr
+    try {
+        
+    } catch (error) {
+        
+    }
 })()
