@@ -55,7 +55,7 @@ Prettier is an opinionated code formatter. It enforces a consistent style by par
 npm i -D prettier
 
 touch .prettierrc create file
-
+and 
 
 
 ## Author Mudasir @ Anberlin
