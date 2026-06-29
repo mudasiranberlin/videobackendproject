@@ -93,7 +93,7 @@ like this will be and change the pasasord
 
 mongodb+srv://your cluster:<db_password>@di.jgdl6hb.mongodb.net/
 
-mongodb+srv://anberlin:your_password@mudi.jgdl6hb.mongodb.net/
+mongodb+srv://anberlin:your_password@mudi.jgdl6hb.mongodb.net
 
 
 
