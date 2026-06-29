@@ -107,7 +107,7 @@ npm install express dotenv mongoose
 
 2. dataase in another contient (chage the location database ) and then use async await use 
 
-# to connect da
+# to connect database we will use function 
 
 
 
