@@ -84,7 +84,9 @@ here we will use mongodb database
 
 signup and create project and then create cluster and allow all  network access 0.0.0.0 only for learning purpose 
 
+and then copy usernamer and password and save 
 
+and then 
 
 
 
