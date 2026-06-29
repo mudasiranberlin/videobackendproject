@@ -66,6 +66,7 @@ and write in the file :
 }
 
 create another file touch 
+.prettierignore
 
 
 ## Author Mudasir @ Anberlin
