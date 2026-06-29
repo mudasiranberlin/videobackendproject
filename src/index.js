@@ -15,7 +15,8 @@ const app = express();
         })
         
         app.listen(process.env.PORT,()=>{
-            log
+            console.log();
+            
         })
 
 
