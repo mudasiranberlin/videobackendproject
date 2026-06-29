@@ -89,7 +89,7 @@ and then copy usernamer and password and save
 and then 
 
 go to database and then cluster and then click on connect and select the connection u can select anyone but i will select the compass and 
-mongodb+srv://your cluster:<db_password>@mudi.jgdl6hb.mongodb.net/
+mongodb+srv://your cluster:<db_password>@udi.jgdl6hb.mongodb.net/
 
 
 
