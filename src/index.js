@@ -14,7 +14,9 @@ const app = express();
             throw error
         })
         
-        app.listen(process.env.PORT,()=>)
+        app.listen(process.env.PORT,()=>{
+            
+        })
 
 
     } catch (error) {
