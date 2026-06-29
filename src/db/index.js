@@ -24,7 +24,7 @@ try { /* Try connecting to the database. If anything fails, execution jumps to t
     Wrong URL this block runs.
 */
         console.log("The error connecting the database")
-        process.exit(1). 
+        process.exit(1) /*
     }
 
     
