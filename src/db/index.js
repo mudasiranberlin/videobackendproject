@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-This imports the Mongoose library so you can connect to MongoDB.
+// This imports the Mongoose library so you can connect to MongoDB.
 import { DB_NAME } from "../constants";
 
 const  connectDB= async ()=>{
