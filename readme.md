@@ -65,7 +65,7 @@ and write in the file :
   "semi": true
 }
 
-create another file 
+create another file touch 
 
 
 ## Author Mudasir @ Anberlin
