@@ -103,7 +103,7 @@ mongodb+srv://anberlin:your_password@mudi.jgdl6hb.mongodb.net
 npm install express dotenv mongoose
 
 # database 2 thing note 
-1 get the problems while 
+1 get the proble
 
 2. 
 
