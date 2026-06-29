@@ -8,7 +8,7 @@ const  connectDB= async ()=>{
 
 /* You're creating a function named connectDB. It is not running yet.It only runs when you call:connectDB(); */
 
-try {
+try { 
         const connectionInstance = await mongoose.connect(`${process.env.MONGODB_URI}/${DB_NAME}`)
         console.log(`The DB is Connected and Host Name is ${connectionInstance.connection.host}`);
         
