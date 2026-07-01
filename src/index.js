@@ -15,7 +15,7 @@ So we use:.then(...) .catch(...)
 
 If connection is successful
 .then(()=>{
-    This means:
+This means:
 "If MongoDB connects successfully, do this."
 */
 .then(()=>{ 
