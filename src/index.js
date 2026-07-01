@@ -4,7 +4,7 @@ import app from "./app.js";
 
 dotenv.config({
     path: './env'
-})  // 
+})  // This reads your environment file.
 
 
 connectDB()  //A function that connects to MongoDB.
