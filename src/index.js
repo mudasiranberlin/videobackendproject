@@ -8,7 +8,7 @@ dotenv.config({
 
 
 connectDB()  //A function that connects to MongoDB.
-.then(()=>{ // 
+.then(()=>{ // Since connecting takes time, connectDB() returns a Promise.
     app.on("error",(error)=>{     // app → our Express application also our website/server
         console.log("ERRR:",error);
         throw error
