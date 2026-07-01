@@ -8,7 +8,7 @@ dotenv.config({
 
 
 connectDB()  
-/A function that connects to MongoDB.
+/* A function that connects to MongoDB.
 // Since connecting takes time, connectDB() returns a Promise.
 // A Promise has two possibilities: Success ✅ or Failure ❌  
 // So we use:.then(...) .catch(...)
