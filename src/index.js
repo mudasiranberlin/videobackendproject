@@ -13,6 +13,8 @@ Since connecting takes time, connectDB() returns a Promise.
 A Promise has two possibilities: Success ✅ or Failure ❌  
 So we use:.then(...) .catch(...)
 
+// app → our Express application also our website/server
+
 If connection is successful
 .then(()=>{
 This means:
