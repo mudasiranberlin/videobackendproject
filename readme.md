@@ -110,8 +110,7 @@ npm install express dotenv mongoose
 # to connect database we will use if inside it we will use arrow function with async 
 ;( async (params) => {})() some are using like this do not get confuse.
 ( async (params) => {})()
-
-
+now the db is connected refer to index.js in 
 
 
 
