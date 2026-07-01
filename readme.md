@@ -112,7 +112,8 @@ npm install express dotenv mongoose
 ( async (params) => {})()
 now the db is connected refer to index.js in db
 
-## 
+## Now use dotenv
+
 
 
 
