@@ -119,6 +119,8 @@ dotenv.config({
     path: './env'
 })
 
+and then go to package json 
+
 
 
 
