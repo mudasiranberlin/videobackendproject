@@ -25,7 +25,7 @@ try { /* Try connecting to the database. If anything fails, execution jumps to t
 */
         console.log("The error connecting the database")
         process.exit(1)      /*Stop the application because something serious went wrong.*/
-    }
+    } 
 
     
 }
