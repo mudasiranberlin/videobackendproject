@@ -11,7 +11,7 @@ dotenv.config({
 
 connectDB()
 .then(()=>{
-    
+    app
 })
 .catch()
 
