@@ -23,7 +23,7 @@ try { /* Try connecting to the database. If anything fails, execution jumps to t
     MongoDB not running
     Wrong URL this block runs.
 */
-        console.log("The error connecting the database")
+        console.log("")
         process.exit(1)      /*Stop the application because something serious went wrong.*/
     } 
 
