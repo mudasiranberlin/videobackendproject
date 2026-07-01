@@ -21,7 +21,6 @@ This means:
 "If MongoDB connects successfully, do this."
 */
 .then(()=>{ 
-    
     app.on("error",(error)=>{     
         console.log("ERRR:",error);
         throw error.  
