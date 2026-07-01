@@ -25,9 +25,7 @@ This means:
         console.log("ERRR:",error);
         throw error //stops the program because something serious happened. 
     })
-    app.listen(process.env.PORT||8080,()=>{ // Start the server Think of || as:
-
-"Use the left value. If it doesn't exist, use the right one."
+    app.listen(process.env.PORT||8080,()=>{ // Start the server Think of || as: "Use the left value. If it doesn't exist, use the right one."
         console.log(`Server is Running at Port : ${process.env.PORT}`);
         
     })
