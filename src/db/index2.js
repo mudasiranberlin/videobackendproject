@@ -8,6 +8,6 @@ const ConnectDB = async () => {
         
     } catch (error) {
         console.log(`Error while Connecting mongodb`);
-        process
+        process.exit
     }
 } 
