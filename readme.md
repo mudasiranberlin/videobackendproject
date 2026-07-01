@@ -121,7 +121,9 @@ dotenv.config({
 
 and then go to package json 
 write there :
-
+"scripts": {
+    "dev": "nodemon -r dotenv/config --experimental-json-module src/index.js"
+  },
 
 
 
