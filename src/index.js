@@ -1,5 +1,6 @@
+import connectDB from "./db";
 
 
 
 
-Conne
+connectDB
