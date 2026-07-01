@@ -124,7 +124,7 @@ write there :
 "scripts": {
     "dev": "nodemon -r dotenv/config src/index.js"
   },
-now go to 
+now go to main index
 
 
 
