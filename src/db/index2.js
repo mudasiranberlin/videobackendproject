@@ -3,7 +3,7 @@ import { DB_NAME } from "../constants";
 
 const connectDB= async () => {
     try {
-        const connection
+        const connectionInstance
         
     } catch (error) {
         console.log();
