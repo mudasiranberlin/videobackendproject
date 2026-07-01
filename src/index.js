@@ -11,7 +11,9 @@ dotenv.config({
 
 connectDB()
 .then(()=>{
-    app.listen(process.env.PORT||8080,)
+    app.listen(process.env.PORT||8080,()=>{
+        
+    })
 })
 .catch()
 
