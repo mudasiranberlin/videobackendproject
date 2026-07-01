@@ -1,4 +1,6 @@
 import mongoose from "mongoose";
 import { DB_NAME } from "../constants";
 
-const ConnectDB = as 
+const ConnectDB = async (params) => {
+    
+} 
