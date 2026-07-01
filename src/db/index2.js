@@ -5,6 +5,7 @@ const ConnectDB = async () => {
     try {
         
     } catch (error) {
+        console.log();
         
     }
 } 
