@@ -19,7 +19,7 @@ connectDB()
 .catch()
 
 connectDB((error)=>{
-    console.log("");
+    console.log("Mongo Db ");
     
 })
 .then(()=>{
