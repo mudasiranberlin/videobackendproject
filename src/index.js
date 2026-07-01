@@ -17,7 +17,7 @@ So we use:.then(...) .catch(...)
     app.on("error",(error)=>{     // app → our Express application also our website/server
         console.log("ERRR:",error);
         throw error.  
-    }).
+    })
     app.listen(process.env.PORT||8080,()=>{
         console.log(`Server is Running at Port : ${process.env.PORT}`);
         
