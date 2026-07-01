@@ -121,9 +121,7 @@ dotenv.config({
 
 and then go to package json 
 write there :
-dotenv.config({
-    path: './env'
-})
+
 
 
 
