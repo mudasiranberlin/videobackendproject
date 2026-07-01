@@ -10,5 +10,5 @@ dotenv.config({
 
 
 connectDB()
-.then()
+.then( )
 .catch()
