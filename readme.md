@@ -113,7 +113,9 @@ npm install express dotenv mongoose
 now the db is connected refer to index.js in db
 
 ## Now use dotenv
-i will be using import
+i will be using import statement
+import dotenv from "dotenv"
+
 
 
 
