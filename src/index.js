@@ -9,7 +9,7 @@ dotenv.config({
 
 connectDB()  //A function that connects to MongoDB.
 .then(()=>{
-    app.on("error",(error)=>{     // our Express application.
+    app.on("error",(error)=>{     // app → our Express application.
         console.log("ERRR:",error);
         throw error
     })
