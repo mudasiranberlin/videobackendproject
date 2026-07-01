@@ -10,7 +10,7 @@ dotenv.config({
 
 connectDB()
 .then(()=>{
-    app.listen(process.e)
+    app.listen(process.env)
 })
 .catch((err)=>{
     console.log("NongoDB Connection failed !!!", err);
