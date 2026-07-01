@@ -127,6 +127,28 @@ write there :
 now go to main index.js and call connectDB()
 
 after that 
+// Read environment variables
+dotenv.config()
+
+// Connect to MongoDB
+connectDB()
+
+// If database connects successfully
+.then(() => {
+
+    // Watch for server errors
+    app.on("error", (error) => {
+        console.log(error);
+    });
+
+    // Start the server
+    app.listen(PORT);
+})
+
+// If database connection fails
+.catch((err) => {
+    console.log(err);
+});
 
 
 
