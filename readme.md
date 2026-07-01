@@ -126,7 +126,7 @@ write there :
   },
 now go to main index.js and call connectDB()
 
-
+after that 
 
 
 
