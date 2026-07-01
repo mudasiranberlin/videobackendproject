@@ -11,4 +11,4 @@ dotenv.config({
 
 connectDB()
 .then
-.c
+.catc
