@@ -31,6 +31,6 @@ This means:
     })
 })
 .catch((err)=>{
-    console.log("NongoDB Connection failed !!!", err);
+    console.log("NongoDB Connection failed !!!", err);   // If MongoDB connection fails
     
 })
