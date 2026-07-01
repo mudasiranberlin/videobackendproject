@@ -10,4 +10,4 @@ dotenv.config({
 
 connectDB()
 .then()
-.catch()
+.catch((err))
