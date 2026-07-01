@@ -1,4 +1,4 @@
-import dotenv from "dot"
+import dotenv from "dotenv"
 import connectDB from "./db";
 
 
