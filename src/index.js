@@ -11,6 +11,6 @@ dotenv.config({
 connectDB()
 .then()
 .catch((err)=>{
-    console.log("NongoDB Connection failed !!!");
+    console.log("NongoDB Connection failed !!!", err);
     
 })
