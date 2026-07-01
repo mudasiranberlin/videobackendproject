@@ -1,4 +1,4 @@
-import dotenv from "dotenv"  //dotenv → Reads environment variables from your .env file.
+import dotenv from "dotenv"            //dotenv → Reads environment variables from your .env file.
 import connectDB from "./db/index.js";
 import app from "./app.js";
 
