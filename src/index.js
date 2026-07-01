@@ -11,5 +11,6 @@ dotenv.config({
 connectDB()
 .then()
 .catch((err)=>{
-    log
+    console.log();
+    
 })
