@@ -9,3 +9,4 @@ dotenv.config({
 
 
 connectDB()
+.then
