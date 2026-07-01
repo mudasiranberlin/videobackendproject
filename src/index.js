@@ -8,4 +8,4 @@ dotenv.config({
 
 
 
-connectDB
+connectDB()
