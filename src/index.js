@@ -1,4 +1,4 @@
-import
+import dot
 import connectDB from "./db";
 
 
