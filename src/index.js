@@ -21,7 +21,7 @@ This means:
 "If MongoDB connects successfully, do this."
 */
 .then(()=>{ 
-    app.on("error",(error)=>{     /* Listen for server errors */
+    app.on("error",(error)=>{     /* Listen for server errors f your Express app has an error later, it prints: */
         console.log("ERRR:",error);
         throw error.  
     })
