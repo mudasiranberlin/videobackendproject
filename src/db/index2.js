@@ -5,7 +5,7 @@ const ConnectDB = async () => {
     try {
         
     } catch (error) {
-        console.log(`Error while `);
+        console.log(`Error while Connecting mongodb`);
         
     }
 } 
