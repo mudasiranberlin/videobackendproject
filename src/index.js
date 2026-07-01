@@ -22,7 +22,7 @@ This means:
     /*
     Listen for server errors
     */
-    app.on("error",(error)=>{     // app → our Express application also our website/server
+    app.on("error",(error)=>{     
         console.log("ERRR:",error);
         throw error.  
     })
