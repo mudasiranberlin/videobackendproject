@@ -18,10 +18,7 @@ connectDB()
 })
 .catch()
 
-connectDB((error)=>{
-    console.log("Mongo Db Connection failed !!!",error);
-    
-})
+connectDB()
 .then(()=>{
     app.on("error",(error)=>{
         console.log("ERRR:",error);
