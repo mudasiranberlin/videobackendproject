@@ -18,7 +18,7 @@ connectDB()
 })
 .catch()
 
-connectDB()
+connectDB(())
 .then(()=>{
     app.on("error",(error)=>{
         console.log("ERRR:",error);
