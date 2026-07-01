@@ -23,7 +23,7 @@ This means:
 .then(()=>{ 
     app.on("error",(error)=>{     /* Listen for server errors f your Express app has an error later, it prints:ERRR */
         console.log("ERRR:",error);
-        throw error.  
+        throw error //
     })
     app.listen(process.env.PORT||8080,()=>{
         console.log(`Server is Running at Port : ${process.env.PORT}`);
