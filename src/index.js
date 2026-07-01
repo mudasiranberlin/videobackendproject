@@ -10,3 +10,5 @@ dotenv.config({
 
 
 connectDB()
+.then
+.c
