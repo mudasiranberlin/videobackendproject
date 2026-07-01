@@ -14,8 +14,6 @@ A Promise has two possibilities: Success ✅ or Failure ❌
 So we use:.then(...) .catch(...)
 */
 .then(()=>{ 
-
-
     app.on("error",(error)=>{     // app → our Express application also our website/server
         console.log("ERRR:",error);
         throw error.  
