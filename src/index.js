@@ -12,7 +12,7 @@ connectDB()
 .then(()=>{
     app.on("error",(error)=>{
         console.log("ERRR:",error);
-        th
+        throw
         
     })
     app.listen(process.env.PORT||8080,()=>{
