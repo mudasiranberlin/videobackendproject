@@ -33,6 +33,7 @@ express.urlencoded() translates it.
 name=Ram&age=10
 becomes
 
+
 app.use(express.static("public"))
 
 app.use(cookieParser())
