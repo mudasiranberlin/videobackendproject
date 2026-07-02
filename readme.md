@@ -152,7 +152,7 @@ connectDB()
 
 Most we will using the request in express 
 most 2 thing will study 
-req.prams: when u get data from url 
+req.prams: when u get data from url u will get from req.prams 
 req.body: get data from forms or from json
 
 
