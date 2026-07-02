@@ -35,4 +35,4 @@ This means:
     
 })
 
-connectDB
+connectDB()
