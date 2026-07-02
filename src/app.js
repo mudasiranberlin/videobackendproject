@@ -16,7 +16,6 @@ app.use(express.json({limit:"16kb"}))
  "name":"Ram",
  "age":10
 }
-
 and turns it into:  req.body 
 so you can do
 
