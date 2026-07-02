@@ -37,6 +37,6 @@ This means:
 
 connectDB()
 .then(()=>{
-    app.listen(process.env.port)
+    app.listen(process.env.PORT)
 })
 .catch()
