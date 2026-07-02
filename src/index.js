@@ -37,3 +37,4 @@ This means:
 
 connectDB()
 .then()
+.catch
