@@ -169,7 +169,7 @@ cors → "Allow or restrict which websites can call my API."
 most of the time when when u have to use middleware so mostly u will use=  app.use
 
 Now Lets go to app.js
-import cookie-parser
+import cookie-parser, cors
 
 1. app.use(cors({
     origin:process.env.CORS_ORIGIN,
