@@ -178,6 +178,7 @@ app.use(...) is a rule that applies to every student (every request) entering th
     credentials:true
 }))
 
+
 2. app.use(express.json({limit:"16kb"}))
 
 
