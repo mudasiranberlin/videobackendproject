@@ -151,7 +151,7 @@ connectDB()
 });
 
 Most we will using the request in express 
-Most 2 thing will study 
+# Most 2 thing will study 
 req.prams: when u get data from url u will get from req.prams handle :  % ?= these prams we are handling
 req.body: get data from forms or from json will handle from req.body
 
