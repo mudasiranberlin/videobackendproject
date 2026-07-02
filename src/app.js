@@ -11,13 +11,13 @@ app.use(cors({
 
 app.use(express.json({limit:"16kb"})) 
 
-// // submits a form written in JSON.express.json() works like a translator.
-// // {
-//  "name":"Ram",
-//  "age":10
-// }
-// and turns it into:  req.body 
-// so you can do
+// submits a form written in JSON.express.json() works like a translator.
+// {
+ "name":"Ram",
+ "age":10
+}
+and turns it into:  req.body 
+so you can do
 
 console.log(req.body.name)
 
