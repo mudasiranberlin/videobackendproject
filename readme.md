@@ -177,7 +177,7 @@ app.use(...) is a rule that applies to every student (every request) entering th
     origin:process.env.CORS_ORIGIN,
     credentials:true
 }))
-Only allow requests coming from this website."
+Only allow requests coming from this website." 
 
 2. app.use(express.json({limit:"16kb"}))
 
