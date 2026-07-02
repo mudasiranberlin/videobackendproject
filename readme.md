@@ -156,6 +156,8 @@ req.prams: when u get data from url u will get from req.prams handle :  % ?= the
 req.body: get data from forms or from json will handle from req.body
 
 
+req.cookies : you will handle data from cookies 
+
 
 
 
