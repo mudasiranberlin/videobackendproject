@@ -25,7 +25,7 @@ limit = This protects the server from huge data.
 console.log(req.body.name)
 
 app.use(express.urlencoded({extended:true,limit:"16kb"}))
-
+/*
 When submitted, it sends= name=Ram&age=10
 Express cannot understand it automatically.
 
