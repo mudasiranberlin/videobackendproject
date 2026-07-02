@@ -41,4 +41,4 @@ connectDB()
         console.log(`Server is Running at Port: ${process.env.PORT}`);
     })
 })
-.catch(())
+.catch((err))
