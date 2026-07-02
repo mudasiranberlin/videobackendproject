@@ -26,7 +26,7 @@ console.log(req.body.name)
 
 app.use(express.urlencoded({extended:true,limit:"16kb"}))
 
-
+When submitted, it sends
 
 app.use(express.static("public"))
 
