@@ -9,6 +9,6 @@ app.use(cors({
     credentials:true
 }))
 
-app
+app.use
 
 export default app
