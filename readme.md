@@ -158,7 +158,9 @@ req.body: get data from forms or from json will handle from req.body
 
 req.cookies : you will handle data from cookies 
 
-for this we will need 
+for this we will need cookie parser
+
+now lets install cookie parswe
 
 
 
