@@ -163,7 +163,7 @@ for this we will need cookie parser
 # now lets install cookie-parser and another cors 
 
 cookie-parser → "Read browser cookies."
-
+cors → "Allow or restrict which websites can call my API."
 
 most of the time when when u have to use middleware so mostly u will use=  app.use
 
