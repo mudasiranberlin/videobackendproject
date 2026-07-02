@@ -153,6 +153,7 @@ connectDB()
 Most we will using the request in express 
 most 2 thing will study 
 req.prams: 
+req.body
 
 
 
