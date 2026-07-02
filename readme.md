@@ -173,7 +173,8 @@ most of the time when when u have to use middleware so mostly u will use=  app.u
     credentials:true
 }))
 
-2. 
+2. app.use(express.json({limit:"16kb"}))
+
 
 
 
