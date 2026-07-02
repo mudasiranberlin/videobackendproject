@@ -30,6 +30,7 @@ When submitted, it sends= name=Ram&age=10
 Express cannot understand it automatically.
 
 express.urlencoded() translates it.
+name=Ram&age=10
 
 app.use(express.static("public"))
 
