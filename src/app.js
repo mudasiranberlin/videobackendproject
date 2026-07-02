@@ -9,7 +9,8 @@ app.use(cors({
     credentials:true
 }))
 
-app.use(express.json({limit:"16kb"})) // submits a form written in JSON.express.json() works like a translator.
+app.use(express.json({limit:"16kb"})) 
+// submits a form written in JSON.express.json() works like a translator.
 
 // {
  "name":"Ram",
