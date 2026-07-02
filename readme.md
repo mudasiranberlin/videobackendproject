@@ -160,7 +160,7 @@ req.cookies : you will handle data from cookies
 
 for this we will need cookie parser
 
-# now lets install cookie-parser and 
+# now lets install cookie-parser and another cors 
 
 
 
