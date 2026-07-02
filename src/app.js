@@ -9,6 +9,6 @@ app.use(cors({
     credentials:true
 }))
 
-app.use(express.jso)
+app.use(express.json)
 
 export default app
