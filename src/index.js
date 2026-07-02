@@ -36,4 +36,4 @@ This means:
 })
 
 connectDB()
-.then
+.then()
