@@ -38,7 +38,7 @@ This means:
 connectDB()
 .then(()=>{
     app.listen(process.env.PORT||8080,()=>{
-        console.log(`Sever is runn`);
+        console.log(`Sever is running at Port`);
         
     })
 })
