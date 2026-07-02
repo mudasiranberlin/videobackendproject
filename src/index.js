@@ -36,5 +36,7 @@ This means:
 })
 
 connectDB()
-.then(  )
+.then( ()=>{
+    
+} )
 .catch()
