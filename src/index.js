@@ -42,6 +42,6 @@ connectDB()
     }))
 } )
 .catch((err)=>{
-    console.log();
+    console.log("");
     
 })
