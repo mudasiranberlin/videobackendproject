@@ -175,7 +175,7 @@ app.use(...) is a rule that applies to every student (every request) entering th
 
 1. app.use(cors({
     origin:process.env.CORS_ORIGIN,
-    credentials:true
+    credentials:true // 
 }))
 Only allow requests coming from this website." "I only trust requests coming from localhost:3000."
 
