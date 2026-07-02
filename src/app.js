@@ -36,7 +36,7 @@ req.body = {
    name: "Ram",
    age: "10"
 }
-   
+   Extended 
 */
 app.use(express.static("public"))
 
