@@ -40,6 +40,6 @@ req.body = {
 */
 app.use(express.static("public"))
 
-app.use(cookieParser()). // cookieParser() reads those cookies.
+app.use(cookieParser()) // cookieParser() reads those cookies.
 
 export default app
