@@ -171,7 +171,7 @@ most of the time when when u have to use middleware so mostly u will use=  app.u
 Now Lets go to app.js
 import cookie-parser, cors
 
-app.use(...) is a rule that applies to every request) entering the school.
+app.use(...) is a rule that applies to every request entering the school.
 
 1. app.use(cors({
     origin:process.env.CORS_ORIGIN,
