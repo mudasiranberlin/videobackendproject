@@ -27,6 +27,9 @@ console.log(req.body.name)
 app.use(express.urlencoded({extended:true,limit:"16kb"}))
 
 When submitted, it sends= name=Ram&age=10
+Express cannot understand it automatically.
+
+express.urlencoded() translates it.
 
 app.use(express.static("public"))
 
