@@ -4,7 +4,7 @@ import cors from "cors"
 
 const app = express();
 
-
+app
 
 
 export default app
