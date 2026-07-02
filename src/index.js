@@ -37,6 +37,6 @@ This means:
 
 connectDB()
 .then(()=>{
-    
+    app.listen
 })
 .catch()
