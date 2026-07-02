@@ -35,4 +35,5 @@ This means:
     
 })
 
-connectDB
+connectDB()
+.then
