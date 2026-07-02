@@ -168,7 +168,7 @@ cors → "Allow or restrict which websites can call my API."
 
 most of the time when when u have to use middleware so mostly u will use=  app.use
 
-
+1. 
 
 
 
