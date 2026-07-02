@@ -38,7 +38,7 @@ req.body = {
 }
    Extended=  Express can understand nested objects too.
 */
-app.use(express.static("public")) 
+app.use(express.static("public"))  
 
 app.use(cookieParser()) // cookieParser() reads those cookies.
 
