@@ -170,6 +170,7 @@ most of the time when when u have to use middleware so mostly u will use=  app.u
 
 Now Lets go to app.js
 
+
 1. app.use(cors({
     origin:process.env.CORS_ORIGIN,
     credentials:true
