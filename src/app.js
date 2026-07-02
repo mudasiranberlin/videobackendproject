@@ -36,7 +36,7 @@ req.body = {
    name: "Ram",
    age: "10"
 }
-
+/
 app.use(express.static("public"))
 
 app.use(cookieParser())
