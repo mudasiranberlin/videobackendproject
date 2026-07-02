@@ -1,5 +1,5 @@
 import express from "express"
-import cor
+import cors
 
 const app = express();
 
