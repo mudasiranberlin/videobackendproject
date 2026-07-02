@@ -18,7 +18,7 @@ app.use(express.json({limit:"16kb"}))
 }
 and turns it into:  req.body 
 so you can do
-/
+*/
 
 console.log(req.body.name)
 
