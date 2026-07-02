@@ -16,7 +16,9 @@ app.use(express.json({limit:"16kb"})) // submits a form written in JSON.express.
  "age":10
 }
 
-and turns it into:  req.body
+and turns it into:  req.body so you can do
+
+console.log(req.body.name)
 
 app.use(express.urlencoded({extended:true,limit:"16kb"}))
 
