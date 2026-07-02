@@ -18,6 +18,8 @@ app.use(express.json({limit:"16kb"}))
 }
 and turns it into:  req.body 
 so you can do
+
+This protects the server from huge data.
 */
 
 console.log(req.body.name)
