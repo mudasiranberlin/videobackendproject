@@ -38,7 +38,8 @@ This means:
 connectDB()
 .then(()=>{
     app.listen(process.env.PORT||8080,()=>{
-        log
+        console.log();
+        
     })
 })
 .catch()
