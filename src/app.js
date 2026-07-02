@@ -36,7 +36,7 @@ req.body = {
    name: "Ram",
    age: "10"
 }
-   Extended 
+   Extended Express can understand nested objects too.
 */
 app.use(express.static("public"))
 
