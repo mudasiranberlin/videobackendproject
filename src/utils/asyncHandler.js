@@ -4,7 +4,13 @@ async (req,res,next) => {
         await fn(req,res,next)
     } 
     catch (error) {
-        res.status(error)
+        res.status(error./**
+         *
+         */
+        constructor() {
+            super();
+            
+        })
         
     }
 }
