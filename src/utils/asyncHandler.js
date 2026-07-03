@@ -1,5 +1,5 @@
 const asyncHandler = (requestHandler)=>{
-    ()
+    (req,res)
 }
 
 
