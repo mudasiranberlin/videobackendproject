@@ -7,5 +7,6 @@ class ApiError extends Error {
 
     ){
         
+        
     }
 }
