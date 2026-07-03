@@ -1,1 +1,3 @@
-class ApiError extends Erro
+class ApiError extends Error {
+    
+}
