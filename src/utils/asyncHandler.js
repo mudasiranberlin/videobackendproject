@@ -1,1 +1,1 @@
-const as
+const async
