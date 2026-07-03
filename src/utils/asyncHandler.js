@@ -1,4 +1,4 @@
-const asyncHandler = (req)
+const asyncHandler = (request)
 
 
 
