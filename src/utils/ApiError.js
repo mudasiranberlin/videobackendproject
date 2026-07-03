@@ -6,7 +6,7 @@ class ApiError extends Error {
         stack = ""
 
     ){
-        super 
+        super (message)
         
     }
 }
