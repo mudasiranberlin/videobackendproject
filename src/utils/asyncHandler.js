@@ -1,1 +1,3 @@
-const as
+const async (params) => {
+    
+}
