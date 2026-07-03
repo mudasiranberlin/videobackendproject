@@ -1,3 +1,5 @@
+import { startSession } from "mongoose";
+
 class ApiError extends Error {
     constructor(
         statusCode,
@@ -7,7 +9,7 @@ class ApiError extends Error {
 
     ){
         super (message),
-        this.statusCode
+        this.statusCode =startSession
         
     }
 }
