@@ -12,12 +12,6 @@ const asyncHandler = (fun)=>()=>{}
 
 const asyncHandler = (fun)=>{ async()=>{} }
 
-
-
-
-
-
-
 const asyncHandler = (fn)=>{
 async (req,res,next) => {
     try {
