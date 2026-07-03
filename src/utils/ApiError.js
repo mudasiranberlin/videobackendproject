@@ -1,3 +1,5 @@
 class ApiError extends Error {
-    constructor
+    constructor(){
+        
+    }
 }
