@@ -12,6 +12,8 @@ class ApiError extends Error {
         this.message =message,
         this.success =false,
         this.error =this.error
+
+        if
         
     }
 }
