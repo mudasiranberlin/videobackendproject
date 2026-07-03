@@ -1,1 +1,1 @@
-class Api
+class ApiError
