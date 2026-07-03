@@ -1,1 +1,1 @@
-class ApiError
+class ApiError extends 
