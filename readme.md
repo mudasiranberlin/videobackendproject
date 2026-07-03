@@ -181,6 +181,12 @@ Only allow requests coming from this website." "I only trust requests coming fro
 
 2. app.use(express.json({limit:"16kb"}))
 
+3. app.use(express.urlencoded({extended:true,limit:"16kb"}))
+
+4. app.use(express.static("public"))  
+
+5. app.use(cookieParser()) // cookieParser() reads those cookies.
+
 
 
 
