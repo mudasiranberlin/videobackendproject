@@ -1,3 +1,1 @@
-const async () => {
-    
-}
+const as
