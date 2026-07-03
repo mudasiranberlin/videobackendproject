@@ -4,7 +4,9 @@ async (req,res,next) => {
         await fn(req,res,next)
     } 
     catch (error) {
-        res.status(error.code || 5000).json
+        res.status(error.code || 5000).json({
+            
+        })
         
     }
 }
