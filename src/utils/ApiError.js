@@ -1,5 +1,3 @@
-import { startSession } from "mongoose";
-
 class ApiError extends Error {
     constructor(
         statusCode,
