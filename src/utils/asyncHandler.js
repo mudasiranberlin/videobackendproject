@@ -1,3 +1,3 @@
 const asyncHandler = (fn)=>{
-async
+as
 }
