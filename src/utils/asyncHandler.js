@@ -4,7 +4,7 @@ async (req,res,next) => {
         await fn(req,res,next)
     } 
     catch (error) {
-        res
+        res.sta
         
     }
 }
