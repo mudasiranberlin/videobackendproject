@@ -10,7 +10,7 @@ export default asyncHandler
 const asyncHandler = ()=>{}
 const asyncHandler = (fun)=>()=>{}
 
-const asyncHandler = (fun)=>{ as()=>{} }
+const asyncHandler = (fun)=>{ async()=>{} }
 
 
 
