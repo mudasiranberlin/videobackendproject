@@ -5,7 +5,7 @@ const asyncHandler = (requestHandler)=>{
     }
 }
 
-export defasyncHandler
+export default asyncHandler
 
 
 
