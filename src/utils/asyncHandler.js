@@ -1,5 +1,9 @@
 const asyncHandler = (fn)=>{
 async (req,res,next) => {
-    tr
+    try {
+        
+    } catch (error) {
+        
+    }
 }
 }
