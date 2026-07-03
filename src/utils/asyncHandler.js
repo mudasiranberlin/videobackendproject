@@ -1,5 +1,5 @@
 const asyncHandler = (fn)=>{
-async (params) => {
+async (re) => {
     
 }
 }
