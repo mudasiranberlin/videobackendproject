@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 connectDB = async () => {
     try {
-        connection
+        connectionInstance = 
         
     } catch (error) {
         console.log("Erroe cOnnecting database",error);
