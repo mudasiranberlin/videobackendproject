@@ -8,5 +8,5 @@ app.use(cors({
 }))
 
 app.use(cookieParser())
-app.use(express.urlencoded())
+app.use(express.urlencoded(extends: tr))
 
