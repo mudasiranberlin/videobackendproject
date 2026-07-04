@@ -11,6 +11,6 @@ app.listen(process.env.PORT||8080,()=>{
 })
 } )
 .catch( (errr)=>{
-    console.log();
+    console.log(" Not abale to talk with the database");
     
 } )
