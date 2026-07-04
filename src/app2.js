@@ -1,2 +1,2 @@
 import express from "express"
-import 
+import cors from "cors"
