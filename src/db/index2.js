@@ -4,6 +4,6 @@ connectDB = async () => {
     try {
         
     } catch (error) {
-        
+        log
     }
 }
