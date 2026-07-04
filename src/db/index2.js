@@ -4,7 +4,7 @@ connectDB = async () => {
     try {
         
     } catch (error) {
-        console.log("Erroe cOnnecting database");
+        console.log("Erroe cOnnecting database",);
         
     }
 }
