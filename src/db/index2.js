@@ -1,2 +1,2 @@
 import mongoose from "mongoose";
-import {DB_NAME}
+import {DB_NAME} from 
