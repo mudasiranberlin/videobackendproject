@@ -6,7 +6,7 @@ const app = express()
 
 connectDB()
 .then( ()=>{
-app.
+app.listen
 } )
 .catch( ()=>{
 
