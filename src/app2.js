@@ -6,4 +6,6 @@ connectDB()
 .then( ()=>{
 
 } )
-.catch(  )
+.catch( ()=>{
+    
+} )
