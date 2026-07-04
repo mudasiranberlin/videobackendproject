@@ -10,5 +10,5 @@ app.listen(process.env.PORT||8080,()=>{
     console.log(" The database has been connected sucessfully");
 })
 } )
-.catch( (err)=>{
+.catch( (errr)=>{
 } )
