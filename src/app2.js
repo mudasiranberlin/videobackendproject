@@ -3,4 +3,5 @@ import express from "express";
 import connectDB from "./db";
 
 connectDB()
-.then
+.then()
+.catch()
