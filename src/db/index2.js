@@ -1,5 +1,9 @@
 import mongoose from "mongoose";
 
 connectDB = async () => {
-    try
+    try {
+        
+    } catch (error) {
+        
+    }
 }
