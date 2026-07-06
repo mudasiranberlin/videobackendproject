@@ -37,7 +37,7 @@ This means:
 
 
 import mongoose from "mongoose";
-import ex
+import express from 
 
 connectDB()
 .then()
