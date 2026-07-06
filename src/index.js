@@ -44,7 +44,7 @@ const app =express();
 connectDB()
 .then( ()=>{
     app.listen(process.env.PORT||8000,()=>{
-        console.log(`The data base is connect on port ${process.env}`);
+        console.log(`The data base is connect on port ${process.env.PORT}`);
         
     })
 } )
