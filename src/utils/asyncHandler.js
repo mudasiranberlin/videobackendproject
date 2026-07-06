@@ -30,4 +30,6 @@ async (req,res,next) => {
 }
 */
 
-const asyncHandler = (fun)
+const asyncHandler = (fun)=>{
+    
+}
