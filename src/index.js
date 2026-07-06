@@ -43,7 +43,7 @@ const app =express();
 
 connectDB()
 .then( ()=>{
-    app.listen()
+    app.listen(process.env.p)
 } )
 
 .catch( (error)=>{
