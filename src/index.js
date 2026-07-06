@@ -44,7 +44,7 @@ const app =express();
 connectDB()
 .then( ()=>{
     app.listen(process.env.PORT||8000,()=>{
-        console.log();
+        console.log("The data ");
         
     })
 } )
