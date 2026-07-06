@@ -43,4 +43,6 @@ const app =express();
 
 connectDB()
 .then( )
-.catch()
+.catch( ()=>{
+    
+})
