@@ -44,5 +44,6 @@ const app =express();
 connectDB()
 .then( )
 .catch( (error)=>{
+console.log();
 
 })
