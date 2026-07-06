@@ -43,7 +43,9 @@ const app =express();
 
 connectDB()
 .then( ()=>{
-    app.listen(process.env.PORT||8000,)
+    app.listen(process.env.PORT||8000,()=>{
+        
+    })
 } )
 
 .catch( (error)=>{
