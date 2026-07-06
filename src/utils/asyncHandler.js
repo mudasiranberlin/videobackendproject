@@ -32,6 +32,6 @@ async (req,res,next) => {
 
 const asyncHandler = (fun)=>{
     (req,res,next)=>{
-        Promise.resolve(fu)
+        Promise.resolve(fun)
     }
 }
