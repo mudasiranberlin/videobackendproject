@@ -43,6 +43,7 @@ const app =express();
 
 connectDB()
 .then( )
+
 .catch( (error)=>{
 console.log("Failed to connect database",error);
 
