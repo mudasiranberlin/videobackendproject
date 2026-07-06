@@ -35,6 +35,4 @@ This means:
     
 })
 
-dotenv.config({
-    
-})
+dotenv.config()
