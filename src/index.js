@@ -36,5 +36,5 @@ This means:
 })
 
 dotenv.config({
-    
+    path
 })
