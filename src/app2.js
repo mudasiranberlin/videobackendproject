@@ -1,4 +1,10 @@
 import mongoose from "mongoose";
 import express from "express"
 
-const app
+const app = express()
+
+
+
+
+
+export default app
