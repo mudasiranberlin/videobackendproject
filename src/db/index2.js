@@ -5,6 +5,5 @@ const connectDB = async () => {
         
     } catch (error) {
         console.log("Failed to COnnect database|| !!!");
-        
     }
 }
