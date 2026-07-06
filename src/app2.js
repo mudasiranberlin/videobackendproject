@@ -4,7 +4,7 @@ import cors from "cors"
 
 const app = express()
 
-app.listen(80, function () {
+app.use(80, function () {
   console.log('web server listening on port 80')
 })
 
