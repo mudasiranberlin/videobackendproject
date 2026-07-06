@@ -42,7 +42,9 @@ import express from "express"
 const app =express();
 
 connectDB()
-.then(  )
+.then( ()=>{
+    
+} )
 
 .catch( (error)=>{
 console.log("Failed to connect database",error);
