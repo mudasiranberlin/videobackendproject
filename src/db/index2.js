@@ -6,6 +6,6 @@ const connectDB = async () => {
         console.log(`The database has been connected on port ${connectionInstance.connection.host}`)
     } catch (error) {
         console.log("Failed to COnnect database|| !!!");
-        process.exit()
+        process.exit(1)
     }
 }
