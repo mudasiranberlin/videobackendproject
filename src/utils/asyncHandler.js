@@ -31,7 +31,7 @@ async (req,res,next) => {
 */
 
 const asyncHandler = (fun)=>{
-    (req,res)=>{
+    (req,res,next)=>{
 
     }
 }
