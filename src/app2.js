@@ -9,7 +9,7 @@ app.use(cors({
     credentials:true
 }))
 
-app.use
+app.use(express.json)
 
 
 
