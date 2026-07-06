@@ -42,5 +42,5 @@ import express from "express"
 const app =express();
 
 connectDB()
-.then()
+.then( )
 .catch()
