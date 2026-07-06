@@ -35,21 +35,3 @@ This means:
     
 })
 
-
-import mongoose from "mongoose";
-import express from "express"
-
-const app =express();
-
-connectDB()
-.then( ()=>{
-    app.listen(process.env.PORT||8000,()=>{
-        console.log(`The data base is connect on port ${process.env.PORT}`);
-        
-    })
-} )
-
-.catch( (error)=>{
-console.log("Failed to connect database",error);
-
-})
