@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 import express from "express"
-import cors
+import cors from 
 
 const app = express()
 
