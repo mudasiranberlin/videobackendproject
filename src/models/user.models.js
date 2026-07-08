@@ -39,6 +39,7 @@ const Userschema = new Schema({
         type:String,
 
     }
+    user
 
 
 
