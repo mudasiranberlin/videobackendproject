@@ -42,7 +42,7 @@ const Userschema = new Schema({
 },{timestamps:true})
 
 Userschema.pre('save', async function (next) {
-    this.password = bcrypt.
+    this.password = bcrypt.hash
 } )
 
 export const User = mongoose.model("User",Userschema) 
