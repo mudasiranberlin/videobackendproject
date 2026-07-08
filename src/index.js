@@ -35,30 +35,3 @@ This means:
     
 })
 
-import mongoose from "mongoose";
-import express from "express"
-
-dotenv.config({
-    path:'./env'
-})
-
-const app = express()
-
-connectDB()
-.then(()=>{
-    app.on(("error",(error)=>{
-        console.log("ERROR",error);
-        throw error
-        
-    }))
-     app.listen(process.env.PORT||8080,()=>{
-        console.log(`The database has been connected sucessfully at port || ${process.env.PORT}`);
-        
-    })
-}
-   
-)
-.catch( (error)=>{
-    console.log(`Failed to connect with the database !!!`,error);
-    
-})
