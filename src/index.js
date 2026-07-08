@@ -43,7 +43,8 @@ const app = express()
 connectDB()
 .then(()=>{
     app.on(("error",(error)=>{
-
+        console.log();
+        
     }))
      app.listen(process.env.PORT||8080,()=>{
         console.log(`The database has been connected sucessfully at port || ${process.env.PORT}`);
