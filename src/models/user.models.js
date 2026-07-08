@@ -1,2 +1,2 @@
 import mongoose from "mongoose";
-const Userschema = new mongoose.mo 
+const Userschema = new mongoose.model 
