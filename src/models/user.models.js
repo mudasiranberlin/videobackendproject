@@ -21,7 +21,7 @@ const Userschema = new Schema({
         required:true
     },
     coverImage:{
-        type:str
+        type:String
     }
 
 
