@@ -1,6 +1,6 @@
 import mongoose,{Schema} from "mongoose";
 
-import mongooseA
+import mongooseAgg
 
 const VideoSchema = new Schema({
     videoFile:{
