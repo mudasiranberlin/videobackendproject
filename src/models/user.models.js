@@ -63,7 +63,8 @@ Userschema.methods.generateAccessToken = function () {
         email:this.email,
         username:this.username,
         fullname:this.fullname // this one is comming from database this.fullname
-    },{
+    },
+    {
         process.env.ASSESS_TOKEN_SECRET
     })
     
