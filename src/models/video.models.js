@@ -2,6 +2,7 @@ import mongoose,{Schema} from "mongoose";
 
 const VideoSchema = new Schema({
     videoFile:{
+        
 
     },
     thumnail:{
@@ -24,7 +25,7 @@ const VideoSchema = new Schema({
     },
     isPublished:{
         type:Boolean,
-        
+
 
     },
 },{timestamps:true})
