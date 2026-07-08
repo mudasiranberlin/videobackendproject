@@ -40,6 +40,6 @@ import mongoose from "mongoose";
 connectDB()
 .then()
 .catch( ()=>{
-    console.log(`Failed to conn`);
+    console.log(`Failed to connect with the database `);
     
 })
