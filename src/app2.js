@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 import cors from 
 
-var cors = {
+ cors = {
   origin: 'http://example.com',
   }
