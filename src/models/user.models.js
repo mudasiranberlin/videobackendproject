@@ -42,7 +42,7 @@ const Userschema = new Schema({
 },{timestamps:true})
 
 Userschema.pre('save', async function (next) {
-    if(this.Mo)
+    if(this.Mod)
     this.password = bcrypt.hash(this.password,10)
     next()
 } )
