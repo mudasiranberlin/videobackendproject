@@ -39,7 +39,7 @@ const Userschema = new Schema({
         type:String,
 
     }
-    Userschema.pre('save',)
+    
 
 
 
