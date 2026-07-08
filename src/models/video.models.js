@@ -3,7 +3,7 @@ import mongoose,{Schema} from "mongoose";
 const VideoSchema = new Schema({
     videoFile:{
         type:String,
-        req
+        required:true
 
 
     },
