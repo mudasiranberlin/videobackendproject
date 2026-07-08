@@ -10,4 +10,4 @@ import express from "express"
  }))
 
  app.use(cookieParser())
- app.use(expre)
+ app.use(express)
