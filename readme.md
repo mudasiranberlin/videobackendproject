@@ -244,7 +244,7 @@ in the video model we will be using the mongodb aggreation pipeline
 
 npm i mongoose-paginate-v2
 
-
+VideoSchema.plugin(mongooseAggregatePaginate)
 
 
 
