@@ -269,5 +269,43 @@ Userschema.methods.isPasswordCorrect = async function (password) {
 now we will be using jwt 
 
 
+Userschema.pre('save', async function (next) {
+    if(this.isModified("password")) return next();
+    this.password = bcrypt.hash(this.password,10)
+    next()
+} )
+
+Userschema.methods.isPasswordCorrect = async function (password) {
+    return await bcrypt.compare(password,this.password)
+}
+
+Userschema.methods.generateAccessToken = function () {
+    return jwt.sign({
+        _id : this._id,
+        email:this.email,
+        username:this.username,
+        fullname:this.fullname // this one is comming from database this.fullname
+    },
+    process.env.ASSESS_TOKEN_SECRET,
+    {
+        expiresIn:process.env.ASSESS_TOKEN_EXPIRY,
+        
+    })
+    
+} 
+Userschema.methods.generateRefreshToken = function () {
+    return jwt.sign({
+        _id : this._id // this one is comming from database this.fullname
+    },
+    process.env.REFRESH_TOKEN_SECRET,
+    {
+        expiresIn:process.env.REFRESH_TOKEN_EXPIRY,
+        
+    })
+    
+} 
+
+
+
 
 ## Author Mudasir @ Anberlin
