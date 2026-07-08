@@ -47,7 +47,7 @@ Userschema.pre('save', async function (next) {
     next()
 } )
 
-Userschema.methods.isPasswordCorrect = async function name(params) {
+Userschema.methods.isPasswordCorrect = async function (params) {
     
 }
 
