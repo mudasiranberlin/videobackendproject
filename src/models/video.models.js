@@ -23,7 +23,7 @@ const VideoSchema = new Schema({
 
     },
     isPublished:{
-        type:
+        type:B
 
     },
 },{timestamps:true})
