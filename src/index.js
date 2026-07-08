@@ -38,4 +38,5 @@ This means:
 import mongoose from "mongoose";
 
 connectDB()
-.then
+.then()
+.catch()
