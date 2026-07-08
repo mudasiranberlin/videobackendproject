@@ -30,7 +30,7 @@ const Userschema = new Schema({
         }
     ],
     password:{
-        type:str
+        type:String
     }
 
 
