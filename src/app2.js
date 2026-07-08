@@ -3,4 +3,4 @@ import cors from "cors"
 import cookieParser from "cookie-parser";
 
 
- 
+ app.use(cors())
