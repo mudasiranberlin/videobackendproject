@@ -43,4 +43,6 @@ const VideoSchema = new Schema({
     },
 },{timestamps:true})
 
+vide
+
 export const Video = mongoose.model("Video",VideoSchema)
