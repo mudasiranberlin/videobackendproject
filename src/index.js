@@ -38,7 +38,9 @@ This means:
 import mongoose from "mongoose";
 
 connectDB()
-.then()
+.then(
+    
+)
 .catch( (error)=>{
     console.log(`Failed to connect with the database !!!`,error);
     
