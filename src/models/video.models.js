@@ -7,7 +7,9 @@ const VideoSchema = new Schema({
     thumnail:{
 
     },
-    
+    owner:{
+        
+    }
 },{timestamps:true})
 
 export const Video = mongoose.model("Video",VideoSchema)
