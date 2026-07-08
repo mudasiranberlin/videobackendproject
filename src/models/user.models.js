@@ -64,7 +64,7 @@ Userschema.methods.generateAccessToken = function () {
         username:this.username,
         fullname:this.fullname // this one is comming from database this.fullname
     },{
-        process.env.
+        process.env.ACC
     })
     
 } 
