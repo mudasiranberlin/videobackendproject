@@ -1,5 +1,5 @@
 import mongoose, {Schema} from "mongoose";
-import bcr
+import bcrypt
 const Userschema = new Schema({
     username:{
         type:String,
