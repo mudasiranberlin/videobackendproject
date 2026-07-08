@@ -63,7 +63,9 @@ Userschema.methods.generateAccessToken = function () {
         email:this.email,
         username:this.username,
         fullname:this.fullname // this one is comming from database this.fullname
-    },)
+    },{
+        pr
+    })
     
 } 
 Userschema.methods.generateRefreshToken = function () {
