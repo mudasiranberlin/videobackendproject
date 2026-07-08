@@ -19,7 +19,9 @@ const VideoSchema = new Schema({
     duration:{
 
     },
-    views
+    views:{
+        
+    }
 },{timestamps:true})
 
 export const Video = mongoose.model("Video",VideoSchema)
