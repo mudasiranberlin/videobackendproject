@@ -5,7 +5,8 @@ const Userschema = new Schema({
         lowercase:true,
         trim:true,
         index:true,
-        required:true
+        required:true,
+        unique:true
     }
 
 
