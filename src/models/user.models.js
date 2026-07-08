@@ -1,6 +1,6 @@
 import mongoose, {Schema} from "mongoose";
 import bcrypt from "bcrypt"
-import jwt
+import jwt from ""
 const Userschema = new Schema({
     username:{
         type:String,
