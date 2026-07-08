@@ -62,7 +62,7 @@ Userschema.methods.generateAccessToken = function () {
         _id : this._id,
         email:this.email,
         username:this.username,
-        fullname:this.fullname.  // this one is comming from database this
+        fullname:this.fullname.  // this one is comming from database this.fullname
     })
     
 } 
