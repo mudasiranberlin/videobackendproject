@@ -1,6 +1,6 @@
 import mongoose,{Schema} from "mongoose";
 
-import mongoose from "mongoose";
+import mong
 
 const VideoSchema = new Schema({
     videoFile:{
