@@ -42,7 +42,7 @@ const app = express()
 
 connectDB()
 .then(()=>{
-    app.on((error)=>{
+    app.on(("error")=>{
 
     })
      app.listen(process.env.PORT||8080,()=>{
