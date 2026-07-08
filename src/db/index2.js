@@ -5,6 +5,10 @@ const app = express()
 
 (
     async()=>{
-        tr
+        try {
+            
+        } catch (error) {
+            
+        }
     }
 )()
