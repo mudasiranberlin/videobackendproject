@@ -43,7 +43,7 @@ const app = express()
 connectDB()
 .then(
     app.listen(process.env.PORT||8080,()=>{
-        
+        log
     })
 )
 .catch( (error)=>{
