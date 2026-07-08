@@ -1,4 +1,4 @@
 import mongoose from "mongoose";
 const Userschema = new mongoose.Schema({},{})
 
-export User 
+export const User 
