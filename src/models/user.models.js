@@ -3,7 +3,8 @@ const Userschema = new Schema({},{timestamps:true})
 
 username:{
     type:String,
-    lowercase: true
+    lowercase: true,
+    
 }
 
 export const User = mongoose.model("User",Userschema) 
