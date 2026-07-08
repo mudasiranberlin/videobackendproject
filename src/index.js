@@ -38,6 +38,8 @@ This means:
 import mongoose from "mongoose";
 import express from "express"
 
+dote
+
 const app = express()
 
 connectDB()
