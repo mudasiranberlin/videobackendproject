@@ -73,6 +73,7 @@ Userschema.methods.generateAccessToken = function () {
 } 
 Userschema.methods.generateRefreshToken = function () {
     
+    
 } 
 
 export const User = mongoose.model("User",Userschema) 
