@@ -1,3 +1,3 @@
 import mongoose,{Schema} from "mongoose";
 
-const VideoSchema = new Schema({},{})
+const VideoSchema = new Schema({},{times})
