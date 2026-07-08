@@ -11,7 +11,6 @@ const app = express()
             console.log(`Mongo db connected`);
             app.on("error",(error)=>{
                 console.log("Error",error)
-                );
                 
             })
 
