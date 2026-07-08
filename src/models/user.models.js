@@ -31,6 +31,7 @@ const Userschema = new Schema({
     ],
     password:{
         type:String,
+        
     }
 
 
