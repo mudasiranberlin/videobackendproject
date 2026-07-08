@@ -73,8 +73,7 @@ Userschema.methods.generateAccessToken = function () {
 } 
 Userschema.methods.generateRefreshToken = function () {
     return jwt.sign({
-        _id : this._id,
-        email:this.email// this one is comming from database this.fullname
+        _id : this._id // this one is comming from database this.fullname
     },
     process.env.ASSESS_TOKEN_SECRET,
     {
