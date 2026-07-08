@@ -22,7 +22,7 @@ so you can do
 limit = This protects the server from huge data.
 */
 
-console.log(req.body.name)
+// console.log(req.body.name)
 
 app.use(express.urlencoded({extended:true,limit:"16kb"}))
 /*
