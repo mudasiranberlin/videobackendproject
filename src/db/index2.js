@@ -6,7 +6,7 @@ const app = express()
 (
     async()=>{
         try {
-            await mongoose.connect(`${process.env.MONGODB_URI}/{}`)
+            await mongoose.connect(`${process.env.MONGODB_URI}/${}`)
         } catch (error) {
             
         }
