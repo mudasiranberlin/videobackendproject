@@ -11,7 +11,7 @@ const VideoSchema = new Schema({
 
     },
     owner:{
-        type: Object.
+        type: sc
     },
     title:{
         type:String,
