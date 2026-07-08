@@ -34,3 +34,5 @@ This means:
     console.log("NongoDB Connection failed !!!", err);   // If MongoDB connection fails The server will not start.
     
 })
+
+import mongoose from "mongoose";
