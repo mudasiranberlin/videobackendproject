@@ -42,7 +42,7 @@ const app = express()
 
 connectDB()
 .then(
-    app.listen(process.env.PORT||8080,)
+    app.listen(process.env.PORT||8080,()=>)
 )
 .catch( (error)=>{
     console.log(`Failed to connect with the database !!!`,error);
