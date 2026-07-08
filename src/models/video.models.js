@@ -6,7 +6,7 @@ const VideoSchema = new Schema({
         required:true
     },
     thumnail:{
-
+        
     },
     owner:{
 
