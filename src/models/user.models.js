@@ -1,4 +1,5 @@
 import mongoose, {Schema} from "mongoose";
+import 
 const Userschema = new Schema({
     username:{
         type:String,
@@ -35,7 +36,7 @@ const Userschema = new Schema({
     },
     refreshToken:{
         type:String,
-        
+
     }
 
 
