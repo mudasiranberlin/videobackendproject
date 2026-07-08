@@ -17,7 +17,8 @@ const Userschema = new Schema({
         unique:true
     },
     avatar:{
-        type:String
+        type:String,
+        re
     }
 
 
