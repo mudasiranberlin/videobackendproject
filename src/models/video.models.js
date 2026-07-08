@@ -2,4 +2,4 @@ import mongoose,{Schema} from "mongoose";
 
 const VideoSchema = new Schema({},{timestamps:true})
 
-export const Video = mongoose
+export const Video = mongoose.model
