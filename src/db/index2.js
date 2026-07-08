@@ -9,7 +9,7 @@ const app = express()
         try {
             await mongoose.connect(`${process.env.MONGODB_URI}/${DB_NAME}`);
             console.log(`Mongo db connected`);
-            app.on()
+            app.on("")
 
             app.listen(process.env.PORT||8000,()=>{
                 console.log(`App is listening at port ${process.env.PORT}`);
