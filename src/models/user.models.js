@@ -7,9 +7,9 @@ const Userschema = new Schema({
         index:true,
         required:true,
         unique:true
-    }
+    },
     email:{
-        
+
     }
 
 
