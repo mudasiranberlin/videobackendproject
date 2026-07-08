@@ -19,4 +19,4 @@ import express from "express"
     extended:true
  }))
 
- app.use(express)
+ app.use(express.static)
