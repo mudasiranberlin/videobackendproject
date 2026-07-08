@@ -4,6 +4,6 @@ import cookieParser from "cookie-parser";
 
 
  app.use(cors({
-    origin:prCORS_ORIGIN,
+    origin:process.envCORS_ORIGIN,
 
  }))
