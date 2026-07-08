@@ -247,7 +247,7 @@ atlast add after timestamps
 VideoSchema.plugin(mongooseAggregatePaginate)
 
 
-now lets go to 
+now lets go to make password 
 
 
 
