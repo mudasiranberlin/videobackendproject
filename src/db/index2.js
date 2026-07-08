@@ -10,7 +10,7 @@ const app = express()
             await mongoose.connect(`${process.env.MONGODB_URI}/${DB_NAME}`);
             console.log(`Mongo db connected`);
             app.on("error",(error)=>{
-                
+                log
             })
 
             app.listen(process.env.PORT||8000,()=>{
