@@ -11,5 +11,5 @@ import express from "express"
 
  app.use(cookieParser())
  app.use(express.urlencoded({
-    limit:"1"
+    limit:"16kb"
  }))
