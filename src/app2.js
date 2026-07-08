@@ -1,2 +1,2 @@
 import mongoose from "mongoose";
-import cors
+import cors from
