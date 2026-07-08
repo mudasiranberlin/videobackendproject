@@ -9,4 +9,4 @@ import cookieParser from "cookie-parser";
  }))
 
  app.use(cookieParser())
- app.use((ex))
+ app.use()
