@@ -250,7 +250,7 @@ VideoSchema.plugin(mongooseAggregatePaginate)
 now lets go to make password encript and token 
 npm i bcrypt
 npm i jsonwebtoken
-
+npm i bcrypt jsonwebtoken
 
 
 
