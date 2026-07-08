@@ -47,6 +47,6 @@ Userschema.pre('save', async function (next) {
     next()
 } )
 
-Userschema.methods
+Userschema.methods.is
 
 export const User = mongoose.model("User",Userschema) 
