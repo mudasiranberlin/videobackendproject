@@ -11,7 +11,7 @@ const app = express()
             console.log(`Mongo db connected`);
             
         } catch (error) {
-            console.log("Not able to connected ");
+            console.log("Not able to connect the database");
             
             
         }
