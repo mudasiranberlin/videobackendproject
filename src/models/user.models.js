@@ -24,7 +24,9 @@ const Userschema = new Schema({
         type:String
     },
     watchHistory:[
-        
+        {
+            
+        }
     ]
 
 
