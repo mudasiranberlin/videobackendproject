@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 import cors from "cors"
 import cookieParser from "cookie-parser";
-import express from
+import express from "express"
 
 
  app.use(cors({
