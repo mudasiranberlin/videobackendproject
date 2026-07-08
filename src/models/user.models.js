@@ -41,7 +41,7 @@ const Userschema = new Schema({
     }
 },{timestamps:true})
 
-Userschema.pre('save', async function (params) {
+Userschema.pre('save', async function () {
     
 } )
 
