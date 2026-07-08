@@ -6,7 +6,7 @@ const app = express()
 (
     async()=>{
         try {
-            
+            await 
         } catch (error) {
             
         }
