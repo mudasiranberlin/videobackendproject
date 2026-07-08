@@ -36,6 +36,7 @@ This means:
 })
 
 import mongoose from "mongoose";
+import express from "express"
 
 
 connectDB()
