@@ -5,10 +5,10 @@ import { DB_NAME } from "../constants";
 const app = express()
 
 (
-    async()=>{
+    async(og)=>{
         try {
             await mongoose.connect(`${process.env.MONGODB_URI}/${DB_NAME}`)
-            
+            l
         } catch (error) {
             
         }
