@@ -201,7 +201,7 @@ const asyncHandler = (requestHandler)=>{
 export default asyncHandler
 
 
-now many times we will return the error and we have not structure of the error and now i want to standardize the api error and api response 
+now many times we will return the error and we have not structure of the error and now i want to standardize the api error and api response also want to s
 
 
 ## Author Mudasir @ Anberlin
