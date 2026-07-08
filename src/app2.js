@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import cors from "co"
+import cors from "cors"
 
  cors = {
   origin: 'http://example.com',
