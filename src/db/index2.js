@@ -7,6 +7,7 @@ const app = express()
     async()=>{
         try {
             await mongoose.connect
+            
         } catch (error) {
             
         }
