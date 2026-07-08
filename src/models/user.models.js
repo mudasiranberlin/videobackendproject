@@ -67,6 +67,7 @@ Userschema.methods.generateAccessToken = function () {
     process.env.ASSESS_TOKEN_SECRET,
     {
         
+        
     })
     
 } 
