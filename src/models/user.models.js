@@ -25,7 +25,7 @@ const Userschema = new Schema({
     },
     watchHistory:[
         {
-            type:Schema.Ty
+            type:Schema.Types.
         }
     ]
 
