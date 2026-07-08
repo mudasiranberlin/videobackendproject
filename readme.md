@@ -247,7 +247,8 @@ atlast add after timestamps
 VideoSchema.plugin(mongooseAggregatePaginate)
 
 
-now lets go to make password encript 
+now lets go to make password encript and token 
+
 
 
 
