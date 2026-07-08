@@ -8,4 +8,4 @@ import cookieParser from "cookie-parser";
     credentials:true
  }))
 
- app.use
+ app.use(cookieParser())
