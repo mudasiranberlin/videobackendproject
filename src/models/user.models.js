@@ -3,7 +3,8 @@ const Userschema = new Schema({
     username:{
         type:String,
         lowercase:true,
-        trim
+        trim:true,
+        index
     }
 
 
