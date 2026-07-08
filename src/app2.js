@@ -10,4 +10,4 @@ import express from "express"
  }))
 
  app.use(cookieParser())
- app.use(express.)
+ app.use(express.urlencoded)
