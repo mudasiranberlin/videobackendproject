@@ -29,7 +29,7 @@ const Userschema = new Schema({
             ref:"Video"
         }
     ],
-    
+    password
 
 
 
