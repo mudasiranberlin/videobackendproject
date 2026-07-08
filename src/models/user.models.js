@@ -54,7 +54,7 @@ Userschema.methods.isPasswordCorrect = async function (password) {
 Userschema.methods.generateAccesstoken = function () {
     
 } 
-Userschema.methods.generateAccesstoken = function () {
+Userschema.methods.generateRetoken = function () {
     
 } 
 
