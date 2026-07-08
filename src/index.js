@@ -39,4 +39,6 @@ import mongoose from "mongoose";
 
 connectDB()
 .then()
-.catch()
+.catch( ()=>{
+    
+})
