@@ -203,7 +203,7 @@ export default asyncHandler
 
 now many times we will return the error and we have not structure of the error and now i want to standardize the api error and api response also want to standrize so it will make it easy 
 
-now for that we will be using 
+now for that we will be using class error 
 
 
 ## Author Mudasir @ Anberlin
