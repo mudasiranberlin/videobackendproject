@@ -26,7 +26,7 @@ const Userschema = new Schema({
     watchHistory:[
         {
             type:Schema.Types.ObjectId,
-            ref:
+            ref:''
         }
     ]
 
