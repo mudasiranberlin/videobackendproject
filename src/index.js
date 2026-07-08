@@ -38,7 +38,9 @@ This means:
 import mongoose from "mongoose";
 import express from "express"
 
-dotenv.config
+dotenv.config({
+    
+})
 
 const app = express()
 
