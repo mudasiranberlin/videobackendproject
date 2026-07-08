@@ -42,7 +42,7 @@ const app = express()
 
 connectDB()
 .then(
-    
+    app
 )
 .catch( (error)=>{
     console.log(`Failed to connect with the database !!!`,error);
