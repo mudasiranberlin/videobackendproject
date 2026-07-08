@@ -15,6 +15,5 @@ import express from "express"
  }))
 
  app.use(express.json({
-    ex
     limit:"15kb"
  }))
