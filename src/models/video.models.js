@@ -12,7 +12,7 @@ const VideoSchema = new Schema({
     },
     owner:{
         type: Schema.Types.ObjectId,
-        ref:''
+        ref:'User'
     },
     title:{
         type:String,
