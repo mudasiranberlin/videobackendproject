@@ -20,7 +20,6 @@ const Userschema = new Schema({
     },
     fullname:{
         type:String,
-        lowercase:true,
         trim:true,
         index:true,
         required:true,
