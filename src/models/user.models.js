@@ -4,7 +4,8 @@ const Userschema = new Schema({
         type:String,
         lowercase:true,
         trim:true,
-        index
+        index:true,
+        
     }
 
 
