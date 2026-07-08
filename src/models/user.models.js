@@ -22,7 +22,8 @@ const Userschema = new Schema({
     },
     coverImage:{
         type:String
-    }
+    },
+    
 
 
 
