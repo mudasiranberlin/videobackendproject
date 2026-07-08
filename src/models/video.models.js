@@ -30,7 +30,7 @@ const VideoSchema = new Schema({
         required:true
     },
     views:{
-        type:String,
+        type:,
         required:true
 
     },
