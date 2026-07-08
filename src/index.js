@@ -39,7 +39,7 @@ import mongoose from "mongoose";
 import express from "express"
 
 dotenv.config({
-    path:'./e'
+    path:'./env'
 })
 
 const app = express()
