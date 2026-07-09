@@ -12,7 +12,7 @@ const uploadCloudinary = async (localfilepath)=>{
     try {
         
     } catch (error) {
-        console.log("Error to Upload the ");
+        console.log("Error to Upload the image");
         
     }
 }
