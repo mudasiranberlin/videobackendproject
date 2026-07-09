@@ -22,7 +22,6 @@ const storage = multer.diskStorage({
   }
 
 })
-
 // Create multer upload middleware
 // We export it so we can use it in routes
 export const upload = multer({ storage })
