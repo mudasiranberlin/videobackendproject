@@ -1,86 +1,125 @@
-import mongoose, {Schema} from "mongoose";
-import bcrypt from "bcrypt"
-import jwt from "jsonwebtoken"
+import mongoose, { Schema } from "mongoose"; // Import Mongoose to work with MongoDB
+import bcrypt from "bcrypt"; // Used to encrypt (hash) passwords
+import jwt from "jsonwebtoken"; // Used to create login tokens
+
+// Create the User schema (blueprint for a user)
 const Userschema = new Schema({
-    username:{
-        type:String,
-        lowercase:true,
-        trim:true,
-        index:true,
-        required:true,
-        unique:true
+    username: {
+        type: String,          // Username must be text
+        lowercase: true,       // Convert to lowercase
+        trim: true,            // Remove extra spaces
+        index: true,           // Make searching faster
+        required: true,        // Username is required
+        unique: true           // No duplicate usernames
     },
-    email:{
-        type:String,
-        lowercase:true,
-        trim:true,
-        index:true,
-        required:true,
-        unique:true
+
+    email: {
+        type: String,          // Email must be text
+        lowercase: true,       // Convert to lowercase
+        trim: true,            // Remove extra spaces
+        index: true,           // Make searching faster
+        required: true,        // Email is required
+        unique: true           // No duplicate emails
     },
-    fullname:{
-        type:String,
-        trim:true,
-        index:true,
-        required:true,
+
+    fullname: {
+        type: String,          // Full name must be text
+        trim: true,            // Remove extra spaces
+        index: true,           // Make searching faster
+        required: true         // Full name is required
     },
-    avatar:{
-        type:String,
-        required:true
+
+    avatar: {
+        type: String,          // Store profile image URL
+        required: true         // Avatar is required
     },
-    coverImage:{
-        type:String
+
+    coverImage: {
+        type: String           // Store cover image URL
     },
-    watchHistory:[
+
+    watchHistory: [
         {
-            type:Schema.Types.ObjectId,
-            ref:"Video"
+            type: Schema.Types.ObjectId, // Store Video ID
+            ref: "Video"                 // Link to Video collection
         }
     ],
-    password:{
-        type:String,
-        required:[true,"password is required"]
-    },
-    refreshToken:{
-        type:String,
 
+    password: {
+        type: String,          // Store password
+        required: [true, "Password is required"]
+    },
+
+    refreshToken: {
+        type: String           // Store refresh token
     }
-},{timestamps:true})
 
-Userschema.pre('save', async function (next) {
-    if(this.isModified("password")) return next();
-    this.password = bcrypt.hash(this.password,10)
-    next()
-} )
+}, { timestamps: true }); // Automatically create createdAt and updatedAt
 
+
+
+// Run this before saving the user
+Userschema.pre("save", async function (next) {
+
+    // If password was NOT changed, skip hashing
+    if (!this.isModified("password")) return next();
+
+    // Convert password into a secure hash
+    this.password = await bcrypt.hash(this.password, 10);
+
+    // Continue saving
+    next();
+});
+
+
+
+// Check if entered password is correct
 Userschema.methods.isPasswordCorrect = async function (password) {
-    return await bcrypt.compare(password,this.password)
-}
 
+    // Compare entered password with saved password
+    return await bcrypt.compare(password, this.password);
+};
+
+
+
+// Create Access Token
 Userschema.methods.generateAccessToken = function () {
-    return jwt.sign({
-        _id : this._id,
-        email:this.email,
-        username:this.username,
-        fullname:this.fullname // this one is comming from database this.fullname
-    },
-    process.env.ASSESS_TOKEN_SECRET,
-    {
-        expiresIn:process.env.ASSESS_TOKEN_EXPIRY,
-        
-    })
-    
-} 
-Userschema.methods.generateRefreshToken = function () {
-    return jwt.sign({
-        _id : this._id // this one is comming from database this.fullname
-    },
-    process.env.REFRESH_TOKEN_SECRET,
-    {
-        expiresIn:process.env.REFRESH_TOKEN_EXPIRY,
-        
-    })
-    
-} 
 
-export const User = mongoose.model("User",Userschema) 
+    return jwt.sign(
+        {
+            _id: this._id,           // User ID
+            email: this.email,       // User email
+            username: this.username, // Username
+            fullname: this.fullname  // Full name
+        },
+
+        process.env.ACCESS_TOKEN_SECRET, // Secret key
+
+        {
+            expiresIn: process.env.ACCESS_TOKEN_EXPIRY // Token expiry time
+        }
+    );
+};
+
+
+
+// Create Refresh Token
+Userschema.methods.generateRefreshToken = function () {
+
+    return jwt.sign(
+        {
+            _id: this._id // Only store User ID
+        },
+
+        process.env.REFRESH_TOKEN_SECRET, // Secret key
+
+        {
+            expiresIn: process.env.REFRESH_TOKEN_EXPIRY // Token expiry time
+        }
+    );
+};
+
+
+
+// Create the User model
+export const User = mongoose.model("User", Userschema);
