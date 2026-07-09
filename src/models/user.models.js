@@ -100,7 +100,11 @@ Userschema.methods.isPasswordCorrect = async function (password) {
 }
 
 Userschema.methods.generateAccessToken( function () {
-    jwt.sign()
+    jwt.sign(
+        {
+            
+        }
+    )
     
 });
 Userschema.methods.generateRefreshToken( function () {
