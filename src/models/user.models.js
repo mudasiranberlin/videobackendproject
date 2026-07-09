@@ -104,7 +104,8 @@ Userschema.methods.generateAccessToken( function () {
         {
             _id:this.id,
             fullname:this.fullname,
-            username:this.username
+            username:this.username,
+            
         }
     )
     
