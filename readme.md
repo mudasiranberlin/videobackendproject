@@ -502,7 +502,7 @@ export { uploadCloudinary }
 
 
 now create new file in middleware
-multer
+multer.middleware
 
 
 
