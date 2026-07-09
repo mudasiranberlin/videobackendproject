@@ -373,6 +373,22 @@ Multer does.
 
 now we will use npm install cloudinary and 
 
+What is Cloudinary? (Super Easy Explanation)
+
+Imagine you build a website like Instagram.
+
+Users upload:
+
+📷 Photos
+🎥 Videos
+📄 PDFs
+
+Where will you keep these files?
+
+You have two choices:
+
+Option 1: Save them on your own server
+
 
 
 
