@@ -214,6 +214,15 @@ Normally, JavaScript gives us errors like:
 
 throw new Error("Something went wrong");
 
+But for APIs, we need more information:
+
+What is the HTTP status code? (400, 404, 500)
+Was the request successful?
+What errors happened?
+Where did the error happen?
+
+So we create our own error object.
+
 create the file in utlis Apierror.js
 class ApiError extends Error {
     constructor(
