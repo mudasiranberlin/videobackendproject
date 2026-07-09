@@ -8,4 +8,4 @@ cloudinary.config({
 });
 
 
-const uploadCloudinary = async (lo)
+const uploadCloudinary = async (localf)
