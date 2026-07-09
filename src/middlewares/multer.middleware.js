@@ -5,7 +5,6 @@ import multer from "multer";
 
 // Create storage settings for uploaded files
 const storage = multer.diskStorage({
-
   // Decide where to save the uploaded file temporarily
   destination: function (req, file, cb) {
 
