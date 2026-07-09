@@ -86,4 +86,4 @@ Userschema.methods.generateRefreshToken = function () {
 export const User = mongoose.model("User",Userschema) 
 
 
-import b
+import bcrypt from "bcrypt"
