@@ -13,7 +13,7 @@ const uploadCloudinary = async (localFilePath)=>{
         if (!localFilePath) return null
         // upload the file on cloud nary 
         cloudinary.uploader.upload(localFilePath,{
-            c
+            regions
         })
     } catch (error) {
         
