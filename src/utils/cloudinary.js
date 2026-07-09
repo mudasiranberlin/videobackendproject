@@ -8,6 +8,6 @@ cloudinary.config({
 });
 
 
-const uploadCloudinary = async (localFile)=>{
+const uploadCloudinary = async (localFilePath)=>{
 
 }
