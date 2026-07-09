@@ -326,7 +326,22 @@ Userschema.methods.generateRefreshToken = function () {
 
 now we will be using the multer 
 
+Multer is a middleware for Express.js that helps your Node.js application receive files uploaded by users.
 
+Without Multer:
+
+Express can read text (name, email, password)
+❌ Express cannot understand uploaded files like images or PDFs.
+
+With Multer:
+
+✅ Express can receive images
+✅ PDFs
+✅ Videos
+✅ Documents
+✅ Any uploaded file
+
+Think of Multer as a file receiver.
 
 now we will use npm install cloudinary and 
 
