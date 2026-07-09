@@ -389,6 +389,29 @@ You have two choices:
 
 Option 1: Save them on your own server
 
+Problems:
+
+Server storage fills up.
+If the server crashes, files may be lost.
+Hard to serve millions of images.
+Option 2: Use Cloudinary ☁️ (Recommended)
+
+Instead of saving files on your server, upload them to Cloudinary.
+
+User
+   │
+Uploads Image
+   │
+Node.js + Multer
+   │
+Cloudinary
+   │
+Stores Image
+   │
+Returns Image URL
+
+Cloudinary safely stores your files in the cloud.
+
 
 
 
