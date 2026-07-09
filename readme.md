@@ -414,8 +414,6 @@ Cloudinary safely stores your files in the cloud.
 
 import {v2 as cloudinary} from 'cloudinary'
 
-const cloudinary = require("cloudinary").v2;
-
 cloudinary.config({
     cloud_name: "your_cloud_name",
     api_key: "your_api_key",
