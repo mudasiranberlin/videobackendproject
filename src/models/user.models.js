@@ -102,3 +102,6 @@ Userschema.methods.isPasswordCorrect = async function (password) {
 Userschema.methods.generateAccessToken( function () {
     
 });
+Userschema.methods.generateAccessToken( function () {
+    
+});
