@@ -346,7 +346,17 @@ Think of Multer as a file receiver.
 npm install multer
 
 
+Why do we need Multer?
 
+Suppose a user registers.
+
+They send:
+
+Username: Ali
+
+Email: ali@gmail.com
+
+Profile Picture: photo.png
 
 now we will use npm install cloudinary and 
 
