@@ -365,6 +365,12 @@ Email
 
 But : photo.png
 
+is a file.
+
+Express doesn't know how to read it.
+
+Multer does.
+
 now we will use npm install cloudinary and 
 
 
