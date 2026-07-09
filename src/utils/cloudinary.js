@@ -20,7 +20,7 @@ const uploadCloudinary = async (localFilePath)=>{
         return response;
         
     } catch (error) {
-        fs.unlinkSync(localFilePath)
+        fs.unlinkSync(localFilePath) //remove the local saved temporay file 
         
     }
 }
