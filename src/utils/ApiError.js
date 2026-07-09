@@ -1,23 +1,39 @@
 class ApiError extends Error { 
-    // extends Error means it inherits all features of JavaScript's built-in Error class.
-    // We are creating a new class called ApiError.
+    // Creating a custom error class called ApiError
+    // "extends Error" means it gets all the built-in error features from JavaScript
+
     constructor(
-        statusCode,
-        message = "Something Went Wrong",
-        errors = [],
-        stack = ""
+        statusCode, // HTTP error status code (example: 400, 404, 500)
+        message = "Something Went Wrong", // Error message shown to the user
+        errors = [], // Store extra error details if available
+        stack = "" // Store error location details for debugging
     ) {
-        super(message);
+
+        super(message); 
+        // Calling the parent Error class
+        // This sets the normal error message
 
         this.statusCode = statusCode;
+        // Saving the HTTP status code
+        // Example: 404 means "Not Found"
+
         this.data = null;
+        // No data is sent when an error happens
+
         this.success = false;
+        // Error means the API request was not successful
+
         this.errors = errors;
+        // Store additional error information
+
 
         if (stack) {
             this.stack = stack;
+            // If stack information already exists, use it
         } else {
             Error.captureStackTrace(this, this.constructor);
+            // Automatically creates a stack trace
+            // It helps developers find where the error happened
         }
     }
 }
