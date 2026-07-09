@@ -10,7 +10,9 @@ cloudinary.config({
 
 const uploadCloudinary = async (localfilepath)=>{
     try {
-        if
+        if () {
+            
+        }
         
     } catch (error) {
         console.log("Error to Upload the image");
