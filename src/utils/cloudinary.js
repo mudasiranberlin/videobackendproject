@@ -8,4 +8,4 @@ cloudinary.config({
 });
 
 
-const uploadCloudinary = as
+const uploadCloudinary = async
