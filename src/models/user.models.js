@@ -120,7 +120,7 @@ Userschema.methods.generateRefreshToken( function () {
             _id:this.id,
             email:this.email
         },
-        process.env.ref
+        process.env.REFRESH_TOKEN_SECRET
         {
             expiresIn:process.env.ASSESS_TOKEN_EXPIRY
         }
