@@ -2,7 +2,6 @@
 // Multer helps us handle file uploads from users
 import multer from "multer";
 
-
 // Create storage settings for uploaded files
 const storage = multer.diskStorage({
   // Decide where to save the uploaded file temporarily
