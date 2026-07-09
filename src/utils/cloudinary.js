@@ -21,6 +21,8 @@ const uploadCloudinary = async (localFilePath)=>{
         
     } catch (error) {
         fs.unlinkSync(localFilePath) //remove the local saved temporay file as the operation got failed 
+
+        return null
         
     }
 }
