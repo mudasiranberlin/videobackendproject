@@ -324,7 +324,7 @@ Userschema.methods.generateRefreshToken = function () {
     
 } 
 
-now we will use npm install cloudinary
+now we will use npm install cloudinary and 
 
 
 
