@@ -422,6 +422,8 @@ cloudinary.config({
     api_secret: "your_api_secret"
 });
 
+import fs from "fs"
+
 
 
 
