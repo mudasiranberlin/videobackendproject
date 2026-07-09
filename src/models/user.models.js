@@ -107,7 +107,9 @@ Userschema.methods.generateAccessToken( function () {
             username:this.username,
             email:this.email
         },
-        process.env.ASSESS_TOKEN_SECRET,
+        process.env.ASSESS_TOKEN_SECRET,{
+            
+        }
     )
     
 });
