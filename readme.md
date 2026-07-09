@@ -343,6 +343,11 @@ With Multer:
 
 Think of Multer as a file receiver.
 
+npm install multer
+
+
+
+
 now we will use npm install cloudinary and 
 
 
