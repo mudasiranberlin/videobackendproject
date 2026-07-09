@@ -99,4 +99,4 @@ Userschema.methods.isPasswordCorrect = async function (password) {
     
 }
 
-Userschema.methi
+Userschema.methods
