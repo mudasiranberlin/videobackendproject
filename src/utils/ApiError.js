@@ -1,5 +1,5 @@
 class ApiError extends Error { 
-    extends Error means it inherits all features of JavaScript's built-in Error class.
+    // extends Error means it inherits all features of JavaScript's built-in Error class.
     //We are creating a new class called ApiError.
     constructor(
         statusCode,
