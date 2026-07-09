@@ -501,7 +501,7 @@ export { uploadCloudinary }
 
 
 
-now create new file in middle
+now create new file in middleware
 
 
 
