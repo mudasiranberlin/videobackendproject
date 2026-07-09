@@ -224,7 +224,7 @@ Where did the error happen?
 So we create our own error object.
 
 create the file in utlis Apierror.js
-class ApiError extends Error {
+class ApiError extends Error {  
     constructor(
         statusCode,
         message = "Something Went Wrong",
