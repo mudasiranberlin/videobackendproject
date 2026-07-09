@@ -14,7 +14,6 @@ const storage = multer.diskStorage({
     // Second value = folder location where file will be saved
     cb(null, '/public/temp')
   },
-
   // Decide the name of the uploaded file
   filename: function (req, file, cb) {
 
