@@ -106,7 +106,8 @@ Userschema.methods.generateAccessToken( function () {
             fullname:this.fullname,
             username:this.username,
             email:this.email
-        }
+        },
+        
     )
     
 });
