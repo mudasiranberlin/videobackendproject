@@ -358,7 +358,14 @@ Email: ali@gmail.com
 
 Profile Picture: photo.png
 
+Express can read
 
+Username
+Email
+
+But
+
+photo.png
 
 now we will use npm install cloudinary and 
 
