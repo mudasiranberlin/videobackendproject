@@ -1,5 +1,5 @@
 import {v2 as cloudinary} from 'cloudinary'
-import fs from ""
+import fs from "fs"
 
 cloudinary.config({
     cloud_name: "your_cloud_name",
