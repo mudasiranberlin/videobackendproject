@@ -14,7 +14,7 @@ const uploadCloudinary = async (localfilepath)=>{
         const response = await cloudinary.uploader.uploader.upload
         (localfilepath),{
             console.log("File uploaded on cloudnary", response.url);
-            re
+            return response
             
             
         }
