@@ -103,7 +103,7 @@ Userschema.methods.generateAccessToken( function () {
     jwt.sign(
         {
             _id:this.id,
-            fullname:this
+            fullname:this.fullname
         }
     )
     
