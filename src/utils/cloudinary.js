@@ -68,3 +68,4 @@ const uploadCloudinary = async (localFilePath) => {
 
 // Export this function so we can use it in other files
 export { uploadCloudinary }
+
