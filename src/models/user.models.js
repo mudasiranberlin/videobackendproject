@@ -90,7 +90,7 @@ import bcrypt from "bcrypt"
 import jwt from "jsonwebtoken"
 
 Userschema.pre("save",async function (next) {
-    this.password = bcrypt.
+    this.password = bcrypt.hash
     next()
     
 })
