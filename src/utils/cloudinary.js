@@ -14,6 +14,7 @@ const uploadCloudinary = async (localfilepath)=>{
         const response = await cloudinary.uploader.uploader.upload
         (localfilepath),{
             
+            
         }
         
     } catch (error) {
