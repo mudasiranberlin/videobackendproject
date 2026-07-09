@@ -8,4 +8,4 @@ cloudinary.config({
 });
 
 
-const uploadCloudinary
+const uploadCloudinary = as
