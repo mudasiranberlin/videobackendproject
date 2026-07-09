@@ -99,6 +99,6 @@ Userschema.methods.isPasswordCorrect = async function (password) {
     
 }
 
-Userschema.methods.generateAccessToken( function (params) {
+Userschema.methods.generateAccessToken( function () {
     
 });
