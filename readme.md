@@ -425,7 +425,7 @@ cloudinary.config({
 import fs from "fs"
 
 
-and now 
+and now when we have to use the cloudnary so we have to keep in mind 
 
 
 
