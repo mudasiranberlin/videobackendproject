@@ -89,7 +89,7 @@ export const User = mongoose.model("User",Userschema)
 import bcrypt from "bcrypt"
 import jwt from "jsonwebtoken"
 
-Userschema.pre("save",asfunction (next) {
+Userschema.pre("save",async function (next) {
 
     
 })
