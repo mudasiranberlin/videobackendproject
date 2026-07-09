@@ -363,9 +363,7 @@ Express can read
 Username
 Email
 
-But
-
-photo.png
+But : photo.png
 
 now we will use npm install cloudinary and 
 
