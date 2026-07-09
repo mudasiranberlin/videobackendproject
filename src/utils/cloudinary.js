@@ -8,4 +8,4 @@ cloudinary.config({
 });
 
 
-const 
+const upload
