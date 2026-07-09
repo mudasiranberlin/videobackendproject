@@ -206,7 +206,13 @@ now many times we will return the error and we have not structure of the error a
 now for that we will be using class error 
 
 
+What is ApiError?
 
+ApiError is a custom error class in Node.js.
+
+Normally, JavaScript gives us errors like:
+
+throw new Error("Something went wrong");
 create the file in utlis Apierror.js
 class ApiError extends Error {
     constructor(
