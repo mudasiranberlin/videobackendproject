@@ -412,7 +412,7 @@ Returns Image URL
 
 Cloudinary safely stores your files in the cloud.
 
-import {}
+import {v2}
 
 const cloudinary = require("cloudinary").v2;
 
