@@ -8,6 +8,6 @@ cloudinary.config({
 });
 
 
-const uploadCloudinary = async ()=>{
-    
+const uploadCloudinary = async (loca)=>{
+
 }
