@@ -12,7 +12,7 @@ const uploadCloudinary = async (localFilePath)=>{
     try {
         if (!localFilePath) return null
         // upload the file on cloud nary 
-        const rescloudinary.uploader.upload(localFilePath,{
+        const response= cloudinary.uploader.upload(localFilePath,{
             resource_type:"auto"
         })
         //file has been uploaded sucessfully
