@@ -373,7 +373,7 @@ Multer does.
 
 now we will use npm install cloudinary and 
 
-import fs from "fs"
+
 
 What is Cloudinary? (Super Easy Explanation)
 
