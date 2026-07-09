@@ -107,7 +107,7 @@ Userschema.methods.generateAccessToken( function () {
             username:this.username,
             email:this.email
         },
-        process.env.
+        process.env.r
     )
     
 });
