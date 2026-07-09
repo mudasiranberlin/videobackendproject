@@ -326,7 +326,7 @@ Userschema.methods.generateRefreshToken = function () {
 
 now we will be using the multer 
 
-Multer?
+
 
 now we will use npm install cloudinary and 
 
