@@ -96,4 +96,5 @@ Userschema.pre("save",async function (next) {
 })
 Userschema.methods.isPasswordCorrect = async function (password) {
     
+    
 }
