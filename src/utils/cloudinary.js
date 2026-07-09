@@ -8,19 +8,4 @@ cloudinary.config({
 });
 
 
-const uploadCloudinary = async (localfilepath)=>{
-    try {
-        if (!localfilepath) return null // upload the file on cloudnary
-        const response = await cloudinary.uploader.uploader.upload
-        (localfilepath),{
-            console.log("File uploaded on cloudnary", response.url);
-            return response
-            
-            
-        }
-        
-    } catch (error) {
-        console.log("Error to Upload the image");
-        
-    }
-}
+const 
