@@ -10,7 +10,7 @@ export default asyncHandler
 
 const asyncHandler = (requestHandler)=>{
     return (req,res,next)=>{
-        Promise
+        Promise.res
     }
 }
 
