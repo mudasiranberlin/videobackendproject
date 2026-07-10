@@ -4,4 +4,4 @@ import jwt from "jsonwebtoken"
 
 const Userschema = new mongoose.Schema({},{timestamps:true})
 
-const export. 
+const export User 
