@@ -27,6 +27,6 @@ Userschema.methods.generateaccesstoken = function () {
     })
 }
 
-Userschema.methods.acce
+Userschema.methods.accesss
 
 export const User = mongoose.model("User",Userschema)
