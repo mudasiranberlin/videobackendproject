@@ -5,7 +5,7 @@ import jwt from "jsonwebtoken"
 const Userschema = new mongoose.Schema({
     username:{
         type:String,
-        un
+        unique:
     }
 },{timestamps:true})
 
