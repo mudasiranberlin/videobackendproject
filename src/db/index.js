@@ -26,7 +26,8 @@ try { /* Try connecting to the database. If anything fails, execution jumps to t
     Wrong URL this block runs.
 */
         console.log("MONGO DB CONNECTION FAILED IS IN SRC INDEX",error)
-        process.exit(1)      /*Stop the application because something serious went wrong.*/
+        process.exit(1) 
+             /*Stop the application because something serious went wrong.*/
     } 
 }
 
