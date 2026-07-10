@@ -18,6 +18,8 @@ Userschema.pre('save', async function(next) {
      this.password= await bcrypt.hash(this.password, 10) 
 });
 
-Userschema.methods.generateaccesstoken =
+Userschema.methods.generateaccesstoken = function (params) {
+    
+}
 
 export const User = mongoose.model("User",Userschema)
