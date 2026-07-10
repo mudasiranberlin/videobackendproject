@@ -28,7 +28,7 @@ Userschema.methods.generateaccesstoken = function () {
 }
 
 Userschema.methods.accessstoken = function () {
-    return jwt
+    return jwt.sign
 }
 
 export const User = mongoose.model("User",Userschema)
