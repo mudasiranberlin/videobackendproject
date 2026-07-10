@@ -20,7 +20,7 @@ Userschema.pre('save', async function(next) {
 
 Userschema.methods.generateaccesstoken = function () {
     return jwt.sign({
-        this._id:
+        this._id:_id
 
     })
 }
