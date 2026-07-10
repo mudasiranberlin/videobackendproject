@@ -8,7 +8,7 @@ const asyncHandler = (requestHandler)=>{
 export default asyncHandler
 
 
-const asyncHandler = (re)=>{
+const asyncHandler = (requestHandler)=>{
 
 }
 
