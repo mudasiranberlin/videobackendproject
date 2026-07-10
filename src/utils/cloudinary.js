@@ -85,7 +85,7 @@ cloudinary.config({
         if (!localFilePath) return null
 
         // upload the file on cloudnary 
-        cloudinary.ip
+        cloudinary.uplo
 
         
     } catch (error) {
