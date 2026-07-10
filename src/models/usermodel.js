@@ -13,7 +13,7 @@ const Userschema = new mongoose.Schema({
     }
 },{timestamps:true})
 
-Us.pre('save', async function() {
+Userschema.pre('save', async function() {
   await doStuff();
   await doMoreStuff();
 });
