@@ -84,6 +84,9 @@ cloudinary.config({
     try {
         if (!localFilePath) return null
 
+        // upload the file on cloudnary 
+        
+
         
     } catch (error) {
         console.log("Error Uploading file on cloud nary ");
