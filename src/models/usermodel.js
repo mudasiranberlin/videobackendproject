@@ -26,7 +26,7 @@ Userschema.methods.generateaccesstoken = function () {
         email:this.email
     },
     process.env.generateaccesstokenm,{
-        expiresIn
+        expiresIn:
     }
 )
 }
