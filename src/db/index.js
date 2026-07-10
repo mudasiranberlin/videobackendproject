@@ -13,7 +13,7 @@ try { /* Try connecting to the database. If anything fails, execution jumps to t
         const connectionInstance = await mongoose.connect(`${process.env.MONGODB_URI}/${DB_NAME}`)
         console.log(`The DB is Connected and Host Name is ${connectionInstance.connection.host}`);
 
-        console.log(con);
+        console.log(connectionInstance);
         
 
         /*. The DB is Connected and Host Name is localhost.  */
