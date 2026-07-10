@@ -88,7 +88,7 @@ cloudinary.config({
        const response= await cloudinary.uploader.upload(localFilePath,{
             resource_type:"auto"
         })
-        console.log("File has been upload sucessfully",response.u);
+        console.log("File has been upload sucessfully",response.url);
         
 
         
