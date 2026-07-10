@@ -72,4 +72,4 @@ export { uploadCloudinary }
 
 
 
-import { v2 as c } from 'cloudinary';
+import { v2 as clou } from 'cloudinary';
