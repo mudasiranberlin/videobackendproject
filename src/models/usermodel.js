@@ -3,7 +3,9 @@ import bycrpt from "bcrypt"
 import jwt from "jsonwebtoken"
 
 const Userschema = new mongoose.Schema({
-    username
+    username:{
+        ty
+    }
 },{timestamps:true})
 
 export const User = mongoose.model("User",Userschema)
