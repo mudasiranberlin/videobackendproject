@@ -9,7 +9,7 @@ export default asyncHandler
 
 
 const asyncHandler = (requestHandler)=>{
-    return (req,res,next)
+    return (req,res,next)=>{asyncHandler}
 }
 
 
