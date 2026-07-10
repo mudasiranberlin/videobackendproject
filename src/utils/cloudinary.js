@@ -81,5 +81,9 @@ cloudinary.config({
   });
 
   const uploadCloudinary = async () => {
-    try
+    try {
+        
+    } catch (error) {
+        
+    }
   } 
