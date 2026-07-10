@@ -94,7 +94,7 @@ cloudinary.config({
 
         
     } catch (error) {
-        fs.readFileSync
+        fs.un
         console.log("Error Uploading file on cloud nary ");
         
         
