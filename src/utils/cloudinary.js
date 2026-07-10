@@ -89,6 +89,7 @@ cloudinary.config({
             resource_type:"auto"
         })
         console.log("File has been upload sucessfully",response.url);
+        return
         
 
         
