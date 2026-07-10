@@ -27,7 +27,7 @@ Userschema.methods.generateaccesstoken = function () {
     })
 }
 
-Userschema.methods.accessstoken = function (params) {
+Userschema.methods.accessstoken = function () {
     
 }
 
