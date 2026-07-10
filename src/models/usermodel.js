@@ -13,6 +13,6 @@ const Userschema = new mongoose.Schema({
     }
 },{timestamps:true})
 
-
+User
 
 export const User = mongoose.model("User",Userschema)
