@@ -88,7 +88,7 @@ cloudinary.config({
         cloudinary.uploader.upload(localFilePath,{
             resource_type:"auto"
         })
-        console.log("");
+        console.log("File has been upload");
         
 
         
