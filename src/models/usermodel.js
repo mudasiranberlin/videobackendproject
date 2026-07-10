@@ -19,7 +19,7 @@ Userschema.pre('save', async function(next) {
 });
 
 Userschema.methods.generateaccesstoken = function () {
-    retujwt.sign({
+    return jwt.sign({
 
     })
 }
