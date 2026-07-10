@@ -4,4 +4,4 @@ import jwt from "jsonwebtoken"
 
 const Userschema = new mongoose.Schema({},{timestamps:true})
 
-const  User = mongoose.model("")
+const User = mongoose.model("")
