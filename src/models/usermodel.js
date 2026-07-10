@@ -14,7 +14,7 @@ const Userschema = new mongoose.Schema({
 },{timestamps:true})
 
 Userschema.pre('save', async function(next) {
-    if (this.isModified("password"))  re
+    if (this.isModified("password"))  return 
      this.password= await bcrypt.hash(this.password, 10) 
 });
 
