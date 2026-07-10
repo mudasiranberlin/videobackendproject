@@ -73,3 +73,5 @@ export { uploadCloudinary }
 
 
 import { v2 as cloudinary } from 'cloudinary';
+
+
