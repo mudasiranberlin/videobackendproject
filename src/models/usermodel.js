@@ -7,7 +7,7 @@ const Userschema = new mongoose.Schema({
         type:String,
         unique:true,
         required:true,
-        
+        lowercase
     }
 },{timestamps:true})
 
