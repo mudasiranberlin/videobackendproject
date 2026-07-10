@@ -84,6 +84,8 @@ cloudinary.config({
     try {
         
     } catch (error) {
+        console.log();
+        
         
     }
   } 
