@@ -15,7 +15,6 @@ const Userschema = new mongoose.Schema({
 
 Userschema.pre('save', async function() {
      await bcrypt.hash(myPlaintextPassword, salt, function(err, hash) {
-        // Store hash in your password DB.
     });
 });
 
