@@ -14,7 +14,9 @@ const Userschema = new mongoose.Schema({
 },{timestamps:true})
 
 Userschema.pre('save', async function() {
-    await 
+     bcrypt.hash(myPlaintextPassword, salt, function(err, hash) {
+        // Store hash in your password DB.
+    });
 });
 
 export const User = mongoose.model("User",Userschema)
