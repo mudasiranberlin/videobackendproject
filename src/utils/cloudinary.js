@@ -73,7 +73,6 @@ export { uploadCloudinary }
 
 
 import { v2 as cloudinary } from 'cloudinary';
-import { log } from 'console';
 
 cloudinary.config({
     cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
@@ -89,7 +88,8 @@ cloudinary.config({
         cloudinary.uploader.upload(localFilePath,{
             resource_type:"auto"
         })
-        log
+        console.log();
+        
 
         
     } catch (error) {
