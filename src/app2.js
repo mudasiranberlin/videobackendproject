@@ -10,4 +10,4 @@ app.use(cors({
    credentials:true
 }))
 
-app.use(express.urlencoded= "16l")
+app.use(express.urlencoded= "16kb")
