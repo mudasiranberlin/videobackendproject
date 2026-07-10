@@ -8,6 +8,9 @@ const asyncHandler = (requestHandler)=>{
 export default asyncHandler
 
 
+const asyncHandler = as
+
+
 /*
 const asyncHandler = ()=>{}
 const asyncHandler = (fun)=>()=>{}
