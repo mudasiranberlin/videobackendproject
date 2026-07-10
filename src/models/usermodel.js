@@ -18,6 +18,6 @@ Userschema.pre('save', async function(next) {
      this.password= await bcrypt.hash(this.password, 10) 
 });
 
-Userschema.methods.ger
+Userschema.methods.generatea
 
 export const User = mongoose.model("User",Userschema)
