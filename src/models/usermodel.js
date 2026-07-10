@@ -36,7 +36,9 @@ Userschema.methods.accessstoken = function () {
         _id:this._id,
     },
     process.env.generateaccesstokenm2,
-    
+    {
+        
+    }
 )
 }
 
