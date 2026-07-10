@@ -24,7 +24,6 @@ Userschema.methods.generateaccesstoken = function () {
         username:this.username,
         password:this.password,
         email:this.email
-
     })
 }
 
