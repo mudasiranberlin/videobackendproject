@@ -23,7 +23,7 @@ Userschema.methods.generateaccesstoken = function () {
         _id:this._id,
         username:this.username,
         password:this.password,
-        email
+        email:
 
     })
 }
