@@ -83,6 +83,7 @@ cloudinary.config({
   const uploadCloudinary = async () => {
     try {
         
+        
     } catch (error) {
         console.log("Error Uploading file on cloud nary ");
         
