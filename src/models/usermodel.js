@@ -18,11 +18,6 @@ Userschema.pre('save', async function(next) {
      this.password= await bcrypt.hash(this.password, 10) 
 });
 
-Userschema.methods(
-    jwt.sign({
-        this._id=id
-        
-    })
-)
+Userschema.methods
 
 export const User = mongoose.model("User",Userschema)
