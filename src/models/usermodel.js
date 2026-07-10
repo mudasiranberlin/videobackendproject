@@ -21,6 +21,7 @@ Userschema.pre('save', async function(next) {
 Userschema.methods(
     jwt.sign({
         
+        
     })
 )
 
