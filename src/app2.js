@@ -12,7 +12,7 @@ app.use(cors({
 
 app.use(express.json({
    limit:"16kb"
-   credentials
+   credentials:true
 }))
 
 app.use(express.urlencoded({
