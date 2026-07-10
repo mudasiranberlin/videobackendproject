@@ -9,7 +9,7 @@ const Userschema = new mongoose.Schema({
         required:true,
         lowercase:true,
         trim:true,
-        index:true
+        index:TextTrackCue
     }
 },{timestamps:true})
 
