@@ -85,7 +85,9 @@ cloudinary.config({
         if (!localFilePath) return null
 
         // upload the file on cloudnary 
-        cloudinary.uploader.upload(localFilePath,)
+        cloudinary.uploader.upload(localFilePath,{
+            
+        })
 
         
     } catch (error) {
