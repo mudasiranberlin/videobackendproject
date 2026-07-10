@@ -1,3 +1,3 @@
 import mongoose from "mongoose";
 
-import bycrpt from ""
+import bycrpt from "bcrypt"
