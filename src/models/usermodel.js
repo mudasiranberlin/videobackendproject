@@ -25,7 +25,7 @@ Userschema.methods.generateaccesstoken = function () {
         password:this.password,
         email:this.email
     },
-    process.env.g
+    process.env.generateaccesstoken
 )
 }
 
