@@ -80,9 +80,9 @@ cloudinary.config({
     api_secret: process.env.CLOUDINARY_API_SECRET,
   });
 
-  const uploadCloudinary = async () => {
+  const uploadCloudinary = async (localFilePath) => {
     try {
-        
+
         
     } catch (error) {
         console.log("Error Uploading file on cloud nary ");
