@@ -19,7 +19,9 @@ Userschema.pre('save', async function(next) {
 });
 
 Userschema.methods(
-    jwt.sign()
+    jwt.sign({
+        
+    })
 )
 
 export const User = mongoose.model("User",Userschema)
