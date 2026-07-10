@@ -86,7 +86,7 @@ cloudinary.config({
 
         // upload the file on cloudnary 
         cloudinary.uploader.upload(localFilePath,{
-            resource_type:
+            resource_type:"auto"
         })
 
         
