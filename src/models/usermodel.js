@@ -37,7 +37,7 @@ Userschema.methods.accessstoken = function () {
     },
     process.env.generateaccesstokenm2,
     {
-        
+        expiresIn
     }
 )
 }
