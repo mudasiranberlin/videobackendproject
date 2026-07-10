@@ -80,4 +80,4 @@ cloudinary.config({
     api_secret: process.env.CLOUDINARY_API_SECRET,
   });
 
-  const uploadCloudinary = async  
+  const uploadCloudinary = as 
