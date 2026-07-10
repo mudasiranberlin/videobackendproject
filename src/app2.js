@@ -10,4 +10,4 @@ app.use(cors({
    credentials:true
 }))
 
-app.use(express.urlencoded(li))
+app.use(express.urlencoded())
