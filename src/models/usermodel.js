@@ -22,7 +22,7 @@ Userschema.methods.generateaccesstoken = function () {
     return jwt.sign({
         _id:this._id,
         username:this.username,
-        password
+        password:this_pas
 
     })
 }
