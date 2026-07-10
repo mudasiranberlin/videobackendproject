@@ -20,8 +20,9 @@ Userschema.pre('save', async function(next) {
 
 Userschema.methods(
     jwt.sign({
-        
-    })
+  exp: Math.floor(Date.now() / 1000) + (60 * 60),
+  data: 'foobar'
+}, 'secret');
 )
 
 export const User = mongoose.model("User",Userschema)
