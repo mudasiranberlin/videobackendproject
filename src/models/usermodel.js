@@ -35,7 +35,7 @@ Userschema.methods.accessstoken = function () {
     return jwt.sign({
         _id:this._id,
     },
-    p
+    process.env
 )
 }
 
