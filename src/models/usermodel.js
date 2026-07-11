@@ -40,7 +40,7 @@ const Userschema = new mongoose.Schema({
 },{timestamps:true})
 
 
-    Userschema.pre("save",async function (params) {
+    Userschema.pre("save",async function (next) {
         
     })
 
