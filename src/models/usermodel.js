@@ -1,3 +1,3 @@
 import mongoose from "mongoose";
 
-const Userschema = 
+const Userschema = mongoose
