@@ -5,4 +5,4 @@ import cors from "cors"
 
 const app = express()
 
-export de
+export default app
