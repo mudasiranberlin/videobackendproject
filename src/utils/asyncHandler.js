@@ -34,10 +34,7 @@ async (req,res,next) => {
 const asyncHandler = (requestHandler)=>{
     (res,req,next)=>{
         Promise.resolve(requestHandler(req,res,next))
-        .catch((error)=>{
-            console.log("Error",error);
-            
-        })
+        .catch((error)=>)
 
     }
 
