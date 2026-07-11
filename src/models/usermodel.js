@@ -19,6 +19,14 @@ const Userschema = new mongoose.Schema({
         required:true,
         trim:true
     }
+    username:{
+        type:String,
+        lowercase:true,
+        unique:true,
+        required:true,
+        trim:true,
+        index:true
+    },
 
 
 
