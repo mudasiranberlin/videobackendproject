@@ -39,9 +39,6 @@ const Userschema = new mongoose.Schema({
 
 },{timestamps:true})
 
-Userschema.pre("save",()=>{
-    bcrypt.hash(myPlaintextPassword, saltRounds, function(err, hash) {
-});
 })
 
 
