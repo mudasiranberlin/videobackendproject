@@ -49,7 +49,7 @@ const Userschema = new mongoose.Schema({
         return await bycrpt.compare(password,this.password)
         
     }
-    Userschema.
+    Userschema.me
 
 
 export const User = mongoose.model("User",Userschema);
