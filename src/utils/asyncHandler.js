@@ -32,7 +32,7 @@ async (req,res,next) => {
 */
 
 const asyncHandler = (requestHandler)=>{
-    (res)=>{
+    (res,req,next)=>{
 
     }
 
