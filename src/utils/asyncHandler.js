@@ -31,10 +31,4 @@ async (req,res,next) => {
 }
 */
 
-const asyncHandler = (fun)=>{
-    (req,res,next)=>{
-        Promise.resolve(fun,()=>{
-
-        })
-    }
-}
+const as
