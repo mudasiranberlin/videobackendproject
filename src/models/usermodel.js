@@ -4,4 +4,4 @@ const Userschema = new mongoose.Schema({
 
 },{timestamps:true})
 
-export const User = mongoose.model("User",User)
+export const User = mongoose.model("User",Use)
