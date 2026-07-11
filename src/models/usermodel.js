@@ -45,7 +45,7 @@ const Userschema = new mongoose.Schema({
         this.password= bycrpt.hash(this.password,10)
         next()
     })
-    Userschema.
+    Userschema.meth
 
 
 export const User = mongoose.model("User",Userschema);
