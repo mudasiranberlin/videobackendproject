@@ -31,6 +31,6 @@ async (req,res,next) => {
 }
 */
 
-const asyncHandler = (requ)=>{
+const asyncHandler = (requestHandler)=>{
 
 }
