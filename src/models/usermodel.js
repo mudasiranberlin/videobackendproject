@@ -54,7 +54,7 @@ const Userschema = new mongoose.Schema({
             _id=this._id,
             username=this.username,
             email=this.email,
-            
+            fullname
 
          });
         
