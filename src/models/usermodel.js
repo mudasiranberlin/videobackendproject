@@ -40,7 +40,7 @@ const Userschema = new mongoose.Schema({
 },{timestamps:true})
 
 
-    user
+    Userschema
 
 
 export const User = mongoose.model("User",Userschema);
