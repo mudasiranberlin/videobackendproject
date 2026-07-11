@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 import bycrpt from "bcrypt"
 import jwt from "jsonwebtoken"
-import mong
+import mongoose
 import mongoose from "mongoose-paginate-v2";
 
 const Userschema = new mongoose.Schema({
