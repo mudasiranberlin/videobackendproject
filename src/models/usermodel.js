@@ -3,7 +3,9 @@ import mongoose from "mongoose";
 const Userschema = new mongoose.Schema({
 
     username:{
-        type
+        type:String,
+        lowercase:true,
+        
     }
 
 
