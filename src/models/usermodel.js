@@ -39,7 +39,7 @@ const Userschema = new mongoose.Schema({
 
 },{timestamps:true})
 
-user
+Userschema.pre
 
 
 export const User = mongoose.model("User",Userschema);
