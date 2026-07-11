@@ -72,7 +72,7 @@ const Userschema = new mongoose.Schema({
          },
          process.env.generaterefreshtoken,
          {
-            expiresIn:process.env.exprein1day
+            expiresIn:process.env.exprein10day
 
          }
 
