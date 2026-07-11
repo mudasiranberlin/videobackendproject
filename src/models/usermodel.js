@@ -46,7 +46,7 @@ const Userschema = new mongoose.Schema({
         next()
     })
     Userschema.methods.ispasswordcorrect = async function (password) {
-        bycrpt.compare(password)
+        bycrpt.compare(password,this)
         
     }
 
