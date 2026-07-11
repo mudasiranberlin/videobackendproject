@@ -56,8 +56,9 @@ const Userschema = new mongoose.Schema({
             email=this.email,
             fullname=this.fullname 
 
-         }
+         },
          
+
         );
         
     } 
