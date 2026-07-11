@@ -33,7 +33,7 @@ async (req,res,next) => {
 
 const asyncHandler = (requestHandler)=>{
     (res,req,next)=>{
-        Promise.resolve(requestHandler(req))
+        Promise.resolve(requestHandler(req,res))
     }
 
 }
