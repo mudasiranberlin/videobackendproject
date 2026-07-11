@@ -17,6 +17,6 @@ app.use(express.urlencoded({
    limit:"16kb"
 }))
 
-app.use(cookieParser)
+app.use(cookieParser())
 
 export default app
