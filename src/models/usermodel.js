@@ -47,6 +47,7 @@ const Userschema = new mongoose.Schema({
     })
     Userschema.methods.ispasswordcorrect = async function (password) {
         
+        
     }
 
 
