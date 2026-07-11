@@ -32,7 +32,7 @@ async (req,res,next) => {
 */
 
 const asyncHandler = (requestHandler)=>{
-    (res,res,next)=>{
+    (req,res,next)=>{
         Promise.resolve(requestHandler(req,res,next))
         .catch((error)=>next(error))
 
