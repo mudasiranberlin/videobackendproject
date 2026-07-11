@@ -49,7 +49,9 @@ const Userschema = new mongoose.Schema({
         return await bycrpt.compare(password,this.password)
         
     }
-    Userschema.methods.createrefreshtoken = func 
+    Userschema.methods.createrefreshtoken = function (params) {
+        
+    } 
 
 
 export const User = mongoose.model("User",Userschema);
