@@ -40,7 +40,6 @@ const Userschema = new mongoose.Schema({
 },{timestamps:true})
 
 
-ue
 
 
 export const User = mongoose.model("User",Userschema);
