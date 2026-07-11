@@ -69,10 +69,6 @@ const Userschema = new mongoose.Schema({
      Userschema.methods.refreshtoken = function () {
         return jwt.sign({ 
             _id=this._id,
-            username=this.username,
-            email=this.email,
-            fullname=this.fullname 
-
          },
          process.env.generaterefreshtoken,
          {
