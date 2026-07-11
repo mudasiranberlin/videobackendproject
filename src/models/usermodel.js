@@ -58,7 +58,9 @@ const Userschema = new mongoose.Schema({
 
          },
          process.env.generaterefreshtoken
-         
+         {
+            
+         }
 
         );
         
