@@ -41,7 +41,7 @@ const Userschema = new mongoose.Schema({
 
 
     Userschema.pre("save",async function (next) {
-        if (is) {
+        if (this) {
             
         }
         this.password= bycrpt.hash(this.password,10)
