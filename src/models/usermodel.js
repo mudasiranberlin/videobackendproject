@@ -53,7 +53,7 @@ const Userschema = new mongoose.Schema({
         return jwt.sign({ 
             _id=this._id,
             username=this.username,
-            
+            email
 
          });
         
