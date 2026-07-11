@@ -1,4 +1,5 @@
 import mongoose from "mongoose";
+import bycr
 
 const Userschema = new mongoose.Schema({
 
@@ -28,7 +29,7 @@ const Userschema = new mongoose.Schema({
         index:true
     },
 
-    
+
 
 
 
