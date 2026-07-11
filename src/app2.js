@@ -19,6 +19,6 @@ app.use(express.urlencoded({
 
 app.use(cookieParser())
 
-app.use(pu)
+app.use(express.static)
 
 export default app
