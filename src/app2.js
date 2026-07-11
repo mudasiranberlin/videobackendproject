@@ -19,6 +19,6 @@ app.use(express.urlencoded({
 
 app.use(cookieParser())
 
-app.
+app.use
 
 export default app
