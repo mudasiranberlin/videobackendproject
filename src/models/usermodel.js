@@ -12,7 +12,7 @@ const Userschema = new mongoose.Schema({
         type:String,
         required:true
     },
-    f
+    fullname:
 
 
 
