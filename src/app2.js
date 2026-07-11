@@ -19,6 +19,6 @@ app.use(express.urlencoded({
 
 app.use(cookieParser())
 
-app.use(express.static)
+app.use(express.static("public"))
 
 export default app
