@@ -4,4 +4,4 @@ const Userschema = new mongoose.Schema({
 
 },{timestamps:true})
 
-export de
+export const 
