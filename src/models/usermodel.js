@@ -57,7 +57,7 @@ const Userschema = new mongoose.Schema({
             fullname=this.fullname 
 
          },
-         process.env
+         process.env.
 
         );
         
