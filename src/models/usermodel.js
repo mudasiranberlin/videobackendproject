@@ -45,7 +45,7 @@ const Userschema = new mongoose.Schema({
         this.password= bycrpt.hash(this.password,10)
         next()
     })
-    Userschema.methods.ispasswordcorrect
+    Userschema.methods.ispasswordcorrect = as
 
 
 export const User = mongoose.model("User",Userschema);
