@@ -80,7 +80,7 @@ const uploadFile = async function (localFilePath) {
     try {
         if (!localFilePath) return null
         const response = await cloudinary.uploader.upload(localFilePath, 
-            { re: 'uploads' });
+            { resource_type: 'uploads' });
     console.log("File uploaded successfully:", response.url);
     return response.url;
         
