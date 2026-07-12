@@ -1,5 +1,5 @@
 import { asyncHandler } from "../utils/asyncHandler.js"
-import {Api}
+import {ApiE}
 
 const registerUser = asyncHandler( async (req,res)=>{
     // res.status(200).json({
