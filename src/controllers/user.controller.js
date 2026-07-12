@@ -6,7 +6,9 @@ const registerUser = asyncHandler( async (req,res)=>{
     // })
     const {fullname,username,email} = req.body
     console.log(email,fullname);
-    if
+    if (condition) {
+        
+    }
     
 } )
 
