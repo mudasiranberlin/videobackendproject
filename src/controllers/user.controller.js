@@ -26,7 +26,7 @@ const registerUser = asyncHandler( async (req,res)=>{
     }
 
    const avatarlocalpath =  req.files?.avatar[0]?.path;
-   req.files?.coverImage
+   req.files?.coverImage[]
     
 } )
 
