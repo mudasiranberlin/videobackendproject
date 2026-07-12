@@ -39,7 +39,7 @@ const registerUser = asyncHandler( async (req,res)=>{
     throw new ApiError(400,"Avatar file is required")
    }
 
-    User.create({
+   const user User.create({
     fullname,
     avatar:avatar.url,
     coverImage:coverImage?.url ||"",
