@@ -1,6 +1,6 @@
 import { Router } from "express";
 import registerUser from "../controllers/user.controller.js";
-import {upload} from "../"
+import {upload} from "../middlewares"
 
 const router = Router()
 
