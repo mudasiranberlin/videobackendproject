@@ -25,7 +25,7 @@ const registerUser = asyncHandler( async (req,res)=>{
         throw new ApiError(409,"User with email or username already existed ")
     }
 
-    req.files?.avatar[0]
+    req.files?.avatar[0]?
     
 } )
 
