@@ -545,7 +545,9 @@ const router = Router()
 router.route("/register").post(registerUser)
 
 
-now u can install post 
+now u can install postman to check the details 
+
+
 
 
 
