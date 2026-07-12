@@ -56,7 +56,7 @@ const registerUser = asyncHandler( async (req,res)=>{
     
    }
 
-   return res.status()
+   return res.status(201)
     
 } )
 
