@@ -45,6 +45,6 @@ app.use(cookieParser()) // cookieParser() reads those cookies.
 
 // now we will import routes here 
 
-import userRouter from './'
+import userRouter from './routes/'
 
 export default app
