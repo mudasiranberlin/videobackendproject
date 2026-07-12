@@ -1,6 +1,6 @@
 import { asyncHandler } from "../utils/asyncHandler.js"
 import {ApiError} from "../utils/ApiError.js"
-import 
+import {user}
 
 const registerUser = asyncHandler( async (req,res)=>{
     // res.status(200).json({
