@@ -55,6 +55,8 @@ const registerUser = asyncHandler( async (req,res)=>{
     throw new ApiError(500,"something went wrong while registering the user")
     
    }
+
+   return.
     
 } )
 
