@@ -547,6 +547,8 @@ router.route("/register").post(registerUser)
 
 now u can install postman to check the details 
 
+http://localhost:8000/api/v1/users/register
+
 
 
 
