@@ -2,4 +2,4 @@ import { Router } from "express";
 
 const router = Router()
 
-router.route("/register").post(re)
+router.route("/register").post(reg)
