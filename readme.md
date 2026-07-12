@@ -531,7 +531,9 @@ const registerUser = asyncHandler( async (req,res)=>{
 } )
 
 now after that go the app.js 
+import userRouter from './routes/user.routes.js'
 
+app.use("/user",userRouter)
 
 
 
