@@ -1,1 +1,1 @@
-import {asyn}
+import {a}
