@@ -42,7 +42,8 @@ const registerUser = asyncHandler( async (req,res)=>{
    User.create({
     fullname,
     avatar:avatar.url,
-    coverImage:coverImage?.url ||""
+    coverImage:coverImage?.url ||"",
+    
    })
     
 } )
