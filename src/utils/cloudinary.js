@@ -79,7 +79,7 @@ cloudinary.config({
 const uploadFile = async function (localFilePath) {
     try {
         if (!localFilePath) return null
-        const result = await cloudinary.uploader.upload(file, { folder: 'uploads' });
+        const res = await cloudinary.uploader.upload(file, { folder: 'uploads' });
     console.log("File uploaded successfully:", result.url);
     return result.url;
         
