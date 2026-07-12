@@ -47,7 +47,9 @@ const registerUser = asyncHandler( async (req,res)=>{
     password,
     username:username.toLowerCase()
    })
-   const createdUser = await User.findById(user._id).select()
+   const createdUser = await User.findById(user._id).select(
+    
+   )
     
 } )
 
