@@ -80,8 +80,9 @@ const uploadFile = async function (localFilePath) {
     try {
         if (!localFilePath) return null
         
-    } catch (error) {
         
+    } catch (error) {
+
         
     }
     
