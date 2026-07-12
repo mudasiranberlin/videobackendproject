@@ -13,6 +13,7 @@ const registerUser = asyncHandler( async (req,res)=>{
     // }
     if(
         [fullname,email,username,password].some((fields)=>{
+            
             throw new.ApiError(400,"All fields are required")
         })
     )
