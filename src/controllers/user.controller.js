@@ -32,7 +32,6 @@ const registerUser = asyncHandler( async (req,res)=>{
    if (!avatarlocalpath) {
     throw new ApiError(400,"Avatar file is required")
    }
-
     
 } )
 
