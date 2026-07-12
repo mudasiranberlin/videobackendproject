@@ -521,7 +521,14 @@ export const upload = multer({ storage })
 
 now after that we will write controller 
 
-create a file in user.controller
+create a file in user.controller.js in controller and write this 
+import { asyncHandler } from "../utils/asyncHandler"
+
+const registerUser = asyncHandler( async (req,res)=>{
+    res.status(200).json({
+        message:"ok"
+    })
+} )
 
 
 
