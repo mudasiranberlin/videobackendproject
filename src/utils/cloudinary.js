@@ -76,3 +76,4 @@ cloudinary.config({
   api_secret: 'your_api_secret'
 });
 
+const uploadFile 
