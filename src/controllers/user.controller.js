@@ -12,7 +12,7 @@ const registerUser = asyncHandler( async (req,res)=>{
     // }
     if(
         [fullname,email,username,password].some(()=>{
-            throw new.ApiError()
+            throw new.ApiError(400,)
         })
     )
     
