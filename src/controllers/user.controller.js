@@ -10,7 +10,7 @@ const registerUser = asyncHandler( async (req,res)=>{
     // if (fullname=="") {
     //     throw new ApiError(400,"Full Name is required")
     // }
-    
+    if
     
 } )
 
