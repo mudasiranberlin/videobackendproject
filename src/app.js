@@ -43,6 +43,8 @@ app.use(express.static("public"))
 app.use(cookieParser()) // cookieParser() reads those cookies.
 
 
-// 
+// now we will import routes here 
+
+
 
 export default app
