@@ -21,7 +21,9 @@ const registerUser = asyncHandler( async (req,res)=>{
         $or:[{email},{username}]
     })
     
-    if
+    if (existedUser) {
+        
+    }
     
 } )
 
