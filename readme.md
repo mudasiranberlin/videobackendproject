@@ -535,7 +535,7 @@ import userRouter from './routes/user.routes.js'
 
 app.use("/user",userRouter)
 
-and after that go routes folder and create a file userroutes
+and after that go routes folder and create a file user.routes
 
 
 
