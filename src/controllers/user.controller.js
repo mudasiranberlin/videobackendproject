@@ -5,7 +5,7 @@ const registerUser = asyncHandler( async (req,res)=>{
     // res.status(200).json({
     //     message:"ok mudasir "
     // })
-    const {fullname,username} = req.body
+    const {fullname,username,} = req.body
 } )
 
 export default registerUser
