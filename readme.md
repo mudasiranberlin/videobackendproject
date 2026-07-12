@@ -545,7 +545,7 @@ const router = Router()
 router.route("/register").post(registerUser)
 
 
-now u can install 
+now u can install post 
 
 
 
