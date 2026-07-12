@@ -1,6 +1,7 @@
 import { asyncHandler } from "../utils/asyncHandler.js"
 import {ApiError} from "../utils/ApiError.js"
 import { User } from "../models/user.models.js"
+import 
 
 const registerUser = asyncHandler( async (req,res)=>{
     // res.status(200).json({
@@ -31,7 +32,7 @@ const registerUser = asyncHandler( async (req,res)=>{
    if (!avatarlocalpath) {
     throw new ApiError(400,"Avatar file is required")
    }
-   
+
     
 } )
 
