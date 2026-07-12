@@ -1,5 +1,5 @@
 import { asyncHandler } from "../utils/asyncHandler.js"
-import {ApiEr}
+import {ApiErr}
 
 const registerUser = asyncHandler( async (req,res)=>{
     // res.status(200).json({
