@@ -51,7 +51,7 @@ const registerUser = asyncHandler( async (req,res)=>{
     "-password -refreshToken"
    )
    if (createdUser) {
-    
+    TR
     
    }
     
