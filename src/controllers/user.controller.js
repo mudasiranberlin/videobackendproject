@@ -22,7 +22,7 @@ const registerUser = asyncHandler( async (req,res)=>{
     })
     
     if (existedUser) {
-        throw ApiError
+        throw new ApiError
     }
     
 } )
