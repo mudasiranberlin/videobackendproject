@@ -537,7 +537,12 @@ app.use("/user",userRouter)
 
 and after that go routes folder and create a file user.routes.js
 
+import { Router } from "express";
+import registerUser from "../controllers/user.controller.js";
 
+const router = Router()
+
+router.route("/register").post(registerUser)
 
 
 
