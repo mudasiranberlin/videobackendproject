@@ -519,7 +519,9 @@ export const upload = multer({ storage })
 
 
 
-now after that we will 
+now after that we will write controller 
+
+
 
 
 
