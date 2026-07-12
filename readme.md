@@ -530,6 +530,9 @@ const registerUser = asyncHandler( async (req,res)=>{
     })
 } )
 
+now after that go the app.js 
+
+
 
 
 
