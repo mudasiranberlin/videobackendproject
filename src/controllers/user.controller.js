@@ -47,7 +47,7 @@ const registerUser = asyncHandler( async (req,res)=>{
     password,
     username:username.toLowerCase()
    })
-   User.fin
+   User.findById
     
 } )
 
