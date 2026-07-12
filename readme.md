@@ -545,6 +545,9 @@ const router = Router()
 router.route("/register").post(registerUser)
 
 
+now 
+
+
 
 
 
