@@ -51,7 +51,7 @@ const registerUser = asyncHandler( async (req,res)=>{
     "-password -refreshToken"
    )
    if (createdUser) {
-    throw new ApiError(400,"Avatar file is required")
+    throw new ApiError(400,"something went wrong while registering the user")
     
    }
     
