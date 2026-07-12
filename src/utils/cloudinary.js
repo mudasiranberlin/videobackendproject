@@ -70,24 +70,24 @@ const uploadCloudinary = async (localFilePath) => {
 export { uploadCloudinary }
 
 
-cloudinary.config({
-  cloud_name: 'your_cloud_name',
-  api_key: 'your_api_key',
-  api_secret: 'your_api_secret'
-});
+// cloudinary.config({
+//   cloud_name: 'your_cloud_name',
+//   api_key: 'your_api_key',
+//   api_secret: 'your_api_secret'
+// });
 
-const uploadFile = async function (localFilePath) {
-    try {
-        if (!localFilePath) return null
-        const response = await cloudinary.uploader.upload(localFilePath, 
-            { resource_type: "auto" });
-    console.log("File uploaded successfully:", response.url);
-    return response.url;
+// const uploadFile = async function (localFilePath) {
+//     try {
+//         if (!localFilePath) return null
+//         const response = await cloudinary.uploader.upload(localFilePath, 
+//             { resource_type: "auto" });
+//     console.log("File uploaded successfully:", response.url);
+//     return response.url;
         
-    } catch (error) {
-        fs.unlinkSync(localFilePath)
+//     } catch (error) {
+//         fs.unlinkSync(localFilePath)
 
-        return null
-    }
+//         return null
+//     }
     
-}
+// }
