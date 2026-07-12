@@ -21,6 +21,7 @@ const registerUser = asyncHandler( async (req,res)=>{
         $or:[{email},{username}]
     })
     
+    
 } )
 
 export default registerUser
