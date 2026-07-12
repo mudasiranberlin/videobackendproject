@@ -87,7 +87,7 @@ const uploadFile = async function (localFilePath) {
     } catch (error) {
         fs.unlinkSync(localFilePath)
 
-        
+        return null
     }
     
 }
