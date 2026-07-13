@@ -1,4 +1,4 @@
 import mongoose from "mongoose";
 import { Schema } from "mongoose";
 
-const UserSchema = 
+const UserSchema = new 
