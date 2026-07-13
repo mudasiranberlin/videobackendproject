@@ -71,4 +71,5 @@ class ApiError extends Error {
     errors = [],
     statusCode,
   )
+  mes
 }
