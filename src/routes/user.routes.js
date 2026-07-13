@@ -23,4 +23,4 @@ export default router
 import { Router } from "express";
 import registerUser from "../controllers/user.controller.js";
 
-const router from 
+const router from express()
