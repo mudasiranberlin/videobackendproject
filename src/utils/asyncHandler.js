@@ -14,7 +14,7 @@ const asyncHandler = (requestHandler)=>{
     }
 }
 
-export as
+export asyncHandler
 /*
 const asyncHandler = ()=>{}
 const asyncHandler = (fun)=>()=>{}
