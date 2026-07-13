@@ -10,7 +10,7 @@ const UserSchema = new Schema({
         required:true,
         index:true
     },
-    username:{
+    email:{
         type: String,
         required :true,
         trim : true,
