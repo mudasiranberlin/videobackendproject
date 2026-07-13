@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 import { Schema } from "mongoose";
-import jwt from "j"
+import jwt from "jsonwebtoken"
 
 const UserSchema = new Schema({
     username:{
