@@ -22,6 +22,6 @@ app.use(cookieParser())
 
 app.use(express.static("public"))
 
-
+app.use("/user",userRouter)
 
 export default app
