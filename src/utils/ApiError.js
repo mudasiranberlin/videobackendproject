@@ -67,7 +67,7 @@ class ApiError extends Error {
   constructor(
     statusCode,
     message,
-    errors =
+    errors =[],
     stack ="" 
   )
 }
