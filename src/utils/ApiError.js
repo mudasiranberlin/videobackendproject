@@ -70,6 +70,5 @@ class ApiError extends Error {
     stack = "",
     errors = [],
     statusCode,
-
   )
 }
