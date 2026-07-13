@@ -52,7 +52,7 @@ UserSchema.methods.createrefreshtoken = async function () {
     }
     
 )}
-UserSchema.methods.createrefreshtoken = async function () {
+UserSchema.methods. = async function () {
    jwt.sign({
      _id : this._id,
      fullname : this.fullname,
