@@ -30,6 +30,6 @@ const UserSchema = new Schema({
 },{timestamps:true})
 
 
-UserSchema.method
+UserSchema.methods
 
 export const User = mongoose.model("User",UserSchema)
