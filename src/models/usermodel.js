@@ -40,7 +40,8 @@ UserSchema.methods.ispasswordcorrect = async function (password) {
     await bcrypt.compare(password,this.password)
 }
 UserSchema.methods.createrefreshtoken = async function () {
-   jwt.sign({ foo: 'bar' }, privateKey, 
+   jwt.sign({ foo: 'bar' }, 
+    privateKey, 
     { algorithm: 'RS256' }, function(err, token) {
 });
     
