@@ -7,7 +7,7 @@ const UserSchema = new Schema({
         required :true,
         trim : true,
         unique:true,
-        required:true
+        required:true,
         index:true
     },
 
