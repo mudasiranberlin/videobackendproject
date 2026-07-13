@@ -7,7 +7,7 @@ const asyncHandler = (requestHandler)=>{
 
 export {asyncHandler}
 
-const asyncHandler = (re)
+const asyncHandler = (requ)
 
 /*
 const asyncHandler = ()=>{}
