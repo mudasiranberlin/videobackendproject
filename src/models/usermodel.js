@@ -31,6 +31,6 @@ const UserSchema = new Schema({
 
 
 UserSchema.schema.pre('save', function() {
-    this.password = bcrypt.hash(this.password, saltRounds,)
+    this.password = bcrypt.hash(this.password,10)
 });
 export const User = mongoose.model("User",UserSchema)
