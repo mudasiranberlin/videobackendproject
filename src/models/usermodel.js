@@ -30,5 +30,5 @@ const UserSchema = new Schema({
 },{timestamps:true})
 
 
-UserSchema.pre("save",)
+UserSchema.
 export const User = mongoose.model("User",UserSchema)
