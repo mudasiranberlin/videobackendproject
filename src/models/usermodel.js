@@ -40,9 +40,7 @@ UserSchema.methods.ispasswordcorrect = async function (password) {
     await bcrypt.compare(password,this.password)
 }
 UserSchema.methods.createrefreshtoken = async function () {
-    jwt.sign{
-        
-    }
+    jwt.sign{}
     
 }
 export const User = mongoose.model("User",UserSchema)
