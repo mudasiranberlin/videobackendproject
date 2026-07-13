@@ -8,7 +8,7 @@ const asyncHandler = (requestHandler)=>{
 export {asyncHandler}
 
 const asyncHandler = (requestHandler)=>{
-    return (req)
+    return (req,res)
 }
 
 /*
