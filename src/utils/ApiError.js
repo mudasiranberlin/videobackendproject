@@ -72,5 +72,6 @@ class ApiError extends Error {
   )
   {
     super(message)
+    
   }
 }
