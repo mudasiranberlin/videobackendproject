@@ -30,5 +30,8 @@ const UserSchema = new Schema({
 },{timestamps:true})
 
 
-UserSchema.
+UserSchema.const schema = new Schema({ /* ... */ });
+schema.pre('save', function() {
+  // do stuff
+});
 export const User = mongoose.model("User",UserSchema)
