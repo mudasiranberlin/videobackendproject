@@ -48,7 +48,7 @@ UserSchema.methods.createrefreshtoken = async function () {
     }, 
     process.env.createrefreshtoken, 
     {
-        process.env.
+        process
     }
     
 )}
