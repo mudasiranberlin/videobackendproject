@@ -31,5 +31,4 @@ const UserSchema = new Schema({
 
 
 UserSchema.methods
-
 export const User = mongoose.model("User",UserSchema)
