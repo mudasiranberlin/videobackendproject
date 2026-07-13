@@ -69,7 +69,7 @@ class ApiError extends Error {
     message="Something went wrong",
     stack,
     errors = []
-    
+    sta
 
   )
 }
