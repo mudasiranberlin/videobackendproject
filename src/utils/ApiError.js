@@ -71,5 +71,7 @@ class ApiError extends Error {
     errors = [],
     statusCode,
   )
-  super(message)
+  super(message){
+    
+  }
 }
