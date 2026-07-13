@@ -9,7 +9,7 @@ export {asyncHandler}
 
 const asyncHandler = (requestHandler)=>{
     return (req,res,next)=>{
-        Pr
+        Promise.resolve
     }
 }
 /*
