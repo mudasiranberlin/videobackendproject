@@ -75,6 +75,7 @@ class ApiError extends Error {
     this.message = message,
     this.statusCode =this.statusCode,
     this.data = null,
-    this.s
+    this.stack =this.stack,
+    
   }
 }
