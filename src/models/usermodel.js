@@ -10,6 +10,14 @@ const UserSchema = new Schema({
         required:true,
         index:true
     },
+    username:{
+        type: String,
+        required :true,
+        trim : true,
+        unique:true,
+        required:true,
+        index:true
+    },
 
 
 },{timestamps:true})
