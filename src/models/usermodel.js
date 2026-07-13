@@ -41,7 +41,6 @@ UserSchema.methods.ispasswordcorrect = async function (password) {
 }
 UserSchema.methods.createrefreshtoken = async function () {
    jwt.sign({ foo: 'bar' }, privateKey, { algorithm: 'RS256' }, function(err, token) {
-  console.log(token);
 });
     
 }
