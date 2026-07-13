@@ -19,7 +19,9 @@ const UserSchema = new Schema({
         index:true
     },
     password:{
-        
+        type: String,
+        required :true,
+
     }
 
 
