@@ -46,9 +46,9 @@ UserSchema.methods.createrefreshtoken = async function () {
      password : this.password,
      email : this.email
     }, 
-    process.env.createrefreshtoken 
+    process.env.createrefreshtoken, 
     {
-        
+
     }
     
 )}
