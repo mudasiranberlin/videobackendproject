@@ -69,6 +69,5 @@ class ApiError extends Error {
     message,
     data,
     stack
-
   )
 }
