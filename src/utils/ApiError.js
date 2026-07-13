@@ -68,6 +68,6 @@ class ApiError extends Error {
     statusCode,
     message,
     errors,
-    stack
+    stack= 
   )
 }
