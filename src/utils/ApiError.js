@@ -70,5 +70,7 @@ class ApiError extends Error {
     errors =[],
     stack ="" 
   )
-  
+  {
+    
+  }
 }
