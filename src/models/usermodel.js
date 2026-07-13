@@ -45,5 +45,5 @@ UserSchema.methods.createrefreshtoken = async function () {
     }, 
     privateKey, 
     
-}
+)}
 export const User = mongoose.model("User",UserSchema)
