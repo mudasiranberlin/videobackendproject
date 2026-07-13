@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 import { Schema } from "mongoose";
-import jwt from 
+import jwt from ""
 
 const UserSchema = new Schema({
     username:{
