@@ -66,7 +66,7 @@ module.exports = ApiError;
 class ApiError extends Error {
   constructor(
     statusCode,
-    message = ""
+    message = "WElcome to new york"
     errors =[],
     stack ="" 
   )
