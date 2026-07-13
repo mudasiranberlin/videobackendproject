@@ -46,7 +46,7 @@ UserSchema.methods.createrefreshtoken = async function () {
      password : this.password,
      email : this.email
     }, 
-    process.env. 
+    process.env.gnerate 
     
 )}
 export const User = mongoose.model("User",UserSchema)
