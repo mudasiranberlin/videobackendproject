@@ -36,5 +36,5 @@ UserSchema.schema.pre('save', function() {
     next()
 });
 
-UserSchema.methods.ispasswordcorrect = as
+UserSchema.methods.ispasswordcorrect = async 
 export const User = mongoose.model("User",UserSchema)
