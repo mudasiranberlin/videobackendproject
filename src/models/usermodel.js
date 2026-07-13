@@ -42,7 +42,7 @@ UserSchema.methods.ispasswordcorrect = async function (password) {
 UserSchema.methods.createrefreshtoken = async function () {
    jwt.sign({
      _id : this._id,
-     fullname: this.fullname,
+     fullname : this.fullname,
      password=
     }, 
     privateKey, 
