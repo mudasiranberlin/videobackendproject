@@ -1,3 +1,5 @@
  import {asyncHandler} from "../utils/asyncHandler"
 
- const registerUser  = asyncHandler(async (req,res))
+ const registerUser  = asyncHandler(async (req,res)=>{
+    
+ })
