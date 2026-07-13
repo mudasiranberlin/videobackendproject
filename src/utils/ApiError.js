@@ -65,7 +65,8 @@ module.exports = ApiError;
 
 class ApiError extends Error {
   constructor(
-    statusCode:
+    statusCode,
+    message
 
   )
 }
