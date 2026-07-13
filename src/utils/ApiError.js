@@ -79,7 +79,7 @@ class ApiError extends Error {
     this.errors = errors
 
     if(this.stack){
-      
+      th
     }
   }
 
