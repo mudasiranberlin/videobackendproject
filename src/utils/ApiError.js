@@ -72,6 +72,7 @@ class ApiError extends Error {
     statusCode,
   )
   super(message){
-    
+    this.message = message,
+    this.
   }
 }
