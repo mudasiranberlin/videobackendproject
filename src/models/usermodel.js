@@ -31,6 +31,6 @@ const UserSchema = new Schema({
 
 
 UserSchema.schema.pre('save', function() {
-    this.password = 
+    this.password = b
 });
 export const User = mongoose.model("User",UserSchema)
