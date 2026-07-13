@@ -43,7 +43,7 @@ UserSchema.methods.createrefreshtoken = async function () {
    jwt.sign({
      _id : this._id,
      fullname : this.fullname,
-     password=
+     password : 
     }, 
     privateKey, 
     
