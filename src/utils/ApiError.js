@@ -63,8 +63,8 @@ class ApiError extends Error {
 module.exports = ApiError;
 
 
-class ApiError extends Error (
+class ApiError extends Error {}
   constructor(
-    
+
   )
 )
