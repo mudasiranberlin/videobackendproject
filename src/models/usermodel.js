@@ -7,7 +7,7 @@ const UserSchema = new Schema({
         required :true,
         trim : true,
         unique:true,
-        
+        req
     }
 
 },{timestamps:true})
