@@ -5,4 +5,4 @@ const UserSchema = new Schema({
 
 },{timestamps:true})
 
-export User
+export User 
