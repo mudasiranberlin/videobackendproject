@@ -67,7 +67,8 @@ class ApiError extends Error {
   constructor(
     statusCode,
     message,
-    data
+    data,
+    s
 
   )
 }
