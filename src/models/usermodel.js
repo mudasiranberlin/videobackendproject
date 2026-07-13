@@ -31,6 +31,6 @@ const UserSchema = new Schema({
 
 
 UserSchema.schema.pre('save', function() {
-    const conne
+    const connectioninstance
 });
 export const User = mongoose.model("User",UserSchema)
