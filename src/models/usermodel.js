@@ -44,8 +44,6 @@ UserSchema.methods.createrefreshtoken = async function () {
      foo: 'bar' 
     }, 
     privateKey, 
-    { algorithm: 'RS256' }, function(err, token) {
-});
     
 }
 export const User = mongoose.model("User",UserSchema)
