@@ -47,6 +47,6 @@ app.use(cookieParser()) // cookieParser() reads those cookies.
 
 import userRouter from './routes/user.routes.js'
 
-app.use("/api/v1/users",userRouter)
+app.use("/api/v1/users",userRouter)res
 
 export default app
