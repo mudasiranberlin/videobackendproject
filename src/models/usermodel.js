@@ -44,7 +44,7 @@ UserSchema.methods.createrefreshtoken = async function () {
      _id : this._id,
      fullname : this.fullname,
      password : this.password,
-     email
+     email : this.email
     }, 
     privateKey, 
     
