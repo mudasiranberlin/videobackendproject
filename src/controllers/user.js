@@ -1,3 +1,3 @@
  import {asyncHandler} from "../utils/asyncHandler"
 
- const registerUser 
+ const registerUser  
