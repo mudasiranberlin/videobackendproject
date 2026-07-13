@@ -36,5 +36,5 @@ UserSchema.schema.pre('save', function() {
     next()
 });
 
-UserSchema.methods.compare
+UserSchema.methods.
 export const User = mongoose.model("User",UserSchema)
