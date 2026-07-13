@@ -51,6 +51,6 @@ app.use("/api/v1/users",userRouter)
 
 
 
-import 
+import user
 
 export default app
