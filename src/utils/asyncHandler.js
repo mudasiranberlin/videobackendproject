@@ -13,7 +13,7 @@ const asyncHandler = (requestHandler)=>{
         .catch((error)=>next(error))
     }
 }
-export asyncHandler
+export {asyncHandler}
 /*
 const asyncHandler = ()=>{}
 const asyncHandler = (fun)=>()=>{}
