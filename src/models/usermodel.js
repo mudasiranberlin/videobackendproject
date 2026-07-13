@@ -18,6 +18,9 @@ const UserSchema = new Schema({
         required:true,
         index:true
     },
+    password:{
+        
+    }
 
 
 },{timestamps:true})
