@@ -82,7 +82,7 @@ class ApiError extends Error {
       this.stack=this.stack
     }
     else {
-      Error.captureStackTrace(this,this.c)
+      Error.captureStackTrace(this,this.co)
     }
   }
 
