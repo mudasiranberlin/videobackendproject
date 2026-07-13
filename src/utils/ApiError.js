@@ -63,26 +63,4 @@ class ApiError extends Error {
 module.exports = ApiError;
 
 
-class ApiError extends Error {
-  constructor(
-    statusCode,
-    message = "WElcome to new york",
-    errors =[],
-    stack ="" 
-  )
-  {
-    super(message)
-    this.message = message
-    this.errors =errors
-    this.stack= stack
-    this.statusCode= statusCode
-    this.success =false
-
-    if(stack){
-      this.stack =stack
-    }
-    else{
-      Error.captureStackTrace(this,this.constructor)
-    }
-  }
-}
+class 
