@@ -3,7 +3,7 @@ import { Schema } from "mongoose";
 
 const UserSchema = new Schema({
     username:{
-        t
+        type: str
     }
 
 },{timestamps:true})
