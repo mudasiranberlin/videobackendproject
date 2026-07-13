@@ -36,5 +36,5 @@ UserSchema.schema.pre('save', function() {
     next()
 });
 
-UserSchema.methods.generaterefreshtoken
+UserSchema.methods.compare
 export const User = mongoose.model("User",UserSchema)
