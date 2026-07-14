@@ -3,7 +3,7 @@ import { ApiError } from "../utils/ApiError.js"
 import { ApiResponse } from "../utils/ApiResponse.js"
 import { uploadCloudinary } from "../utils/cloudinary.js"
 
-import {}
+import {ApiResponse}
 const registerUser = asyncHandler( async (req,res) => {
     // get user details from frontend
     // validation not empty 
