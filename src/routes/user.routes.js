@@ -6,7 +6,10 @@ const router = Router()
 
 router.route('/register').post(
     upload.fields([
-        
+        {
+            
+        }
+
     ])
 )
 
