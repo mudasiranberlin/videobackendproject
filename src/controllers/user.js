@@ -33,7 +33,7 @@ const registerUser = asyncHandler( async (req,res) => {
     })
 
     if (existedUser) {
-        throw new ApiError(400,"Username already created ")
+        throw new ApiError(400,"Username  email already created ")
     }
 
     
