@@ -1,7 +1,7 @@
 // Import multer library
 // Multer helps us handle file uploads from users
 import multer from "multer";
-import 
+import { asyncHandler } from "../utils/asyncHandler";
 
 
 // Create storage settings for uploaded files
