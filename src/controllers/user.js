@@ -36,7 +36,7 @@ const registerUser = asyncHandler( async (req,res) => {
         throw new ApiError(400,"Username  email already created ")
     }
 
-    const avareq.files?.avatar[0]?.path;
+    const avatarlocalpathreq.files?.avatar[0]?.path;
 
     
 } )
