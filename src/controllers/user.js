@@ -36,6 +36,8 @@ const registerUser = asyncHandler( async (req,res) => {
         throw new ApiError(400,"Username  email already created ")
     }
 
+    re
+
     
 } )
 export {registerUser}
