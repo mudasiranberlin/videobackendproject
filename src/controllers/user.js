@@ -67,6 +67,8 @@ const registerUser = asyncHandler( async (req,res) => {
         throw new ApiError(500,"Error creating the user")
     }
 
+    
+
 
     
 } )
