@@ -9,6 +9,7 @@ const registerUser = asyncHandler( async (req,res) => {
     // create user object entry in db 
     // remove password and refresh token from response 
     // check the user creation 
+    // return yes 
     
 } )
 export {registerUser}
