@@ -18,7 +18,7 @@ const registerUser = asyncHandler( async (req,res) => {
     console.log("email",email);
 
     if (fullname === "") {
-        throw new ApiError(4)
+        throw new ApiError(400,)
     }
 
 
