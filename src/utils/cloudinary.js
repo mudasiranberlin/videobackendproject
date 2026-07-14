@@ -56,7 +56,9 @@ const uploadCloudinary = async (localFilePath) => {
 
         // If upload fails, delete the temporary file
         // because we don't need it anymore
-        fs.unlinkSync(localFilePath)
+        if (fs.existsSync(localFilePath)) {
+    fs.unlinkSync(localFilePath);
+}
 
 
         // Tell the application that upload failed
