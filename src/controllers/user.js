@@ -5,5 +5,6 @@ const registerUser = asyncHandler( async (req,res) => {
     // validation not empty 
     // check if the user is already exist or not username and email
     // check for images check avatar
+    
 } )
 export {registerUser}
