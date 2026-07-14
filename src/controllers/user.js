@@ -1,5 +1,5 @@
 import {asyncHandler} from "../utils/asyncHandler.js"
-import { }
+import { Api }
 
 const registerUser = asyncHandler( async (req,res) => {
     // get user details from frontend
