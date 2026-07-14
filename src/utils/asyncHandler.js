@@ -5,7 +5,7 @@ const asyncHandler = (requestHandler)=>{
     }
 }
 
-export {ApiResponse}
+export {asyncHandler}
 /*
 const asyncHandler = ()=>{}
 const asyncHandler = (fun)=>()=>{}
