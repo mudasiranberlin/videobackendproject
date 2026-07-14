@@ -36,7 +36,7 @@ const registerUser = asyncHandler( async (req,res) => {
         throw new ApiError(400,"Username  email already created ")
     }
 
-    req.files?.avatar.
+    req.files?.avatar.[]
 
     
 } )
