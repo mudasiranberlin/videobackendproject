@@ -1,3 +1,3 @@
 import { Router } from "express";
 
-const rout
+const router 
