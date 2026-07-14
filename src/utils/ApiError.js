@@ -62,7 +62,7 @@ class ApiError extends Error {
 
 // module.exports = ApiError;
 
-export def
+export {ApiResponse}
 
 
 // class ApiError extends Error {
