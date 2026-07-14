@@ -232,4 +232,4 @@ const registerUser = asyncHandler(async (req, res) => {
 // Export this function
 // So we can use it in routes
 
-export  registerUser
+export  {registerUser}
