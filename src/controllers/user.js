@@ -63,7 +63,7 @@ const registerUser = asyncHandler( async (req,res) => {
 
     const createdUser = await User.findByid(user._id).select("-passwors -refreshtoken")
 
-    if () {
+    if (createdUser) {
         
     }
 
