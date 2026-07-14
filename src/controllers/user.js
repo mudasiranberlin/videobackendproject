@@ -45,6 +45,7 @@ const registerUser = asyncHandler( async (req,res) => {
     }
 
     const avatar= await uploadCloudinary(avatarlocalpath) 
+    co
 
 
     
