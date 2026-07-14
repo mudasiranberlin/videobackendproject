@@ -6,6 +6,7 @@ const registerUser = asyncHandler( async (req,res) => {
     // check if the user is already exist or not username and email
     // check for images check avatar
     // upload from cloudnary 
-    // create user object entr
+    // create user object entry in db 
+    
 } )
 export {registerUser}
