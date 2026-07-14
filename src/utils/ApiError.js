@@ -38,52 +38,52 @@ class ApiError extends Error {
     }
 }
 
-// apiError.js
-class ApiError extends Error {
-  constructor(
-    statusCode, 
-    message, 
-    errors = [], 
-    stack = ""
-) {
-    super(message);
-    this.statusCode = statusCode;
-    this.data = null;
-    this.success = false;
-    this.errors = errors;
+// // apiError.js
+// class ApiError extends Error {
+//   constructor(
+//     statusCode, 
+//     message, 
+//     errors = [], 
+//     stack = ""
+// ) {
+//     super(message);
+//     this.statusCode = statusCode;
+//     this.data = null;
+//     this.success = false;
+//     this.errors = errors;
 
-    if (stack) {
-      this.stack = stack;
-    } else {
-      Error.captureStackTrace(this, this.constructor);
-    }
-  }
-}
+//     if (stack) {
+//       this.stack = stack;
+//     } else {
+//       Error.captureStackTrace(this, this.constructor);
+//     }
+//   }
+// }
 
-module.exports = ApiError;
+// module.exports = ApiError;
 
 
-class ApiError extends Error {
-  constructor(
+// class ApiError extends Error {
+//   constructor(
 
-    message="Something went wrong",
-    stack = "",
-    errors = [],
-    statusCode,
-  )
-  super(message){
-    this.message = message,
-    this.statusCode =this.statusCode,
-    this.data = null,
-    this.stack =this.stack,
-    this.errors = errors
+//     message="Something went wrong",
+//     stack = "",
+//     errors = [],
+//     statusCode,
+//   )
+//   super(message){
+//     this.message = message,
+//     this.statusCode =this.statusCode,
+//     this.data = null,
+//     this.stack =this.stack,
+//     this.errors = errors
 
-    if(stack){
-      this.stack=this.stack
-    }
-    else {
-      Error.captureStackTrace(this,this.constructor)
-    }
-  }
+//     if(stack){
+//       this.stack=this.stack
+//     }
+//     else {
+//       Error.captureStackTrace(this,this.constructor)
+//     }
+//   }
 
-}
+// }
