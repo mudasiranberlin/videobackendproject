@@ -1,1 +1,1 @@
-import { async}
+import { asynchandle }
