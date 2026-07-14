@@ -12,7 +12,7 @@ const storage = multer.diskStorage({
     // cb means callback function
     // First value = error (null means no error)
     // Second value = folder location where file will be saved
-    cb(null, '')
+    cb(null, '/')
   },
 
 
