@@ -4,6 +4,7 @@ import { ApiResponse } from "../utils/ApiResponse.js"
 import { uploadCloudinary } from "../utils/cloudinary.js"
 
 import {ApiResponse} from "../utils/cloudinary.js"
+
 const registerUser = asyncHandler( async (req,res) => {
     // get user details from frontend
     // validation not empty 
