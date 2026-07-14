@@ -44,7 +44,7 @@ const registerUser = asyncHandler( async (req,res) => {
         throw new ApiError(409,"Everthing is Error ")
     }
 
-    await uploadCloudinary(avatarlocalpath) 
+     await uploadCloudinary(avatarlocalpath) 
 
 
     
