@@ -32,7 +32,7 @@ const registerUser = asyncHandler( async (req,res) => {
         $or:[{username},{email}]
     })
 
-    if (ex) {
+    if (existedUser) {
         
     }
 
