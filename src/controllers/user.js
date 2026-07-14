@@ -53,6 +53,7 @@ const registerUser = asyncHandler( async (req,res) => {
     }
 
     User.create({
+        fullname,
         
     })
 
