@@ -4,7 +4,7 @@ import {upload} from "../middlewares/multer.middleware.js"
 
 const router = Router()
 
-router.rou
+router.rout
 
 export default router
 
