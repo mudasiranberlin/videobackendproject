@@ -56,7 +56,7 @@ const registerUser = asyncHandler( async (req,res) => {
         fullname,
         avatar:avatar.url,
         coverImage:coverImage?.url || "",
-        
+        email
     })
 
 
