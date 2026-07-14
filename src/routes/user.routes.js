@@ -16,7 +16,7 @@ router.route('/register').post(
 
         }
 
-    ])
+    ]),registerUser
 )
 
 router.route("/register").post(
