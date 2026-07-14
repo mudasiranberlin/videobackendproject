@@ -58,7 +58,7 @@ app.use("/api/v1/users",userRouter);
 
 import userRouter from "./routes/user.routes.js"
 
-app.use("/ap")
+app.use("/api")
 
 
 export default app
