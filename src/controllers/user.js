@@ -54,7 +54,8 @@ const registerUser = asyncHandler( async (req,res) => {
 
     User.create({
         fullname,
-        avatar:avatar.url
+        avatar:avatar.url,
+        
     })
 
 
