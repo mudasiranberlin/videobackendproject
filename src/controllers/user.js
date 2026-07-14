@@ -1,6 +1,6 @@
 import {asyncHandler} from "../utils/asyncHandler.js"
 
 const registerUser = asyncHandler( async (req,res) => {
-    // get user details 
+    // get user details from fro
 } )
 export {registerUser}
