@@ -42,7 +42,6 @@ const registerUser = asyncHandler( async (req,res) => {
 
     if (!avatarlocalpath) {
         throw new ApiError(409,"Everthing is Error ")
-        
     }
 
 
