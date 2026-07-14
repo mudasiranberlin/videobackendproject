@@ -11,7 +11,7 @@ const registerUser = asyncHandler( async (req,res) => {
     // check the user creation 
     // return yes 
 
-    
-    const 
+
+    const  
 } )
 export {registerUser}
