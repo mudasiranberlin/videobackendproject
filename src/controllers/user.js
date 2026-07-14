@@ -64,7 +64,7 @@ const registerUser = asyncHandler( async (req,res) => {
     const createdUser = await User.findByid(user._id).select("-passwors -refreshtoken")
 
     if (!createdUser) {
-        throw new ApiError
+        throw new ApiError()
     }
 
 
