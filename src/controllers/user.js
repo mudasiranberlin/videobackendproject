@@ -10,6 +10,6 @@ const registerUser = asyncHandler( async (req,res) => {
     // remove password and refresh token from response 
     // check the user creation 
     // return yes 
-    
+    const 
 } )
 export {registerUser}
