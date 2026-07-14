@@ -70,7 +70,7 @@ const registerUser = asyncHandler( async (req,res) => {
     }
 
 
-return res.
+return res.st
 
     
 } )
