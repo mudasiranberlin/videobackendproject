@@ -12,6 +12,6 @@ const registerUser = asyncHandler( async (req,res) => {
     // return yes 
 
 
-    const  {fullname,email,}
+    const  {fullname,email,username}
 } )
 export {registerUser}
