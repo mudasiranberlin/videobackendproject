@@ -28,7 +28,9 @@ const registerUser = asyncHandler( async (req,res) => {
         throw new ApiError(400,"All fields are required ")
     }
 
-    User.findOne()
+    User.findOne({
+        
+    })
 
     
 } )
