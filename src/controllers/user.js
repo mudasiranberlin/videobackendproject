@@ -40,7 +40,7 @@ const registerUser = asyncHandler( async (req,res) => {
     const coverimagelocalpath = req.files?.avatar[0]?.path;
 
     if (!avatarlocalpath) {
-        throw new ApiError(409,"Everthing ")
+        throw new ApiError(409,"Everthing is Error ")
         
     }
 
