@@ -1,1 +1,1 @@
-import { asynchandle } from "../utils"
+import { asynchandle } from "../utils/"
