@@ -15,7 +15,7 @@ router.route("/register").post([
             maxCount:1
         }
     ])
-])
+],)
 
 router.route("/register").post(
     upload.fields([
