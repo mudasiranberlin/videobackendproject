@@ -28,6 +28,8 @@ const registerUser = asyncHandler( async (req,res) => {
         throw new ApiError(400,"All fields are required ")
     }
 
+    username.fin
+
     
 } )
 export {registerUser}
