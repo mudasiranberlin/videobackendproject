@@ -26,6 +26,6 @@ app.use(express.static("public"))
 
 app.use("/user",userRouter)
 
-app.use
+app.use()
 
 export default app
