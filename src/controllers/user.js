@@ -29,7 +29,7 @@ const registerUser = asyncHandler( async (req,res) => {
     }
 
     User.findOne({
-        $or:{}
+        $or:[]
     })
 
     
