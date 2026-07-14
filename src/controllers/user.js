@@ -33,7 +33,7 @@ const registerUser = asyncHandler( async (req,res) => {
     })
 
     if (existedUser) {
-        throw new e
+        throw new 
     }
 
     
