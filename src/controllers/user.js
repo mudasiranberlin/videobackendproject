@@ -1,5 +1,5 @@
 import { asyncHandler } from "../utils/asyncHandler"
 
-const registerUser = asyncHandler (async ) => {
+const registerUser = asyncHandler (async () => {
     
 })
