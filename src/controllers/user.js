@@ -22,7 +22,7 @@ const registerUser = asyncHandler( async (req,res) => {
     }
 
     if (
-        [fullname,email,username,password].some((fie))
+        [fullname,email,username,password].some((field))
     ) {
         
     }
