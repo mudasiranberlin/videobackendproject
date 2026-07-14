@@ -553,6 +553,8 @@ http://localhost:8000/api/v1/users/register
 
 now to upload the file we will write a small code for that :
 
+
+
 import { Router } from "express";
 import registerUser from "../controllers/user.controller.js";
 import {upload} from "../middlewares/multer.middleware.js"
