@@ -8,6 +8,7 @@ const registerUser = asyncHandler( async (req,res) => {
     // upload from cloudnary 
     // create user object entry in db 
     // remove password and refresh token from response 
-    // check the user 
+    // check the user creation 
+    
 } )
 export {registerUser}
