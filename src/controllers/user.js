@@ -1,7 +1,7 @@
 import {asyncHandler} from "../utils/asyncHandler.js"
 import { ApiError } from "../utils/ApiError.js"
 import { ApiResponse } from "../utils/ApiResponse.js"
-import {} from "../utils/cloudinary.js"
+import { } from "../utils/cloudinary.js"
 
 const registerUser = asyncHandler( async (req,res) => {
     // get user details from frontend
