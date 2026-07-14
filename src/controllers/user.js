@@ -61,7 +61,7 @@ const registerUser = asyncHandler( async (req,res) => {
         username:username.toLowerCase()
     })
 
-    const await User.findByid(user._id)
+    const createduawait User.findByid(user._id)
 
 
     
