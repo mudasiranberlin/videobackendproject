@@ -62,7 +62,7 @@ const Userschema = new Schema({
 Userschema.pre("save", async function (next) {
 
     // If password was NOT changed, skip hashing
-    if (!this.isModified("password")) return next()
+    if (!this.isModified("password")) return next();
 
     // Convert password into a secure hash
     this.password = await bcrypt.hash(this.password, 10);
