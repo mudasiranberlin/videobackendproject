@@ -51,20 +51,20 @@ const uploadCloudinary = async (localFilePath) => {
         return response;
 
 
-    } catch (error) {
+//     } catch (error) {
 
 
-        // If upload fails, delete the temporary file
-        // because we don't need it anymore
-        if (fs.existsSync(localFilePath)) {
-    fs.unlinkSync(localFilePath);
-}
+//         // If upload fails, delete the temporary file
+//         // because we don't need it anymore
+//         if (fs.existsSync(localFilePath)) {
+//     fs.unlinkSync(localFilePath);
+// }
 
 
-        // Tell the application that upload failed
-        return null
+//         // Tell the application that upload failed
+//         return null
 
-    }
+//     }
 }
 
 
