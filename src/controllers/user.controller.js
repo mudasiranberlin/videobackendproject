@@ -55,8 +55,8 @@ console.log("req.body:", req.body);
 
     const existedUser = await User.findOne({
         $or: [
-            { email },
-            { username }
+            { username },
+            { email }
         ]
     })
 
@@ -102,7 +102,7 @@ console.log("req.body:", req.body);
 
         throw new ApiError(
             400,
-            "Avatar file is required"
+            "Avatar file is required where is the Error"
         )
     }
 

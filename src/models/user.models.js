@@ -31,7 +31,7 @@ const Userschema = new Schema({
 
     avatar: {
         type: String,          // Store profile image URL
-        required: false         // Avatar is required
+        required: true         // Avatar is required
     },
 
     coverImage: {
@@ -59,16 +59,16 @@ const Userschema = new Schema({
 
 
 // Run this before saving the user
-Userschema.pre("save", async function (next) {
+Userschema.pre("save", async function () {
 
     // If password was NOT changed, skip hashing
-    if (!this.isModified("password")) return next();
+    if (!this.isModified("password")) return;
 
     // Convert password into a secure hash
     this.password = await bcrypt.hash(this.password, 10);
 
     // Continue saving
-    next();
+    
 });
 
 
