@@ -106,7 +106,7 @@ const registerUser = asyncHandler(async (req, res) => {
     }
 
 
-
+console.log("req.files:", req.files);
 
     // Upload avatar image to Cloudinary
     // Local computer image
