@@ -31,7 +31,7 @@ const Userschema = new Schema({
 
     avatar: {
         type: String,          // Store profile image URL
-        required: true         // Avatar is required
+        required: false         // Avatar is required
     },
 
     coverImage: {
