@@ -38,8 +38,7 @@ const registerUser = asyncHandler(async (req, res) => {
     // .some() checks if at least one value is empty
     // .trim() removes extra spaces
 
-    if (
-        [fullname, email, username, password].some(
+    if ([fullname, email, username, password].some(
             (field) => field?.trim() === ""
         )
     ) {
