@@ -39,8 +39,7 @@ const registerUser = asyncHandler(async (req, res) => {
     // .trim() removes extra spaces
 
     if ([fullname, email, username, password].some(
-            (field) => field?.trim() === "")
-    ) {
+            (field) => field?.trim() === "")) {
 
         // Stop execution and send error message
         throw new ApiError(
