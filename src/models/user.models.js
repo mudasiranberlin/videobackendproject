@@ -59,7 +59,7 @@ const Userschema = new Schema({
 
 
 // Run this before saving the user
-Userschema.pre("save", async function (next) {
+Userschema.pre("save", async function () {
 
     // If password was NOT changed, skip hashing
     // if (!this.isModified("password")) return next();
