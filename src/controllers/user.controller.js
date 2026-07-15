@@ -82,7 +82,7 @@ const registerUser = asyncHandler(async (req, res) => {
     // = "/uploads/profile.png"
 
     const avatarlocalpath =
-        req.files?.avatar[0]?.path
+        req.files?.avatar[0]?.path;
 
 
 
