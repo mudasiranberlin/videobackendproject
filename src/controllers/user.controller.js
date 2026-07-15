@@ -29,7 +29,8 @@ const registerUser = asyncHandler(async (req, res) => {
 
     const { fullname, username, email, password } = req.body
 
-
+console.log("req.files:", req.files);
+console.log("req.body:", req.body);
 
 
 
