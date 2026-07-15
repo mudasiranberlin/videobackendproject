@@ -18,7 +18,6 @@ import { ApiResponse } from "../utils/ApiResponse.js"
 // asyncHandler will catch any error automatically
 const registerUser = asyncHandler(async (req, res) => {
 
-
     // Getting user information from frontend request body
     // Example:
     // req.body = {

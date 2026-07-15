@@ -29,40 +29,27 @@ const UserSchema = new Schema({
 
 },{timestamps:true})
 
+Userschema.pre("save", async function (next) {
 
-UserSchema.schema.pre('save', function() {
-    if (this.isModified ="password") return next()
-     this.password = await  bcrypt.hash(this.password,10)
-    next()
+    // If password was NOT changed, skip hashing
+    if (!this.isModified("password")) return next();
+
+    // Convert password into a secure hash
+    this.password = await bcrypt.hash(this.password, 10);
+
+    // Continue saving
+    next();
 });
 
-UserSchema.methods.ispasswordcorrect = async function (password) {
-    await bcrypt.compare(password,this.password)
-}
-UserSchema.methods.createrefreshtoken = async function () {
-   jwt.sign({
-     _id : this._id,
-     fullname : this.fullname,
-     password : this.password,
-     email : this.email
-    }, 
-    process.env.createrefreshtoken, 
-    {
-        expiresIn:"1d"
-    }
-    
-)}
-UserSchema.methods.managerefreshtoken = async function () {
-   jwt.sign({
-     _id : this._id,
-     fullname : this.fullname,
-     password : this.password,
-     email : this.email
-    }, 
-    process.env.createrefreshtoken, 
-    {
-        expiresIn:"1d"
-    }
-    
-)}
+
+
+UserSchema.pre('save', async function(next) {
+    if (!this.isModified("password"))return next()
+    this.password = await bcrypt.hash(this.password,10) 
+next()
+
+});
+
+
+
 export const User = mongoose.model("User",UserSchema)
