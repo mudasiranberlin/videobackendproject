@@ -273,7 +273,7 @@ const loginUser = asyncHandler( async (req,res)=>{
         throw new ApiError(401,"Invalid user credentials") 
     }
 
-    await generateAccessAndRefreshTokens(user._id)
+   const  await generateAccessAndRefreshTokens(user._id)
 
 
 
