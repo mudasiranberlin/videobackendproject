@@ -579,7 +579,19 @@ export default router
 
 
 # before go there here i get the error :
+// Run this before saving the user
+Userschema.pre("save", async function () {
 
+    // If password was NOT changed, skip hashing
+    if (!this.isModified("password")) return // next(); next is showing error and also mention no need to send the next in new version of express
+
+    // Convert password into a secure hash
+    this.password = await bcrypt.hash(this.password, 10);
+
+    // Continue saving
+    // next();
+    
+});
 
 
 now after that now we will create the register form :
