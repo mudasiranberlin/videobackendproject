@@ -577,7 +577,7 @@ router.route("/register").post(
 export default router
 
 
-now after that 
+now after that now we will create the register 
 
 
 
