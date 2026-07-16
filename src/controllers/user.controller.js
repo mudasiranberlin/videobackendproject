@@ -105,9 +105,9 @@ console.log("req.body:", req.body);
 
 
     // Getting cover image path
-
-
     
+
+
 
 
     const coverimagelocalpath =
