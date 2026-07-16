@@ -113,6 +113,7 @@ console.log("req.body:", req.body);
 
         if (req.files && Array.isArray(req.files.coverImage) && req.files.coverImage >0) {
             
+            
         }
 
 
