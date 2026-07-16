@@ -226,7 +226,7 @@ console.log("req.files:", req.files);
 })
 
 
-const loginUser = 
+const loginUser = a
 
 
 // Export this function
