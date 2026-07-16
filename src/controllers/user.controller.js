@@ -231,7 +231,7 @@ const loginUser = asyncHandler( async (req,res)=>{
     //check the username or password 
     // find the user
     // check password
-    // 
+    // access and refresh token 
 
     
 })
