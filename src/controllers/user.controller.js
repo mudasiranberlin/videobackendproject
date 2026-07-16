@@ -112,7 +112,7 @@ console.log("req.body:", req.body);
         let coverimagelocalpath;
 
         if (req.files && Array.isArray(req.files.coverImage) && req.files.coverImage >0) {
-            coverimagelocalpath = 
+            coverimagelocalpath = re
             
         }
 
