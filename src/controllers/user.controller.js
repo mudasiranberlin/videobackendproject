@@ -287,6 +287,7 @@ const loginUser = asyncHandler( async (req,res)=>{
         {
             user:logg
         }
+        
     )
    )
 
