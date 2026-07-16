@@ -14,6 +14,8 @@ import { uploadCloudinary } from "../utils/cloudinary.js"
 import { ApiResponse } from "../utils/ApiResponse.js"
 
 
+
+
 // Register User function
 // asyncHandler will catch any error automatically
 const registerUser = asyncHandler(async (req, res) => {
