@@ -300,7 +300,7 @@ const loginUser = asyncHandler( async (req,res)=>{
     
 })
 
-const logoutUser
+const logoutUser = as
 
 
 // Export this function
