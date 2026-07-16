@@ -109,7 +109,7 @@ console.log("req.body:", req.body);
     // const coverimagelocalpath =
     //     req.files?.coverImage[0]?.path
 
-        let coverimagelocalpath
+        let coverimagelocalpath = 
 
 
 
