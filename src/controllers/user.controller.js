@@ -18,6 +18,8 @@ const generateAccessAndRefreshTokens = async (userId)=>{
         const user = await User.findById(userId) 
         const accessToken = user.generateAccessToken()
         const refreshToken = user.generateRefreshToken()
+
+        user.re
         
     } catch (error) {
         throw new ApiError(500,"Something went wrong while generate refresh and access token")
