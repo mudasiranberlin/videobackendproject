@@ -21,6 +21,7 @@ const generateAccessAndRefreshTokens = async (userId)=>{
 
         user.refreshToken=refreshToken
         
+        
     } catch (error) {
         throw new ApiError(500,"Something went wrong while generate refresh and access token")
         
