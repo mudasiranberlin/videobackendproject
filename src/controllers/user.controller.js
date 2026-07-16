@@ -111,7 +111,7 @@ console.log("req.body:", req.body);
 
         let coverimagelocalpath;
 
-        if (condition) {
+        if (re) {
             
         }
 
