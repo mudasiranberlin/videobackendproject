@@ -62,7 +62,7 @@ const Userschema = new Schema({
 Userschema.pre("save", async function () {
 
     // If password was NOT changed, skip hashing
-    if (!this.isModified("password")) return // next();
+    if (!this.isModified("password")) return // next(); next is showing error and also mention no need to send the 
 
     // Convert password into a secure hash
     this.password = await bcrypt.hash(this.password, 10);
