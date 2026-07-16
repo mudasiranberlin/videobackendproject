@@ -241,7 +241,7 @@ const loginUser = asyncHandler( async (req,res)=>{
         throw new ApiError("400","Username or email is required")
     }
 
-    User.find
+    User.findOne
 
     
 })
