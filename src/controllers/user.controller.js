@@ -17,7 +17,7 @@ const generateAccessAndRefreshTokens = async (userId)=>{
     try {
         
     } catch (error) {
-        throw 
+        throw new ApiError
         
     }
 
