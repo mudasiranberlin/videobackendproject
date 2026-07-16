@@ -111,7 +111,7 @@ console.log("req.body:", req.body);
 
         let coverimagelocalpath;
 
-        if (req.fil) {
+        if (req.files) {
             
         }
 
