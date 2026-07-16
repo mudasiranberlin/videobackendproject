@@ -236,7 +236,7 @@ const loginUser = asyncHandler( async (req,res)=>{
     // response 
 
 
-    const {email}=req.body
+    const {email,user}=req.body
 
     
 })
