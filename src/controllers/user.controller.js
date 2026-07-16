@@ -106,7 +106,7 @@ console.log("req.body:", req.body);
 
     // Getting cover image path
 
-    if (cove) {
+    if (coverImage) {
         
     }
 
