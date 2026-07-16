@@ -227,7 +227,8 @@ console.log("req.files:", req.files);
 
 
 const loginUser = asyncHandler( async (req,res)=>{
-    //check the 
+    //check the username and password 
+    
 })
 
 
