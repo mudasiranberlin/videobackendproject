@@ -300,7 +300,7 @@ const loginUser = asyncHandler( async (req,res)=>{
     
 })
 
-const log
+const logout
 
 
 // Export this function
