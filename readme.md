@@ -579,7 +579,10 @@ export default router
 
 
 # before go there here i get the error :
-now we dont have to mention the next
+now we dont have to mention the next()
+
+
+
 // Run this before saving the user
 Userschema.pre("save", async function () {
 
