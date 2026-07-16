@@ -837,7 +837,10 @@ export  {registerUser}
 
 
 
-and then 
+and then send data sing the postman
+
+
+
 
 
 
