@@ -274,7 +274,7 @@ const loginUser = asyncHandler( async (req,res)=>{
     }
 
    const {accessToken,refreshToken} = await generateAccessAndRefreshTokens(user._id)
-   const loggedInUser = await 
+   const loggedInUser = await User.find
 
 
 
