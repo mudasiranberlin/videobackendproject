@@ -17,6 +17,7 @@ const generateAccessAndRefreshTokens = async (userId)=>{
     try {
         
     } catch (error) {
+        throw 
         
     }
 
