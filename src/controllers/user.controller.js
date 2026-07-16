@@ -13,7 +13,7 @@ import { uploadCloudinary } from "../utils/cloudinary.js"
 // Import custom API response format
 import { ApiResponse } from "../utils/ApiResponse.js"
 
-const generateAccess
+const generateAccessAnd
 
 
 // Register User function
