@@ -1,8 +1,6 @@
 // Import asyncHandler to handle errors automatically in async functions
 import { asyncHandler } from "../utils/asyncHandler.js"
 
-
-
 // Import custom error class to create our own errors
 import { ApiError } from "../utils/ApiError.js"
 
