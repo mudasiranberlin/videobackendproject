@@ -845,6 +845,17 @@ now after that
 
 # here we got error undefinded then we use this code instead of previous one 
 
+ // Getting cover image path
+
+    // const coverimagelocalpath =
+    //     req.files?.coverImage[0]?.path
+
+        let coverimagelocalpath;
+
+        if (req.files && Array.isArray(req.files.coverImage) && req.files.coverImage >0) {
+            coverimagelocalpath = req.files.coverImage[0].path
+            
+        }
 
 
 
