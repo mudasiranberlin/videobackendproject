@@ -110,7 +110,8 @@ console.log("req.body:", req.body);
     //     req.files?.coverImage[0]?.path
 
         let coverimagelocalpath;
-        
+
+        if
 
 
 
