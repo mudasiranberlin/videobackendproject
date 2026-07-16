@@ -242,7 +242,7 @@ const loginUser = asyncHandler( async (req,res)=>{
     }
 
     User.findOne({
-        $or:
+        $or:[]
     })
 
     
