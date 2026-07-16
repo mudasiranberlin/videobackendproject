@@ -226,7 +226,7 @@ console.log("req.files:", req.files);
 })
 
 
-const loginUser = a
+const loginUser = asyncHandler
 
 
 // Export this function
