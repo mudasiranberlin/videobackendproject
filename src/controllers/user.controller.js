@@ -245,7 +245,7 @@ const loginUser = asyncHandler( async (req,res)=>{
         $or:[{username},{email}]
     })
 
-    if (user) {
+    if (!user) {
         
     }
 
