@@ -270,9 +270,9 @@ const loginUser = asyncHandler( async (req,res)=>{
         $or:[{username},{email}]
     })
 
-
-
     
+
+
 
     if (!user) {
         throw new ApiError(404,"Usernot existed");
