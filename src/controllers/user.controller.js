@@ -260,6 +260,7 @@ const loginUser = asyncHandler( async (req,res)=>{
     // response 
 
     const {email,username,password} =req.body
+    
 
 
     const {email,username,password}=req.body
