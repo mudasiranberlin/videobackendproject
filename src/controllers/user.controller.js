@@ -274,6 +274,8 @@ const loginUser = asyncHandler( async (req,res)=>{
         throw new ApiError(404,"Usernot existed");
     }
 
+    const is
+
     const isPasswordValid = await user.isPasswordCorrect(password)
 
     if (!isPasswordValid) {
