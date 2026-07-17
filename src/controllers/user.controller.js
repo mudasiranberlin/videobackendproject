@@ -271,7 +271,7 @@ const loginUser = asyncHandler( async (req,res)=>{
     })
 
     if(!user){
-        throw new ApiError(404,"")
+        throw new ApiError(404,"User not found")
     }
 
 
