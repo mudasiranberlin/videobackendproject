@@ -266,7 +266,7 @@ const loginUser = asyncHandler( async (req,res)=>{
         
     }
 
-    const user
+    const user = await 
 
 
     const {email,username,password}=req.body
