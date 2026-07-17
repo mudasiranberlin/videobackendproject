@@ -21,7 +21,7 @@ try {
     const accessToken = user.generateAccessToken()
     const refreshToken = user.generateRefreshToken()
     user.refreshToken = refreshToken
-    user.save({vali})
+    user.save({validateBeforeSave})
     
 } catch (error) {
     throw new ApiError(401,"Error while generating refresh token ")
