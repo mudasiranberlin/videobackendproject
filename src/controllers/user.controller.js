@@ -266,7 +266,9 @@ const loginUser = asyncHandler( async (req,res)=>{
         
     }
 
-    const user = await User.findOne({})
+    const user = await User.findOne({
+        
+    })
 
 
     const {email,username,password}=req.body
