@@ -259,7 +259,7 @@ const loginUser = asyncHandler( async (req,res)=>{
     // send cookies 
     // response 
 
-    const {email,user}
+    const {email,username}
 
 
     const {email,username,password}=req.body
