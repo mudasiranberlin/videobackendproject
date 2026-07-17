@@ -15,7 +15,7 @@ import { ApiResponse } from "../utils/ApiResponse.js"
 
 
 
-const generateAccessAndRefreshTokens = async (use) => {
+const generateAccessAndRefreshTokens = async (userId) => {
 
     
 }
