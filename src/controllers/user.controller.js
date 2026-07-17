@@ -262,7 +262,7 @@ const loginUser = asyncHandler( async (req,res)=>{
     const {email,username,password} =req.body
 
     if (!username && !email) {
-        throw ApiError(400,)
+        throw ApiError(400,"Username a")
         
     }
 
