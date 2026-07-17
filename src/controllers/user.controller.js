@@ -18,6 +18,7 @@ import { ApiResponse } from "../utils/ApiResponse.js"
 const generateAccessAndRefreshTokens = async (userId) => {
 try {
     const user = await user.findById(userId)
+    user.generateAccessToken
     
 } catch (error) {
     throw new ApiError(401,"Error while generating refresh token ")
