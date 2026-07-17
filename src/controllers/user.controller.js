@@ -277,7 +277,7 @@ const loginUser = asyncHandler( async (req,res)=>{
     const isPasswordValid = await user.isPasswordCorrect(password)
 
     if (!isPasswordValid) {
-        
+        throw api
     }
 
     const isPasswordValid = await user.isPasswordCorrect(password)
