@@ -19,7 +19,7 @@ const generateAccessAndRefreshTokens = async (userId) => {
 try {
     
 } catch (error) {
-    throw new ApiError(401,"")
+    throw new ApiError(401,"Error while generating refresh token ")
 }
     
 }
