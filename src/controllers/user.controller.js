@@ -22,6 +22,7 @@ try {
     const refreshToken = user.generateRefreshToken()
     user.refreshToken = refreshToken
     
+    
 } catch (error) {
     throw new ApiError(401,"Error while generating refresh token ")
 }
