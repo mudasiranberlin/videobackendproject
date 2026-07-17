@@ -22,7 +22,7 @@ try {
     const refreshToken = user.generateRefreshToken()
     user.refreshToken = refreshToken
     await user.save({validateBeforeSave: true})
-    return refreshToken
+    return {refreshToken}
     
 } catch (error) {
     throw new ApiError(401,"Error while generating refresh token ")
