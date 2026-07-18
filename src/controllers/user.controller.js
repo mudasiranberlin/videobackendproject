@@ -267,7 +267,11 @@ console.log("req.files:", req.files);
 })
 
 const generateAccessAndRefreshTokens = async (userId) => {
-    tr
+    try {
+        
+    } catch (error) {
+        
+    }
 } 
 
 
