@@ -4,7 +4,7 @@
     const token = req.cookies?.accessToken || req.header
     ("Authorization")?.replace("Bearer","")
 
-    if (token) {
+    if (!token) {
         
     }
 
