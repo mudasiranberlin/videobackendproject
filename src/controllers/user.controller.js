@@ -272,9 +272,9 @@ const loggedInUser = asyncHandler (async (req,res) => {
         throw new ApiError(401,"Usernot found")
     }
 
-    User.findOne(
+    User.findOne({
         $or:[{username},{email}]
-    )
+    })
     
 
     
