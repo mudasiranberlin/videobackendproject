@@ -266,20 +266,6 @@ console.log("req.files:", req.files);
 
 })
 
-const generateAccessAndRefreshTokens = async (userId) => {
-    try {
-        const user = await findById(userId)
-        const refreshToken = user.generateRefreshToken
-        const accessToken = user.generateAccessToken
-        user.refreshToken = refreshToken
-        user.save({validateBeforeSave:false})
-    } catch (error) {
-        throw new ApiError(401,"Not able to generate the refresh token ")
-        return {refreshToken,accessToken}
-        
-    }
-} 
-
 
 
 const loginUser = asyncHandler( async (req,res)=>{
