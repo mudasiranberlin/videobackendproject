@@ -6,7 +6,7 @@ import {asyncHandler} from "../utils/asyncHandler.js"
     ("Authorization")?.replace("Bearer","")
 
     if (!token) {
-        throw new ApiError()
+        throw new ApiError(410)
     }
 
  })
