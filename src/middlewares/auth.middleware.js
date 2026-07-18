@@ -6,7 +6,7 @@ import {asyncHandler} from "../utils/asyncHandler.js"
     ("Authorization")?.replace("Bearer","")
 
     if (!token) {
-        throw new ApiError(401,"")
+        throw new ApiError(401,"Cannot find the resh token")
     }
 
  })
