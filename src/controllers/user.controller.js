@@ -266,7 +266,7 @@ console.log("req.files:", req.files);
 
 })
 
-const generateAccessAndRefreshTokens = asyncHandler 
+const generateAccessAndRefreshTokens = as 
 
 
 
