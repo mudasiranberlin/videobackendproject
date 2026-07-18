@@ -5,7 +5,7 @@
     ("Authorization")?.replace("Bearer","")
 
     if (!token) {
-        
+        throw new 
     }
 
  })
