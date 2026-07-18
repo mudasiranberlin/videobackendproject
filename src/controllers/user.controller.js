@@ -266,6 +266,17 @@ console.log("req.files:", req.files);
 
 })
 
+const loggedInUser = asyncHandler (async (req,res) => {
+    const {username,email,password}= req.body
+    if (!username && !email) {
+        throw new ApiError(401,"Usernot found")
+    }
+    
+
+    
+})
+
+
 
 const loginUser = asyncHandler( async (req,res)=>{
     // req body ->data
