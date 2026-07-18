@@ -277,7 +277,7 @@ const loggedInUser = asyncHandler (async (req,res) => {
     })
 
     if (!user) {
-        throw new ApiError()
+        throw new ApiError(401)
     }
 
     
