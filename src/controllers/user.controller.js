@@ -270,6 +270,7 @@ const generateAccessAndRefreshTokens = async (userId) => {
     try {
         const user = await findById(userId)
         const generateRefreshToken = user.generateRefreshToken
+        const 
         
     } catch (error) {
         throw new ApiError(401,"Not able to generate the refresh token ")
