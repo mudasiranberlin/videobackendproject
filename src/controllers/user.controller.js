@@ -272,7 +272,7 @@ const loggedInUser = asyncHandler (async (req,res) => {
         throw new ApiError(401,"Usernot found")
     }
 
-    
+    user
     
 
     
