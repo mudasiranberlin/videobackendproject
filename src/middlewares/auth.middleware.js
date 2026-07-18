@@ -1,3 +1,3 @@
  import {asyncHandler} from "../utils/asyncHandler.js"
 
- export const verfiy
+ export const verfiyJ
