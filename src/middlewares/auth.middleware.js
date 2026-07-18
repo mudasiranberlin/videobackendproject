@@ -1,5 +1,5 @@
  import {asyncHandler} from "../utils/asyncHandler.js"
 
- export const verfiyJWT = asyncHandler(as(req,res)=>{
+ export const verfiyJWT = asyncHandler(async (req,res)=>{
 
  })
