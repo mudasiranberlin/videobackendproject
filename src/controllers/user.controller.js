@@ -266,28 +266,7 @@ console.log("req.files:", req.files);
 
 })
 
-const loggedInUser = asyncHandler (async (req,res) => {
-    const {username,email,password}= req.body
-    if (!username && !email) {
-        throw new ApiError(401,"Usernot found")
-    }
 
-    const user = User.findOne({
-        $or:[{username},{email}]
-    })
-
-    if (!user) {
-        throw new ApiError(401,"User does not exist")
-    }
-    const isPasswordValid = await user.isPasswordCorrect(password)
-
-    if (!isPasswordValid) {
-        throw new ApiError(401,"Password is incorrect")
-    }
-    
-
-    
-})
 
 
 
