@@ -266,9 +266,7 @@ console.log("req.files:", req.files);
 
 })
 
-const generateAccessAndRefreshTokens = async function name(params) {
-    
-} 
+const generateAccessAndRefreshTokens = as 
 
 
 
