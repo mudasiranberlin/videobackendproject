@@ -269,7 +269,7 @@ console.log("req.files:", req.files);
 const generateAccessAndRefreshTokens = async (userId) => {
     try {
         const user = await findById(userId)
-        const ref = user.generateRefreshToken
+        const refreshToken = user.generateRefreshToken
         const accessToken = user.generateAccessToken
         
     } catch (error) {
