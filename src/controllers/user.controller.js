@@ -275,7 +275,7 @@ const generateAccessAndRefreshTokens = async (userId) => {
         user.save({validateBeforeSave:false})
     } catch (error) {
         throw new ApiError(401,"Not able to generate the refresh token ")
-        return {refreshToken,ac}
+        return {refreshToken,accessToken}
         
     }
 } 
