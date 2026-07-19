@@ -322,7 +322,7 @@ const logoutUser = asyncHandler(async (req,res) => {
    }
    return res
    .status(200)
-   .clearCookie("access")
+   .clearCookie("accessToken")
     
 })
 
