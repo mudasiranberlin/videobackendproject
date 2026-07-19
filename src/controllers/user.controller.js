@@ -283,7 +283,7 @@ const loginUser = asyncHandler( async (req,res)=>{
 
 
    const {accessToken,refreshToken} = await generateAccessAndRefreshTokens(user._id)
-   const log
+   const loggedInUser = await 
 
    const options = {
     httpOnly : true,
