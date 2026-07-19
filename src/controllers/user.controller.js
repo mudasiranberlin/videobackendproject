@@ -313,7 +313,7 @@ const logoutUser = asyncHandler(async (req,res) => {
             }
         },
         {
-            new
+            const name = new type(arguments);
         }
     )
     req.user._id
