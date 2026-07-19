@@ -24,6 +24,7 @@ const generateAccessAndRefreshTokens = async (userId)=>{
 
         await user.save({validateBeforeSave:false})
         
+        
     } catch (error) {
         throw new ApiError(500,"SOmething went wrong generating refresh token")
         
