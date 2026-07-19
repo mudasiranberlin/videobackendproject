@@ -275,8 +275,8 @@ const loginUser = asyncHandler( async (req,res)=>{
     // response 
 
 
-    const loggedInUser = asyncHandler( ()=>{
-        
+    const loggedInUser = asyncHandler( (req,res)=>{
+
     } )
 
 
