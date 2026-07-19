@@ -21,7 +21,6 @@ import {asyncHandler} from "../utils/asyncHandler.js"
         }
     } catch (error) {
         throw new ApiError(405,error?.message || "Invalid access token")
-        
     }
 
  })
