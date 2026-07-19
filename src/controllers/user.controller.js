@@ -16,7 +16,11 @@ import { ApiResponse } from "../utils/ApiResponse.js"
 
 
 const generateAccessAndRefreshTokens = async (userId)=>{
-    try
+    try {
+        
+    } catch (error) {
+        
+    }
 
 }
 
