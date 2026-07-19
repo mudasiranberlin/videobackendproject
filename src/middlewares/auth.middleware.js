@@ -19,7 +19,7 @@ import {asyncHandler} from "../utils/asyncHandler.js"
     const token = req.cookies?.accessToken || req.header
     ("Authorization")?.replace("Bearer","")
     if (!token) {
-        throw new ApiError(401,"cannot find the refrs")
+        throw new ApiError(401,"cannot find the refrsh token")
         
     }
 
