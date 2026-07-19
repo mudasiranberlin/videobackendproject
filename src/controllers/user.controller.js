@@ -292,7 +292,7 @@ const loginUser = asyncHandler( async (req,res)=>{
    }
 
 
-   return res.status(200)
+   return res.status(200).
 
    const options = {
     httpOnly : true,
