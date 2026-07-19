@@ -16,6 +16,6 @@ import {asyncHandler} from "../utils/asyncHandler.js"
  import { asyncHandler } from "../utils/asyncHandler.js"
 
  export const verfiyJWT = asyncHandler( async(req,res,next)=>{
-    const token = req.cookies
+    const token = req.cookies?
 
  } )
