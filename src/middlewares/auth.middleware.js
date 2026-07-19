@@ -8,6 +8,6 @@ import {asyncHandler} from "../utils/asyncHandler.js"
     if (!token) {
         throw new ApiError(401,"Cannot find the resh token")
     }
-    const dejwt.verify(token,process.env.ASSESS_TOKEN_SECRET)
+    const decodedjwt.verify(token,process.env.ASSESS_TOKEN_SECRET)
 
  })
