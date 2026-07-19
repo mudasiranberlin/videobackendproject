@@ -9,7 +9,9 @@ import { User } from "../models/user.models.js"
         ("Authorization")?.replace("Bearer","")
 
 
-        
+        const token =
+    req.cookies?.accessToken ||
+    req.header("Authorization")?.replace("Bearer ", "")
     
         if (!token) {
             throw new ApiError(401,"Cannot find the resh token")
