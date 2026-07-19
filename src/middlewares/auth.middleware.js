@@ -14,7 +14,7 @@ import {asyncHandler} from "../utils/asyncHandler.js"
 
     if (!user) {
 
-        throw new ApiError
+        throw new ApiError()
         
     }
 
