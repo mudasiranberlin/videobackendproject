@@ -17,6 +17,6 @@ router.route("/register").post(
     ]),
     registerUser)
 
-    router.route("login")
+    router.route("login").post
 
 export default router
