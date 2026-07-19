@@ -15,7 +15,8 @@ import {asyncHandler} from "../utils/asyncHandler.js"
     if (!user) {
 
         throw new ApiError(401,"Invalid access token")
-        req.user =
+        req.user =user
+        
         
     }
 
