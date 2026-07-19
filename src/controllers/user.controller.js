@@ -275,28 +275,6 @@ const loginUser = asyncHandler( async (req,res)=>{
     // response 
 
 
-    const loggedInUser = asyncHandler( (req,res)=>{
-
-        const {username,password,email} = req.body
-        if (!username && !password) {
-            throw new ApiError(401,"User does not existed ")
-        } 
-
-        const user = await User.findOne({
-            $or:[{username},{email}]
-        })
-
-        if (!user) {
-            throw new ApiError(401,"User does not existed")
-            
-        }
-        const isPasswordValid = await user.isPasswordCorrect(password)
-        if (!isPasswordValid) {
-            throw new ApiError(401,"Please enter Valid Password")
-            
-        }
-
-    } )
 
 
 
