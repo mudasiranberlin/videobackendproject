@@ -10,6 +10,6 @@ import {asyncHandler} from "../utils/asyncHandler.js"
     }
     const decodedToken = jwt.verify(token,process.env.ASSESS_TOKEN_SECRET)
 
-    const user = await User.FIn
+    const user = await User.find
 
  })
