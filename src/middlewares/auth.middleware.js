@@ -13,7 +13,8 @@ import {asyncHandler} from "../utils/asyncHandler.js"
     const user = await User.findById(decodedToken?._id).select("-password, -refreshToken")
 
     if (!user) {
-        
+
+        throw new ApiError
         
     }
 
