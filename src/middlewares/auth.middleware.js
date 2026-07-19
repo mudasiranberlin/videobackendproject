@@ -13,7 +13,7 @@ import { User } from "../models/user.models.js"
         }
         const decodedToken = jwt.verify(token,process.env.ASSESS_TOKEN_SECRET)
     
-        const user = await User.findById(decodedToken?._id).select("-password, -refreshToken")
+        const user = await User.findById(decodedToken?._id).select("-password -refreshToken")
     
         if (!user) {
     
