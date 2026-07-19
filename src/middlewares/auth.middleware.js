@@ -20,7 +20,7 @@ import {asyncHandler} from "../utils/asyncHandler.js"
             next()
         }
     } catch (error) {
-        throw new ApiError
+        throw new ApiError(405,"")
         
     }
 
