@@ -287,7 +287,7 @@ const loginUser = asyncHandler( async (req,res)=>{
 
 
    const options = {
-    
+    httpOnly
    }
 
    const options = {
