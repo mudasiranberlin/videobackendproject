@@ -14,24 +14,6 @@ import { uploadCloudinary } from "../utils/cloudinary.js"
 import { ApiResponse } from "../utils/ApiResponse.js"
 
 
-
-const generateAccessAndRefreshTokens = async (userId)=>{
-    try {
-        const user = await User.findById(userId)
-        const accessToken = user.generateAccessToken()
-        const refreshToken = user.generateRefreshToken()
-        user.refreshToken = refreshToken
-
-        await user.save({validateBeforeSave:false})
-        return {accessToken,refreshToken}
-        
-    } catch (error) {
-        throw new ApiError(500,"SOmething went wrong generating refresh token")
-        
-    }
-
-}
-
 const generateAccessAndRefreshTokens = async (userId)=>{
     try {
         const user = await User.findById(userId) 
