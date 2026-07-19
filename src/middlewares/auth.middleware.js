@@ -14,7 +14,7 @@ import {asyncHandler} from "../utils/asyncHandler.js"
 
     if (!user) {
 
-        throw new ApiError(401,"I")
+        throw new ApiError(401,"Invalid access token")
         
     }
 
