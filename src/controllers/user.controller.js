@@ -12,9 +12,11 @@ import { uploadCloudinary } from "../utils/cloudinary.js"
 
 // Import custom API response format
 import { ApiResponse } from "../utils/ApiResponse.js"
+import jwt from "jsonwebtoken"
+import mongoose from "mongoose";
 
 
-const generateAccessAndRefreshTokens = async (userId)=>{
+const generateAccessAndRefereshTokens = async (userId)=>{
     try {
         const user = await User.findById(userId) 
         const accessToken = user.generateAccessToken()
@@ -25,10 +27,19 @@ const generateAccessAndRefreshTokens = async (userId)=>{
 
         return {accessToken,refreshToken}
         
-    } catch (error) {
-        throw new ApiError(500,"Something went wrong while generate refresh and access token")
+    // } catch (error) {
+    //     throw new ApiError(500,"Something went wrong while generate refresh and access token")
         
-    }
+    // }
+
+    } catch (error) {
+    console.log("REAL TOKEN ERROR:", error);
+
+    throw new ApiError(
+        500,
+        error?.message || "Something went wrong while generating tokens"
+    );
+}
 
 }
 
@@ -278,7 +289,7 @@ const loginUser = asyncHandler( async (req,res)=>{
         throw new ApiError(401,"Invalid user credentials") 
     }
 
-   const {accessToken,refreshToken} = await generateAccessAndRefreshTokens(user._id)
+   const {accessToken,refreshToken} = await generateAccessAndRefereshTokens(user._id)
    const loggedInUser = await User.findById(user._id).select("-password -refreshToken")
 
    const options = {

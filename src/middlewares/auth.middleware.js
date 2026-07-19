@@ -11,7 +11,7 @@ import { User } from "../models/user.models.js"
         if (!token) {
             throw new ApiError(401,"Cannot find the resh token")
         }
-        const decodedToken = jwt.verify(token,process.env.ASSESS_TOKEN_SECRET)
+        const decodedToken = jwt.verify(token,process.env.ACCESS_TOKEN_SECRET)
     
         const user = await User.findById(decodedToken?._id).select("-password -refreshToken")
     
@@ -22,7 +22,7 @@ import { User } from "../models/user.models.js"
             next()
         }
     } catch (error) {
-        throw new ApiError(405,error?.message || "Invalid access token")
+        throw new ApiError(401,error?.message || "Invalid access token")
     }
 
  })
