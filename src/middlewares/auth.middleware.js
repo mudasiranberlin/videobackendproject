@@ -1,4 +1,4 @@
-import { ApiError } from "../utils/ApiError.js"
+oimport { ApiError } from "../utils/ApiError.js"
 import {asyncHandler} from "../utils/asyncHandler.js"
 
  export const verfiyJWT = asyncHandler(async (req,res,next)=>{
@@ -17,6 +17,6 @@ import {asyncHandler} from "../utils/asyncHandler.js"
 
  export const verfiyJWT = asyncHandler( async(req,res,next)=>{
     const token = req.cookies?.accessToken || req.header
-    ("Au")
+    ("Auth")
 
  } )
