@@ -282,7 +282,9 @@ const loginUser = asyncHandler( async (req,res)=>{
             throw new ApiError(401,"User does not existed ")
         } 
 
-        const user = await User.findOne
+        const user = await User.findOne({
+            
+        })
 
     } )
 
