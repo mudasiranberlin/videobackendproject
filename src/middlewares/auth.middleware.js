@@ -17,7 +17,6 @@ import {asyncHandler} from "../utils/asyncHandler.js"
         throw new ApiError(401,"Invalid access token")
         req.user =user
         next()
-        
     }
 
  })
