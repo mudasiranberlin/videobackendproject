@@ -26,7 +26,7 @@ const generateAccessAndRefereshTokens = async (userId)=>{
     const accessToken = user.generateAccessToken()
 
     user.refreshToken = refreshToken
-    user.save{va}
+    user.save{validateBeforeSave:true}
 
         
     } catch (error) {
