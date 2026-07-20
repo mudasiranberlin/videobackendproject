@@ -312,7 +312,7 @@ const loggedInUser = asyncHandler( async (req,res)=>{
     const {accessToken,refreshToken}= await generateAccessAndRefereshTokens(user_id)
     const loggedInUser =await User.findById(user_id).select("-password -refreshToken")
 
-    const options
+    const options=
     
 }) 
 
