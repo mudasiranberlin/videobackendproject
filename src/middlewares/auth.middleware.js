@@ -38,7 +38,7 @@ import { User } from "../models/user.models.js"
     const decodeToken = jwt.verify(token.process.env.ACCESS_TOKEN_SECRET)
     await User.findById(decodedToken?._id).select("-password -refreshToken")
 
-    if () {
+    if (!user) {
         
     }
  } )
