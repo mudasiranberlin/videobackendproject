@@ -327,7 +327,7 @@ const loggedInUser = asyncHandler( async (req,res)=>{
                 accessToken,
                 refreshToken
             },
-            
+            "User logged in sucessfully"
         )
     )
 
