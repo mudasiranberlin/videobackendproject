@@ -270,7 +270,7 @@ const loggedInUser = asyncHandler( async (req,res)=>{
     }
     
     User.findOne({
-        $or:{username}{,email}
+        $or:{username}{,email}]
     })
 
 }) 
