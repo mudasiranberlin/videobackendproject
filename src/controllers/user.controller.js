@@ -263,7 +263,7 @@ console.log("req.files:", req.files);
 
 
 const loggedInUser = asyncHandler( async (req,res)=>{
-    const {email,user}req.body
+    const {email,username,password}req.body
 
 }) 
 
