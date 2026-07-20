@@ -30,4 +30,4 @@ import { User } from "../models/user.models.js"
 
  // pratice 
 
- export const verfiyJWT = asyncHandler ( async(re) )
+ export const verfiyJWT = asyncHandler ( async(req) )
