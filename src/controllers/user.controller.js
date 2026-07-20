@@ -286,7 +286,7 @@ const loggedInUser = asyncHandler( async (req,res)=>{
 }) 
 
 
-///
+///.    practice 
 
 const loginUser = asyncHandler( async (req,res)=>{
     // req body ->data
