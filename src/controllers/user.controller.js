@@ -317,7 +317,8 @@ const loggedInUser = asyncHandler( async (req,res)=>{
         secure:true
     }
     return res.status(200)
-    .cookie("accesstoken",accessToken)
+    .cookie("accesstoken",accessToken,options)
+    
 
     
 }) 
