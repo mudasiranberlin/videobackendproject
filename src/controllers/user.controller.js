@@ -279,7 +279,7 @@ const loggedInUser = asyncHandler( async (req,res)=>{
 
     const isPasswordValid = await user.isPasswordCorrect(password)
 
-    if (isPasswordValid) {
+    if (!isPasswordValid) {
         
     }
 
