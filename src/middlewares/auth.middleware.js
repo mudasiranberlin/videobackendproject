@@ -35,5 +35,5 @@ import { User } from "../models/user.models.js"
     if (!token) {
         throw new ApiError(401,"Unauthorized request");
     }
-    const decodejwt.verify(token.process.env.ACCESS_TOKEN_SECRET)
+    const decodeTokenjwt.verify(token.process.env.ACCESS_TOKEN_SECRET)
  } )
