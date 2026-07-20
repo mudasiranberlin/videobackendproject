@@ -42,4 +42,5 @@ import { User } from "../models/user.models.js"
         throw new ApiError(401,"invalid Access Token")
     }
     req.user = user;
+    next
  } )
