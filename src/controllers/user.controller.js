@@ -319,7 +319,9 @@ const loggedInUser = asyncHandler( async (req,res)=>{
     return res.status(200)
     .cookie("accesstoken",accessToken,options)
     .cookie("refreshToken",refreshToken,options)
-    .json()
+    .json(
+        new 
+    )
 
     
 }) 
