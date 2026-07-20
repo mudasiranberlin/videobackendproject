@@ -310,7 +310,7 @@ const loggedInUser = asyncHandler( async (req,res)=>{
     }
 
     const {accessToken,refreshToken}= await generateAccessAndRefereshTokens(user_id)
-    User.findById()
+    User.findById(user)
     
 }) 
 
