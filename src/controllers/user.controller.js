@@ -19,7 +19,7 @@ import mongoose from "mongoose";
 
 // pratice again 
 
-const generateAccessAndRefereshTokens = async (User)=>{
+const generateAccessAndRefereshTokens = async (user)=>{
     try {
         const user = findById(userId)
     const refreshToken = user.generateRefreshToken()
