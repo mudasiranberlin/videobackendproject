@@ -336,7 +336,7 @@ const loggedInUser = asyncHandler( async (req,res)=>{
 
 
 const logoutUser = asyncHandler( async (req,res)=>{
-    req.user._id
+    
 
 })
 
