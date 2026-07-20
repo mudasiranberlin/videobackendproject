@@ -266,7 +266,7 @@ const loggedInUser = asyncHandler( async (req,res)=>{
     const {email,username,password}=req.body
 
     if (!username && !password) {
-        throw new ApiError(401,"")
+        throw new ApiError(401,"Please enter the username and email")
         
     }
 
