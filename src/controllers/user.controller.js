@@ -25,7 +25,8 @@ const generateAccessAndRefereshTokens = async (userId)=>{
     const refreshToken = user.generateRefreshToken()
     const accessToken = user.generateAccessToken()
 
-    
+    user.refreshToken = refreshToken
+    user.save
 
         
     } catch (error) {
