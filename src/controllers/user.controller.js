@@ -316,7 +316,7 @@ const loggedInUser = asyncHandler( async (req,res)=>{
         httpOnly:true,
         secure:true
     }
-    return 
+    return res.
     
 }) 
 
