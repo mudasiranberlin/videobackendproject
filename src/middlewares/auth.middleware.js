@@ -45,7 +45,7 @@ import { User } from "../models/user.models.js"
         req.user = user;
         next()
     } catch (error) {
-        throw new ApiError()
+        throw new ApiError(401,"")
         
     }
  } )
