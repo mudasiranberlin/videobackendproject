@@ -344,7 +344,20 @@ const logoutUser = asyncHandler( async (req,res)=>{
         httpOnly:true,
         secure:true
     }
-    retu
+    return res.status(200)
+    .cookie("accesstoken",accessToken,options)
+    .cookie("refreshToken",refreshToken,options)
+    .json(
+        new ApiResponse(
+            200,
+            {
+                user:loggedInUser,
+                accessToken,
+                refreshToken
+            },
+            "User logged in sucessfully"
+        )
+    )
 
 })
 
