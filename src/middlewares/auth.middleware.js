@@ -34,6 +34,5 @@ import { User } from "../models/user.models.js"
     const token = req.cookie?.accessToken || req.header("Authorization")?.replace("Bearer ","")
     if (token) {
         throw new ApiError(401,"Unauthorized request");
-        
     }
  } )
