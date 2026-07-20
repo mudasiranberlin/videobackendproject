@@ -326,7 +326,8 @@ const loggedInUser = asyncHandler( async (req,res)=>{
                 user:loggedInUser,
                 accessToken,
                 refreshToken
-            }
+            },
+            
         )
     )
 
