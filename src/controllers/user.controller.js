@@ -285,8 +285,6 @@ console.log("req.files:", req.files);
 
 })
 
-
-
 ///.    practice 
 
 const loginUser = asyncHandler( async (req,res)=>{
