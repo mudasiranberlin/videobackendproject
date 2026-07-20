@@ -20,6 +20,7 @@ import mongoose from "mongoose";
 // pratice again 
 
 const generateAccessAndRefereshTokens = async (User)=>{
+    try
 
 }
 
