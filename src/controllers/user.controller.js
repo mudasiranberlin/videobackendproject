@@ -342,7 +342,7 @@ const logoutUser = asyncHandler( async (req,res)=>{
                 refreshToken :undefined
             }
         },
-        
+        new true
     )
 
 })
