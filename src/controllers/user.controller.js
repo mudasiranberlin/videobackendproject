@@ -27,19 +27,19 @@ const generateAccessAndRefereshTokens = async (userId)=>{
 
         return {accessToken,refreshToken}
         
-    // } catch (error) {
-    //     throw new ApiError(500,"Something went wrong while generate refresh and access token")
-        
-    // }
-
     } catch (error) {
-    console.log("REAL TOKEN ERROR:", error);
+        throw new ApiError(500,"Something went wrong while generate refresh and access token")
+        
+    }
 
-    throw new ApiError(
-        500,
-        error?.message || "Something went wrong while generating tokens"
-    );
-}
+//     } catch (error) {
+//     console.log("REAL TOKEN ERROR:", error);
+
+//     throw new ApiError(
+//         500,
+//         error?.message || "Something went wrong while generating tokens"
+//     );
+// }
 
 }
 
