@@ -19,22 +19,6 @@ import mongoose from "mongoose";
 
 // pratice again 
 
-const generateAccessAndRefereshTokens = async (userId)=>{
-    try {
-        const user = findById(userId)
-    const refreshToken = user.generateRefreshToken()
-    const accessToken = user.generateAccessToken()
-
-    user.refreshToken = refreshToken
-    await user.save({validateBeforeSave:true})
-    return (refreshToken,accessToken)
-        
-    } catch (error) {
-        throw new ApiError(401,"Unable to gnerate the refresh token ")
-    }
-
-}
-
 
 
 // pratice again 
