@@ -282,7 +282,6 @@ const loggedInUser = asyncHandler( async (req,res)=>{
     if (!isPasswordValid) {
         throw new ApiError(401,"password incorrect")  
     }
-
 }) 
 
 const loginUser = asyncHandler( async (req,res)=>{
