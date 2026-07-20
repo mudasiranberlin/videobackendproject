@@ -19,7 +19,7 @@ import mongoose from "mongoose";
 
 // pratice again 
 
-const generateAccessAndRefereshTokens = 
+const generateAccessAndRefereshTokens = as
 
 
 
