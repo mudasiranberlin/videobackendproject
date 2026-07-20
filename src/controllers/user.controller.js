@@ -261,6 +261,8 @@ console.log("req.files:", req.files);
 
 })
 
+// pratice 
+
 
 const loggedInUser = asyncHandler( async (req,res)=>{
     const {email,username,password}=req.body
