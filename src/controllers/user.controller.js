@@ -312,10 +312,8 @@ const loggedInUser = asyncHandler( async (req,res)=>{
     const {accessToken,refreshToken}= await generateAccessAndRefereshTokens(user_id)
     const loggedInUser =await User.findById(user_id).select("-password -refreshToken")
 
-    const options={
-        httpOnly:true,
-        secure:true
-    }
+    
+     
     return res.status(200)
     .cookie("accesstoken",accessToken,options)
     .cookie("refreshToken",refreshToken,options)
@@ -348,7 +346,7 @@ const logoutUser = asyncHandler( async (req,res)=>{
         httpOnly:true,
         secure:true
     }
-    res
+    retu
 
 })
 
