@@ -31,5 +31,5 @@ import { User } from "../models/user.models.js"
  // pratice 
 
  export const verfiyJWT = asyncHandler ( async(req,res,next)=>{
-    req.cookie?.accessToken || req.header("Authorization")?.replace
+    req.cookie?.accessToken || req.header("Authorization")?.replace("b")
  } )
