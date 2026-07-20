@@ -273,6 +273,8 @@ const loggedInUser = asyncHandler( async (req,res)=>{
         $or:[{username},{email}]
     })
 
+    if
+
 }) 
 
 const loginUser = asyncHandler( async (req,res)=>{
