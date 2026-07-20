@@ -28,8 +28,6 @@ const generateAccessAndRefereshTokens = async (userId)=>{
     user.refreshToken = refreshToken
     await user.save({validateBeforeSave:true})
     return (refreshToken,accessToken)
-
-
         
     } catch (error) {
         throw new ApiError(401,"Unable to gnerate the refresh token ")
