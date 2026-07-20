@@ -283,7 +283,7 @@ const loggedInUser = asyncHandler( async (req,res)=>{
         throw new ApiError(401,"password incorrect")  
     }
     const refreshToken = user.generateRefreshToken()
-    const accessToken = user.
+    const accessToken = user.gen
 }) 
 
 const loginUser = asyncHandler( async (req,res)=>{
