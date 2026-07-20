@@ -19,7 +19,9 @@ import mongoose from "mongoose";
 
 // pratice again 
 
-const generateAccessAndRefereshTokens = as
+const generateAccessAndRefereshTokens = async ()=>{
+    
+}
 
 
 
