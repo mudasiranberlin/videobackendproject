@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Login</title>
+    <title>User Authentication</title>
 
 ```
 <style>
@@ -20,15 +20,15 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100vh;
+        min-height: 100vh;
     }
 
     .container {
         width: 400px;
-        background: #fff;
+        background: white;
         padding: 25px;
         border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     }
 
     h2 {
@@ -73,6 +73,21 @@
     .logout-btn:hover {
         background: #a71d2a;
     }
+
+    .switch-btn {
+        background: transparent;
+        color: #007BFF;
+        margin-top: 10px;
+    }
+
+    .switch-btn:hover {
+        background: transparent;
+        color: #0056b3;
+    }
+
+    .hidden {
+        display: none;
+    }
 </style>
 ```
 
@@ -83,59 +98,200 @@
 <div class="container">
 
 ```
-<h2>User Login</h2>
+<!-- LOGIN FORM -->
+<div id="loginSection">
 
-<form
-    action="http://localhost:8000/api/v1/users/login"
-    method="POST"
->
+    <h2>User Login</h2>
 
-    <!-- Email or Username -->
-    <label for="email">Email or Username</label>
-
-    <input
-        type="text"
-        id="email"
-        name="email"
-        placeholder="Enter email or username"
-        required
+    <form
+        action="http://localhost:8000/api/v1/users/login"
+        method="POST"
     >
 
-    <!-- Password -->
-    <label for="password">Password</label>
+        <label for="loginEmail">
+            Email or Username
+        </label>
 
-    <input
-        type="password"
-        id="password"
-        name="password"
-        placeholder="Enter your password"
-        required
-    >
+        <input
+            type="text"
+            id="loginEmail"
+            name="email"
+            placeholder="Enter email or username"
+            required
+        >
 
-    <!-- Login Button -->
-    <button type="submit">
-        Login
-    </button>
+        <label for="loginPassword">
+            Password
+        </label>
 
-</form>
+        <input
+            type="password"
+            id="loginPassword"
+            name="password"
+            placeholder="Enter your password"
+            required
+        >
 
-<!-- Logout Button -->
-<form
-    action="http://localhost:8000/api/v1/users/logout"
-    method="POST"
->
+        <button type="submit">
+            Login
+        </button>
+
+    </form>
 
     <button
-        type="submit"
-        class="logout-btn"
+        class="switch-btn"
+        onclick="showRegister()"
     >
-        Logout
+        Don't have an account? Create Account
     </button>
 
-</form>
+    <form
+        action="http://localhost:8000/api/v1/users/logout"
+        method="POST"
+    >
+
+        <button
+            type="submit"
+            class="logout-btn"
+        >
+            Logout
+        </button>
+
+    </form>
+
+</div>
+
+
+<!-- REGISTER FORM -->
+<div id="registerSection" class="hidden">
+
+    <h2>Create Account</h2>
+
+    <form
+        action="http://localhost:8000/api/v1/users/register"
+        method="POST"
+        enctype="multipart/form-data"
+    >
+
+        <label for="fullname">
+            Full Name
+        </label>
+
+        <input
+            type="text"
+            id="fullname"
+            name="fullname"
+            placeholder="Enter your full name"
+            required
+        >
+
+        <label for="username">
+            Username
+        </label>
+
+        <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Enter your username"
+            required
+        >
+
+        <label for="registerEmail">
+            Email
+        </label>
+
+        <input
+            type="email"
+            id="registerEmail"
+            name="email"
+            placeholder="Enter your email"
+            required
+        >
+
+        <label for="registerPassword">
+            Password
+        </label>
+
+        <input
+            type="password"
+            id="registerPassword"
+            name="password"
+            placeholder="Enter your password"
+            required
+        >
+
+        <label for="avatar">
+            Avatar Image
+        </label>
+
+        <input
+            type="file"
+            id="avatar"
+            name="avatar"
+            accept="image/*"
+            required
+        >
+
+        <label for="coverImage">
+            Cover Image (Optional)
+        </label>
+
+        <input
+            type="file"
+            id="coverImage"
+            name="coverImage"
+            accept="image/*"
+        >
+
+        <button type="submit">
+            Create Account
+        </button>
+
+    </form>
+
+    <button
+        class="switch-btn"
+        onclick="showLogin()"
+    >
+        Already have an account? Login
+    </button>
+
+</div>
 ```
 
 </div>
+
+<script>
+
+    function showRegister() {
+
+        document
+            .getElementById("loginSection")
+            .classList
+            .add("hidden");
+
+        document
+            .getElementById("registerSection")
+            .classList
+            .remove("hidden");
+    }
+
+
+    function showLogin() {
+
+        document
+            .getElementById("registerSection")
+            .classList
+            .add("hidden");
+
+        document
+            .getElementById("loginSection")
+            .classList
+            .remove("hidden");
+    }
+
+</script>
 
 </body>
 </html>
