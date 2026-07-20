@@ -316,7 +316,7 @@ const loggedInUser = asyncHandler( async (req,res)=>{
         httpOnly:true,
         secure:true
     }
-    return res.status(200).cookie
+    return res.status(200).cookie("accesstoken")
     
 }) 
 
