@@ -21,9 +21,10 @@ import mongoose from "mongoose";
 
 const generateAccessAndRefereshTokens = async (User)=>{
     try {
+        
     const refreshToken = user.generateRefreshToken()
     const accessToken = user.generateAccessToken()
-    
+
         
     } catch (error) {
         throw new ApiError(401,"Unable to gnerate the refresh token ")
