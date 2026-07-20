@@ -19,8 +19,8 @@ import mongoose from "mongoose";
 
 // pratice again 
 
-const generateAccessAndRefereshTokens = async ()=>{
-    
+const generateAccessAndRefereshTokens = async (user)=>{
+
 }
 
 
