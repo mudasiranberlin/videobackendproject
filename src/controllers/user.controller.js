@@ -262,7 +262,7 @@ console.log("req.files:", req.files);
 })
 
 
-const lo
+const loggedInUser = asyncHandler
 
 const loginUser = asyncHandler( async (req,res)=>{
     // req body ->data
