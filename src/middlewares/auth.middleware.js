@@ -32,7 +32,7 @@ import { User } from "../models/user.models.js"
 
  export const verfiyJWT = asyncHandler ( async(req,res,next)=>{
     req.cookie?.accessToken || req.header("Authorization")?.replace("Bearer ","")
-    if () {
+    if (t) {
         
     }
  } )
