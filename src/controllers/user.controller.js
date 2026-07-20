@@ -309,7 +309,7 @@ const loggedInUser = asyncHandler( async (req,res)=>{
         throw new ApiError(401,"password incorrect")  
     }
 
-    const {accessToken,refreshToken}=generateAccessAndRefereshTokens(user_id)
+    const {accessToken,refreshToken}= await generateAccessAndRefereshTokens(user_id)
     
 }) 
 
