@@ -23,7 +23,7 @@ const generateAccessAndRefereshTokens = async (User)=>{
     try {
         
     } catch (error) {
-        throw new ApiError(401,"")
+        throw new ApiError(401,"Unable to gnerate the refresh token ")
     }
 
 }
