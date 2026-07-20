@@ -351,9 +351,6 @@ const logoutUser = asyncHandler( async (req,res)=>{
         new ApiResponse(
             200,
             {
-                user:loggedInUser,
-                accessToken,
-                refreshToken
             },
             "User loggedout  in sucessfully"
         )
