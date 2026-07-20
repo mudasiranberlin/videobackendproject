@@ -39,6 +39,6 @@ import { User } from "../models/user.models.js"
     await User.findById(decodedToken?._id).select("-password -refreshToken")
 
     if (!user) {
-        throw new ApiError(401,)
+        throw new ApiError(401,"in")
     }
  } )
