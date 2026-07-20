@@ -36,4 +36,5 @@ import { User } from "../models/user.models.js"
         throw new ApiError(401,"Unauthorized request");
     }
     const decodeToken = jwt.verify(token.process.env.ACCESS_TOKEN_SECRET)
+    
  } )
