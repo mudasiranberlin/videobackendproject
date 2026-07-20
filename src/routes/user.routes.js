@@ -21,6 +21,6 @@ router.route("/register").post(
     router.route("/login").post(loginUser)
     router.route("/logout").post(verfiyJWT,logoutUser)
 
-    router.route("/login").post(verfiyJWT,loginou)
+    router.route("/login").post(verfiyJWT,logi)
 
 export default router
