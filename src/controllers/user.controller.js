@@ -355,7 +355,7 @@ const logoutUser = asyncHandler( async (req,res)=>{
                 accessToken,
                 refreshToken
             },
-            "User logged in sucessfully"
+            "User loggedout  in sucessfully"
         )
     )
 
