@@ -285,6 +285,9 @@ const loggedInUser = asyncHandler( async (req,res)=>{
     
 }) 
 
+
+///
+
 const loginUser = asyncHandler( async (req,res)=>{
     // req body ->data
     //check the username or password 
