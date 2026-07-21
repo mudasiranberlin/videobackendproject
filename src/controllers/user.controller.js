@@ -385,7 +385,7 @@ const refreshAccessToken = asyncHandler( async(req,res)=>{
     .cookie("accessToken",accessToken,options)
     .cookie("refreshToken",refreshToken,options)
     .json(
-        new ApiError
+        new api
     )
 
 } )
