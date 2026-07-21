@@ -362,7 +362,7 @@ const refreshAccessToken = asyncHandler( async(req,res)=>{
 
         
     }
-    const decodedTokenjwt.verify(
+    const decodedToken= jwt.verify(
         incomingRefreshToken,
         process.env.REFRESH_TOKEN_SECRET
     )
