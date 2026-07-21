@@ -383,7 +383,7 @@ const refreshAccessToken = asyncHandler( async(req,res)=>{
     return res
     .status(200)
     .cookie("accessToken",accessToken,options)
-    .cookie(re,refreshToken,options)
+    .cookie(refre,refreshToken,options)
 
 } )
 
