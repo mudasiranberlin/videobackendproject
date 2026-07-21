@@ -379,7 +379,7 @@ const refreshAccessToken = asyncHandler( async(req,res)=>{
         httpOnly: true,
         secure:true
     }
-    const await generateAccessAndRefereshTokens(user._id)
+    const {accessToken} await generateAccessAndRefereshTokens(user._id)
     return res
     .status(200)
     .cookie("accessToken",accessToken,options)
