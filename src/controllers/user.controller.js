@@ -355,7 +355,7 @@ const logoutUser = asyncHandler(async (req,res) => {
 // So we can use it in routes
 // 
 
-const refreshAccessToken = as
+const refreshAccessToken = asyncHandler
 
 export  {
     registerUser,
