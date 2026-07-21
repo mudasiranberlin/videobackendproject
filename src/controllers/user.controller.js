@@ -375,7 +375,7 @@ const refreshAccessToken = asyncHandler( async(req,res)=>{
         throw new ApiError(401,"refresh token expired or used ")
         
     }
-    const op
+    const options
 
 } )
 
