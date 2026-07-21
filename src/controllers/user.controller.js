@@ -382,7 +382,7 @@ const refreshAccessToken = asyncHandler( async(req,res)=>{
     await generateAccessAndRefereshTokens(user._id)
     return res
     .status(200)
-    .cookie
+    .cookie()
 
 } )
 
