@@ -371,7 +371,7 @@ const refreshAccessToken = asyncHandler( async(req,res)=>{
     if (!user) {
         throw new ApiError(401,"Invalid refresh token")
     }
-    if (incomingRefreshToken !== refreshToken) {
+    if (incomingRefreshToken !== userrefreshToken) {
         
     }
 
