@@ -20,6 +20,6 @@ router.route("/register").post(
 
     router.route("/login").post(loginUser)
     router.route("/logout").post(verfiyJWT,logoutUser)
-    router.route("/refreshAccessToken").post(refreshAccessToken)
+    router.route("/refreshToken").post(refreshAccessToken)
 
 export default router
