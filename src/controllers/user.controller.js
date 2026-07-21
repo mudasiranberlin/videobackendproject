@@ -355,6 +355,8 @@ const logoutUser = asyncHandler(async (req,res) => {
 // So we can use it in routes
 // 
 
+
+
 export  {
     registerUser,
     loginUser,
