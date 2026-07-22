@@ -404,7 +404,7 @@ const refreshAccessToken = asyncHandler( async (req,res)=>{
         incomingRefreshToken,
         process.env.REFRESH_TOKEN_SECRET
     )
-    User.findById(decodedToken?._id)
+    const User.findById(decodedToken?._id)
 })
 
 export  {
