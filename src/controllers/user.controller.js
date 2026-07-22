@@ -412,6 +412,7 @@ const refreshAccessToken = asyncHandler( async (req,res)=>{
         throw new ApiError(401,"Invalid Refresh Token Request ")  
     }
     const options={
+        httpOnly:true,
         
     }
 })
