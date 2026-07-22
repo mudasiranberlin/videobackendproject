@@ -405,7 +405,7 @@ const refreshAccessToken = asyncHandler( async (req,res)=>{
         process.env.REFRESH_TOKEN_SECRET
     )
     const user = User.findById(decodedToken?._id)
-    if (!incomingRefreshToken) {
+    if (!user) {
         throw new ApiError(401,"Un Authorized Request ")     
     }
 })
