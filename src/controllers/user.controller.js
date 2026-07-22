@@ -400,7 +400,7 @@ const refreshAccessToken = asyncHandler( async (req,res)=>{
     if (!incomingRefreshToken) {
         throw new ApiError(401,"Un Authorized Request ")     
     }
-    jwt.verify(
+    const decodedTokenjwt.verify(
         incomingRefreshToken,
         process.env.REFRESH_TOKEN_SECRET
     )
