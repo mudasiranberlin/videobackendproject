@@ -396,7 +396,7 @@ const refreshAccessToken = asyncHandler( async(req,res)=>{
 } )
 
 const refreshAccessToken = asyncHandler( async (req,res)=>{
-    req.c
+    req.cookies
     const incomingRefreshToken = req.body.refreshToken
 })
 
