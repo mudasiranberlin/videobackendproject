@@ -396,7 +396,7 @@ const refreshAccessToken = asyncHandler( async(req,res)=>{
 } )
 
 const refreshAccessToken = asyncHandler( async (req,res)=>{
-    const incomingRefreshToken = req.bod
+    const incomingRefreshToken = req.body.
 })
 
 export  {
