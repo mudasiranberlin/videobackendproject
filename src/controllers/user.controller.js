@@ -417,7 +417,7 @@ const refreshAccessToken = asyncHandler( async (req,res)=>{
     }
     generateAccessAndRefereshTokens(user._id)
     return res
-    .status(2)
+    .status(200)
 })
 
 export  {
