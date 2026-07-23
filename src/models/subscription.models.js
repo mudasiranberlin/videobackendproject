@@ -13,6 +13,6 @@ const SubscriptionSchema = new Schema(
 
   },
   { timestamps: true }
-);
+);re
 
 export const Subscription = mongoose.model("Subscription",SubscriptionSchema);
