@@ -1,4 +1,4 @@
-import mongoose, {S} from "mongoose";
+import mongoose, {Schema} from "mongoose";
 
 const SubscriptionSchema = new mongoose.Schema(
   {
