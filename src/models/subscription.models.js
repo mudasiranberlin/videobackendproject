@@ -1,1 +1,1 @@
-import m
+import mongoose from "mongoose";
