@@ -1,3 +1,3 @@
 import mongoose from "mongoose";
 
-const SubscriptionScheme = new mongoose.Schema({},{})
+const SubscriptionScheme = new mongoose.Schema({},{tim})
