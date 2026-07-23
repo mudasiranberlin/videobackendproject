@@ -421,7 +421,9 @@ const refreshAccessToken = asyncHandler( async (req,res)=>{
         .status(200)
         .cookies(accessToken)
         .cookies(refreshToken)
-        .json()
+        .json(
+            
+        )
     } catch (error) {
         throw new ApiResponse(401,error?.message || "Invalid refresh token")
         
