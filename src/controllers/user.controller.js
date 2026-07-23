@@ -404,6 +404,7 @@ const changeCurrentPassword = asyncHandler(async (req,res)=>{
         throw new ApiError(401,"Please enter correct Password")
     }
     user.password = new password
+    user.save
 })
 
 export  {
