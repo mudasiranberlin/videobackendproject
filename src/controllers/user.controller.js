@@ -437,7 +437,7 @@ const refreshAccessToken = asyncHandler(async(req,res)=>{
     )
     const user = await User.findById(decodedToken?._id)
 
-    if (user) {
+    if (!user) {
         
     }
 })
