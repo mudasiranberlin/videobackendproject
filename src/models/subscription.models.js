@@ -1,3 +1,3 @@
 import mongoose from "mongoose";
 
-const SubscriptionSc
+const SubscriptionScheme
