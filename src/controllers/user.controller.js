@@ -406,7 +406,7 @@ const changeCurrentPassword = asyncHandler(async (req,res)=>{
     user.password = new password
     await user.save({validateBeforeSave:false})
 
-    return res.status(200).json(new ap)
+    return res.status(200).json(new api)
 })
 
 export  {
