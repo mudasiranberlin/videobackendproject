@@ -435,7 +435,7 @@ const refreshAccessToken = asyncHandler(async(req,res)=>{
         incomingRefreshToken,
         process.env.REFRESH_TOKEN_SECRET
     )
-    User.findById(de)
+    User.findById(decodedToken)
 })
 
 export  {
