@@ -4,7 +4,7 @@ const SubscriptionScheme = new mongoose.Schema({
 
     subscriber:{
         type:String,
-        subscr
+        subscrribing
     }
 
 },{timestamps:true})
