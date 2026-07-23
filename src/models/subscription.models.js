@@ -1,4 +1,4 @@
-```javascript
+
 import mongoose from "mongoose";
 
 const SubscriptionSchema = new mongoose.Schema(
