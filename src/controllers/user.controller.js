@@ -399,7 +399,7 @@ const refreshAccessToken = asyncHandler( async(req,res)=>{
 const changeCurrentPassword = asyncHandler(async (req,res)=>{
     const {oldPassword,newPassword} = req.body
     const user =  await User.findById(req.user?.id)
-    user.
+    user.isPasswordCorrect
 })
 
 export  {
