@@ -414,6 +414,9 @@ const getCurrentUser = asyncHandler(async(req,res)=>{
     .status(200)
     .json(200,req.user,"current user fetched sucessfully")
 })
+
+
+
 export  {
     registerUser,
     loginUser,
