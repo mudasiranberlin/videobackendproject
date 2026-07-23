@@ -403,7 +403,7 @@ const changeCurrentPassword = asyncHandler(async (req,res)=>{
     if (!isPasswordCorrect) {
         throw new ApiError(401,"Please enter correct Password")
     }
-    user.password = newpassword
+    user.password = newPassword
     await user.save({validateBeforeSave:false})
 
     return res.status(200).json(new ApiResponse(200,{},"password changed sucessfully"))
