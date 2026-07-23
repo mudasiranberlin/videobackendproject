@@ -425,44 +425,6 @@ const refreshAccessToken = asyncHandler( async (req,res)=>{
     })
 })
 
-
-const refreshAccessToken = asyncHandler(async(req,res)=>{
-    const incomingRefreshToken= req.cookie.refreshToken || req.body.refreshToken
-    if (incomingRefreshToken) {
-        throw new ApiError(401,"Unatorized access")
-    }
-    const decodedToken = jwt.verify(
-        incomingRefreshToken,
-        process.env.REFRESH_TOKEN_SECRET
-    )
-    const user = await User.findById(decodedToken?._id)
-
-    if (!user) {
-        throw new ApiError(201,"Invalid refesh token")
-    }
-    if (incomingRefreshToken !== user?.refreshToken ) {
-
-        throw new ApiError(201,"Invalid refesh token")
-    }
-    const options= {
-        httpOnly:true,
-        secure:true
-    }
-    await generateAccessAndRefereshTokens(user._id)
-
-    return res.status(200)
-    .cookie("accessToken",accessToken)
-    .cookies("refreshToken",refreshToken)
-    .json(
-        new ApiResponse(
-            200,
-            {
-                accessToken,refreshToken:newrefreshToken 
-            },"access token refresh"
-        )
-    )
-})
-
 export  {
     registerUser,
     loginUser,
