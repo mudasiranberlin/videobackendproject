@@ -3,7 +3,7 @@ import mongoose, {Schema} from "mongoose";
 const SubscriptionSchema = new Schema(
   {
     subscriber: {
-      type: mongoose.Types.ObjectId,
+      type: Schema.Types.ObjectId,
       ref: "User",
     },
     channel: {
