@@ -4,4 +4,4 @@ const SubscriptionScheme = new mongoose.Schema({
 
 },{timestamps:true})
 
-export const Subscription = 
+export const Subscription = mongoose
