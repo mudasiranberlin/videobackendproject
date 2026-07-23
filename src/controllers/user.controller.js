@@ -426,7 +426,7 @@ const refreshAccessToken = asyncHandler( async (req,res)=>{
 })
 
 
-const ref
+const refreshAccessToken = as
 
 export  {
     registerUser,
