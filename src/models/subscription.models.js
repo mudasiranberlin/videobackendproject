@@ -3,7 +3,7 @@ import mongoose, {Schema} from "mongoose";
 const SubscriptionSchema = new Schema(
   {
     subscriber: {
-      type: Schema.Types.ObjectId,
+      type: mongoose.Types.ObjectId,
       ref: "User",
     },
     channel: {
@@ -13,6 +13,6 @@ const SubscriptionSchema = new Schema(
 
   },
   { timestamps: true }
-); password
+);
 
 export const Subscription = mongoose.model("Subscription",SubscriptionSchema);
