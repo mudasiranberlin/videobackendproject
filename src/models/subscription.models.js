@@ -1,3 +1,5 @@
 import mongoose from "mongoose";
 
-const SubscriptionScheme = new mongoose.Schema({},{timestamps:true})
+const SubscriptionScheme = new mongoose.Schema({
+    
+},{timestamps:true})
