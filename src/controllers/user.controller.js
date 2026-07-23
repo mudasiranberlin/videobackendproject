@@ -395,41 +395,6 @@ const refreshAccessToken = asyncHandler( async(req,res)=>{
 
 } )
 
-const refreshAccessToken = asyncHandler( async (req,res)=>{
-    const incomingRefreshToken = req.cookies.refreshToken || req.body.refreshToken
-    if (!incomingRefreshToken) {
-        throw new ApiError(401,"Un Authorized Request ")     
-    }
-    try {
-        const decodedToken = jwt.verify(
-            incomingRefreshToken,
-            process.env.REFRESH_TOKEN_SECRET
-        )
-        const user = User.findById(decodedToken?._id)
-        if (!user) {
-            throw new ApiError(401,"Invalid Refresh Token Request ")     
-        }
-        if (incomingRefreshToken !== user?.refreshToken) {
-            throw new ApiError(401,"Invalid Refresh Token Request ")  
-        }
-        const options={
-            httpOnly:true,
-            secure:true
-        }
-        generateAccessAndRefereshTokens(user._id)
-        return res
-        .status(200)
-        .cookies(accessToken)
-        .cookies(refreshToken)
-        .json(
-            200,{accessToken,refreshToken:newrefreshToken},"Access token refreshed"
-        )
-    } catch (error) {
-        throw new ApiResponse(401,error?.message || "Invalid refresh token")
-        
-    }
-})
-
 export  {
     registerUser,
     loginUser,
