@@ -425,7 +425,7 @@ const refreshAccessToken = asyncHandler( async (req,res)=>{
             
         })
     } catch (error) {
-        throw new api
+        throw new ApiResponse
         
     }
 })
