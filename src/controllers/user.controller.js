@@ -14,7 +14,6 @@ import { uploadCloudinary } from "../utils/cloudinary.js"
 import { ApiResponse } from "../utils/ApiResponse.js"
 import jwt from "jsonwebtoken"
 import mongoose from "mongoose";
-import { use } from "react"
 
 
 
@@ -438,7 +437,7 @@ const refreshAccessToken = asyncHandler(async(req,res)=>{
     )
     const user = await User.findById(decodedToken?._id)
 
-    if (!user) {
+    if (use) {
         
     }
 })
