@@ -3,8 +3,7 @@ import mongoose from "mongoose";
 const SubscriptionScheme = new mongoose.Schema({
 
     subscriber:{
-        type: str
-    }
+        type: st    }
 
 },{timestamps:true})
 
