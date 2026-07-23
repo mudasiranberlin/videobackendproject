@@ -4,7 +4,7 @@ const SubscriptionScheme = new mongoose.Schema({
 
     subscriber:{
         type: mongoose.Types.ObjectId,
-        ref
+        ref: "User"
     }
 
 },{timestamps:true})
