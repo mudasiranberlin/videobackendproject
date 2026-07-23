@@ -1,6 +1,6 @@
 import mongoose, {Schema} from "mongoose";
 
-const SubscriptionSchema = new mongoose.Schema(
+const SubscriptionSchema = new Schema(
   {
     subscriber: {
       type: mongoose.Types.ObjectId,
