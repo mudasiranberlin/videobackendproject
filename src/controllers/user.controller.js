@@ -431,7 +431,7 @@ const refreshAccessToken = asyncHandler(async(req,res)=>{
     if (incomingRefreshToken) {
         throw new ApiError(401,"Unatorized access")
     }
-    const decodedToken =jwt.verify(
+    const decodedToken = jwt.verify(
         incomingRefreshToken,
         process.env.REFRESH_TOKEN_SECRET
     )
