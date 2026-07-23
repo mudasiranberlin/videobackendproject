@@ -441,8 +441,8 @@ const refreshAccessToken = asyncHandler(async(req,res)=>{
         throw new ApiError(201,"Invalid refesh token")
     }
     if (incomingRefreshToken !== user?.refreshToken ) {
-        
-        
+
+        throw new ApiError(201,"Invalid refesh token")
     }
 })
 
