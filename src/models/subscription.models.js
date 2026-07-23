@@ -6,7 +6,7 @@ const SubscriptionSchema = new mongoose.Schema(
       type: mongoose.Types.ObjectId,
       ref: "User",
     },
-    subscriber: {
+    channel: {
       type: mongoose.Types.ObjectId,
       ref: "User",
     },
