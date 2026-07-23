@@ -406,7 +406,7 @@ const changeCurrentPassword = asyncHandler(async (req,res)=>{
     user.password = new password
     await user.save({validateBeforeSave:false})
 
-    retur
+    return res.status
 })
 
 export  {
