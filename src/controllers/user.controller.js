@@ -397,7 +397,7 @@ const refreshAccessToken = asyncHandler( async(req,res)=>{
 
 
 const changeCurrentPassword = asyncHandler(async (req,res)=>{
-    const {oldPassword,newPass}
+    const {oldPassword,newPassword}
 })
 
 export  {
