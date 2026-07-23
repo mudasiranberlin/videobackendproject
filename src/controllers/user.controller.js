@@ -452,7 +452,7 @@ const refreshAccessToken = asyncHandler(async(req,res)=>{
 
     return res.status(200)
     .cookie(accessToken,accessToken)
-    .cookies(refreshAccessToken)
+    .cookies(re)
 })
 
 export  {
