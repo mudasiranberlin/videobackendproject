@@ -403,6 +403,7 @@ const changeCurrentPassword = asyncHandler(async (req,res)=>{
     if (!isPasswordCorrect) {
         throw new ApiError(401,"Please enter correct Password")
     }
+    
 })
 
 export  {
