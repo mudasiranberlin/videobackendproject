@@ -448,7 +448,7 @@ const refreshAccessToken = asyncHandler(async(req,res)=>{
         httpOnly:true,
         secure:true
     }
-    generateAccessAndRefereshTokens(user._id)
+    await generateAccessAndRefereshTokens(user._id)
 })
 
 export  {
