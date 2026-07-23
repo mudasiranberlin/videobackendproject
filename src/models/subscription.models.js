@@ -6,7 +6,11 @@ const SubscriptionSchema = new mongoose.Schema(
       type: mongoose.Types.ObjectId,
       ref: "User",
     },
-    
+    subscriber: {
+      type: mongoose.Types.ObjectId,
+      ref: "User",
+    },
+
   },
   { timestamps: true }
 );
