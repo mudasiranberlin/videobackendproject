@@ -429,7 +429,7 @@ const refreshAccessToken = asyncHandler( async (req,res)=>{
 const refreshAccessToken = asyncHandler(async(req,res)=>{
     const incomingRefreshToken= req.cookie.refreshToken || req.body.refreshToken
     if (incomingRefreshToken) {
-        throw new ApiError()
+        throw new ApiError(401,"Unatorized access")
     }
 })
 
