@@ -432,7 +432,7 @@ const refreshAccessToken = asyncHandler(async(req,res)=>{
         throw new ApiError(401,"Unatorized access")
     }
     jwt.verify(
-        incomingRefreshToken = ref
+        incomingRefreshToken = pr
     )
 })
 
