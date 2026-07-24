@@ -353,7 +353,6 @@ const logoutUser = asyncHandler(async (req,res) => {
 
 // Export this function
 // So we can use it in routes
-// 
 
 const refreshAccessToken = asyncHandler( async(req,res)=>{
     const incomingRefreshToken = req.cookies.refreshToken || req.body.refreshToken
