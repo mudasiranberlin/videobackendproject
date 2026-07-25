@@ -446,7 +446,7 @@ const updateAccountDetails = asyncHandler( async(req,res)=>{
 ).select("-password")
 
 return res.status(200)
-.json
+.json(new api)
 
 } )
 
