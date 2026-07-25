@@ -429,6 +429,8 @@ const updateAccountDetails = asyncHandler( async(req,res)=>{
     const {fullname, email} =req.body
 
     if (! fullname|| !email) {
+
+        
         
     }
 
