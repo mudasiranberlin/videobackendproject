@@ -451,7 +451,7 @@ return res.status(200)
 } )
 
 
-const updateUserAvatar = asyncHandler 
+const updateUserAvatar = asyncHandler( as ) 
 
 
 
