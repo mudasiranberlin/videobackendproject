@@ -483,7 +483,7 @@ const updateUserCoverImage = asyncHandler( async (req,res)=>{
     }
     const CoverImage = await uploadOnCloudinary(CoverImageLocalPath)
 
-    if (!avatar.url) {
+    if (!CoverImage.url) {
         throw new ApiError(400,"Error While uploading on avatar")
         
     }
