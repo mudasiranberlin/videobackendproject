@@ -487,5 +487,5 @@ export  {
     changeCurrentPassword,
     getCurrentUser,
     updateAccountDetails
-    up
+    updateUserAvatar
 }
