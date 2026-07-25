@@ -438,7 +438,7 @@ const updateAccountDetails = asyncHandler( async(req,res)=>{
     {
 
     },
-    {const name = new type(arguments);}
+    {new}
 )
 
 } )
