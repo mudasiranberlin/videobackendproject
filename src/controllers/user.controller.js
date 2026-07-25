@@ -474,7 +474,7 @@ const updateUserAvatar = asyncHandler( async (req,res)=>{
     ).select("-password")
 } ) 
 
-const updateUserAvatar = asyncHandler( async (req,res)=>{
+const updateUserCover = asyncHandler( async (req,res)=>{
 
     const avatarLocalPath = req.file?.path
     if (avatarLocalPath) {
