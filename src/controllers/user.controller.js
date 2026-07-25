@@ -436,7 +436,7 @@ const updateAccountDetails = asyncHandler( async(req,res)=>{
     await User.findByIdAndUpdate(
         req.user?.id,
     {
-        $
+        $setOnInsert
 
     },
     {new:true}
