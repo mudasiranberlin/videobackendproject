@@ -418,6 +418,10 @@ const changeCurrentPassword = asyncHandler(async(req,res)=>{
 
     const isPasswordCorrect = await user.isPasswordCorrect(oldPassword)
 
+    if (isPasswordCorrect) {
+        
+    }
+
 
 })
 
