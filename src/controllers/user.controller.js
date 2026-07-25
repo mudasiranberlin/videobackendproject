@@ -455,7 +455,7 @@ const updateUserAvatar = asyncHandler( async (req,res)=>{
 
     const avatarLocalPath = req.file?.path
     if (avatarLocalPath) {
-        throw new ApiError("")
+        throw new ApiError("Please upload the image")
         
     }
 
