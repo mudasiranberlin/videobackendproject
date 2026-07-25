@@ -426,6 +426,7 @@ const getCurrentUser = asyncHandler(
 
 const updateAccountDetails = asyncHandler( async(req,res)=>{
     
+
 } )
 
 
