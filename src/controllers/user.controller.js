@@ -434,7 +434,7 @@ const updateAccountDetails = asyncHandler( async(req,res)=>{
         
     }
     await User.findByIdAndUpdate(
-        req.user?_id,
+        req.user?._id,
     {
         $set:{
             fullname:fullname,
