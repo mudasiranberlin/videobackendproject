@@ -459,7 +459,9 @@ const updateUserAvatar = asyncHandler( async (req,res)=>{
         
     }
 
-    if
+    if (condition) {
+        
+    }
 
     const user =  await User.findById(req.user?.avatar)
 
