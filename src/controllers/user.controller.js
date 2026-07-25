@@ -413,7 +413,7 @@ const changeCurrentPassword = asyncHandler(async (req,res)=>{
 //
 
 const changeCurrentPassword = asyncHandler(async(req,res)=>{
-    const {oldPassword,new}
+    const {oldPassword,newPassword}
 
 })
 
