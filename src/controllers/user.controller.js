@@ -459,7 +459,7 @@ const updateUserAvatar = asyncHandler( async (req,res)=>{
         
     }
 
-    if (!) {
+    if (!av) {
         
     }
 
