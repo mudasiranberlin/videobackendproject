@@ -498,7 +498,7 @@ const updateUserCoverImage = asyncHandler( async (req,res)=>{
 
     return res.status(200)
     .json(
-        new ApiError(200,user,)
+        new ApiError(200,user,"")
     )
 } ) 
 
