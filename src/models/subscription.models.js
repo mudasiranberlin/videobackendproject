@@ -25,6 +25,10 @@ const  SubscriptionSchema = new mongoose.Schema({
   subscriber:{
     type : mongoose.Schema.Types.ObjectId,
     ref: "User"
+  },
+  subscriber:{
+    type : mongoose.Schema.Types.ObjectId,
+    ref: "User"
   }
 
 
