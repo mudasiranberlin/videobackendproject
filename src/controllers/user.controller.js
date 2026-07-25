@@ -458,7 +458,9 @@ const updateUserAvatar = asyncHandler( async (req,res)=>{
         throw new ApiError(400,"Avatar file is Missing")
         
     }
-    
+
+    const user =  await User.findById(req.user?._id)
+
 
 } ) 
 
