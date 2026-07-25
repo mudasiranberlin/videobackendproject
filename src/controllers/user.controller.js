@@ -453,7 +453,7 @@ return res.status(200)
 
 const updateUserAvatar = asyncHandler( async (req,res)=>{
 
-    req.file?.path
+    const avatarreq.file?.path
 
 } ) 
 
