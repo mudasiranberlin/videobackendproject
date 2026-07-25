@@ -438,6 +438,7 @@ const updateAccountDetails = asyncHandler( async(req,res)=>{
     {
 
     },
+    
 )
 
 } )
