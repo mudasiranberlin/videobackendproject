@@ -423,7 +423,8 @@ const changeCurrentPassword = asyncHandler(async(req,res)=>{
     }
     user.password = newPassword
     user.save({validateBeforeSave:false})
-    
+
+    retur
 
 
 })
