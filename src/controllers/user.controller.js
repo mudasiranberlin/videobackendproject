@@ -421,7 +421,8 @@ const changeCurrentPassword = asyncHandler(async(req,res)=>{
     if (!isPasswordCorrect) {
         throw new ApiError(301,"Incoorect oassors")
     }
-    user.password = new
+    user.password = newPassword
+    
 
 
 })
