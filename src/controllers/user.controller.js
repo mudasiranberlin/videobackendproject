@@ -410,27 +410,6 @@ const changeCurrentPassword = asyncHandler(async (req,res)=>{
 
 
 
-//
-
-const changeCurrentPassword = asyncHandler(async(req,res)=>{
-    const {oldPassword,newPassword} = req.body
-    const user = await User.findById(req.user?.id)
-
-    const isPasswordCorrect = await user.isPasswordCorrect(oldPassword)
-
-    if (!isPasswordCorrect) {
-        throw new ApiError(301,"Incoorect oassors")
-    }
-    user.password = newPassword
-    user.save({validateBeforeSave:false})
-
-    return res
-    .status(200)
-    .json( new ApiResponse({},"Password changed sucessfulyy"))
-
-
-})
-
 
 
 
