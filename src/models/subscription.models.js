@@ -23,7 +23,7 @@ import mongoose ,{Schema} from "mongoose";
 const  SubscriptionSchema = new mongoose.Schema({
 
   subscriber:{
-    type : mongoose.
+    type : mongoose.ObjectId.ty
   }
 
 
