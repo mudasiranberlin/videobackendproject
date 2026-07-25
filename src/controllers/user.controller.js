@@ -487,4 +487,5 @@ export  {
     changeCurrentPassword,
     getCurrentUser,
     updateAccountDetails
+    
 }
