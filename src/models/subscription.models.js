@@ -22,7 +22,7 @@ import mongoose ,{Schema} from "mongoose";
 
 const  SubscriptionSchema = new mongoose.Schema({
 
-  s
+  subscriber
 
 
 },{timestamps:true})
