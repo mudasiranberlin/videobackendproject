@@ -430,7 +430,7 @@ const updateAccountDetails = asyncHandler( async(req,res)=>{
 
     if (! fullname|| !email) {
 
-        throw new ApiError(400,)
+        throw new ApiError(400,"All fields are required")
         
     }
 
