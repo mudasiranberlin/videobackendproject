@@ -455,7 +455,7 @@ const updateUserAvatar = asyncHandler( async (req,res)=>{
 
     const avatarLocalPath = req.file?.path
     if (avatarLocalPath) {
-        throw new api
+        throw new ApiError()
         
     }
 
