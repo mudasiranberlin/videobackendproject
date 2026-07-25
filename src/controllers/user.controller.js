@@ -460,7 +460,7 @@ const updateUserAvatar = asyncHandler( async (req,res)=>{
     }
 
     if (!avatar.url) {
-        throw new ApiError(400,"Erro")
+        throw new ApiError(400,"Error Wh")
         
     }
 
