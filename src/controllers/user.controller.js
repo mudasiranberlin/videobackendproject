@@ -451,7 +451,7 @@ return res.status(200)
 } )
 
 
-const update
+const updateUserAvatar
 
 
 
