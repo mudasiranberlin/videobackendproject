@@ -422,7 +422,7 @@ const changeCurrentPassword = asyncHandler(async(req,res)=>{
         throw new ApiError(301,"Incoorect oassors")
     }
     user.password = newPassword
-    user.save({va})
+    user.save({validateBeforeSave})
 
 
 })
