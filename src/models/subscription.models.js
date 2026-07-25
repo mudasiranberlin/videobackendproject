@@ -26,7 +26,7 @@ const  SubscriptionSchema = new mongoose.Schema({
     type : mongoose.Schema.Types.ObjectId,
     ref: "User"
   },
-  Su:{
+  subscriber:{
     type : mongoose.Schema.Types.ObjectId,
     ref: "User"
   }
