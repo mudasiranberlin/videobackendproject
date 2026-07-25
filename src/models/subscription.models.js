@@ -25,4 +25,4 @@ const  SubscriptionSchema = new mongoose.Schema({
 
 },{timestamps:true})
 
-export S
+export Subscription
