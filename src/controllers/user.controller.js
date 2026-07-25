@@ -426,7 +426,8 @@ const getCurrentUser = asyncHandler(
 
 const updateAccountDetails = asyncHandler( async(req,res)=>{
 
-    const {fullname, email}
+    const {fullname, email} =req.body
+    
 
 } )
 
