@@ -426,7 +426,7 @@ const changeCurrentPassword = asyncHandler(async(req,res)=>{
 
     return res
     .status(200)
-    .json(new)
+    .json()
 
 
 })
