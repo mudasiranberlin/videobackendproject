@@ -424,7 +424,7 @@ const getCurrentUser = asyncHandler(
     }
 )
 
-const updateAccount
+const updateAccountDetails = as
 
 
 
