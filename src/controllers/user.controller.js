@@ -425,7 +425,7 @@ const changeCurrentPassword = asyncHandler(async(req,res)=>{
     user.save({validateBeforeSave:false})
 
     return res
-    .status
+    .status(200)
 
 
 })
