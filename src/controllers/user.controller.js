@@ -433,7 +433,7 @@ const updateAccountDetails = asyncHandler( async(req,res)=>{
         throw new ApiError(400,"All fields are required")
         
     }
-    await User.findByIdAndUpdate()
+    await User.findByIdAndUpdate(req.)
 
 } )
 
