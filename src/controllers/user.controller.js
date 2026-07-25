@@ -451,7 +451,9 @@ return res.status(200)
 } )
 
 
-const updateUserAvatar = asyncHandler( async (req,res) ) 
+const updateUserAvatar = asyncHandler( async (req,res)=>{
+    
+} ) 
 
 
 
