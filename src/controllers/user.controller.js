@@ -491,7 +491,7 @@ const updateUserCoverImage = asyncHandler( async (req,res)=>{
     const user =  await User.findByIdAndUpdate(req.user?._id,
         {
             $set:
-            { avatar:CoverImage.url}
+            { CoverImage:CoverImage.url}
         },
         {new : true}
     ).select("-password")
