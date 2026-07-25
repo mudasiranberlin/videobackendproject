@@ -469,7 +469,8 @@ const updateUserAvatar = asyncHandler( async (req,res)=>{
         {
             $set:
             { avatar:avatar.url}
-        }
+        },
+        
     )
 
 
