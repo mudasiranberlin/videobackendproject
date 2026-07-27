@@ -571,7 +571,9 @@ const getUserChannelProfile = asyncHandler(async(req,res)=>{
         }
         return res
         .status(200)
-        .json()
+        .json(
+            new
+        )
         
     }
 )
