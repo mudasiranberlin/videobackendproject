@@ -529,7 +529,8 @@ const getUserChannelProfile = asyncHandler(async(res,req)=>{
             },
             {
                 $lookup:{
-                    from:"subscriptions"
+                    from:"subscriptions",
+                    
                 }
             }
         ])
