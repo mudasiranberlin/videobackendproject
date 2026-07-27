@@ -513,7 +513,7 @@ const getUserChannelProfile = asyncHandler(async(res,req)=>{
     if (!username) {
         throw new ApiError(401,"User not fond ")
 
-        User.aggregate([])
+        const chnaUser.aggregate([])
         User.findOne({username})
         
     }
