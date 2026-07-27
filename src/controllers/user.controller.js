@@ -515,7 +515,9 @@ const getUserChannelProfile = asyncHandler(async(res,req)=>{
 
         const channel = await User.aggregate([
             {
-                $match
+                $match:{
+                    
+                }
             }
         ])
         User.findOne({username})
