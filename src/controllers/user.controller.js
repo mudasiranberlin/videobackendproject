@@ -507,7 +507,7 @@ const updateUserCoverImage = asyncHandler( async (req,res)=>{
 } ) 
 
 
-const getUserChannelProfile = asyncHandler(async(re,req)=>{
+const getUserChannelProfile = asyncHandler(async(req,req)=>{
     const {username}=req.params
     
     if (!username) {
