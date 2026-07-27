@@ -520,7 +520,6 @@ const getUserChannelProfile = asyncHandler(async(res,req)=>{
                 }
             }
         ])
-        User.findOne({username})
         
     }
 })
