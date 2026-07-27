@@ -555,7 +555,8 @@ const getUserChannelProfile = asyncHandler(async(res,req)=>{
                     fullname,
                     username,
                     subscribersCount,
-                    channelSubscribedToCount
+                    channelSubscribedToCount,
+                    
                 }
 
             }
