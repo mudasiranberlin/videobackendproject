@@ -537,7 +537,7 @@ const getUserChannelProfile = asyncHandler(async(res,req)=>{
             },
             {
                 $addFields:{
-                    
+                    sub
                 }
             }
         ])
