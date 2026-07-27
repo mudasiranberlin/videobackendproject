@@ -536,7 +536,7 @@ const getUserChannelProfile = asyncHandler(async(res,req)=>{
                 }
             },
             {
-                
+                $lookup
             }
         ])
         
