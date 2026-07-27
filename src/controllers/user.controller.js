@@ -524,7 +524,7 @@ const getUserChannelProfile = asyncHandler(async(res,req)=>{
                     from:"subscriptions",
                     localField:"_id",
                     foreignField:"channel",
-                    as 
+                    as:
                 }
             }
         ])
