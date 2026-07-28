@@ -562,7 +562,7 @@ const getUserChannelProfile = asyncHandler(async(req,res)=>{
                     avatar,
                     coverImage,
                     email
-                    ema
+                    email
                 }
 
             }
