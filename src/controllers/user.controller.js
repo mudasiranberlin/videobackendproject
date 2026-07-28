@@ -568,7 +568,7 @@ const getUserChannelProfile = asyncHandler(async(req,res)=>{
         ])
 
         // pratice 
-        const  channel = await 
+        const  channel = await User
 
  //ENd the practice
 
