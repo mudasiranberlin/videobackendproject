@@ -570,7 +570,7 @@ const getUserChannelProfile = asyncHandler(async(req,res)=>{
         // pratice 
         const  channel = await User.aggregate([
             {
-                
+                $match
             }
         ])
 
