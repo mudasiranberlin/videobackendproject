@@ -569,23 +569,6 @@ const getUserChannelProfile = asyncHandler(async(req,res)=>{
         ])
 
         // pratice 
-        const  channel = await User.aggregate([
-            {
-                $match:{
-                    username:username?.toLowerCase()
-
-                }
-            },
-            {
-                $lookup:{
-                    from:"subscriptions",
-                    localField:"",
-                    foreignField:"",
-                    as: ""
-
-                }
-            }
-        ])
 
  //ENd the practice
 
