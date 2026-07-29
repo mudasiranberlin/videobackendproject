@@ -623,7 +623,8 @@ const loginUser = asyncHandler ( async(req,res)=>{
             try {
 
                 const user = await findById(userId)
-                const accessToken = user.generateAccessToken
+                const accessToken = user.generateAccessToken()
+                const red
                 
             } catch (error) {
                 throw new ApiError(402,"Something went wrong while generating refrresh token")
