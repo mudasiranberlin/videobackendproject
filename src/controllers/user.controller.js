@@ -623,7 +623,7 @@ const loginUser = asyncHandler ( async(req,res)=>{
             try {
                 
             } catch (error) {
-                throw new ap
+                throw new ApiError
             }
         }
 
