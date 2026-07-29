@@ -603,7 +603,7 @@ const loginUser = asyncHandler ( async(req,res)=>{
 
     const {email,password,username} = req.body
 
-    
+    if
     if (![email,password,username]) {
         throw new ApiError(401,"please enter the correct details")
     }
