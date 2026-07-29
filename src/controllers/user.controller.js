@@ -608,7 +608,7 @@ const loginUser = asyncHandler ( async(req,res)=>{
     }
 
     const user = await findOne({
-        $or:[username,email]
+        $or:[{username},email]
     })
     if (!user) {
         throw new ApiError(401,"Please enter the username and email")
