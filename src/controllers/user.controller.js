@@ -642,6 +642,8 @@ const loginUser = asyncHandler ( async(req,res)=>{
 
         const loggedInUser = user.findById(user._id).select("-password -refreshtoken")
 
+        const options:
+
 
 } )
 
