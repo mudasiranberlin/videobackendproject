@@ -628,7 +628,7 @@ const loginUser = asyncHandler ( async(req,res)=>{
 
                 user.refreshToken = refreshToken;
                 user.save(
-                    {validateBeforeSave:}
+                    {validateBeforeSave:true}
                 )
                 
             } catch (error) {
