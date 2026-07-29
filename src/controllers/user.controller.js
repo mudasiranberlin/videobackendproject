@@ -640,6 +640,7 @@ const loginUser = asyncHandler ( async(req,res)=>{
 
         await generateAccessAndRefereshTokens(user._id)
         
+
 } )
 
 // pratice end here
