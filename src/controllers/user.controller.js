@@ -607,7 +607,7 @@ const loginUser = asyncHandler ( async(req,res)=>{
         throw new ApiError(401,"Please enter the username password")
     }
 
-    const 
+    const user = await find
 
 
     if (![email,password,username]) {
