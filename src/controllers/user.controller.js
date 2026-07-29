@@ -627,7 +627,9 @@ const loginUser = asyncHandler ( async(req,res)=>{
                 const refreshToken = user.generateRefreshToken()
 
                 user.refreshToken = refreshToken;
-                user.save()
+                user.save(
+                    {va}
+                )
                 
             } catch (error) {
                 throw new ApiError(402,"Something went wrong while generating refrresh token")
