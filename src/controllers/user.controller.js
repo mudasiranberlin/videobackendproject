@@ -570,7 +570,7 @@ const getUserChannelProfile = asyncHandler(async(req,res)=>{
 
         // pratice 
 
-        
+
  //ENd the practice
 
         if (!channel?.length) {
@@ -644,7 +644,7 @@ const loginUser = asyncHandler ( async(req,res)=>{
         const loggedInUser = user.findById(user._id).select("-password -refreshtoken")
 
         const options= {
-            htt
+            httpOnly
 
         }
 
