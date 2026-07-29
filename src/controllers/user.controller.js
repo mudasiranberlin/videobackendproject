@@ -603,7 +603,7 @@ const loginUser = asyncHandler ( async(req,res)=>{
 
     const {email,password,username} = req.body
 
-    if (!user) {
+    if (!username ) {
         
     }
     if (![email,password,username]) {
