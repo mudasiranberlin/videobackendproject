@@ -614,10 +614,7 @@ const loginUser = asyncHandler ( async(req,res)=>{
         throw new ApiError(401,"Please enter the username and email")
     }
 
-
-    if (![email,password,username]) {
-        throw new ApiError(401,"please enter the correct details")
-    }
+    
 
 } )
 
