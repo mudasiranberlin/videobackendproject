@@ -631,7 +631,7 @@ const loginUser = asyncHandler ( async(req,res)=>{
                     {validateBeforeSave:false}
                 )
 
-                return {accessToken,ref}
+                return {accessToken,refreshToken}
                 
             } catch (error) {
                 throw new ApiError(402,"Something went wrong while generating refrresh token")
