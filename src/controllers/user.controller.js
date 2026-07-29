@@ -601,7 +601,7 @@ const loginUser = asyncHandler ( async(req,res)=>{
 
     //send response
 
-    const {email}
+    const {email,password}
 
 } )
 
