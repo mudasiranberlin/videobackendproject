@@ -14,6 +14,7 @@ import { uploadCloudinary } from "../utils/cloudinary.js"
 import { ApiResponse } from "../utils/ApiResponse.js"
 import jwt from "jsonwebtoken"
 import mongoose from "mongoose";
+import { Subscription } from "../models/subscription.models.js"
 
 
 
@@ -577,7 +578,7 @@ const getUserChannelProfile = asyncHandler(async(req,res)=>{
             },
             {
                 $lookup:{
-                    from:sub
+                    from:Subscription
                 }
             }
         ])
