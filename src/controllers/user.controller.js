@@ -655,7 +655,7 @@ const loginUser = asyncHandler ( async(req,res)=>{
         .json(
             new ApiResponse(
                 200,
-                ""
+                
             )
         )
 
