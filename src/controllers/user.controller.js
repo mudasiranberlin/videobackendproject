@@ -667,7 +667,7 @@ const loginUser = asyncHandler ( async(req,res)=>{
 } )
 
 
-const log
+const logoutUser = await 
 
 // pratice end here
 export  {
