@@ -638,7 +638,7 @@ const loginUser = asyncHandler ( async(req,res)=>{
             }
         }
 
-        const {accessToken}await generateAccessAndRefereshTokens(user._id)
+        const {accessToken,}await generateAccessAndRefereshTokens(user._id)
 
 
 } )
