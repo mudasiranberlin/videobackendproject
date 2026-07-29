@@ -616,6 +616,8 @@ const loginUser = asyncHandler ( async(req,res)=>{
 
     const isPasswordValid = user.isPasswordCorrect(password)
 
+    
+
 } )
 
 // pratice end here
