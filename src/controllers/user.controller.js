@@ -623,7 +623,7 @@ const loginUser = asyncHandler ( async(req,res)=>{
             try {
                 
             } catch (error) {
-                throw new ApiError("Something went wrong while generating refrresh token")
+                throw new ApiError(402,"Something went wrong while generating refrresh token")
             }
         }
 
