@@ -615,7 +615,7 @@ const loginUser = asyncHandler ( async(req,res)=>{
     }
 
     const isPasswordValid = user.isPasswordCorrect(password)
-if (!pas) {
+if (!password) {
         throw new ApiError(401,"Please enter the username and email")
     }
 
