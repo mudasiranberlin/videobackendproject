@@ -651,7 +651,7 @@ const loginUser = asyncHandler ( async(req,res)=>{
         return res
         .status(200)
         .cookie(refreshToken,accessToken,options)
-        .cookie(accessToken,accessToken,)
+        .cookie(accessToken,accessToken,o)
 
 
 } )
