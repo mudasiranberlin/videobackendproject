@@ -640,7 +640,7 @@ const loginUser = asyncHandler ( async(req,res)=>{
 
         const {accessToken,refreshToken} = await generateAccessAndRefereshTokens(user._id)
 
-        const logguser.findById(user._id)
+        const loggedInUser = user.findById(user._id)
 
 
 } )
