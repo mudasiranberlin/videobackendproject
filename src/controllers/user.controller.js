@@ -587,7 +587,7 @@ const getUserChannelProfile = asyncHandler(async(req,res)=>{
 
 /
  
-const loginUser = as
+const loginUser = asyncHandler 
 
 */
 export  {
