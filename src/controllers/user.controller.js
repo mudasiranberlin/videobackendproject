@@ -591,7 +591,7 @@ const loginUser = asyncHandler ( async(req,res)=>{
 
 } )
 
-// prat
+// pratice end here
 export  {
     registerUser,
     loginUser,
