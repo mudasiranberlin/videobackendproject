@@ -619,7 +619,7 @@ const loginUser = asyncHandler ( async(req,res)=>{
             throw new ApiError(401,"Please enter the username and email")
         }
 
-        const generateAccessAndRefereshTokens = async
+        const generateAccessAndRefereshTokens = async()
 
 
 } )
