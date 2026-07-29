@@ -630,6 +630,8 @@ const loginUser = asyncHandler ( async(req,res)=>{
                 user.save(
                     {validateBeforeSave:false}
                 )
+
+                
                 
             } catch (error) {
                 throw new ApiError(402,"Something went wrong while generating refrresh token")
