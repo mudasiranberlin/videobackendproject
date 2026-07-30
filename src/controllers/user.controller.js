@@ -648,12 +648,6 @@ const getUserChannelProfile = asyncHandler(async(req,res)=>{
             }
         ])
 
-        // pratice 
-
-
-
- //ENd the practice
-
         if (!channel?.length) {
             throw new ApiError(404,"channel does not exists")
         }
@@ -712,7 +706,7 @@ const getWatchHistory = asyncHandler( async()=>{
     return res.status(200)
     .json(
         new ApiResponse(200,user[0].WatchHistory,"Watch history fetched successfuly")
-        
+
     )
 })
 
