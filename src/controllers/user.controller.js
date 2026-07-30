@@ -697,7 +697,7 @@ const getWatchHistory = asyncHandler( async()=>{
                                 {
                                     $addFields:{
                                         owner:{
-                                            $first:"owner"
+                                            $first:"$owner"
                                         }
                                     }
                                 }
