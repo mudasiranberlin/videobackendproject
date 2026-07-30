@@ -672,6 +672,7 @@ const getWatchHistory = asyncHandler( async()=>{
             $match:{
                 _id:new mongoose.Types.ObjectId(req.user._id)
             }
+            
         }
     ])
 })
