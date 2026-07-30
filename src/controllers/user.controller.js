@@ -675,7 +675,8 @@ const getWatchHistory = asyncHandler( async()=>{
             $lookup:{
                 from: "videos",
                 localField:
-                for
+                foreignField:
+                as
 
             }}
         }
