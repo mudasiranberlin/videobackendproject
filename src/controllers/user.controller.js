@@ -667,7 +667,7 @@ const getUserChannelProfile = asyncHandler(async(req,res)=>{
 )
 
 const getWatchHistory = asyncHandler( async()=>{
-    const 
+    const user = await 
 })
 
 
