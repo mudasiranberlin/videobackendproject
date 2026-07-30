@@ -570,7 +570,7 @@ const getUserChannelProfile = asyncHandler(async (req,res)=>{
         }
     ])
 
-    if (!) {
+    if (!channel) {
         
     }
 })
