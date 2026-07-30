@@ -695,7 +695,9 @@ const getWatchHistory = asyncHandler( async()=>{
                                     }
                                 },
                                 {
-                                    $addFields:
+                                    $addFields:{
+                                        
+                                    }
                                 }
                             ]
                         }
