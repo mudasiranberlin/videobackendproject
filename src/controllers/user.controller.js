@@ -571,7 +571,7 @@ const getUserChannelProfile = asyncHandler(async (req,res)=>{
     ])
 
     if (!channel?.length) {
-        throw new ApiError()
+        throw new ApiError(401)
         
     }
 })
