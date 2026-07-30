@@ -709,7 +709,7 @@ const getWatchHistory = asyncHandler( async()=>{
             }}
         }
     ])
-    
+    retur res
 })
 
 
