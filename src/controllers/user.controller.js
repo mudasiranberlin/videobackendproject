@@ -512,6 +512,7 @@ const getUserChannelProfile = asyncHandler(async (req,res)=>{
     const {username} = req.params
 
     if (!username?.trim()) {
+        throw new api
         
     }
 })
