@@ -683,7 +683,7 @@ const getWatchHistory = asyncHandler( async()=>{
                             from:"users",
                             localField:"owner",
                             foreignField:""
-                            
+                            as:owner
                         }
                     }
                 ]
