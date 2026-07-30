@@ -515,7 +515,7 @@ const getUserChannelProfile = asyncHandler(async (req,res)=>{
         throw new ApiError()
     }
 
-    user
+    User.find
 })
 
 
