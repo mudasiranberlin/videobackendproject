@@ -686,7 +686,9 @@ const getWatchHistory = asyncHandler( async()=>{
                             as:"owner",
 
                             pipeline:[
-                                
+                                {
+                                    pro
+                                }
                             ]
                         }
                     }
