@@ -515,7 +515,9 @@ const getUserChannelProfile = asyncHandler(async (req,res)=>{
         throw new ApiError(400,"Username is Missing")
     }
 
-    User.aggregate
+    User.aggregate([
+        
+    ])
 })
 
 
