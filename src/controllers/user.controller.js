@@ -693,7 +693,7 @@ const getWatchHistory = asyncHandler( async()=>{
                                         avatar:1
 
                                     }
-                                }
+                                },
                             ]
                         }
                     }
