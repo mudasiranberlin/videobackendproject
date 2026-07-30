@@ -678,7 +678,9 @@ const getWatchHistory = asyncHandler( async()=>{
                 foreignField:"_id",
                 as:"watchHistory",
                 pipeline:[
-                    
+                    {
+                        
+                    }
                 ]
 
             }}
