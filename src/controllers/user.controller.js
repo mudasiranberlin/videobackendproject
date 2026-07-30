@@ -508,7 +508,7 @@ const updateUserCoverImage = asyncHandler( async (req,res)=>{
 } ) 
 // 
 
-const ger
+const getUserChannelProfile = 
 
 
 
