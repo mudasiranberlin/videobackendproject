@@ -679,7 +679,9 @@ const getWatchHistory = asyncHandler( async()=>{
                 as:"watchHistory",
                 pipeline:[
                     {
-                        $lookup
+                        $lookup:{
+                            
+                        }
                     }
                 ]
 
