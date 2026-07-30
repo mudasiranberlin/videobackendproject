@@ -549,7 +549,9 @@ const getUserChannelProfile = asyncHandler(async (req,res)=>{
                 },
 
                 isSubscribed:{
-                    $cond:
+                    $cond:{
+                        
+                    }
                 }
 
             }
