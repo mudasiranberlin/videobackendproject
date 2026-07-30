@@ -682,7 +682,7 @@ const getWatchHistory = asyncHandler( async()=>{
                         $lookup:{
                             from:"users",
                             localField:"owner",
-                            foreignField:"",
+                            foreignField:"_id",
                             as:owner
                         }
                     }
