@@ -560,7 +560,7 @@ const getUserChannelProfile = asyncHandler(async (req,res)=>{
         },
         $project:{
             fullname:1,
-            user
+            username
         }
     ])
 })
