@@ -710,7 +710,7 @@ const getWatchHistory = asyncHandler( async()=>{
         }
     ])
     return res.status(200)
-    .json
+    .json()
 })
 
 
