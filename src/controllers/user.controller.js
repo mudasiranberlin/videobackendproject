@@ -585,7 +585,7 @@ const getUserChannelProfile = asyncHandler(async (req,res)=>{
 })
 
 
-
+encodeURI
 
 //
 const getUserChannelProfile = asyncHandler(async(req,res)=>{
