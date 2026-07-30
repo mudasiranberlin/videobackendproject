@@ -680,7 +680,7 @@ const getWatchHistory = asyncHandler( async()=>{
                 pipeline:[
                     {
                         $lookup:{
-                            from
+                            from:""
                         }
                     }
                 ]
