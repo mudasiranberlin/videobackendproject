@@ -666,7 +666,7 @@ const getUserChannelProfile = asyncHandler(async(req,res)=>{
     }
 )
 
-const getWatchHistory = 
+const getWatchHistory = as
 
 
 export  {
