@@ -676,7 +676,7 @@ const getWatchHistory = asyncHandler( async()=>{
                 from: "videos",
                 localField:
                 foreignField:
-                as:
+                as:"watchhistory"
 
             }}
         }
