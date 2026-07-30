@@ -681,7 +681,7 @@ const getWatchHistory = asyncHandler( async()=>{
                     {
                         $lookup:{
                             from:"users",
-                            localField:""
+                            localField:"owner"
                         }
                     }
                 ]
