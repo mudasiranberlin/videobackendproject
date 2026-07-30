@@ -521,7 +521,9 @@ const getUserChannelProfile = asyncHandler(async (req,res)=>{
                 username:username?.toLowerCase()
             }
         },
-        
+        {
+            loo
+        }
     ])
 })
 
