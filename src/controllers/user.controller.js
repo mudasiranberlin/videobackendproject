@@ -677,7 +677,6 @@ const getWatchHistory = asyncHandler( async()=>{
                 localField:
                 foreignField:
                 as:
-                piple
 
             }}
         }
