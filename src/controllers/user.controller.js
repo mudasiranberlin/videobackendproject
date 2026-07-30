@@ -711,7 +711,7 @@ const getWatchHistory = asyncHandler( async()=>{
     ])
     return res.status(200)
     .json(
-        new ApiResponse(200,user[0].getWatchHistory)
+        new ApiResponse(200,user[0].WatchHistory)
     )
 })
 
