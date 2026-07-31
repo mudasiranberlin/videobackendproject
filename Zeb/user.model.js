@@ -27,7 +27,7 @@ const UserSchema = new mongoose.Schema({
     },
     category:{
         default: 0,
-        ty
+        type:
     }
 
 },{timestamps:true})
