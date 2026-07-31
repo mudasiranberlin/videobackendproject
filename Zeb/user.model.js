@@ -15,7 +15,9 @@ const UserSchema = new mongoose.Schema({
         lowercase:true
     },
     content:[
-        
+        {
+            
+        }
     ]
 
 },{timestamps:true})
