@@ -9,6 +9,8 @@ const orderSchema = new mongoose.Schema({
         type:Number,
         required:true
     }
+
+    
 })
 
 const UserSchema = new mongoose.Schema({
