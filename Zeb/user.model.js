@@ -11,7 +11,7 @@ const orderSchema = new mongoose.Schema({
     },
 
     status:{
-        
+        ty
     }
 })
 
