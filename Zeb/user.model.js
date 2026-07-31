@@ -8,7 +8,7 @@ const orderSchema = new mongoose.Schema({
     quntatity :{
         type:Number,
         required:true
-    }
+    },
 
     status
 })
