@@ -94,6 +94,6 @@ $arrayElemAt = Get one item from an array
 
 
 
-$project  : in your documents there are lot of feilds and you will tell me i will 
+$project  : in your documents there are lot of feilds and you will tell me i will return 
  
 */
