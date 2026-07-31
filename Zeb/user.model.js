@@ -1,3 +1,3 @@
 import mongoose from "mongoose";
 
-const UserSchema = new mongoose.model
+const UserSchema = new mongoose.Schema()
