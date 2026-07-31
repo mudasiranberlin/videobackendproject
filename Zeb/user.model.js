@@ -16,7 +16,7 @@ const UserSchema = new mongoose.Schema({
     },
     content:[
         {
-            content: mongoose.Schema.TypesObjectId
+            content: mongoose.Schema.Types.ObjectId
 
         }
     ]
