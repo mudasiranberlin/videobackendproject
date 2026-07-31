@@ -34,9 +34,7 @@ authors collection
 4. as
 as: "author_details"
 
-Means:
-
-Put the result here
+Means: Put the result here
 
 
 */
