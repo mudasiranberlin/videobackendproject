@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 const orderSchema = new mongoose.Schema({
     productid:{
-        type:mongoose.Schema.ty
+        type:mongoose.Schema.Types
     }
 })
 
