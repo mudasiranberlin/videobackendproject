@@ -16,7 +16,7 @@ const UserSchema = new mongoose.Schema({
     },
     content:[
         {
-            content: mongoose.obj
+            content: mongoose
 
         }
     ]
