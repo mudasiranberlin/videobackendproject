@@ -37,6 +37,22 @@ as: "author_details"
 Means: Put the result here
 
 
+New book document:
 
+BOOKS
+--------------------
+
+title: "MongoDB"
+
+author_id: 100
+
+author_details:
+[
+ {
+   _id:100,
+   name:"John Smith",
+   age:35
+ }
+]
 
 */
