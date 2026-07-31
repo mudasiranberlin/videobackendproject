@@ -22,7 +22,7 @@ const UserSchema = new mongoose.Schema({
         }
     ],
     stock:{
-        default:0
+        default:0,
         type:String
     }
 
