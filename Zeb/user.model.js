@@ -5,7 +5,7 @@
 /*{
 aggeration piple: one stage 2 state and 3 stage
 
-if you have 1000 document 
+if you have 1000 document if u appply any condition 
 
 
 
