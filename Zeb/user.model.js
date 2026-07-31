@@ -23,7 +23,7 @@ const UserSchema = new mongoose.Schema({
     ],
     stock:{
         default:0;
-        type:str
+        type:String
     }
 
 },{timestamps:true})
