@@ -1,87 +1,35 @@
-const reviewSchema = new mongoose.Schema({
-  orderId: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "Order",
-    required: true,
-  },
-  reviewerId: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "User", // Client
-    required: true,
-  },
-  providerId: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "User", // Consultant or Translator
-    required: true,
-  },
-  rating: {
-    type: Number,
-    min: 1,
-    max: 5,
-    required: true,
-  },
-  comment: {
-    type: String,
-    trim: true,
-  },
-}, { timestamps: true });
+/*{
+  $lookup: {
+    from: "authors",
+    localField: "author_id",
+    foreignField: "_id",
+    as: "author_details"
+  }
+}
 
-/*
 
-                   +------------------+
-                   |      User        |
-                   +------------------+
-                   | _id              |
-                   | name             |
-                   | email            |
-                   | role             | --> client | consultant | translator
-                   +--------+---------+
-                            |
-            +---------------+---------------+
-            |                               |
-            |                               |
- +----------v-----------+      +------------v-----------+
- | Consultant Profile   |      | Translator Profile     |
- +----------------------+      +------------------------+
- | userId (FK)          |      | userId (FK)            |
- | expertise            |      | languages              |
- | hourlyRate           |      | translationRate        |
- +----------------------+      +------------------------+
+books collection
+{
+  "_id": 1,
+  "title": "Node.js Tutorial",
+  "author_id": 101
+}
+authors collection
+{
+  "_id": 101,
+  "name": "John Smith",
+  "country": "USA"
+}
 
-                            |
-                            |
-                   +--------v---------+
-                   |     Service      |
-                   +------------------+
-                   | _id              |
-                   | providerId (FK)  |
-                   | type             | --> consultant | translator
-                   | title            |
-                   | price            |
-                   +--------+---------+
-                            |
-                            |
-                   +--------v---------+
-                   |      Order       |
-                   +------------------+
-                   | _id              |
-                   | clientId (FK)    |
-                   | providerId (FK)  |
-                   | serviceId (FK)   |
-                   | status           |
-                   +--------+---------+
-                            |
-                            |
-                   +--------v---------+
-                   |      Review      |
-                   +------------------+
-                   | _id              |
-                   | orderId (FK)     |
-                   | reviewerId (FK)  | --> Client
-                   | providerId (FK)  | --> Consultant/Translator
-                   | rating (1-5)     |
-                   | comment          |
-                   | createdAt        |
-                   +------------------+
 
-                   */
+
+| Option         | Meaning             | Where do we find it?                              | Example              |
+| -------------- | ------------------- | ------------------------------------------------- | -------------------- |
+| `from`         | Where to search     | **Other collection name**                         | `authors` collection |
+| `localField`   | My ID               | **Current collection (where aggregation starts)** | `books.author_id`    |
+| `foreignField` | Other collection ID | **Collection mentioned in "from"**                | `authors._id`        |
+| `as`           | Save result here    | **Create a new field in current document**        | `author_details`     |
+
+
+
+*/
