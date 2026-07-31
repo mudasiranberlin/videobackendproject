@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const orderSchem
+const orderSchema = 
 
 const UserSchema = new mongoose.Schema({
 
