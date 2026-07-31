@@ -55,4 +55,30 @@ author_details:
  }
 ]
 
+
+What happens before $addFields?
+
+After $lookup, your data looks like this:
+
+{
+  "title": "MongoDB Tutorial",
+  "author_id": 100,
+
+  "author_details": [
+    {
+      "_id": 100,
+      "name": "John Smith",
+      "age": 35
+    }
+  ]
+}
+
+Notice:
+
+author_details is an array ([ ]).
+
+Why?
+
+Because $lookup always returns an array, even if it finds only one result.
+
 */
