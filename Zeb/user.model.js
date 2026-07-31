@@ -8,6 +8,7 @@ const UserSchema = new mongoose.Schema({
         unique:true,
         lowercase:true
     }
+    pass
 
 },{timestamps:true})
 
