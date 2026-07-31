@@ -17,7 +17,7 @@ const UserSchema = new mongoose.Schema({
     content:[
         {
             content: mongoose.Schema.Types.ObjectId
-            
+            ref
 
         }
     ]
