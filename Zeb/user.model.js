@@ -31,5 +31,12 @@ authors collection
 | `as`           | Save result here    | **Create a new field in current document**        | `author_details`     |
 
 
+4. as
+as: "author_details"
+
+Means:
+
+Put the result here
+
 
 */
