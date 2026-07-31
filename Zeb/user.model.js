@@ -10,7 +10,7 @@ const orderSchema = new mongoose.Schema({
         required:true
     }
 
-    
+    status
 })
 
 const UserSchema = new mongoose.Schema({
