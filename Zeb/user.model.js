@@ -27,7 +27,7 @@ const UserSchema = new mongoose.Schema({
     },
     category:{
         default: 0,
-        type:mongoose.ty
+        type:mongoose.Types.ObjectId
     }
 
 },{timestamps:true})
