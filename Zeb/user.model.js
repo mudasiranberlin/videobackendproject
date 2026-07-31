@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
 const orderSchema = new mongoose.Schema({
-    pro
+    producti
 })
 
 const UserSchema = new mongoose.Schema({
