@@ -5,7 +5,7 @@ const orderSchema = new mongoose.Schema({
         type:mongoose.Schema.Types.ObjectId,
         ref:"product"
     },
-    qunat
+    quntatity 
 })
 
 const UserSchema = new mongoose.Schema({
