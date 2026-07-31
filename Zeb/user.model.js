@@ -8,7 +8,7 @@ const UserSchema = new mongoose.Schema({
         unique:true,
         lowercase:true
     }
-    pass
+    p
 
 },{timestamps:true})
 
