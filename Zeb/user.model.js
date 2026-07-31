@@ -3,7 +3,7 @@
 
 
 /*{
-aggeration piple: 
+aggeration piple: one stage 2 state and 3 stage
 
 
 
