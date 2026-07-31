@@ -26,3 +26,58 @@ const reviewSchema = new mongoose.Schema({
   },
 }, { timestamps: true });
 
+                   +------------------+
+                   |      User        |
+                   +------------------+
+                   | _id              |
+                   | name             |
+                   | email            |
+                   | role             | --> client | consultant | translator
+                   +--------+---------+
+                            |
+            +---------------+---------------+
+            |                               |
+            |                               |
+ +----------v-----------+      +------------v-----------+
+ | Consultant Profile   |      | Translator Profile     |
+ +----------------------+      +------------------------+
+ | userId (FK)          |      | userId (FK)            |
+ | expertise            |      | languages              |
+ | hourlyRate           |      | translationRate        |
+ +----------------------+      +------------------------+
+
+                            |
+                            |
+                   +--------v---------+
+                   |     Service      |
+                   +------------------+
+                   | _id              |
+                   | providerId (FK)  |
+                   | type             | --> consultant | translator
+                   | title            |
+                   | price            |
+                   +--------+---------+
+                            |
+                            |
+                   +--------v---------+
+                   |      Order       |
+                   +------------------+
+                   | _id              |
+                   | clientId (FK)    |
+                   | providerId (FK)  |
+                   | serviceId (FK)   |
+                   | status           |
+                   +--------+---------+
+                            |
+                            |
+                   +--------v---------+
+                   |      Review      |
+                   +------------------+
+                   | _id              |
+                   | orderId (FK)     |
+                   | reviewerId (FK)  | --> Client
+                   | providerId (FK)  | --> Consultant/Translator
+                   | rating (1-5)     |
+                   | comment          |
+                   | createdAt        |
+                   +------------------+
