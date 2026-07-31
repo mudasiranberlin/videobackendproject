@@ -82,6 +82,14 @@ Why?
 Because $lookup always returns an array, even if it finds only one result.
 
 
+Now $addFields changes it:
+$arrayElemAt: ["$author_details", 0]
 
+Means:
+
+$arrayElemAt = Get one item from an array
+
+"$author_details" = Which array?
+0 = Which position? (first item)
 
 */
