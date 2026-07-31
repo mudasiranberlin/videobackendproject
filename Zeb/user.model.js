@@ -22,7 +22,7 @@ const UserSchema = new mongoose.Schema({
         }
     ],
     stock:{
-        de
+        def
     }
 
 },{timestamps:true})
