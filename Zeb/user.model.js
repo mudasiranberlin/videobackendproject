@@ -20,8 +20,8 @@ const UserSchema = new mongoose.Schema({
             ref:"user"
 
         }
-    ]
-    
+    ],
+    stock
 
 },{timestamps:true})
 
