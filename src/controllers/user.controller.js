@@ -858,7 +858,7 @@ const incomingRefreshToken = asyncHandler(async()=>{
         httpOnly=true,
         secure:true
     }
-    await generateAccessAndRefereshTokens(user)
+    await generateAccessAndRefereshTokens(user_id)
 
 
 })
