@@ -823,7 +823,7 @@ const loginUser = asyncHandler(async(req,res)=>{
     .json(
         new ApiResponse(200,
             {
-                user:loog
+                user:logg
             }
         )
 
