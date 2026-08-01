@@ -861,6 +861,7 @@ const logoutUser = await asyncHandler( async (req,res)=>{
 // becomes
 
 // 12345
+MongoDB searches for this user.
 
 
 
