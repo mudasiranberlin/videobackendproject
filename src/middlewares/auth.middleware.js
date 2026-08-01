@@ -140,7 +140,7 @@ here we have next also we use middle ware next andwhen it will done and then pas
 // req.query
 // req.cookies
 // req.headers
-
+// You can also add your own custom data to it.
  } )
 
  
