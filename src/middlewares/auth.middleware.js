@@ -52,6 +52,7 @@ here we have next also we use middle ware next andwhen it will done and then pas
 
 
 // Why .replace("Bearer ", "")?
+
 // JWT only needs the token.
 // But the header contains
 // Bearer abc123
