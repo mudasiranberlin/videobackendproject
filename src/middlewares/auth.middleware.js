@@ -86,7 +86,7 @@ here we have next also we use middle ware next andwhen it will done and then pas
     req.user= user
     next()
     } catch (error) {
-        throw new
+        throw new ApiError()
         
     }
  } )
