@@ -1182,7 +1182,7 @@ const updateAccountDetails = asyncHandler(async(req,res)=>{
     if (!fullname ||!username) {
         throw new ApiError(201,"Enter the fullname and username")
     }
-    const user = User.findById(req.user._id)
+    const user = User.findById(req.user?._id)
 })
 
 
