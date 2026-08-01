@@ -854,8 +854,8 @@ const incomingRefreshToken = asyncHandler(async()=>{
     if (incomingRefreshToken !== user?.refreshToken ) {
         throw new ApiError(403,"refresh token expired")
     }
-    const options{
-        
+    const options={
+
     }
 })
 //End of the practice
