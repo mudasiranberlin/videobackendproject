@@ -1096,6 +1096,8 @@ const changeCurrentPassword = asyncHandler( async(req,res)=>{
 
 
 // # This code will show the user profile after the user has logged in 
+
+
 const getCurrentUser = asyncHandler( async(req,res)=>{
     return res
     .status(200)
