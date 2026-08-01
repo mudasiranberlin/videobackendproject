@@ -56,7 +56,6 @@ here we have next also we use middle ware next andwhen it will done and then pas
 // JWT only needs the token.
 
 // But the header contains
-
 // Bearer abc123
 // We remove "Bearer ".
 // "Bearer abc123".replace("Bearer ", "")
