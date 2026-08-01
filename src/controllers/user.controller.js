@@ -799,6 +799,8 @@ const loginUser = asyncHandler(async(req,res)=>{
             const refreshToken = user.generateRefreshToken()
             user.refreshToken =refreshToken
             user.save({validateBeforeSave:false})
+
+            
             
         } catch (error) {
             throw new ApiError(500,"Something went wrong")
