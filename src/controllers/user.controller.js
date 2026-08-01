@@ -861,6 +861,7 @@ const incomingRefreshToken = asyncHandler(async()=>{
     const {accessToken,refreshToken} = await generateAccessAndRefereshTokens(user_id)
 return res
 .status(200)
+.
 
 })
 //End of the practice
