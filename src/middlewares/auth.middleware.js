@@ -102,13 +102,13 @@ here we have next also we use middle ware next andwhen it will done and then pas
 //The minus (-) means do not include these fields.
 //Without .select(): .select("-password -refreshToken")
 
-you get
+// you get
 
-{
-   _id: "...",
-   username: "mudasir",
-   email: "..."
-}
+// {
+//    _id: "...",
+//    username: "mudasir",
+//    email: "..."
+// }
 
     if (!user) {
         throw new ApiError(401,"Invalid access token")
