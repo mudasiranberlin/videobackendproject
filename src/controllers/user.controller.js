@@ -878,7 +878,7 @@ const changeCurrentPassword = asyncHandler( async(req,res)=>{
 
     const user = await User.findById(req.user?._id)  // req.user = user we have the user there in auth middleware 
 
-    const isPasswordCorrect= await user.isPasswordCorrect(oldPassword) //we have method in usermode
+    const isPasswordCorrect= await user.isPasswordCorrect(oldPassword) //we have method in usermodel ispasssword
 
 })
 
