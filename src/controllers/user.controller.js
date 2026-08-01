@@ -1317,31 +1317,31 @@ const updateAccountDetails = asyncHandler(async(req,res)=>{
 
 
 
-Fourth part:
-{
-    new:true
-}
+// Fourth part:
+// {
+//     new:true
+// }
 
-Means:
+// Means:
 
-"Give me the updated user."
+// "Give me the updated user."
 
-Example:
+// Example:
 
-Without:
+// Without:
 
-You update email
-       |
-       ▼
-You receive old data
+// You update email
+//        |
+//        ▼
+// You receive old data
 
-With:
+// With:
 
-new:true
+// new:true
 
-You receive:
+// You receive:
 
-Updated data
+// Updated data
 
 
 })
