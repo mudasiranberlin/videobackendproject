@@ -1133,7 +1133,6 @@ const changeCurrentPassword = asyncHandler( async(req,res)=>{
 
 // Authorization: Bearer xyz123
 
-
 verifyJWT runs first
 
 Your route probably looks like:
