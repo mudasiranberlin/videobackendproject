@@ -73,7 +73,7 @@ if (!token) {
 // now we get the accesstoken from user and now we have verfify it 
 // with the we have create .env where we store ACCESS_TOKEN_SECRET
 // 
-
+// store in deco
 const decodedToken =jwt.verify(token,process.env.ACCESS_TOKEN_SECRET)
 
  } )
