@@ -864,12 +864,12 @@ const logoutUser = await asyncHandler( async (req,res)=>{
 // MongoDB searches for this user.
 // It finds user 12345.
 
-Step 2
-{
-    $set:{
-        refreshToken: undefined
-    }
-}
+// Step 2
+// {
+//     $set:{
+//         refreshToken: undefined
+//     }
+// }
 
    await User.findByIdAndUpdate(
         req.user._id,
