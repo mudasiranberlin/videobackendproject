@@ -881,7 +881,7 @@ const incomingRefreshToken = asyncHandler(async()=>{
 // User enters
 
 Old Password: 123456
-New Password: abc@123
+//New Password: abc@123
 
 //         │
 //         ▼
