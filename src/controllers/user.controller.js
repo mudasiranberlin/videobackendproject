@@ -838,7 +838,7 @@ const loginUser = asyncHandler(async(req,res)=>{
 
 
 const refreshAccessToken = asyncHandler(async()=>{
-    
+    req.cook
 })
 //End of the practice
 
