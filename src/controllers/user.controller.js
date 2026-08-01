@@ -1199,6 +1199,8 @@ const getCurrentUser = asyncHandler( async(req,res)=>{
 
 // The backend updates the database.
 
+
+
 const updateAccountDetails = asyncHandler(async(req,res)=>{
     const {email,fullname} = req.body
     if (!fullname ||!email) {
