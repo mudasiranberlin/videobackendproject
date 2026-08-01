@@ -1344,6 +1344,12 @@ const updateAccountDetails = asyncHandler(async(req,res)=>{
 // Updated data
 
 
+
+
+Remove password
+.select("-password")
+
+
 })
 
 const updateUserAvatar = asyncHandler(async(req,res)=>{
