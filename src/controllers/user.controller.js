@@ -981,8 +981,6 @@ const incomingRefreshToken = asyncHandler(async()=>{
 // Otherwise:
 
 // isPasswordCorrect = false 
-
-
 // Step 5
 // user.password = newPassword;
 
