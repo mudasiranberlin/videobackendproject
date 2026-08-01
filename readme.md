@@ -864,7 +864,7 @@ now after that
 
 #  logout middleware
 
-router.route("/log)
+router.route("/logout)
 
 // pratice 
 
