@@ -864,7 +864,7 @@ return res
 .cookie("accessToken",accessToken,options)
 .cookie("refreshToken",refreshToken,options)
 .json(
-    new ApiResponse(200,{accessToken,refreshToken})
+    new ApiResponse(200,{accessToken,refreshToken},)
 )
 
 })
