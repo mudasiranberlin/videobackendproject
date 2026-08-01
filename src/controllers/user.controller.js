@@ -809,7 +809,7 @@ const loginUser = asyncHandler(async(req,res)=>{
     }
 
 
-    const refreshTokenawait generateAccessAndRefereshTokens(user._id)
+    const refreshToken,await generateAccessAndRefereshTokens(user._id)
     
 
 
