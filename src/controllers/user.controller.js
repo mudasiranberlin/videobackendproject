@@ -766,7 +766,7 @@ const getWatchHistory = asyncHandler(async (req, res) => {
 });
 
 
-const loginUser = asyncHandler(as)
+const loginUser = asyncHandler(async())
 
 
 export  {
