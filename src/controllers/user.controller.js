@@ -793,7 +793,11 @@ const loginUser = asyncHandler(async(req,res)=>{
     }
 
     const generateAccessAndRefereshTokens = async(userId)=>{
-        try
+        try {
+            
+        } catch (error) {
+            
+        }
 
     }
     
