@@ -843,7 +843,9 @@ const logoutUser = await asyncHandler( async (req,res)=>{
             $set:{
                 refreshToken:undefined
             }
-        },
+        },{
+            new:true
+        }
     )
 })
 
