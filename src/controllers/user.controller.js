@@ -1189,7 +1189,8 @@ const updateAccountDetails = asyncHandler(async(req,res)=>{
         }
     },{new:true}).select("-password")
 
-    return res.status
+    return res
+    .status
 
 })
 
