@@ -796,7 +796,7 @@ const loginUser = asyncHandler(async(req,res)=>{
         try {
             
         } catch (error) {
-            throw new ApiError(500,"Something wen")
+            throw new ApiError(500,"Something went wrong")
         }
 
     }
