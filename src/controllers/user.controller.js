@@ -853,7 +853,7 @@ const logoutUser = await asyncHandler( async (req,res)=>{
     }
     return res.status(200)
     .clearCookie(accessToken)
-    .c
+    .clearCookie
 })
 
 
