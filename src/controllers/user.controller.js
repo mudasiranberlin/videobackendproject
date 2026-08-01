@@ -851,7 +851,7 @@ const logoutUser = await asyncHandler( async (req,res)=>{
         httpOnly:true,
         secure:true
     }
-    return res.status
+    return res.status(200)
 })
 
 
