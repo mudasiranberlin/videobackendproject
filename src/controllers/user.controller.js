@@ -1267,6 +1267,8 @@ const updateAccountDetails = asyncHandler(async(req,res)=>{
 
 // MongoDB searches:
 
+
+
     const user = User.findByIdAndUpdate(req.user?._id,{
         $set:{
             fullname:fullname,
