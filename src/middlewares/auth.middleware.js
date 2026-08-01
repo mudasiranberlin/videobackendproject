@@ -30,6 +30,6 @@ import { User } from "../models/user.models.js"
 
  // pratice 
 
- import 
+ import { asyncHandler } from "../utils/asyncHandler.js"
 
  
