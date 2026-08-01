@@ -846,7 +846,7 @@ const incomingRefreshToken = asyncHandler(async()=>{
     }
     const decodedToken= jwt.verify(incomingRefreshToken,process.env.REFRESH_TOKEN_SECRET)
 
-    await User.findById(decodedToken._id)
+    const await User.findById(decodedToken._id)
 })
 //End of the practice
 
