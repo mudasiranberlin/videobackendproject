@@ -860,7 +860,7 @@ const logoutUser = await asyncHandler( async (req,res)=>{
 // req.user._id
 // becomes
 
-12345
+// 12345
 
 
 
