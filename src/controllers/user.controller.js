@@ -857,7 +857,7 @@ const logoutUser = await asyncHandler( async (req,res)=>{
 
 //Then
 
-req.user._id
+// req.user._id
 
 
 
