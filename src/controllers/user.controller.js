@@ -824,7 +824,7 @@ const loginUser = asyncHandler(async(req,res)=>{
         new ApiResponse(200,
             {
                 user:loggedInUser,accessToken,refreshToken,"User logged in SUcessfully"
-            }
+            },
         )
 
 
@@ -835,7 +835,169 @@ const loginUser = asyncHandler(async(req,res)=>{
 })
 
 
+const logoutUser = await asyncHandler( async (req,res)=>{
 
+// Let's understand this step by step. This logout function has 3 main jobs:
+//  Remove the refresh token from the database.
+//  Remove the cookies from the browser.
+//  Send a success message.
+
+// Step 1
+// What is req.user._id?
+// Remember this line from verifyJWT:
+// req.user = user;
+// Suppose the logged-in user is:
+
+// //req.user = {
+//     _id: "12345",
+//     username: "mudasir",
+//     email: "mudasir@gmail.com"
+// }
+
+
+//Then
+
+// req.user._id
+// becomes
+
+// 12345
+// MongoDB searches for this user.
+// It finds user 12345.
+
+// Step 2
+// {
+//     $set:{
+//         refreshToken: undefined
+//     }
+// }
+// Before logout
+
+// Database
+
+// {
+//     _id:"12345",
+//     username:"mudasir",
+//     refreshToken:"abcd123456"
+// }
+// After logout
+// {
+//     _id:"12345",
+//     username:"mudasir",
+//     refreshToken: undefined
+// }
+
+he refresh token is removed.
+
+// Why?
+
+// If someone steals the old refresh token, it won't work anymore because the database no longer has it.
+Step 3
+// {
+//     new: true
+// }
+
+// This means:
+
+// Return the updated document.
+
+// Example
+
+// Before update
+
+// {
+//     username:"mudasir",
+//     refreshToken:"abc"
+// }
+
+// After update
+
+// {
+//     username:"mudasir",
+//     refreshToken:undefined
+// }
+
+// Since you're not storing the returned document in a variable, this option isn't actually used here. It's harmless but unnecessary.
+
+// https://example.com ✅
+
+// Step 5
+// .clearCookie("accessToken", options)
+
+// Suppose the browser has:
+
+// Cookies
+
+// accessToken = xyz123
+// refreshToken = abc456
+
+// After
+
+// .clearCookie("accessToken", options)
+
+// it becomes
+
+// Cookies
+
+// refreshToken = abc456
+
+// The access token cookie is deleted.
+
+// Step 6
+// .clearCookie("refreshToken", options)
+
+// This removes the refresh token cookie too.
+
+// Now the browser has:
+
+// No cookies
+// Step 7
+// .json(
+//     200,
+//     {},
+//     "User logged out"
+// )
+
+// The client receives:
+
+// {
+//     "statusCode": 200,
+//     "message": "User logged out"
+// }
+
+// (Usually, projects wrap this in an ApiResponse class.)
+
+
+// Logout = 3 steps
+
+// 1️⃣ Delete refresh token from the database
+//         ↓
+// 2️⃣ Delete accessToken cookie
+//         ↓
+// 3️⃣ Delete refreshToken cookie
+//         ↓
+// ✅ User is logged out
+
+   await User.findByIdAndUpdate(
+        req.user._id,
+        {
+            $set:{
+                refreshToken:undefined
+            }
+        },{
+            new:true
+        }
+    )
+    const options= {
+        httpOnly:true,
+        secure:true
+    }
+    return res.status(200)
+    .clearCookie("accessToken",options)
+    .clearCookie("refreshToken",options)
+    .json(
+        new ApiResponse(200, {}, "User logged out")
+    )
+})
 
 
 //End of the practice
