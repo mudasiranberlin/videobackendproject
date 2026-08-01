@@ -855,7 +855,7 @@ const logoutUser = await asyncHandler( async (req,res)=>{
     .clearCookie("accessToken",options)
     .clearCookie("refreshToken",refreshToken)
     .json(
-        200,
+        200,{}
         
     )
 })
