@@ -70,7 +70,7 @@ if (!token) {
 
 // now lets access very jwt token 
 
-now we get the a
+now we get the 
 
 jwt.verify(token,process.env.ACCESS_TOKEN_SECRET)
 
