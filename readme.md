@@ -864,6 +864,8 @@ now after that
 
 #  logout middleware
 
+
+
 router.route("/logout).post(verifyJWT,Logoutuser)
 
 // pratice 
