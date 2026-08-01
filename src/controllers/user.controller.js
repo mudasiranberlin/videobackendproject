@@ -872,19 +872,19 @@ const logoutUser = await asyncHandler( async (req,res)=>{
 // }
 Before logout
 
-Database
+// Database
 
-{
-    _id:"12345",
-    username:"mudasir",
-    refreshToken:"abcd123456"
-}
-After logout
-{
-    _id:"12345",
-    username:"mudasir",
-    refreshToken: undefined
-}
+// {
+//     _id:"12345",
+//     username:"mudasir",
+//     refreshToken:"abcd123456"
+// }
+// After logout
+// {
+//     _id:"12345",
+//     username:"mudasir",
+//     refreshToken: undefined
+// }
 
    await User.findByIdAndUpdate(
         req.user._id,
