@@ -873,7 +873,7 @@ const incomingRefreshToken = asyncHandler(async()=>{
 
 })
 
-const changeCurrentPassword = asyncHandler( as)
+const changeCurrentPassword = asyncHandler( async)
 
 
 
