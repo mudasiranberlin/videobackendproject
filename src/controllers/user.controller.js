@@ -863,6 +863,7 @@ return res
 .status(200)
 .cookie("accessToken",accessToken,options)
 .cookie("refreshToken",refreshToken,options)
+.json()
 
 })
 //End of the practice
