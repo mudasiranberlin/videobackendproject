@@ -864,7 +864,7 @@ now after that
 
 #  logout middleware
 
-in 
+in user
 
 // pratice 
 
