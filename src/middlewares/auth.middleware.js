@@ -90,13 +90,13 @@ here we have next also we use middle ware next andwhen it will done and then pas
 
     //It returns
 
-user = {
-   _id: "64ab12345",
-   username: "mudasir",
-   email: "mudasir@gmail.com",
-   password: "hashedpassword",
-   refreshToken: "xyz"
-}
+// user = {
+//    _id: "64ab12345",
+//    username: "mudasir",
+//    email: "mudasir@gmail.com",
+//    password: "hashedpassword",
+//    refreshToken: "xyz"
+// }
     
     if (!user) {
         throw new ApiError(401,"Invalid access token")
