@@ -1004,6 +1004,54 @@ const incomingRefreshToken = asyncHandler(async()=>{
 // It only changes the value in memory.
 
 
+Step 6
+await user.save({
+    validateBeforeSave: false
+});
+
+This saves the user.
+
+But before saving...
+
+Your schema has something like:
+
+userSchema.pre("save", async function(next){
+
+    if(!this.isModified("password"))
+        return next();
+
+    this.password =
+        await bcrypt.hash(this.password, 10);
+
+    next();
+
+});
+Flow
+user.password = "abc@123"
+
+        │
+        ▼
+user.save()
+
+        │
+        ▼
+pre("save") middleware
+
+        │
+        ▼
+Hash password
+
+        │
+        ▼
+Store hashed password
+
+$2b$10$ksjdhfkjshdf...
+
+The database never stores "abc@123" directly.
+
+It stores only the hashed version.
+
+
 
 
 
