@@ -886,8 +886,7 @@ const changeCurrentPassword = asyncHandler( async(req,res)=>{
 
     user.password = newPassword  //save password.  now it will go to pre and then it will get hash userSchema.pre()
     await user.save({
-        validateBeforeSave:false
-    })
+        validateBeforeSave:false})
 })
 
 
