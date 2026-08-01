@@ -33,7 +33,7 @@ import { User } from "../models/user.models.js"
  import { asyncHandler } from "../utils/asyncHandler.js"
 
 # name can be anything here i give the name is verifyjwt 
-here we have next also we use middle ware next and 
+here we have next also we use middle ware next andwhen it will done and then pass to another 
 
  export const verfiyJWT = asyncHandler( async(req,res,next
  )=>{
