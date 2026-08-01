@@ -837,7 +837,11 @@ const loginUser = asyncHandler(async(req,res)=>{
 
 const logoutUser = await asyncHandler( async (req,res)=>{
 
-    
+    Let's understand this step by step. This logout function has 3 main jobs:
+
+Remove the refresh token from the database.
+Remove the cookies from the browser.
+Send a success message.
 
    await User.findByIdAndUpdate(
         req.user._id,
