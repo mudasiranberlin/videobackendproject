@@ -848,11 +848,11 @@ const logoutUser = await asyncHandler( async (req,res)=>{
 // req.user = user;
 // Suppose the logged-in user is:
 
-//req.user = {
-    _id: "12345",
-    username: "mudasir",
-    email: "mudasir@gmail.com"
-}
+// //req.user = {
+//     _id: "12345",
+//     username: "mudasir",
+//     email: "mudasir@gmail.com"
+// }
 
 Then
 
