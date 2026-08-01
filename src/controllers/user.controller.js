@@ -15,6 +15,7 @@ import { ApiResponse } from "../utils/ApiResponse.js"
 import jwt from "jsonwebtoken"
 import mongoose from "mongoose";
 import { Subscription } from "../models/subscription.models.js"
+import { json } from "express"
 
 
 
@@ -888,7 +889,7 @@ const changeCurrentPassword = asyncHandler( async(req,res)=>{
     await user.save({
         validateBeforeSave:false})
         return res
-        .status(200,js)
+        .status(200,json)
 })
 
 
