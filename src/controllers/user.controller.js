@@ -966,10 +966,6 @@ Step 3
 
 // (Usually, projects wrap this in an ApiResponse class.)
 
-
-
-
-
    await User.findByIdAndUpdate(
         req.user._id,
         {
