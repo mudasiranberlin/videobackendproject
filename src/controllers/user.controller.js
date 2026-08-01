@@ -875,7 +875,7 @@ const incomingRefreshToken = asyncHandler(async()=>{
 
 // Change Password API.
 
-Think of it like this:
+// Think of it like this:
 
 "The user wants to change their password, but first we must make sure they know their current password."
 
