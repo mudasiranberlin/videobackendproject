@@ -38,7 +38,7 @@ here we have next also we use middle ware next andwhen it will done and then pas
  export const verfiyJWT = asyncHandler( async(req,res,next
  )=>{
     req.cookies?.accessToken || req.header
-// req.cookies we check there is cookies or not sometime have mobile cookies 
+// req.cookies we check there is cookies there or not sometime have mobile cookies 
  } )
 
  
