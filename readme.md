@@ -864,6 +864,123 @@ now after that
 
 # 
 
+// pratice 
+
+ import { asyncHandler } from "../utils/asyncHandler.js"
+
+# name can be anything here i give the name is verifyjwt 
+here we have next also we use middle ware next andwhen it will done and then pass to another 
+
+ export const verfiyJWT = asyncHandler( async(req,res,next
+ )=>{
+    try {
+        const token = req.cookies?.accessToken || req.header("Authorization")?replace("Bearer ", "")
+    // req.cookies we check there is cookies there or not sometime have mobile so not have cookies   so we are using ? to check accesstoken is present or not 
+    // if not have access token so customer can send header to get req.header
+    
+    //a mobile app usually doesn't send cookies.
+    // Instead, it sends the token in the request header.
+    // Example request
+    // Authorization: Bearer abc123
+    // So we read it using
+    // req.header("Authorization")
+    // It returns
+    // Bearer abc123
+    
+    
+    // Why .replace("Bearer ", "")?
+    
+    // JWT only needs the token.
+    // But the header contains
+    // Bearer abc123
+    // We remove "Bearer ".
+    // "Bearer abc123".replace("Bearer ", "")
+    // Result
+    // abc123
+    // Now we have only the JWT token.
+    // // 
+    
+    
+    if (!token) {
+        throw new ApiError(401,"Unauthorized request")
+    }
+    
+    // now lets access very jwt token 
+    
+    // now we get the accesstoken from user and now we have verfify it 
+    // with the we have create .env where we store ACCESS_TOKEN_SECRET
+    // 
+    // store in decoded token
+    const decodedToken =jwt.verify(token,process.env.ACCESS_TOKEN_SECRET)
+//     What it does:jwt.verify(token, process.env.ACCESS_TOKEN_SECRET)
+
+// Checks if the token is real.
+// Checks if it was signed with the correct secret key.
+// Checks if it has expired.
+// If everything is correct, it returns the data inside the token.
+
+    await User.findById(decodedToken?._id).select("-password -refreshtoken")
+    // 
+    // Find the user in the database
+    // Now MongoDB searches for that user.
+
+    //It returns
+
+// user = {
+//    _id: "64ab12345",
+//    username: "mudasir",
+//    email: "mudasir@gmail.com",
+//    password: "hashedpassword",
+//    refreshToken: "xyz"
+// }
+    
+// Why .select("-password -refreshToken")?
+//The minus (-) means do not include these fields.
+//Without .select(): .select("-password -refreshToken")
+
+// you get
+
+// {
+//    _id: "...",
+//    username: "mudasir",
+//    email: "..."
+// }
+// Why?
+
+// We don't need to send the password or refresh token while verifying the user.
+
+// It is safer not to expose them.
+
+// Step 5: Save the user
+
+
+    if (!user) {
+        throw new ApiError(401,"Invalid access token")
+        
+    }
+    req.user= user
+    next()
+    } catch (error) {
+        throw new ApiError(401,error?.message || "Inavlid access token")
+        
+    }
+
+    // First, what is req?
+
+// req means Request.
+// Whenever a client (browser or mobile app) sends a request, Express creates a req object.
+// The req object contains information like:
+
+// req.body
+// req.params
+// req.query
+// req.cookies
+// req.headers
+// You can also add your own custom data to it.
+ } )
+
+ 
+
 
 
 
