@@ -847,6 +847,7 @@ const logoutUser = await asyncHandler( async (req,res)=>{
             new:true
         }
     )
+    
 })
 
 
