@@ -820,7 +820,9 @@ const loginUser = asyncHandler(async(req,res)=>{
     return res.status(200)
     .cookie("refreshToken",refreshToken)
     .cookie("accessToken",accessToken)
-    .json({})
+    .json(
+        
+    )
 
 
 
