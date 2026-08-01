@@ -843,6 +843,9 @@ const logoutUser = await asyncHandler( async (req,res)=>{
 //  Send a success message.
 
 // Step 1
+What is req.user._id?
+
+Remember this line from verifyJWT:
 
 
    await User.findByIdAndUpdate(
