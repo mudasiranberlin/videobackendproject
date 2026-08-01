@@ -883,25 +883,25 @@ const incomingRefreshToken = asyncHandler(async()=>{
 Old Password: 123456
 New Password: abc@123
 
-        │
-        ▼
-Find logged-in user
-        │
-        ▼
-Check old password
-        │
-        ▼
-Correct?
-   │           │
-  No          Yes
-   │           │
-Return Error   Save new password
-                    │
-                    ▼
-Password gets hashed
-                    │
-                    ▼
-Return Success
+//         │
+//         ▼
+// Find logged-in user
+//         │
+//         ▼
+// Check old password
+//         │
+//         ▼
+// Correct?
+//    │           │
+//   No          Yes
+//    │           │
+// Return Error   Save new password
+//                     │
+//                     ▼
+// Password gets hashed
+//                     │
+//                     ▼
+// Return Success
 
 
 
