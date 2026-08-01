@@ -1347,7 +1347,7 @@ const updateAccountDetails = asyncHandler(async(req,res)=>{
 
 
 // Remove password
-// .select("-password")
+// .select("-password").    We don't send password to frontend.
 
 
 })
