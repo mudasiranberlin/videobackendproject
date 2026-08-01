@@ -82,7 +82,8 @@ if (!user) {
     throw new ApiError(401,"Invalid access token")
     
 }
-req.user= usernext
+req.user= user
+next()
  } )
 
  
