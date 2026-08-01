@@ -851,7 +851,7 @@ const incomingRefreshToken = asyncHandler(async()=>{
         throw new ApiError(403,"Unauthorized access")
     }
 
-    if (incomingRefreshToken !== user?. ) {
+    if (incomingRefreshToken !== user?.refreshToken ) {
         
     }
 })
