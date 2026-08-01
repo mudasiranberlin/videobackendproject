@@ -1346,8 +1346,8 @@ const updateAccountDetails = asyncHandler(async(req,res)=>{
 
 
 
-Remove password
-.select("-password")
+// Remove password
+// .select("-password")
 
 
 })
