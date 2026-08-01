@@ -891,7 +891,32 @@ he refresh token is removed.
 // Why?
 
 // If someone steals the old refresh token, it won't work anymore because the database no longer has it.
+Step 3
+{
+    new: true
+}
 
+This means:
+
+Return the updated document.
+
+Example
+
+Before update
+
+{
+    username:"mudasir",
+    refreshToken:"abc"
+}
+
+After update
+
+{
+    username:"mudasir",
+    refreshToken:undefined
+}
+
+Since you're not storing the returned document in a variable, this option isn't actually used here. It's harmless but unnecessary.
 
 
 
