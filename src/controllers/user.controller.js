@@ -841,7 +841,8 @@ const incomingRefreshToken = asyncHandler(async()=>{
     req.cookies?.refreshToken ||req.body.refreshToken
 
     if (!incomingRefreshToken) {
-        thr
+        throw new Error(" ");
+        
         
     }
 })
