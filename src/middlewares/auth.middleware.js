@@ -32,6 +32,6 @@ import { User } from "../models/user.models.js"
 
  import { asyncHandler } from "../utils/asyncHandler.js"
 
- export const verfiyJWT = asyncHandler( as )
+ export const verfiyJWT = asyncHandler( asy )
 
  
