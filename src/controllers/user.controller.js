@@ -852,7 +852,7 @@ const incomingRefreshToken = asyncHandler(async()=>{
     }
 
     if (incomingRefreshToken !== user?.refreshToken ) {
-        throw new ApiError(403,"Unauthorized access")
+        throw new ApiError(403,"refresh token expired")
     }
 })
 //End of the practice
