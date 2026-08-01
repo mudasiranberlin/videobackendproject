@@ -1097,6 +1097,41 @@ const changeCurrentPassword = asyncHandler( async(req,res)=>{
 
 // # This code will show the user profile after the user has logged in 
 
+First, remember the login flow
+
+When a user logs in:
+
+User enters email + password
+              |
+              ▼
+Backend checks password
+              |
+              ▼
+Creates JWT Token
+              |
+              ▼
+Sends token to user
+
+The user now has:
+
+accessToken = xyz123
+Later, user opens profile page
+
+Example:
+
+https://myapp.com/profile
+
+Frontend needs to know:
+
+Who is currently logged in?
+
+So it calls:
+
+GET /api/users/current-user
+
+with the token:
+
+Authorization: Bearer xyz123
 
 const getCurrentUser = asyncHandler( async(req,res)=>{
     return res
