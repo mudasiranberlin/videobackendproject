@@ -1154,6 +1154,8 @@ const changeCurrentPassword = asyncHandler( async(req,res)=>{
 
 // Step 3: Why not search the database again?
 
+
+
 const getCurrentUser = asyncHandler( async(req,res)=>{
     return res
     .status(200)
