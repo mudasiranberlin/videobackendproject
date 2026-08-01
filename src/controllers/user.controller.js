@@ -1178,7 +1178,10 @@ const getCurrentUser = asyncHandler( async(req,res)=>{
 
 
 
+# This function is used when a logged-in user wants to change their profile information, like:
 
+Full name
+Email address
 
 const updateAccountDetails = asyncHandler(async(req,res)=>{
     const {email,fullname} = req.body
