@@ -1225,10 +1225,10 @@ const getCurrentUser = asyncHandler( async(req,res)=>{
 
 const updateAccountDetails = asyncHandler(async(req,res)=>{
     const {email,fullname} = req.body
-Step 1: Receive new data
-const {email, fullname} = req.body
+// Step 1: Receive new data
+// const {email, fullname} = req.body
 
-req.body contains data sent from frontend.
+// req.body contains data sent from frontend.
 
 
 
