@@ -1201,24 +1201,24 @@ const getCurrentUser = asyncHandler( async(req,res)=>{
 
 
 // User opens profile settings
-          |
-          ▼
-Changes name/email
-          |
-          ▼
-Sends request to backend
-          |
-          ▼
-Check user is logged in
-          |
-          ▼
-Find user in database
-          |
-          ▼
-Update fullname/email
-          |
-          ▼
-Send updated user data
+//           |
+//           ▼
+// Changes name/email
+//           |
+//           ▼
+// Sends request to backend
+//           |
+//           ▼
+// Check user is logged in
+//           |
+//           ▼
+// Find user in database
+//           |
+//           ▼
+// Update fullname/email
+//           |
+//           ▼
+// Send updated user data
 const updateAccountDetails = asyncHandler(async(req,res)=>{
     const {email,fullname} = req.body
     if (!fullname ||!email) {
