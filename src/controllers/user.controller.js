@@ -876,7 +876,7 @@ const incomingRefreshToken = asyncHandler(async()=>{
 const changeCurrentPassword = asyncHandler( async(req,res)=>{
     const {oldPassword,newPassword} = req.body
 
-    const user = await User.findById(req.user?._id)  // req.user =
+    const user = await User.findById(req.user?._id)  // req.user =user 
     const isPasswordCorrect= await user.isPasswordCorrect(oldPassword)
 
 })
