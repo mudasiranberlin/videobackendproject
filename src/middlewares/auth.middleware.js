@@ -43,7 +43,6 @@ here we have next also we use middle ware next andwhen it will done and then pas
 //a mobile app usually doesn't send cookies.
 
 Instead, it sends the token in the request header.
-
 Example request
 
 Authorization: Bearer abc123
