@@ -795,7 +795,7 @@ const loginUser = asyncHandler(async(req,res)=>{
     const generateAccessAndRefereshTokens = async(userId)=>{
         try {
             const user = await User.findById(userId)
-            user.generateAccessToken()
+            const user.generateAccessToken()
             user.generateRefreshToken()
             
         } catch (error) {
