@@ -846,7 +846,7 @@ const logoutUser = await asyncHandler( async (req,res)=>{
 // What is req.user._id?
 // Remember this line from verifyJWT:
 // req.user = user;
-Suppose the logged-in user is:
+// Suppose the logged-in user is:
 
 req.user = {
     _id: "12345",
