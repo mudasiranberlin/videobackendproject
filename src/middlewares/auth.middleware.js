@@ -51,24 +51,24 @@ here we have next also we use middle ware next andwhen it will done and then pas
 // Bearer abc123
 
 
-Why .replace("Bearer ", "")?
+// Why .replace("Bearer ", "")?
 
-JWT only needs the token.
+// JWT only needs the token.
 
-But the header contains
+// But the header contains
 
-Bearer abc123
+// Bearer abc123
 
-We remove "Bearer ".
+// We remove "Bearer ".
 
-"Bearer abc123".replace("Bearer ", "")
+// "Bearer abc123".replace("Bearer ", "")
 
-Result
+// Result
 
-abc123
+// abc123
 
-Now we have only the JWT token.
-// 
+// Now we have only the JWT token.
+// // 
  } )
 
  
