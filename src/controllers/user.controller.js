@@ -953,6 +953,37 @@ const incomingRefreshToken = asyncHandler(async()=>{
 // In your User model, we have this function isPasswordCorrect:
 
 
+Database
+
+The password is hashed, not plain text.
+
+Database
+
+password
+
+$2b$10$jhfdjshfjhdf...
+
+User enters:
+
+123456
+
+bcrypt.compare() checks
+
+123456
+        │
+Compare
+        │
+Database Hash
+
+If they match:
+
+isPasswordCorrect = true
+
+Otherwise:
+
+isPasswordCorrect = false
+
+
 
 
 
