@@ -88,7 +88,15 @@ here we have next also we use middle ware next andwhen it will done and then pas
     // Find the user in the database
     // Now MongoDB searches for that user.
 
-    
+    //It returns
+
+user = {
+   _id: "64ab12345",
+   username: "mudasir",
+   email: "mudasir@gmail.com",
+   password: "hashedpassword",
+   refreshToken: "xyz"
+}
     
     if (!user) {
         throw new ApiError(401,"Invalid access token")
