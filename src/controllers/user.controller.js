@@ -837,7 +837,7 @@ const loginUser = asyncHandler(async(req,res)=>{
 /// 
 
 
-const refreshAccessToken = asyncHandler(async()=>{
+const inc = asyncHandler(async()=>{
     req.cookies?.refreshToken ||req.body.refreshToken
 })
 //End of the practice
