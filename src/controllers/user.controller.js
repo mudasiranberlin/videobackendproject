@@ -874,7 +874,7 @@ const incomingRefreshToken = asyncHandler(async()=>{
 })
 
 const changeCurrentPassword = asyncHandler( async(req,res)=>{
-    const {oldPassword,new}req.body
+    const {oldPassword,newPassword}req.body
 })
 
 
