@@ -784,7 +784,8 @@ const loginUser = asyncHandler(async(req,res)=>{
     })
 
     if (!user) {
-        throw
+        throw new ap");
+        
     }
 
 
