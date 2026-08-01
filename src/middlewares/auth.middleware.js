@@ -49,6 +49,8 @@ here we have next also we use middle ware next andwhen it will done and then pas
 // req.header("Authorization")
 // It returns
 // Bearer abc123
+
+
 Why .replace("Bearer ", "")?
 
 JWT only needs the token.
