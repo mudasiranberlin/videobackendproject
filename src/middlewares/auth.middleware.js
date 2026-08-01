@@ -76,12 +76,12 @@ here we have next also we use middle ware next andwhen it will done and then pas
     // 
     // store in decoded token
     const decodedToken =jwt.verify(token,process.env.ACCESS_TOKEN_SECRET)
-    What it does:
+//     What it does:
 
-Checks if the token is real.
-Checks if it was signed with the correct secret key.
-Checks if it has expired.
-If everything is correct, it returns the data inside the token.
+// Checks if the token is real.
+// Checks if it was signed with the correct secret key.
+// Checks if it has expired.
+// If everything is correct, it returns the data inside the token.
     await User.findById(decodedToken?._id).select("-password -refreshtoken")
     
     if (!user) {
