@@ -884,7 +884,7 @@ const changeCurrentPassword = asyncHandler( async(req,res)=>{
         throw new ApiError(401,"Invalid password")
     }
 
-    user.password = newPassword  //save password. 
+    user.password = newPassword  //save password.  now 
 
 })
 
