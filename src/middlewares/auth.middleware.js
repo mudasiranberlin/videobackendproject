@@ -60,7 +60,6 @@ here we have next also we use middle ware next andwhen it will done and then pas
 // Bearer abc123
 
 // We remove "Bearer ".
-
 // "Bearer abc123".replace("Bearer ", "")
 // Result
 // abc123
