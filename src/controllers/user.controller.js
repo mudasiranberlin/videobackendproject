@@ -1179,6 +1179,7 @@ const getCurrentUser = asyncHandler( async(req,res)=>{
 
 const updateAccountDetails = asyncHandler(async(req,res)=>{
     const {username,fullname} = req.body
+    
 })
 
 
