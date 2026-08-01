@@ -868,7 +868,7 @@ const incomingRefreshToken = asyncHandler(async()=>{
         new ApiResponse(200,{accessToken,refreshToken},"Access token refreshed sucessfully")
     )
     } catch (error) {
-        throw new ApiError(401,error?.message||"")
+        throw new ApiError(401,error?.message||"Unauthorized access")
     }
 
 })
