@@ -776,7 +776,7 @@ const getWatchHistory = asyncHandler(async (req, res) => {
 
 const loginUser = asyncHandler(async(req,res)=>{
     const {username,password,email}= res.body
-    if ([username,password,email]) {
+    if (![username,password,email]) {
         
     }
 
