@@ -840,7 +840,9 @@ const logoutUser = await asyncHandler( async (req,res)=>{
     User.findByIdAndUpdate(
         req.user._id,
         {
-            $set
+            $set:{
+                
+            }
         }
     )
 })
