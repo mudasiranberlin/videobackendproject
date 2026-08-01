@@ -856,7 +856,7 @@ const logoutUser = await asyncHandler( async (req,res)=>{
     .clearCookie("refreshToken",refreshToken)
     .json(
         200,
-        throw new ApiError()
+        throw new ApiError("")
     )
 })
 
