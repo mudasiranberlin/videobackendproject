@@ -873,7 +873,7 @@ const incomingRefreshToken = asyncHandler(async()=>{
 
 })
 
-Change Password API.
+// Change Password API.
 
 Think of it like this:
 
