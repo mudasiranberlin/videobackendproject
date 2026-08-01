@@ -842,7 +842,7 @@ const logoutUser = await asyncHandler( async (req,res)=>{
 //  Remove the cookies from the browser.
 //  Send a success message.
 
-
+Step 1
 
 
    await User.findByIdAndUpdate(
