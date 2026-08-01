@@ -62,7 +62,6 @@ here we have next also we use middle ware next andwhen it will done and then pas
 // We remove "Bearer ".
 
 // "Bearer abc123".replace("Bearer ", "")
-
 // Result
 // abc123
 // Now we have only the JWT token.
