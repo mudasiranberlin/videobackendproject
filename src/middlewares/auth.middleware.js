@@ -34,6 +34,7 @@ import { User } from "../models/user.models.js"
 
 # name can be anything here i give the name is verifyjwt 
 
+
  export const verfiyJWT = asyncHandler( async(req,res)=>{
     req.cookies?.accessToken || req.header
  } )
