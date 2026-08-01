@@ -76,7 +76,7 @@ here we have next also we use middle ware next andwhen it will done and then pas
     // 
     // store in decoded token
     const decodedToken =jwt.verify(token,process.env.ACCESS_TOKEN_SECRET)
-//     What it does:
+//     What it does:jwt.verify(token, process.env.ACCESS_TOKEN_SECRET)
 
 // Checks if the token is real.
 // Checks if it was signed with the correct secret key.
