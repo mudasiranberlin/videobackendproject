@@ -878,7 +878,30 @@ const incomingRefreshToken = asyncHandler(async()=>{
 // Think of it like this:
 
 // "The user wants to change their password, but first we must make sure they know their current password."
+// User enters
 
+Old Password: 123456
+New Password: abc@123
+
+        │
+        ▼
+Find logged-in user
+        │
+        ▼
+Check old password
+        │
+        ▼
+Correct?
+   │           │
+  No          Yes
+   │           │
+Return Error   Save new password
+                    │
+                    ▼
+Password gets hashed
+                    │
+                    ▼
+Return Success
 
 
 
