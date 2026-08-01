@@ -1015,41 +1015,41 @@ But before saving...
 
 Your schema has something like:
 
-userSchema.pre("save", async function(next){
+// userSchema.pre("save", async function(next){
 
-    if(!this.isModified("password"))
-        return next();
+//     if(!this.isModified("password"))
+//         return next();
 
-    this.password =
-        await bcrypt.hash(this.password, 10);
+//     this.password =
+//         await bcrypt.hash(this.password, 10);
 
-    next();
+//     next();
 
-});
-Flow
-user.password = "abc@123"
+// });
+// Flow
+// user.password = "abc@123"
 
-        │
-        ▼
-user.save()
+//         │
+//         ▼
+// user.save()
 
-        │
-        ▼
-pre("save") middleware
+//         │
+//         ▼
+// pre("save") middleware
 
-        │
-        ▼
-Hash password
+//         │
+//         ▼
+// Hash password
 
-        │
-        ▼
-Store hashed password
+//         │
+//         ▼
+// Store hashed password
 
-$2b$10$ksjdhfkjshdf...
+// $2b$10$ksjdhfkjshdf...
 
-The database never stores "abc@123" directly.
+// The database never stores "abc@123" directly.
 
-It stores only the hashed version.
+// It stores only the hashed version.
 
 
 
