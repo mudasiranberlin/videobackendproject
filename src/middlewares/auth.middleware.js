@@ -128,6 +128,12 @@ here we have next also we use middle ware next andwhen it will done and then pas
         throw new ApiError(401,error?.message || "Inavlid access token")
         
     }
+
+    First, what is req?
+
+req means Request.
+
+Whenever a client (browser or mobile app) sends a request, Express creates a req object.
  } )
 
  
