@@ -837,7 +837,7 @@ const loginUser = asyncHandler(async(req,res)=>{
 /// 
 
 
-const refreshAccessToken = asyncHandler
+const refreshAccessToken = asyncHandler(as)
 //End of the practice
 
 
