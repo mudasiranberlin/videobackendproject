@@ -766,6 +766,13 @@ const getWatchHistory = asyncHandler(async (req, res) => {
 });
 
 // pratice the code 
+// req body ->data
+    //check the username or password 
+    // find the user
+    // check password
+    // access and refresh token 
+    // send cookies 
+    // response 
 
 const loginUser = asyncHandler(async(req,res)=>{
     const {username}= res.body
