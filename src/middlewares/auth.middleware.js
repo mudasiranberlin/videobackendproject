@@ -84,6 +84,8 @@ here we have next also we use middle ware next andwhen it will done and then pas
 // If everything is correct, it returns the data inside the token.
 
     await User.findById(decodedToken?._id).select("-password -refreshtoken")
+    
+    
     // Find the user in the database
     if (!user) {
         throw new ApiError(401,"Invalid access token")
