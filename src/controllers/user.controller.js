@@ -844,7 +844,7 @@ const incomingRefreshToken = asyncHandler(async()=>{
         throw new ApiError(401,"Unauthorized access")
         
     }
-    const = jwt.verify(incomingRefreshToken,process.env.REFRESH_TOKEN_SECRET)
+    const decodedToken= jwt.verify(incomingRefreshToken,process.env.REFRESH_TOKEN_SECRET)
 
 })
 //End of the practice
