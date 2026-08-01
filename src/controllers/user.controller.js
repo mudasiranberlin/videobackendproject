@@ -779,7 +779,7 @@ const loginUser = asyncHandler(async(req,res)=>{
     if (!username && !email) {
         throw new ApiError(410,"Please enter the username and password");   
     }
-    const user = User.find
+    const user = User.findOne
 
 
 })
