@@ -920,51 +920,51 @@ Step 3
 
 // https://example.com ✅
 
-Step 5
-.clearCookie("accessToken", options)
+// Step 5
+// .clearCookie("accessToken", options)
 
-Suppose the browser has:
+// Suppose the browser has:
 
-Cookies
+// Cookies
 
-accessToken = xyz123
-refreshToken = abc456
+// accessToken = xyz123
+// refreshToken = abc456
 
-After
+// After
 
-.clearCookie("accessToken", options)
+// .clearCookie("accessToken", options)
 
-it becomes
+// it becomes
 
-Cookies
+// Cookies
 
-refreshToken = abc456
+// refreshToken = abc456
 
-The access token cookie is deleted.
+// The access token cookie is deleted.
 
-Step 6
-.clearCookie("refreshToken", options)
+// Step 6
+// .clearCookie("refreshToken", options)
 
-This removes the refresh token cookie too.
+// This removes the refresh token cookie too.
 
-Now the browser has:
+// Now the browser has:
 
-No cookies
-Step 7
-.json(
-    200,
-    {},
-    "User logged out"
-)
+// No cookies
+// Step 7
+// .json(
+//     200,
+//     {},
+//     "User logged out"
+// )
 
-The client receives:
+// The client receives:
 
-{
-    "statusCode": 200,
-    "message": "User logged out"
-}
+// {
+//     "statusCode": 200,
+//     "message": "User logged out"
+// }
 
-(Usually, projects wrap this in an ApiResponse class.)
+// (Usually, projects wrap this in an ApiResponse class.)
 
 
 
