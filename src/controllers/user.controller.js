@@ -1238,7 +1238,34 @@ const updateAccountDetails = asyncHandler(async(req,res)=>{
     }
 
 
+Step 3: Find the logged-in user
 
+You wrote:
+
+User.findById(req.user?._id)
+
+Remember:
+
+From verifyJWT:
+
+req.user = user;
+
+Example:
+
+req.user = {
+    _id:"12345",
+    fullname:"Mudasir"
+}
+
+So:
+
+req.user?._id
+
+becomes:
+
+12345
+
+MongoDB searches:
 
     const user = User.findByIdAndUpdate(req.user?._id,{
         $set:{
