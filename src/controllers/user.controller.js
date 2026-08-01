@@ -1152,7 +1152,7 @@ const changeCurrentPassword = asyncHandler( async(req,res)=>{
 // You stored the logged-in user.
 
 
-Step 3: Why not search the database again?
+// Step 3: Why not search the database again?
 
 const getCurrentUser = asyncHandler( async(req,res)=>{
     return res
