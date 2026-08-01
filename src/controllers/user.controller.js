@@ -835,7 +835,7 @@ const loginUser = asyncHandler(async(req,res)=>{
 })
 
 
-const logoutUser = await asyncHandler()
+const logoutUser = await asyncHandler( as)
 
 
 //End of the practice
