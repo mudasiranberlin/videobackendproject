@@ -1177,7 +1177,7 @@ const getCurrentUser = asyncHandler( async(req,res)=>{
 })
 
 
-const updateAccountDetails = asyncHandler(as)
+const updateAccountDetails = asyncHandler(async ())
 
 
 
