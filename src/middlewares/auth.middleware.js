@@ -65,7 +65,7 @@ here we have next also we use middle ware next andwhen it will done and then pas
 
 
 if (!token) {
-    throw new api e
+    throw new ApiError()
     
 }
 
