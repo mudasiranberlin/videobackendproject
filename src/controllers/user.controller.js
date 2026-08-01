@@ -1238,34 +1238,34 @@ const updateAccountDetails = asyncHandler(async(req,res)=>{
     }
 
 
-Step 3: Find the logged-in user
+// Step 3: Find the logged-in user
 
-You wrote:
+// You wrote:
 
-User.findById(req.user?._id)
+// User.findById(req.user?._id)
 
-Remember:
+// Remember:
 
-From verifyJWT:
+// From verifyJWT:
 
-req.user = user;
+// req.user = user;
 
-Example:
+// Example:
 
-req.user = {
-    _id:"12345",
-    fullname:"Mudasir"
-}
+// req.user = {
+//     _id:"12345",
+//     fullname:"Mudasir"
+// }
 
-So:
+// So:
 
-req.user?._id
+// req.user?._id
 
-becomes:
+// becomes:
 
-12345
+// 12345
 
-MongoDB searches:
+// MongoDB searches:
 
     const user = User.findByIdAndUpdate(req.user?._id,{
         $set:{
