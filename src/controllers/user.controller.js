@@ -1236,7 +1236,7 @@ const updateAccountDetails = asyncHandler(async(req,res)=>{
         throw new ApiError(201,"Enter the fullname and username")
     }
 
-Check if fields are empty
+// Check if fields are empty
 
 
     const user = User.findByIdAndUpdate(req.user?._id,{
