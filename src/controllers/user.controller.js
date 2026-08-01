@@ -881,7 +881,7 @@ const changeCurrentPassword = asyncHandler( async(req,res)=>{
     const isPasswordCorrect= await user.isPasswordCorrect(oldPassword) //we have method in usermodel isPassswordCorrect
 
     if (!isPasswordCorrect) {
-        throw new pass
+        throw new 
         
     }
 
