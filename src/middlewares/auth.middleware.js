@@ -48,7 +48,6 @@ Authorization: Bearer abc123
 So we read it using
 req.header("Authorization")
 It returns
-
 Bearer abc123
 // 
  } )
