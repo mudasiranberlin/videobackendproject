@@ -862,7 +862,7 @@ const incomingRefreshToken = asyncHandler(async()=>{
 return res
 .status(200)
 .cookie("accessToken",accessToken,options)
-.cookie(ref)
+.cookie(refreshToken)
 
 })
 //End of the practice
