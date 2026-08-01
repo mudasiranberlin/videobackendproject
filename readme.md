@@ -1028,7 +1028,7 @@ Step 3
     )
 })
 
-middle ware starts from here
+# middle ware starts from here
 
 router.route("/logout).post(verifyJWT,Logoutuser)
 
