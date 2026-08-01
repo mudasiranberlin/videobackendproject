@@ -952,7 +952,6 @@ const incomingRefreshToken = asyncHandler(async()=>{
 
 // In your User model, we have this function isPasswordCorrect:
 
-
 // Database
 
 // The password is hashed, not plain text.
