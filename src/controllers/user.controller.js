@@ -870,7 +870,7 @@ const logoutUser = await asyncHandler( async (req,res)=>{
 //         refreshToken: undefined
 //     }
 // }
-Before logout
+// Before logout
 
 // Database
 
