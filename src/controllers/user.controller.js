@@ -795,6 +795,7 @@ const loginUser = asyncHandler(async(req,res)=>{
     const generateAccessAndRefereshTokens = async(userId)=>{
         try {
             
+            
         } catch (error) {
             throw new ApiError(500,"Something went wrong")
         }
