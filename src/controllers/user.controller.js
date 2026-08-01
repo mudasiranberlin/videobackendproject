@@ -858,7 +858,9 @@ const logoutUser = await asyncHandler( async (req,res)=>{
 //Then
 
 // req.user._id
+becomes
 
+12345
 
 
 
