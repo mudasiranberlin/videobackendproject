@@ -792,7 +792,7 @@ const loginUser = asyncHandler(async(req,res)=>{
         throw new ApiError(401,"password incoorect");
     }
 
-    
+    const generateAccessAndRefereshTokens
     
 
 
