@@ -1143,13 +1143,13 @@ const changeCurrentPassword = asyncHandler( async(req,res)=>{
 //     getCurrentUser
 // )
 
-Why req.user?
+// Why req.user?
 
-Inside your middleware:
+// Inside your middleware:
 
-req.user = user;
+// req.user = user;
 
-You stored the logged-in user.
+// You stored the logged-in user.
 
 const getCurrentUser = asyncHandler( async(req,res)=>{
     return res
