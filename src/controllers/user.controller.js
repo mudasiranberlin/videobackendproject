@@ -1183,7 +1183,21 @@ const getCurrentUser = asyncHandler( async(req,res)=>{
 // Full name
 // Email address
 
+Before:
 
+{
+  "fullname": "Mudasir",
+  "email": "old@gmail.com"
+}
+
+User changes it to:
+
+{
+  "fullname": "Mudasir Ahmad",
+  "email": "new@gmail.com"
+}
+
+The backend updates the database.
 
 const updateAccountDetails = asyncHandler(async(req,res)=>{
     const {email,fullname} = req.body
