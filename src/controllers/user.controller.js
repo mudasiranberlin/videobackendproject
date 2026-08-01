@@ -1181,7 +1181,6 @@ const updateAccountDetails = asyncHandler(async(req,res)=>{
     const {username,fullname} = req.body
     if (!fullname ||!username) {
         throw new ApiError(201,"Enter the fullname and username")
-        
     }
 })
 
