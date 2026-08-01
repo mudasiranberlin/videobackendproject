@@ -1231,7 +1231,7 @@ const updateAccountDetails = asyncHandler(async(req,res)=>{
 // req.body contains data sent from frontend.
 
 
-
+// Check if fields are empty
     if (!fullname ||!email) {
         throw new ApiError(201,"Enter the fullname and username")
     }
