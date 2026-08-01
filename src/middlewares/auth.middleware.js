@@ -33,7 +33,7 @@ import { User } from "../models/user.models.js"
  import { asyncHandler } from "../utils/asyncHandler.js"
 
  export const verfiyJWT = asyncHandler( async(req,res)=>{
-    req.cookies
+    req.cookies?.
  } )
 
  
