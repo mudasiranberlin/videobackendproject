@@ -786,7 +786,6 @@ const loginUser = asyncHandler(async(req,res)=>{
     if (!user) {
         throw new ApiError(401,"User does not exists");
         
-        
     }
 
 
