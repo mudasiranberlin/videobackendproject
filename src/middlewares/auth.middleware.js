@@ -132,7 +132,6 @@ here we have next also we use middle ware next andwhen it will done and then pas
     First, what is req?
 
 req means Request.
-
 Whenever a client (browser or mobile app) sends a request, Express creates a req object.
  } )
 
