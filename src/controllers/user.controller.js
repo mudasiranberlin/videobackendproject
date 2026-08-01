@@ -776,7 +776,7 @@ const getWatchHistory = asyncHandler(async (req, res) => {
 
 const loginUser = asyncHandler(async(req,res)=>{
     const {username,password,email}= res.body
-    if (!username && email) {
+    if (!username && !email) {
         throw new ApiError(410,"Please enter the username and password");   
     }
     const user = User.find
