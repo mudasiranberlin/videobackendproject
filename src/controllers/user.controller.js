@@ -841,7 +841,7 @@ const logoutUser = await asyncHandler( async (req,res)=>{
         req.user._id,
         {
             $set:{
-                refreshToken
+                refreshToken:undefind
             }
         }
     )
