@@ -912,39 +912,39 @@ const incomingRefreshToken = asyncHandler(async()=>{
 // Where did req.user come from?
 // From your verifyJWT middleware.
 // Earlier:
-Earlier:
+// Earlier:
 
-req.user = user;
+// req.user = user;
 
-Suppose
+// Suppose
 
-req.user = {
-    _id: "12345",
-    username: "mudasir"
-}
+// req.user = {
+//     _id: "12345",
+//     username: "mudasir"
+// }
 
-Then
+// Then
 
-req.user._id
+// req.user._id
 
-becomes
+// becomes
 
-12345
+// 12345
 
-MongoDB searches:
+// MongoDB searches:
 
-Database
+// Database
 
-12345 → Mudasir
-67890 → Ali
+// 12345 → Mudasir
+// 67890 → Ali
 
-and returns
+// and returns
 
-user = {
-    _id: "12345",
-    username: "mudasir",
-    password: "$2b$10$k..."
-}
+// user = {
+//     _id: "12345",
+//     username: "mudasir",
+//     password: "$2b$10$k..."
+// }
 
 
 
