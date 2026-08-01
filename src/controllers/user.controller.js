@@ -852,7 +852,7 @@ const logoutUser = await asyncHandler( async (req,res)=>{
         secure:true
     }
     return res.status(200)
-    .clearCookie("accessToken",op)
+    .clearCookie("accessToken",options)
     .clearCookie("refreshToken",refreshToken)
     .json(
         200,
