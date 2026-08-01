@@ -1281,37 +1281,37 @@ const updateAccountDetails = asyncHandler(async(req,res)=>{
     .json( new ApiResponse(200,user,"Account details updated sucessfully") )
 
 
-Third part:
-{
- $set:{
-    fullname: fullname,
-    email: email
- }
-}
+// Third part:
+// {
+//  $set:{
+//     fullname: fullname,
+//     email: email
+//  }
+// }
 
-Means:
+// Means:
 
-Change these fields.
+// Change these fields.
 
-Before database:
+// Before database:
 
-{
-    "_id":"12345",
-    "fullname":"Mudasir",
-    "email":"old@gmail.com",
-    "password":"hashedpassword"
-}
+// {
+//     "_id":"12345",
+//     "fullname":"Mudasir",
+//     "email":"old@gmail.com",
+//     "password":"hashedpassword"
+// }
 
-After update:
+// After update:
 
-{
-    "_id":"12345",
-    "fullname":"Mudasir Ahmad",
-    "email":"new@gmail.com",
-    "password":"hashedpassword"
-}
+// {
+//     "_id":"12345",
+//     "fullname":"Mudasir Ahmad",
+//     "email":"new@gmail.com",
+//     "password":"hashedpassword"
+// }
 
-Password stays the same.
+// Password stays the same.
 
 
 
