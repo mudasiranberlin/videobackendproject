@@ -766,6 +766,8 @@ const getWatchHistory = asyncHandler(async (req, res) => {
 });
 
 // pratice the code 
+
+
 // req body ->data
     //check the username or password 
     // find the user
