@@ -1154,7 +1154,21 @@ const changeCurrentPassword = asyncHandler( async(req,res)=>{
 
 // Step 3: Why not search the database again?
 
+You might think:
 
+"Why don't we do this?"
+
+const user = await User.findById(req.user._id)
+
+again.
+
+Because the middleware already did it.
+
+You already have:
+
+req.user
+
+So this controller is only responsible for sending data.
 
 const getCurrentUser = asyncHandler( async(req,res)=>{
     return res
