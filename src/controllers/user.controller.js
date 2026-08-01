@@ -775,7 +775,7 @@ const getWatchHistory = asyncHandler(async (req, res) => {
     // response 
 
 const loginUser = asyncHandler(async(req,res)=>{
-    const {username,}= res.body
+    const {username,password}= res.body
 
 })
 
