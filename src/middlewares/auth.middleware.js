@@ -76,7 +76,7 @@ if (!token) {
 // store in decoded token
 const decodedToken =jwt.verify(token,process.env.ACCESS_TOKEN_SECRET)
 
-await User.findById(ded_id)
+await User.findById(decodedToken_id)
  } )
 
  
