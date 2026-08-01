@@ -955,7 +955,7 @@ http://example.com ❌
 
 Only:
 
-https://example.com ✅
+//https://example.com ✅
 
 
 
