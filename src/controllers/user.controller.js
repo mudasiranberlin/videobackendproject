@@ -888,9 +888,9 @@ const logoutUser = await asyncHandler( async (req,res)=>{
 
 he refresh token is removed.
 
-Why?
+// Why?
 
-If someone steals the old refresh token, it won't work anymore because the database no longer has it.
+// If someone steals the old refresh token, it won't work anymore because the database no longer has it.
 
    await User.findByIdAndUpdate(
         req.user._id,
