@@ -1094,7 +1094,7 @@ const changeCurrentPassword = asyncHandler( async(req,res)=>{
 })
 
 
-const getCurrentUser = asyncHandler( as)
+const getCurrentUser = asyncHandler( async())
 
 
 
