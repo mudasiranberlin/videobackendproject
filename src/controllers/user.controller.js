@@ -780,7 +780,7 @@ const loginUser = asyncHandler(async(req,res)=>{
         throw new ApiError(410,"Please enter the username and password");   
     }
     const user = User.findOne({
-        $or
+        $or:[]
     })
 
 
