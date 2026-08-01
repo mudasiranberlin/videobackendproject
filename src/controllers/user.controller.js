@@ -826,8 +826,6 @@ const loginUser = asyncHandler(async(req,res)=>{
                 user:loggedInUser,accessToken,refreshToken,"User logged in SUcessfully"
             },
         )
-
-
     )
 
 })
