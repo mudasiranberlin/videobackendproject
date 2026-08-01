@@ -918,44 +918,7 @@ Step 3
 
 // Since you're not storing the returned document in a variable, this option isn't actually used here. It's harmless but unnecessary.
 
-// Step 4
-// const options = {
-//     httpOnly: true,
-//     secure: true
-// }
-
-// These are cookie options.
-
-// httpOnly: true
-
-// JavaScript running in the browser cannot read the cookie.
-
-// Browser
-//     │
-// Cookie
-// accessToken
-
-// Even if someone writes:
-
-// document.cookie
-
-// they cannot read an httpOnly cookie.
-
-// This improves security.
-
-// secure: true
-
-// This means:
-
-// Only send the cookie over HTTPS.
-
-// Not:
-
-// http://example.com ❌
-
-// Only:
-
-https://example.com ✅
+// //https://example.com ✅
 
 
 
