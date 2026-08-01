@@ -37,7 +37,57 @@ here we have next also we use middle ware next andwhen it will done and then pas
 
  export const verfiyJWT = asyncHandler( async(req,res,next
  )=>{
-    tr
+    try {
+        const token = req.cookies?.accessToken || req.header("Authorization")?replace("Bearer ", "")
+    // req.cookies we check there is cookies there or not sometime have mobile so not have cookies   so we are using ? to check accesstoken is present or not 
+    // if not have access token so customer can send header to get req.header
+    
+    //a mobile app usually doesn't send cookies.
+    // Instead, it sends the token in the request header.
+    // Example request
+    // Authorization: Bearer abc123
+    // So we read it using
+    // req.header("Authorization")
+    // It returns
+    // Bearer abc123
+    
+    
+    // Why .replace("Bearer ", "")?
+    
+    // JWT only needs the token.
+    // But the header contains
+    // Bearer abc123
+    // We remove "Bearer ".
+    // "Bearer abc123".replace("Bearer ", "")
+    // Result
+    // abc123
+    // Now we have only the JWT token.
+    // // 
+    
+    
+    if (!token) {
+        throw new ApiError(401,"Unauthorized request")
+    }
+    
+    // now lets access very jwt token 
+    
+    // now we get the accesstoken from user and now we have verfify it 
+    // with the we have create .env where we store ACCESS_TOKEN_SECRET
+    // 
+    // store in decoded token
+    const decodedToken =jwt.verify(token,process.env.ACCESS_TOKEN_SECRET)
+    
+    await User.findById(decodedToken?._id).select("-password -refreshtoken")
+    
+    if (!user) {
+        throw new ApiError(401,"Invalid access token")
+        
+    }
+    req.user= user
+    next()
+    } catch (error) {
+        
+    }
  } )
 
  
