@@ -983,26 +983,26 @@ const incomingRefreshToken = asyncHandler(async()=>{
 // isPasswordCorrect = false 
 
 
-Step 5
-user.password = newPassword;
+// Step 5
+// user.password = newPassword;
 
-Suppose
+// Suppose
 
-Old Password
+// Old Password
 
-123456
+// 123456
 
-User wants
+// User wants
 
-abc@123
+// abc@123
 
-Now
+// Now
 
-user.password = "abc@123";
+// user.password = "abc@123";
 
-Important: At this moment it is not yet saved in the database.
+// Important: At this moment it is not yet saved in the database.
 
-It only changes the value in memory.
+// It only changes the value in memory.
 
 
 
