@@ -98,6 +98,7 @@ here we have next also we use middle ware next andwhen it will done and then pas
 //    refreshToken: "xyz"
 // }
     
+// Why .select("-password -refreshToken")?
 
     if (!user) {
         throw new ApiError(401,"Invalid access token")
