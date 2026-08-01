@@ -946,7 +946,8 @@ const incomingRefreshToken = asyncHandler(async()=>{
 //     password: "$2b$10$k..."
 // }
 
-
+const isPasswordCorrect =
+    await user.isPasswordCorrect(oldPassword);
 
 
 
