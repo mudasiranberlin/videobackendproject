@@ -950,7 +950,7 @@ const incomingRefreshToken = asyncHandler(async()=>{
      // await user.isPasswordCorrect(oldPassword);
 // What is isPasswordCorrect()?
 
-// In your User model, we have this function:
+// In your User model, we have this function is:
 
 
 
