@@ -86,7 +86,7 @@ here we have next also we use middle ware next andwhen it will done and then pas
     await User.findById(decodedToken?._id).select("-password -refreshtoken")
     // 
     // Find the user in the database
-    
+    // Now MongoDB searches for that user.
     
     if (!user) {
         throw new ApiError(401,"Invalid access token")
