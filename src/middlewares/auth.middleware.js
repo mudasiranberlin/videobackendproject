@@ -46,8 +46,7 @@ Instead, it sends the token in the request header.
 Example request
 Authorization: Bearer abc123
 So we read it using
-req.header("Authorization")
-It returns
+req.header("Authorization")It returns
 
 Bearer abc123
 // 
