@@ -779,6 +779,7 @@ const loginUser = asyncHandler(async(req,res)=>{
     if (!username && password) {
         throw new ApiError(410,"Please enter the username and password");   
     }
+    
 
 })
 
