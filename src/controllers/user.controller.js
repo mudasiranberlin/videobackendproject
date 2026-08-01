@@ -1194,7 +1194,9 @@ const updateAccountDetails = asyncHandler(async(req,res)=>{
     .json( new ApiResponse(200,user,"Account details updated sucessfully") )
 })
 
-const updateUserAvatar = asyncHandler(async(req,res))
+const updateUserAvatar = asyncHandler(async(req,res)=>{
+    
+})
 
 
 
