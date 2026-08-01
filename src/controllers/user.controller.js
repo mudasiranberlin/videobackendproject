@@ -1133,6 +1133,9 @@ const changeCurrentPassword = asyncHandler( async(req,res)=>{
 
 // Authorization: Bearer xyz123
 
+
+
+
 const getCurrentUser = asyncHandler( async(req,res)=>{
     return res
     .status(200)
