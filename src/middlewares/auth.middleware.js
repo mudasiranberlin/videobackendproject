@@ -70,7 +70,7 @@ if (!token) {
 
 // now lets access very jwt token 
 
-jwt.verify(token)
+jwt.verify(token,process.env)
 
  } )
 
