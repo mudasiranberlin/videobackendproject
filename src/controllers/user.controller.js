@@ -888,7 +888,7 @@ const changeCurrentPassword = asyncHandler( async(req,res)=>{
     await user.save({
         validateBeforeSave:false})
         return res
-        .status(200,{},)
+        .status(200,js)
 })
 
 
