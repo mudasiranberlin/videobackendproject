@@ -66,7 +66,6 @@ here we have next also we use middle ware next andwhen it will done and then pas
 
 if (!token) {
     throw new ApiError(401,"Unauthorized request")
-    
 }
 
  } )
