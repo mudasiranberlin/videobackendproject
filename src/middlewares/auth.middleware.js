@@ -37,7 +37,7 @@ here we have next also we use middle ware next andwhen it will done and then pas
 
  export const verfiyJWT = asyncHandler( async(req,res,next
  )=>{
-    req.cookies?.accessToken || req.header("Authorization")?replace()
+    req.cookies?.accessToken || req.header("Authorization")?replace("")
 // req.cookies we check there is cookies there or not sometime have mobile so not have cookies   so we are using ? to check accesstoken is present or not 
 // if not have access token so customer can send header to get req.header
  } )
