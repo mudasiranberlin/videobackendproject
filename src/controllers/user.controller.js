@@ -857,7 +857,6 @@ const incomingRefreshToken = asyncHandler(async()=>{
     const options={
         httpOnly=true,
         secure:true
-
     }
 })
 //End of the practice
