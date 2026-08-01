@@ -36,7 +36,6 @@ import { User } from "../models/user.models.js"
 
 
  export const verfiyJWT = asyncHandler( async(req,res,next
-    
  )=>{
     req.cookies?.accessToken || req.header
  } )
