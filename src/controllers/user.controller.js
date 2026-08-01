@@ -862,6 +862,7 @@ const logoutUser = await asyncHandler( async (req,res)=>{
 
 // 12345
 MongoDB searches for this user.
+It finds user 12345.
 
 
 
