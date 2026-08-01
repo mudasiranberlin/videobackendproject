@@ -861,6 +861,7 @@ const logoutUser = await asyncHandler( async (req,res)=>{
 
 
 
+
    await User.findByIdAndUpdate(
         req.user._id,
         {
