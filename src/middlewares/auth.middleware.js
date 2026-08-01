@@ -32,7 +32,7 @@ import { User } from "../models/user.models.js"
 
  import { asyncHandler } from "../utils/asyncHandler.js"
 
- 
+name can be anything 
  export const verfiyJWT = asyncHandler( async(req,res)=>{
     req.cookies?.accessToken || req.header
  } )
