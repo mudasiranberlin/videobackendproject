@@ -133,7 +133,13 @@ here we have next also we use middle ware next andwhen it will done and then pas
 
 // req means Request.
 // Whenever a client (browser or mobile app) sends a request, Express creates a req object.
+The req object contains information like:
 
+req.body
+req.params
+req.query
+req.cookies
+req.headers
  } )
 
  
