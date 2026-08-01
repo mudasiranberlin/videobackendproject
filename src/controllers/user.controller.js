@@ -796,6 +796,7 @@ const loginUser = asyncHandler(async(req,res)=>{
         try {
             const user = await User.findById(userId)
             
+            
         } catch (error) {
             throw new ApiError(500,"Something went wrong")
         }
