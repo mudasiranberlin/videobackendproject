@@ -1232,7 +1232,7 @@ const updateAccountDetails = asyncHandler(async(req,res)=>{
 
 
 // Check if fields are empty
-Because we cannot update with empty values.
+// Because we cannot update with empty values.
     if (!fullname ||!email) {
         throw new ApiError(201,"Enter the fullname and username")
     }
