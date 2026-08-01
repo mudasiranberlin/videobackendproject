@@ -966,6 +966,17 @@ Step 3
 
 // (Usually, projects wrap this in an ApiResponse class.)
 
+
+// Logout = 3 steps
+
+1️⃣ Delete refresh token from the database
+        ↓
+2️⃣ Delete accessToken cookie
+        ↓
+3️⃣ Delete refreshToken cookie
+        ↓
+✅ User is logged out
+
    await User.findByIdAndUpdate(
         req.user._id,
         {
