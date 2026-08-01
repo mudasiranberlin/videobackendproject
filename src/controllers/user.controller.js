@@ -1187,7 +1187,7 @@ const updateAccountDetails = asyncHandler(async(req,res)=>{
             fullname:fullname,
             email:email
         }
-    },{new:true})
+    },{new:true}).select
 
 })
 
