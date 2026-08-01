@@ -1051,7 +1051,25 @@ Your schema has something like:
 
 // It stores only the hashed version.
 
+Why validateBeforeSave: false?
 
+Normally Mongoose validates every field before saving.
+
+Example:
+
+username is required
+email is required
+avatar is required
+
+But here you're only changing the password.
+
+So validation is skipped.
+
+validateBeforeSave: false
+
+means
+
+"Just save the password. Don't validate the other fields."
 
 
 
