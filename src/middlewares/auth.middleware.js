@@ -42,13 +42,13 @@ here we have next also we use middle ware next andwhen it will done and then pas
 // if not have access token so customer can send header to get req.header
 //a mobile app usually doesn't send cookies.
 
-Instead, it sends the token in the request header.
-Example request
-Authorization: Bearer abc123
-So we read it using
-req.header("Authorization")
-It returns
-Bearer abc123
+// Instead, it sends the token in the request header.
+// Example request
+// Authorization: Bearer abc123
+// So we read it using
+// req.header("Authorization")
+// It returns
+// Bearer abc123
 // 
  } )
 
