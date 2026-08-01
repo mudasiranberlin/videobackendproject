@@ -886,6 +886,8 @@ const logoutUser = await asyncHandler( async (req,res)=>{
 //     refreshToken: undefined
 // }
 
+
+
    await User.findByIdAndUpdate(
         req.user._id,
         {
