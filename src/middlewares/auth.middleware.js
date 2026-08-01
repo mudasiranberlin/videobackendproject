@@ -109,11 +109,11 @@ here we have next also we use middle ware next andwhen it will done and then pas
 //    username: "mudasir",
 //    email: "..."
 // }
-Why?
+// Why?
 
-We don't need to send the password or refresh token while verifying the user.
+// We don't need to send the password or refresh token while verifying the user.
 
-It is safer not to expose them.
+// It is safer not to expose them.
 
     if (!user) {
         throw new ApiError(401,"Invalid access token")
