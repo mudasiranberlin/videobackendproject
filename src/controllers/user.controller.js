@@ -908,7 +908,12 @@ const incomingRefreshToken = asyncHandler(async()=>{
 //get user password 
 
 //  Step 2
+const user = await User.findById(req.user?._id);
+Where did req.user come from?
 
+From your verifyJWT middleware.
+
+Earlier:
 
 
 
