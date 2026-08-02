@@ -1411,11 +1411,7 @@ const updateUserAvatar = asyncHandler(async(req,res)=>{
         throw new ApiResponse(401,"File missing") 
     }
 
-    // Find the logged-in user. req.user._id
-
-↓
-
-64a8bd78291...
+    // Find the logged-in user. 
     await findByIdAndUpdate(req.user?._id,
     {
         $set:{
