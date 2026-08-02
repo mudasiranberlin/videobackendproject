@@ -1387,7 +1387,6 @@ const updateUserAvatar = asyncHandler(async(req,res)=>{
         throw new ApiResponse(401,"File missing")  
 
 If the user did not upload any image
-
 avatarLocalPath = undefined
     }
     const avatar = await uploadOnCloudinary(avatarlocalpath)
