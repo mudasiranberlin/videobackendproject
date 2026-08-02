@@ -1414,11 +1414,11 @@ const updateUserAvatar = asyncHandler(async(req,res)=>{
     // Find the logged-in user. like req.user._id -> 64a8bd78291...
     // MongoDB finds
 
-    Meaning
+//     Meaning
 
-Replace the old avatar with the new one.
+// Replace the old avatar with the new one.
 
-Before
+// Before
     await findByIdAndUpdate(req.user?._id,
     {
         $set:{
