@@ -1301,7 +1301,10 @@ return res.status(200).json(
 //         ▼
 // Return updated user
 
-same like that have to update cover 
+same like that have to update cover image
+
+
+
 
 //End of the practice
 
