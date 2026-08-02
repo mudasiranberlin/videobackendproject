@@ -1432,7 +1432,17 @@ const updateUserAvatar = asyncHandler(async(req,res)=>{
 //    avatar:"https://cloudinary.com/new.jpg"
 // }
 
+Meaning
 
+Return the updated document, not the old one.
+
+Without it
+
+Old User
+
+With it
+
+Updated User
     await findByIdAndUpdate(req.user?._id,
     {
         $set:{
