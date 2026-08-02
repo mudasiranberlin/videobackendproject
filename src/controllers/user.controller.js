@@ -1399,6 +1399,8 @@ const updateUserAvatar = asyncHandler(async(req,res)=>{
 // Cloudinary returns something like
 
 
+
+
     if (!avatar.url) {
         throw new ApiResponse(401,"File missing") 
     }
