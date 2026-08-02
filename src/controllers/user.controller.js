@@ -1510,5 +1510,5 @@ export  {
     getCurrentUser,
     updateAccountDetails,
     updateUserAvatar,
-    up
+    updateUserCoverImage
 }
