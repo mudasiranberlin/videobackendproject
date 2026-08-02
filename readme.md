@@ -1173,7 +1173,137 @@ export const Subscription = mongoose.Schema("Subscription",SubscriptionSchema);
 
 update the avatar image :
 
+const updateUserAvatar = asyncHandler(async(req,res)=>{
 
+//     Meaning
+// We are creating a function named updateUserAvatar.
+// Whenever a user uploads a new profile picture, this function runs.
+// req = information sent by the user
+// res = response sent back to the user
+
+    const avatarLocalPath = res.files?.path
+// What is happening?
+// When the user uploads an image using Multer, 
+// Multer temporarily stores it on your computer.
+    
+    if (!avatarLocalPath) {
+        throw new ApiResponse(401,"File missing")  
+
+// If the user did not upload any image
+// avatarLocalPath = undefined
+// if upload then avatarLocalPath= uploads/avatar123.jpg
+
+    }
+    const avatar = await uploadOnCloudinary(avatarlocalpath)
+// Meaning
+// Take the image stored on your computer
+// uploads/myphoto.jpg
+// and upload it to Cloudinary.
+// Cloudinary returns something like
+
+// {
+//    url: "https://res.cloudinary.com/abc123/avatar.jpg",
+//    public_id: "avatar123"
+// }
+// avatar.url
+// contains
+// https://res.cloudinary.com/abc123/avatar.jpg
+
+
+    if (!avatar.url) { // Suppose Cloudinary fails.
+        throw new ApiResponse(401,"File missing") 
+    }
+
+    // Find the logged-in user. like req.user._id -> 64a8bd78291...
+    // MongoDB finds
+
+//     Meaning
+
+// Replace the old avatar with the new one.
+
+// Before
+
+// Before
+// {
+//    username:"Ali",
+//    avatar:"old.jpg"
+// }
+// After
+
+// {
+//    username:"Ali",
+//    avatar:"https://cloudinary.com/new.jpg"
+// }
+
+// Meaning
+
+// Return the updated document, not the old one.
+
+// Without it
+
+// Old User
+
+// With it
+
+// Updated User
+    const user = await findByIdAndUpdate(req.user?._id,
+    {
+        $set:{
+            avatar:avatar.url
+        }
+    },
+    {new:true}
+    ).select("-password")
+
+return res.status(200).json(
+    new ApiResponse(200, user, "Avatar updated successfully")
+)
+
+
+//     Don't return the password.
+
+// Example
+
+// Without .select()
+
+})
+
+
+
+
+// Complete Flow (Easy Diagram)
+// User uploads image
+//         │
+//         ▼
+// req.file.path
+//         │
+//         ▼
+// uploads/avatar.jpg
+//         │
+//         ▼
+// uploadOnCloudinary()
+//         │
+//         ▼
+// Cloudinary URL
+//         │
+//         ▼
+// https://cloudinary.com/avatar.jpg
+//         │
+//         ▼
+// Find logged-in user
+//         │
+//         ▼
+// Update avatar field
+//         │
+//         ▼
+// Save in MongoDB
+//         │
+//         ▼
+// Return updated user
+
+
+
+//End of the practice
 
 
  
