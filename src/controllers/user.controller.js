@@ -1377,7 +1377,6 @@ const updateUserAvatar = asyncHandler(async(req,res)=>{
 We are creating a function named updateUserAvatar.
 
 Whenever a user uploads a new profile picture, this function runs.
-
 req = information sent by the user
 res = response sent back to the user
 
