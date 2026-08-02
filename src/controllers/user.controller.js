@@ -1364,7 +1364,7 @@ const updateUserAvatar = asyncHandler(async(req,res)=>{
     }
     await findByIdAndUpdate(req.user?._id,
     {
-        
+        $set
     },
     {new:true}
     ).select("-password")
