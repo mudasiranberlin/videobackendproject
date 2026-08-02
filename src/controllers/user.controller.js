@@ -1419,6 +1419,8 @@ const updateUserAvatar = asyncHandler(async(req,res)=>{
 // Replace the old avatar with the new one.
 
 // Before
+
+
     await findByIdAndUpdate(req.user?._id,
     {
         $set:{
