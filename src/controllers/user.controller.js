@@ -1386,7 +1386,7 @@ const updateUserAvatar = asyncHandler(async(req,res)=>{
     if (!avatarLocalPath) {
         throw new ApiResponse(401,"File missing")  
 
-        If the user did not upload any image
+If the user did not upload any image
 
 avatarLocalPath = undefined
     }
