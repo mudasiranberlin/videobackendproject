@@ -1379,6 +1379,8 @@ const updateUserAvatar = asyncHandler(async(req,res)=>{
 // res = response sent back to the user
 
     const avatarLocalPath = res.files?.path
+
+    
     if (!avatarLocalPath) {
         throw new ApiResponse(401,"File missing")  
     }
