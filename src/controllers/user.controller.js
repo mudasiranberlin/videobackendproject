@@ -508,7 +508,7 @@ const updateUserCoverImage = asyncHandler( async (req,res)=>{
 } ) 
 
 
-//   start aggeration pip
+//   start aggeration pipeline
 
 const getUserChannelProfile = asyncHandler(async (req,res)=>{
     const {username} = req.params
