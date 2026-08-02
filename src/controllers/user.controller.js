@@ -1452,7 +1452,9 @@ const updateUserAvatar = asyncHandler(async(req,res)=>{
     {new:true}
     ).select("-password")
 
-    
+    return res.status(200).json(
+    new ApiResponse(200, user, "Avatar updated successfully")
+)
 
 
 //     Don't return the password.
