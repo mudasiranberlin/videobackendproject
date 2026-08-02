@@ -1392,9 +1392,17 @@ const updateUserAvatar = asyncHandler(async(req,res)=>{
 
     }
     const avatar = await uploadOnCloudinary(avatarlocalpath)
+Meaning
+
+Take the image stored on your computer
+
+uploads/myphoto.jpg
+
+and upload it to Cloudinary.
+
+Cloudinary returns something like
 
 
-    
     if (!avatar.url) {
         throw new ApiResponse(401,"File missing") 
     }
