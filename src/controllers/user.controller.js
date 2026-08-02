@@ -1358,6 +1358,13 @@ const updateUserAvatar = asyncHandler(async(req,res)=>{
     if (!avatarLocalPath) {
         throw new ApiResponse(401,"File missing")  
     }
+    const response= await cloudinary.uploader.upload(localFilePath,{
+                resource_type:"auto"
+            })
+            // file has been uploaded sucessfully
+            // console.log("File is Uploaded on Cloudinary",response.url);
+            fs.unlinkSync(localFilePath);
+            return response;
 
 })
 
