@@ -640,7 +640,7 @@ const getWatchHistory = asyncHandler( async()=>{
 
     )
 })
-*/
+
 
 
 const getWatchHistory = asyncHandler(async (req, res) => {
