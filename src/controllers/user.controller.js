@@ -1443,7 +1443,7 @@ const updateUserAvatar = asyncHandler(async(req,res)=>{
 // With it
 
 // Updated User
-    await findByIdAndUpdate(req.user?._id,
+    const user = await findByIdAndUpdate(req.user?._id,
     {
         $set:{
             avatar:avatar.url
