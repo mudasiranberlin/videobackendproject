@@ -1453,6 +1453,13 @@ const updateUserAvatar = asyncHandler(async(req,res)=>{
     ).select("-password")
 
 
+
+    Don't return the password.
+
+Example
+
+Without .select()
+
 })
 
 
