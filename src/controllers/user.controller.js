@@ -985,5 +985,5 @@ export  {
     updateAccountDetails,
     updateUserAvatar,
     updateUserCoverImage,
-    
+    get
 }
