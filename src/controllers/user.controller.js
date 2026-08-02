@@ -590,7 +590,6 @@ const getUserChannelProfile = asyncHandler(async (req,res)=>{
 // Valid aggeration   end 
 
 
-/*
 const getWatchHistory = asyncHandler( async()=>{
     const user = await User.aggregate([
         {
