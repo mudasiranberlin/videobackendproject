@@ -1352,6 +1352,8 @@ const updateAccountDetails = asyncHandler(async(req,res)=>{
 
 })
 
+
+This function updates the user's profile picture (avatar).
 const updateUserAvatar = asyncHandler(async(req,res)=>{
 
     const avatarLocalPath = res.files?.path
