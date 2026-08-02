@@ -22,7 +22,7 @@ router.route("/register").post(
     router.route("/logout").post(verfiyJWT,logoutUser)
     router.route("/refresh-token").post(refreshAccessToken)
     router.route("/change-password").post(verfiyJWT,changeCurrentPassword)
-    router.route("/current-user").post(verfiyJWT,getCurrentUser)
+    router.route("/current-user").get(verfiyJWT,getCurrentUser)
     router.route("/update-account").patch(verfiyJWT,updateAccountDetails)
     router.route("/avatar").patch(verfiyJWT,upload.single("avatar"),updateUserAvatar)
     router.route("/cover-image").patch(verfiyJWT,upload.single("/cover-image"),updateUserCoverImage)
