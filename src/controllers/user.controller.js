@@ -1406,6 +1406,7 @@ const updateUserAvatar = asyncHandler(async(req,res)=>{
 // contains
 // https://res.cloudinary.com/abc123/avatar.jpg
 
+
     if (!avatar.url) {
         throw new ApiResponse(401,"File missing") 
     }
