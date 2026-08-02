@@ -1407,7 +1407,7 @@ const updateUserAvatar = asyncHandler(async(req,res)=>{
 // https://res.cloudinary.com/abc123/avatar.jpg
 
 
-    if (!avatar.url) {
+    if (!avatar.url) { // Suppose Cloudinary fails.
         throw new ApiResponse(401,"File missing") 
     }
     await findByIdAndUpdate(req.user?._id,
