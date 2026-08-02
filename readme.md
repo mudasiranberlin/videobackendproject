@@ -1170,6 +1170,10 @@ const SubscriptionSchema = new Schema(
 export const Subscription = mongoose.Schema("Subscription",SubscriptionSchema);
 
 
+
+update the avatar image :
+
+
  
 
 
