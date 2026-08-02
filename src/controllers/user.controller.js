@@ -1402,7 +1402,7 @@ const updateUserAvatar = asyncHandler(async(req,res)=>{
 //    url: "https://res.cloudinary.com/abc123/avatar.jpg",
 //    public_id: "avatar123"
 // }
-vatar.url
+avatar.url
 
 contains
 
