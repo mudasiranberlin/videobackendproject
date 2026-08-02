@@ -1380,7 +1380,6 @@ const updateUserAvatar = asyncHandler(async(req,res)=>{
 
     const avatarLocalPath = res.files?.path
 What is happening?
-
 When the user uploads an image using Multer, 
 Multer temporarily stores it on your computer.
     
