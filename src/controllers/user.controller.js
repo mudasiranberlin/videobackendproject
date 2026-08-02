@@ -1363,7 +1363,9 @@ const updateUserAvatar = asyncHandler(async(req,res)=>{
         throw new ApiResponse(401,"File missing") 
     }
     await findByIdAndUpdate(req.user?._id,
-    {},
+    {
+        
+    },
     {new:true}
     ).select("-password")
 
