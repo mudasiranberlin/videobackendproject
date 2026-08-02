@@ -25,6 +25,6 @@ router.route("/register").post(
     router.route("/current-user").post(verfiyJWT,getCurrentUser)
     router.route("/update-account").patch(verfiyJWT,updateAccountDetails)
     router.route("/avatar").patch(verfiyJWT,upload.single("avatar"),updateUserAvatar
-    )
+)
 
 export default router
