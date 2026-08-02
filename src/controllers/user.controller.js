@@ -1368,6 +1368,8 @@ const updateAccountDetails = asyncHandler(async(req,res)=>{
 // Save URL in MongoDB
 //         ↓
 // Return updated user
+
+
 const updateUserAvatar = asyncHandler(async(req,res)=>{
 
     const avatarLocalPath = res.files?.path
