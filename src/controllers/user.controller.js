@@ -1392,15 +1392,15 @@ const updateUserAvatar = asyncHandler(async(req,res)=>{
 
     }
     const avatar = await uploadOnCloudinary(avatarlocalpath)
-Meaning
+// Meaning
 
-Take the image stored on your computer
+// Take the image stored on your computer
 
-uploads/myphoto.jpg
+// uploads/myphoto.jpg
 
-and upload it to Cloudinary.
+// and upload it to Cloudinary.
 
-Cloudinary returns something like
+// Cloudinary returns something like
 
 
     if (!avatar.url) {
