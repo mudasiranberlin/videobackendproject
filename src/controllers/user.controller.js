@@ -577,6 +577,7 @@ const getUserChannelProfile = asyncHandler(async (req,res)=>{
     if (!channel?.length) {
         throw new ApiError(401,"channel doest not exist")
     }
+    
     return res
     .status(200)
     .json(
