@@ -1425,7 +1425,6 @@ const updateUserAvatar = asyncHandler(async(req,res)=>{
 //    username:"Ali",
 //    avatar:"old.jpg"
 // }
-
 // After
 
 // {
