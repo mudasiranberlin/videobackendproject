@@ -1420,19 +1420,19 @@ const updateUserAvatar = asyncHandler(async(req,res)=>{
 
 // Before
 
-Before
+// Before
 
-{
-   username:"Ali",
-   avatar:"old.jpg"
-}
+// {
+//    username:"Ali",
+//    avatar:"old.jpg"
+// }
 
-After
+// After
 
-{
-   username:"Ali",
-   avatar:"https://cloudinary.com/new.jpg"
-}
+// {
+//    username:"Ali",
+//    avatar:"https://cloudinary.com/new.jpg"
+// }
     await findByIdAndUpdate(req.user?._id,
     {
         $set:{
