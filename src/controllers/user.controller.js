@@ -1509,5 +1509,6 @@ export  {
     changeCurrentPassword,
     getCurrentUser,
     updateAccountDetails,
-    updateUserAvatar
+    updateUserAvatar,
+    up
 }
