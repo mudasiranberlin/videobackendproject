@@ -1354,6 +1354,11 @@ const updateAccountDetails = asyncHandler(async(req,res)=>{
 
 const updateUserAvatar = asyncHandler(async(req,res)=>{
 
+    const avatarLocalPath = req.files?.path
+    if (!avatarLocalPath) {
+        throw new ApiResponse(401,"File missing")  
+    }
+
 })
 
 
