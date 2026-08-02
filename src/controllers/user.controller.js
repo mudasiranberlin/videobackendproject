@@ -1464,6 +1464,39 @@ const updateUserAvatar = asyncHandler(async(req,res)=>{
 
 
 
+
+Complete Flow (Easy Diagram)
+User uploads image
+        │
+        ▼
+req.file.path
+        │
+        ▼
+uploads/avatar.jpg
+        │
+        ▼
+uploadOnCloudinary()
+        │
+        ▼
+Cloudinary URL
+        │
+        ▼
+https://cloudinary.com/avatar.jpg
+        │
+        ▼
+Find logged-in user
+        │
+        ▼
+Update avatar field
+        │
+        ▼
+Save in MongoDB
+        │
+        ▼
+Return updated user
+
+
+
 //End of the practice
 
 
