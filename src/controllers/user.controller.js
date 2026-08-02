@@ -1404,7 +1404,6 @@ const updateUserAvatar = asyncHandler(async(req,res)=>{
 // }
 // avatar.url
 // contains
-
 // https://res.cloudinary.com/abc123/avatar.jpg
 
     if (!avatar.url) {
