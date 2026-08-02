@@ -1388,7 +1388,7 @@ const updateUserAvatar = asyncHandler(async(req,res)=>{
 
 // If the user did not upload any image
 // avatarLocalPath = undefined
-
+// if upload then 
     }
     const avatar = await uploadOnCloudinary(avatarlocalpath)
     if (!avatar.url) {
