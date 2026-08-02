@@ -1397,7 +1397,6 @@ const updateUserAvatar = asyncHandler(async(req,res)=>{
 // Take the image stored on your computer
 
 // uploads/myphoto.jpg
-
 // and upload it to Cloudinary.
 // Cloudinary returns something like
 
