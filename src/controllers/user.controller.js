@@ -1410,6 +1410,8 @@ const updateUserAvatar = asyncHandler(async(req,res)=>{
     if (!avatar.url) { // Suppose Cloudinary fails.
         throw new ApiResponse(401,"File missing") 
     }
+
+    Find the logged-in user.
     await findByIdAndUpdate(req.user?._id,
     {
         $set:{
