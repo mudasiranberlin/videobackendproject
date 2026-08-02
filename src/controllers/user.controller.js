@@ -1431,6 +1431,8 @@ const updateUserAvatar = asyncHandler(async(req,res)=>{
 //    username:"Ali",
 //    avatar:"https://cloudinary.com/new.jpg"
 // }
+
+
     await findByIdAndUpdate(req.user?._id,
     {
         $set:{
