@@ -22,6 +22,6 @@ router.route("/register").post(
     router.route("/logout").post(verfiyJWT,logoutUser)
     router.route("/refresh-token").post(refreshAccessToken)
     router.route("/change-password").post(verfiyJWT,changeCurrentPassword)
-    router.route("/current-user")
+    router.route("/current-user").post
 
 export default router
