@@ -1358,7 +1358,7 @@ const updateUserAvatar = asyncHandler(async(req,res)=>{
     if (!avatarLocalPath) {
         throw new ApiResponse(401,"File missing")  
     }
-    const avaawait uploadOnCloudinary(avatarlocalpath)
+    const avatar = await uploadOnCloudinary(avatarlocalpath)
 
 })
 
