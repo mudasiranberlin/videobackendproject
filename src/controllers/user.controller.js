@@ -1398,7 +1398,10 @@ const updateUserAvatar = asyncHandler(async(req,res)=>{
 // and upload it to Cloudinary.
 // Cloudinary returns something like
 
-
+{
+   url: "https://res.cloudinary.com/abc123/avatar.jpg",
+   public_id: "avatar123"
+}
 
 
     if (!avatar.url) {
