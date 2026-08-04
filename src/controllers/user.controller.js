@@ -489,8 +489,8 @@ const updateUserAvatar = asyncHandler( async (req,res)=>{
 
 
 const updateUserCoverImage = asyncHandler( async (req,res)=>{
-    console.log("FILE:", req.file);
-    console.log("BODY:", req.body);
+    
+    
     
     
     const CoverImageLocalPath = req.file?.path
@@ -504,10 +504,13 @@ const updateUserCoverImage = asyncHandler( async (req,res)=>{
     }
     const coverImage = await uploadCloudinary(CoverImageLocalPath)
 
+    
+    
+
     if (!coverImage.url) {
         throw new ApiError(400,"Error While uploading on Cover image")
-        
     }
+
 
     const user =  await User.findByIdAndUpdate(req.user?._id,
         {
@@ -568,7 +571,7 @@ const getUserChannelProfile = asyncHandler(async (req,res)=>{
 
                 isSubscribed:{
                     $cond:{
-                        if:{$in:[req.user?._id,"$subscribers,subscriber"]},
+                        if:{$in:[req.user?._id,"$subscribers.subscriber"]},
                         then:true,
                         else:false
                     }
