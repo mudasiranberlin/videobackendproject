@@ -124,8 +124,7 @@ console.log("req.body:", req.body);
     console.log("req.files:", req.files);
     console.log("req.body:", req.body);
 
-    const avatarlocalpath =
-        req.files?.avatar?.[0]?.path;
+    const avatarlocalpath =  req.files?.avatar[0]?.path;
 
 
 
@@ -282,7 +281,12 @@ const loginUser = asyncHandler( async (req,res)=>{
     // send cookies 
     // response 
 
-    const {email,username,password}=req.body
+    // const {email,username,password}=req.body
+
+    const {email, username, password } = req.body
+    //console.log("email: ", email);
+
+
     if (!username && !email) {
         throw new ApiError(400,"Username or email is required")
     }
