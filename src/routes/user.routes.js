@@ -25,7 +25,7 @@ router.route("/register").post(
     router.route("/current-user").get(verfiyJWT,getCurrentUser)
     router.route("/update-account").patch(verfiyJWT,updateAccountDetails)
     router.route("/avatar").patch(verfiyJWT,upload.single("avatar"),updateUserAvatar)
-    router.route("/cover-image").patch(verfiyJWT,upload.single("/cover-image"),updateUserCoverImage)
+    router.route("/cover-image").patch(verfiyJWT,upload.single("coverImage"),updateUserCoverImage)
     router.route("/c/:username").get(verfiyJWT,getUserChannelProfile)
     router.route("/history").get(verfiyJWT,getWatchHistory)
 
