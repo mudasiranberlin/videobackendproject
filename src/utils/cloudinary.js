@@ -26,4 +26,21 @@ const uploadCloudinary = async (localFilePath)=>{
     }
 }
 
-export {uploadCloudinary}
+async function deleteVideo(publicId) {
+  try {
+    const result = await cloudinary.uploader.destroy(publicId, { 
+      resource_type: 'video',
+      invalidate: true // Optional: clears cached copies from CDN
+    });
+
+    fs.unlinkSync(localFilePath);
+        return response;
+        
+    console.log(result); // Outputs: { result: 'ok' }
+  } catch (error) {
+    console.error('Error deleting video:', error);
+  }
+}
+
+export {uploadCloudinary,deleteVideo}
+
