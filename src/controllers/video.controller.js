@@ -81,7 +81,14 @@ const updateVideo = asyncHandler(async (req, res) => {
 const deleteVideo = asyncHandler(async (req, res) => {
     const { videoId } = req.params
 
-    
+    console.log("Mudasir is good", avatar.url);
+
+const publicId = avatar.url.split("/").pop().split(".")[0];
+
+console.log("Mudasir is good", publicId);
+
+
+
     //TODO: delete video
 })
 

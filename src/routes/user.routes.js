@@ -29,17 +29,17 @@ router.route("/register").post(
     router.route("/c/:username").get(verfiyJWT,getUserChannelProfile)
     router.route("/history").get(verfiyJWT,getWatchHistory)
 
-    router.route("/getallvideo").post(
-        upload.fields([
-        {
-            name:"videoFile",
-            maxCount:1
-        },
-        {
-            name:"thumbnail",
-            maxCount:1
-        }
-    ] ),registerUser)
+    // router.route("/getallvideo").post(
+    //     upload.fields([
+    //     {
+    //         name:"videoFile",
+    //         maxCount:1
+    //     },
+    //     {
+    //         name:"thumbnail",
+    //         maxCount:1
+    //     }
+    // ] ),registerUser)
 
 
 

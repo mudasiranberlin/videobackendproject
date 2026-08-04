@@ -191,6 +191,10 @@ console.log("req.files:", req.files);
 
     // Create new user in MongoDB database
 
+
+
+    //
+
     const user = await User.create({
 
         // User full name
@@ -200,12 +204,13 @@ console.log("req.files:", req.files);
         // Save Cloudinary avatar URL
         avatar: avatar.url,
 
+        
+
 
         // Save cover image URL
         // If no cover image exists, save empty string
 
         coverImage: coverImage?.url || "",
-
 
         // User email
         email,
@@ -221,7 +226,11 @@ console.log("req.files:", req.files);
 
         username: username.toLowerCase()
 
+        
+        
+
     })
+    
 
 
 
@@ -229,6 +238,9 @@ console.log("req.files:", req.files);
     // Find the created user from database
     // Remove password and refresh token
     // because we should never send them to frontend
+
+
+
 
     const createdUser =
         await User.findById(user._id)
@@ -280,10 +292,11 @@ const loginUser = asyncHandler( async (req,res)=>{
     // access and refresh token 
     // send cookies 
     // response 
+    
 
     // const {email,username,password}=req.body
 
-    const {email, username, password } = req.body
+    const {email, username, password} = req.body
     //console.log("email: ", email);
 
 
