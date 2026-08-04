@@ -120,8 +120,12 @@ console.log("req.body:", req.body);
     // req.files.avatar[0].path
     // = "/uploads/profile.png"
 
+
+    console.log("req.files:", req.files);
+    console.log("req.body:", req.body);
+
     const avatarlocalpath =
-        req.files?.avatar[0]?.path;
+        req.files?.avatar?.[0]?.path;
 
 
 
@@ -132,13 +136,10 @@ console.log("req.body:", req.body);
 
         let coverimagelocalpath;
 
-        if (req.files && Array.isArray(req.files.coverImage) && req.files.coverImage >0) {
+        if (req.files && Array.isArray(req.files.coverImage) && req.files.coverImage.length > 0) {
             coverimagelocalpath = req.files.coverImage[0].path
             
         }
-
-
-
 
     // Avatar image is required
     // If user did not upload profile picture

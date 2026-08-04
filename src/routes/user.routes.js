@@ -26,7 +26,7 @@ router.route("/register").post(
     router.route("/update-account").patch(verfiyJWT,updateAccountDetails)
     router.route("/avatar").patch(verfiyJWT,upload.single("avatar"),updateUserAvatar)
     router.route("/cover-image").patch(verfiyJWT,upload.single("/cover-image"),updateUserCoverImage)
-    route.route("/c/:username").get(verfiyJWT,getUserChannelProfile)
+    router.route("/c/:username").get(verfiyJWT,getUserChannelProfile)
     router.route("/history").get(verfiyJWT,getWatchHistory)
 
 export default router
