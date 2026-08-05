@@ -1,14 +1,15 @@
 import mongoose, { isValidObjectId } from "mongoose"
-import { Video } from "../models/video.model.js"
-import { User } from "../models/user.model.js"
+import { Video } from "../models/video.models.js"
 import { ApiError } from "../utils/ApiError.js"
 import { ApiResponse } from "../utils/ApiResponse.js"
 import { asyncHandler } from "../utils/asyncHandler.js"
-import { uploadOnCloudinary } from "../utils/cloudinary.js"
+import { deleteCloudinary } from "../utils/cloudinary.js"
+import { User } from "../models/user.models.js";
 
 
 const getAllVideos = asyncHandler(async (req, res) => {
     const { page = 1, limit = 10, query, sortBy, sortType, userId } = req.query
+    
     //TODO: get all videos based on query, sort, pagination
 })
 
@@ -81,11 +82,35 @@ const updateVideo = asyncHandler(async (req, res) => {
 const deleteVideo = asyncHandler(async (req, res) => {
     const { videoId } = req.params
 
-    console.log("Mudasir is good", avatar.url);
+    if (!videoId) {
+        throw new ApiError(401,"Please select the video you want to delete")
+    }
+    const video = await Video.findById(videoId)
 
-const publicId = avatar.url.split("/").pop().split(".")[0];
+    if (!video) {
+        throw new ApiError(401,"Not able to find the video")
+    }
 
-console.log("Mudasir is good", publicId);
+    const publicId = video.url.split("/").pop().split(".")[0];
+    if (!publicId) {
+        throw new ApiError(401,"No public id in the video  you want to delete")
+    }
+    const user = await deleteCloudinary(publicId)
+
+    await Video.findByIdAndDelete(publicId);
+
+
+    return res.status(200).json(
+    new ApiResponse(200, {}, "Video deleted successfully")
+);
+
+    
+
+    // console.log("Mudasir is good", avatar.url);
+
+// const publicId = avatar.url.split("/").pop().split(".")[0];
+
+// console.log("Mudasir is good", publicId);
 
 
 
